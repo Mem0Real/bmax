@@ -40,31 +40,26 @@ export default function Navbar() {
 	};
 
 	return (
-		<div className="w-full bg-neutral-900 text-neutral-300 px-4 xl:px-40 py-8 flex items-center justify-between xl:justify-between">
+		<div className="w-full bg-neutral-900 text-neutral-300 px-4 xl:px-40 py-4 flex items-center justify-between xl:justify-between">
 			<div className="flex justify-center items-center gap-4">
-				<Image
-					width={120}
-					height={120}
-					src="/images/logo-noBg-noContainer.png"
-					alt="B-Max"
-				/>
+				<Image width={120} height={120} src="/images/logo.png" alt="B-Max" />
 			</div>
 			{/* xl:screen */}
-			<motion.div className="hidden xl:flex justify-center items-center gap-5 font-semibold ">
+			<motion.div className="hidden xl:flex justify-center items-center gap-3 font-semibold ">
 				{navData.map(({ title, address, dropData }) => {
 					return (
 						<motion.span
 							key={title}
 							onHoverStart={() => setDrop(title)}
 							onHoverEnd={() => setDrop("")}
-							className="relative"
+							className="relative py-8 px-2"
 						>
 							<motion.div className="flex items-center gap-1">
 								<Link href={address}>{title}</Link>
 								<motion.span
 									className="cursor-pointer"
-									initial={{ rotate: -90 }}
-									animate={drop === title ? { rotate: -90 } : { rotate: 90 }}
+									initial={{ rotate: 0 }}
+									animate={drop === title ? { rotate: 90 } : { rotate: 0 }}
 									transition={{ ease: easeInOut }}
 								>
 									{dropData && RightIcon}
@@ -113,13 +108,13 @@ export default function Navbar() {
 									animate={{ opacity: 1, x: 0 }}
 									exit={{ opacity: 0, x: "-100vw" }}
 									transition={{ ease: [0.2, 0.1, 0.5, 0.1] }}
-									className="bg-neutral-200 text-neutral-900 absolute left-0 top-0 h-[100vh] flex flex-col justify-start items-start gap-8 w-[85%] p-8 pr-5"
+									className="bg-neutral-900 text-neutral-200 absolute left-0 top-0 h-[100vh] flex flex-col justify-start items-start gap-8 w-[85%] p-8 pr-5"
 								>
 									{/* top */}
 									<div className="w-full flex justify-between items-center">
 										<Image
-											width={20}
-											height={20}
+											width={90}
+											height={90}
 											src={"/images/logo.png"}
 											alt="B-Max"
 										/>
@@ -155,7 +150,7 @@ export default function Navbar() {
 																	: { rotate: -90 }
 															}
 															transition={{ ease: easeInOut }}
-															className="text-neutral-700"
+															className="text-neutral-200"
 															onClick={() => toggleNest(title)}
 														>
 															{dropData && LeftIcon}
