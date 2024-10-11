@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<CustomIcons>
 				<body
-					className={`${geistSans.variable} ${geistMono.variable} antialiased text-sm`}
+					className={`${geistSans.variable} ${geistMono.variable} antialiased text-sm relative`}
 				>
 					<Topbar className={geistMono.variable} />
 					<Navbar />

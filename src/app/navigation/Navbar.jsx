@@ -45,14 +45,14 @@ export default function Navbar() {
 				<Image width={120} height={120} src="/images/logo.png" alt="B-Max" />
 			</div>
 			{/* xl:screen */}
-			<motion.div className="hidden xl:flex justify-center items-center gap-3 font-semibold ">
+			<motion.div className="hidden xl:flex justify-center items-center gap-3 font-semibold">
 				{navData.map(({ title, address, dropData }) => {
 					return (
 						<motion.span
 							key={title}
 							onHoverStart={() => setDrop(title)}
 							onHoverEnd={() => setDrop("")}
-							className="relative py-8 px-2"
+							className="flex flex-col justify-center items-center py-8 px-2"
 						>
 							<motion.div className="flex items-center gap-1">
 								<Link href={address}>{title}</Link>
@@ -68,7 +68,7 @@ export default function Navbar() {
 							<AnimatePresence>
 								{title === drop && (
 									<motion.h2
-										className="absolute top-16"
+										className=""
 										initial={{ opacity: 0, y: -20 }}
 										animate={{ opacity: 1, y: 0 }}
 										exit={{ opacity: 0, y: -20 }}
@@ -124,7 +124,6 @@ export default function Navbar() {
 											whileTap={{ scale: 0.8 }}
 											transition={{ ease: easeInOut }}
 										>
-											{/* X */}
 											{CloseIcon}
 										</motion.button>
 									</div>
@@ -158,8 +157,7 @@ export default function Navbar() {
 													</div>
 													<AnimatePresence>
 														{nest.includes(title) && (
-															<motion.h2
-																className=""
+															<motion.div
 																initial={{ opacity: 0, y: -20 }}
 																animate={{ opacity: 1, y: 0 }}
 																exit={{ opacity: 0, y: -20 }}
@@ -169,7 +167,7 @@ export default function Navbar() {
 																}}
 															>
 																{dropData}
-															</motion.h2>
+															</motion.div>
 														)}
 													</AnimatePresence>
 												</motion.span>
