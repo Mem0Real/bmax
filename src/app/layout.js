@@ -3,6 +3,7 @@ import "./globals.css";
 import Topbar from "./components/Topbar";
 import Navbar from "./navigation/Navbar";
 import Footer from "./navigation/Footer";
+import CustomIcons from "./components/CustomIcons";
 
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
@@ -23,14 +24,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-			>
-				<Topbar className={geistMono.variable} />
-				<Navbar />
-				{children}
-				<Footer />
-			</body>
+			<CustomIcons>
+				<body
+					className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+				>
+					<Topbar className={geistMono.variable} />
+					<Navbar />
+					{children}
+					<Footer />
+				</body>
+			</CustomIcons>
 		</html>
 	);
 }
