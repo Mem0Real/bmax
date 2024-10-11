@@ -6,7 +6,7 @@ import SolutionLinks from "./footer_components/SolutionLinks";
 export default function Footer() {
 	return (
 		<div className="min-h-96 bg-pink-200/60 pt-12 pb-8 flex flex-col justify-center items-center">
-			<div className="px-12 xl:px-40 flex justify-center items-center gap-4 md:gap-8 xl:gap-16">
+			<div className="px-12 xl:px-40 flex justify-center items-center flex-wrap gap-4 md:gap-8 xl:gap-16">
 				<LogoStuff />
 				<QuickLinks />
 				<SolutionLinks />

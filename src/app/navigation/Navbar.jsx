@@ -9,6 +9,7 @@ import IndustryDrop from "./navbar_components/IndustryDrop";
 
 import { AnimatePresence, easeInOut, motion } from "framer-motion";
 import { useIcons } from "../components/CustomIcons";
+import Image from "next/image";
 
 const navData = [
 	{ title: "Home", address: "/" },
@@ -25,7 +26,7 @@ export default function Navbar() {
 	const [ham, setHam] = useState("");
 	const [nest, setNest] = useState([]);
 
-	const { LeftIcon, CloseIcon } = useIcons();
+	const { RightIcon, LeftIcon, CloseIcon } = useIcons();
 
 	const toggleNest = (title) => {
 		setNest((prevNest) => {
@@ -39,13 +40,17 @@ export default function Navbar() {
 	};
 
 	return (
-		<div className="bg-neutral-100 text-blue-300 px-12 xl:px-40 flex items-center justify-between xl:justify-center xl:gap-16">
+		<div className="w-full bg-neutral-900 text-neutral-300 px-4 xl:px-40 py-8 flex items-center justify-between xl:justify-between">
 			<div className="flex justify-center items-center gap-4">
-				<h1>Logo</h1>
-				<h1>-I</h1>
+				<Image
+					width={120}
+					height={120}
+					src="/images/logo-noBg-noContainer.png"
+					alt="B-Max"
+				/>
 			</div>
 			{/* xl:screen */}
-			<motion.div className="hidden xl:flex justify-center items-center gap-5">
+			<motion.div className="hidden xl:flex justify-center items-center gap-5 font-semibold ">
 				{navData.map(({ title, address, dropData }) => {
 					return (
 						<motion.span
@@ -54,11 +59,21 @@ export default function Navbar() {
 							onHoverEnd={() => setDrop("")}
 							className="relative"
 						>
-							<Link href={address}>{title}</Link>
+							<motion.div className="flex items-center gap-1">
+								<Link href={address}>{title}</Link>
+								<motion.span
+									className="cursor-pointer"
+									initial={{ rotate: -90 }}
+									animate={drop === title ? { rotate: -90 } : { rotate: 90 }}
+									transition={{ ease: easeInOut }}
+								>
+									{dropData && RightIcon}
+								</motion.span>
+							</motion.div>
 							<AnimatePresence>
 								{title === drop && (
 									<motion.h2
-										className="absolute top-8"
+										className="absolute top-16"
 										initial={{ opacity: 0, y: -20 }}
 										animate={{ opacity: 1, y: 0 }}
 										exit={{ opacity: 0, y: -20 }}
@@ -76,8 +91,7 @@ export default function Navbar() {
 				})}
 			</motion.div>
 
-			{/* else:screen */}
-			<div className="flex xl:hidden items-center justify-center gap-5">
+			<div className="flex xl:hidden items-center justify-center gap-2">
 				{/* hamburger btn */}
 				<motion.div onTap={() => setHam(!ham)}>Dropdown</motion.div>
 				{/* hamburger menu */}
@@ -103,7 +117,12 @@ export default function Navbar() {
 								>
 									{/* top */}
 									<div className="w-full flex justify-between items-center">
-										<h1 className="py-1.5">Logo</h1>
+										<Image
+											width={20}
+											height={20}
+											src={"/images/logo.png"}
+											alt="B-Max"
+										/>
 										<motion.button
 											onClick={() => setHam(!ham)}
 											className="text-red-500 border border-red-500 rounded-full px-2.5 py-0.5 mb-5"
