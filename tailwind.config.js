@@ -11,6 +11,7 @@ module.exports = {
 				background: "var(--background)",
 				foreground: "var(--foreground)",
 				mellow: "#FFA500",
+				darkYellow: "#DFA70C",
 			},
 		},
 	},

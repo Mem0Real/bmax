@@ -52,7 +52,7 @@ export default function Navbar() {
 							key={title}
 							onHoverStart={() => setDrop(title)}
 							onHoverEnd={() => setDrop("")}
-							className="flex flex-col justify-center items-center py-8 px-2"
+							className="flex flex-col justify-center items-center py-4 px-2 relative"
 						>
 							<motion.div className="flex items-center gap-1">
 								<Link href={address}>{title}</Link>
@@ -68,7 +68,7 @@ export default function Navbar() {
 							<AnimatePresence>
 								{title === drop && (
 									<motion.h2
-										className=""
+										className="absolute top-16"
 										initial={{ opacity: 0, y: -20 }}
 										animate={{ opacity: 1, y: 0 }}
 										exit={{ opacity: 0, y: -20 }}
