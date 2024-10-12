@@ -3,9 +3,50 @@
 import Image from "next/image";
 import React from "react";
 
+import { Carousel, CarouselSlide } from "@mantine/carousel";
+import { useIcons } from "../components/CustomIcons";
+
+const whyList = [
+	{
+		title: "EXPERTISE",
+		detail:
+			"With years of experience in the automotive industry, our team at B-Max possesses the expertise and knowledge to handle all aspects of car key replacement, programming, and security systems installation with precision and efficiency.",
+	},
+	{
+		title: "Cutting-Edge Technology",
+		detail:
+			"We stay at the forefront of technological advancements, utilizing the latest tools and equipment to ensure accurate key programming, seamless GPS tracking, and reliable car alarm system installations.",
+	},
+	{
+		title: "Custom Solutions",
+		detail:
+			"At B-Max, we understand that every vehicle and client has unique requirements. That's why we offer personalized solutions tailored to your specific needs, whether it's replacing lost keys, enhancing vehicle security, or optimizing fleet management.",
+	},
+	{
+		title: "Prompt Service",
+		detail:
+			"We value your time, which is why we strive to provide prompt and efficient service. Whether you need a car key replacement in a hurry or require urgent assistance with your GPS tracking system, you can rely on B-Max to deliver timely solutions.",
+	},
+	{
+		title: "Customer Satisfaction",
+		detail:
+			"At the heart of our business is a commitment to customer satisfaction. We prioritize open communication, transparency, and integrity in all our interactions, ensuring that every client receives the highest level of service and support. Choose B-Max for all your car key replacement, programming, GPS tracking, car alarm system, and fleet management needs. Experience the difference of working with a trusted partner dedicated to your safety and peace of mind on the road.",
+	},
+];
+
+const imgList = [
+	"fuel.png",
+	"driver.png",
+	"truck.jpg",
+	"monitor.png",
+	"protect.png",
+];
+
 export default function About() {
+	const { LeftArrowIcon, RightArrowIcon } = useIcons();
+
 	return (
-		<div className="w-full px-4 xl:px-40 bg-neutral-100 text-neutral-900">
+		<div className="w-full px-4 xl:px-40 bg-neutral-100 text-neutral-950">
 			<div className="flex flex-col justify-center items-center gap-24 pt-28">
 				{/* landing text */}
 				<div className="flex flex-col justify-center items-center gap-6">
@@ -83,6 +124,58 @@ export default function About() {
 							and expert support in fleet management.
 						</p>
 					</div>
+				</div>
+
+				{/* why be max */}
+				<div className="flex flex-col justify-center items-start gap-8">
+					<h1 className="text-6xl font-semibold">Why Choose B-Max?</h1>
+					{whyList.map(({ title, detail }, index) => (
+						<>
+							<h1 key={index} className="text-2xl font-semibold">
+								{++index}.{title}
+							</h1>
+							<p className="font-thin text-lg">{detail}</p>
+						</>
+					))}
+				</div>
+
+				{/* slide carousel */}
+				<div className="w-full h-[400] mx-auto lg:w-full relative flex flex-col justify-center items-center mb-16">
+					<Carousel
+						withIndicators
+						slideGap={{ base: 0, sm: "md" }}
+						loop
+						align="start"
+						slidesToScroll={1}
+						height="100%"
+						controlsOffset="xl"
+						controlSize={30}
+						nextControlIcon={
+							<div className="w-8 text-white bg-neutral-950 rounded-full">
+								{RightArrowIcon}
+							</div>
+						}
+						previousControlIcon={
+							<div className="w-8 text-white bg-neutral-950 rounded-full">
+								{LeftArrowIcon}
+							</div>
+						}
+						slideSize={{ base: "100%", sm: "50%", lg: "33%" }}
+					>
+						{imgList.map((source, index) => (
+							<React.Fragment key={index}>
+								<CarouselSlide>
+									<Image
+										src={`/images/landing-cards/${source}`}
+										alt={source}
+										width={400}
+										height={400}
+										className="object-contain md:object-cover lg:object-contain object-center"
+									/>
+								</CarouselSlide>
+							</React.Fragment>
+						))}
+					</Carousel>
 				</div>
 			</div>
 		</div>
