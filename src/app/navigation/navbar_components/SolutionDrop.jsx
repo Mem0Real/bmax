@@ -19,12 +19,12 @@ export default function SolutionDrop() {
 			icon: LockIcon,
 			header: "Auto Locksmith Services",
 			nest: [
-				{ title: "Car Key Replacement", address: "car-key-replacement" },
-				{ title: "Car Key Duplication", address: "car-key-duplication" },
-				{ title: "Emergency Car Unlock", address: "emergency-car-unlock" },
+				{ title: "Car Key Replacement", address: "/key-replacement" },
+				{ title: "Car Key Duplication", address: "/key-duplication" },
+				{ title: "Emergency Car Unlock", address: "/emergency-unlock" },
 				{
 					title: "Ignition & Door Lock Repair",
-					address: "ignition-doorlock-repair",
+					address: "/ignition-repair",
 				},
 			],
 		},
@@ -34,7 +34,7 @@ export default function SolutionDrop() {
 			nest: [
 				{
 					title: "Single software platform for all your fleet needs",
-					address: "fleet-management-solutions",
+					address: "/fleet-management",
 				},
 			],
 		},
@@ -42,10 +42,10 @@ export default function SolutionDrop() {
 			icon: TrackingIcon,
 			header: "Vehicle Tracking",
 			nest: [
-				{ title: "Car GPS Tracking", address: "car-gps-tracking" },
-				{ title: "Bike GPS Tracking", address: "bike-gps-tracking" },
-				{ title: "Bus Tracking System", address: "bus-gps-tracking" },
-				{ title: "Truck Tracking System", address: "truck-gps-tracking" },
+				{ title: "Car GPS Tracking", address: "/car-gps" },
+				{ title: "Bike GPS Tracking", address: "/bike-gps" },
+				{ title: "Bus Tracking System", address: "/bus-gps" },
+				{ title: "Truck Tracking System", address: "/truck-gps" },
 			],
 		},
 		{
@@ -54,7 +54,7 @@ export default function SolutionDrop() {
 			nest: [
 				{
 					title: "Monitor Fuel Usage Prevent Theft",
-					address: "fuel-monitoring-solutions",
+					address: "/fuel-monitoring",
 				},
 			],
 		},
@@ -62,18 +62,18 @@ export default function SolutionDrop() {
 			icon: HardwareIcon,
 			header: "Hardware & Software Combinations",
 			nest: [
-				{ title: "Dashcam", address: "dashcam" },
-				{ title: "Video Telematics", address: "video-telematics" },
+				{ title: "Dashcam", address: "/dashcam" },
+				{ title: "Video Telematics", address: "/video-telematics" },
 			],
 		},
 		{
 			icon: VideoIcon,
 			header: "Video Safety",
 			nest: [
-				{ title: "4G AI Built-in Dashcam", address: "4g-ai-builtin-dashcam" },
+				{ title: "4G AI Built-in Dashcam", address: "/4g-ai-builtin-dashcam" },
 				{
 					title: "Enhance safety and reduce liability risk",
-					address: "video-telematics",
+					address: "/video-telematics",
 				},
 			],
 		},
@@ -89,12 +89,13 @@ export default function SolutionDrop() {
 							<div className="text-lg font-semibold">{header}</div>
 						</div>
 						<div className="flex flex-col justify-center items-start gap-4 pb-8 ps-6 xl:pb-3 xl:ps-8">
-							{nest?.map((data) => (
+							{nest?.map(({ address, title }, index) => (
 								<Link
 									className="flex flex-col justify-center items-start ps-5 text-xs"
-									href={`/${data.address}`}
+									key={index}
+									href={address}
 								>
-									{data.title}
+									{title}
 								</Link>
 							))}
 						</div>

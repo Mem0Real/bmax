@@ -1,6 +1,6 @@
 // Backend systems I have to implement
     1. News blog posting & comment
-    2. Email send
+    2. Email send (say hello)
     3. Email subscription (maybe)
 
 // Front-end stuff
