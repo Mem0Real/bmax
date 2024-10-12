@@ -13,7 +13,7 @@ export default function AboutDrop() {
 					exit={{ opacity: 0.9 }}
 					className="w-full px-6 py-2 xl:py-4"
 				>
-					<Link href="/whoweare">Who we are</Link>
+					<Link href="/about">Who we are</Link>
 				</motion.div>
 				<motion.div
 					initial={{ opacity: 0.9 }}
@@ -21,7 +21,7 @@ export default function AboutDrop() {
 					exit={{ opacity: 0.9 }}
 					className="w-full px-6 py-2 xl:py-4"
 				>
-					<Link href="/ourclients">Our Clients</Link>
+					<Link href="/our-clients">Our Clients</Link>
 				</motion.div>
 			</motion.div>
 		</AnimatePresence>
