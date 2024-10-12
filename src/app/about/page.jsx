@@ -5,6 +5,9 @@ import React from "react";
 
 import { Carousel, CarouselSlide } from "@mantine/carousel";
 import { useIcons } from "../components/CustomIcons";
+import Link from "next/link";
+
+import { AnimatePresence, motion } from "framer-motion";
 
 const whyList = [
 	{
@@ -199,6 +202,26 @@ export default function About() {
 							</p>
 						</div>
 					</div>
+				</div>
+
+				{/* interested */}
+				<div className="flex flex-col lg:flex-row justify-evenly lg:justify-between items-start w-full px-6 py-24 my-12 bg-neutral-200 rounded-lg gap-4 xl:gap-0">
+					<h1 className="text-4xl font-semibold">
+						Interested to work and cooperate with us?
+					</h1>
+					<Link href="contact">
+						<AnimatePresence>
+							<motion.div
+								whileHover={{
+									backgroundColor: "#FFF",
+									color: "#000",
+								}}
+								className="w-fit py-4 xl:py-2 px-8 xl:px-6 border border-neutral-900 bg-neutral-900 text-white font-semibold capitalize text-nowrap"
+							>
+								HIRE US!
+							</motion.div>
+						</AnimatePresence>
+					</Link>
 				</div>
 			</div>
 		</div>
