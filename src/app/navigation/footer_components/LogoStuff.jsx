@@ -1,7 +1,14 @@
-import Image from "next/image";
+"use client";
+
 import React from "react";
+import Image from "next/image";
+
+import { useIcons } from "@/app/components/CustomIcons";
+import Link from "next/link";
 
 export default function LogoStuff() {
+	const { FacebookIcon, TwitterIcon, InstagramIcon, TiktokIcon } = useIcons();
+
 	return (
 		<section className="w-full">
 			<div className="flex flex-col justify-stretch items-start gap-6">
@@ -19,12 +26,35 @@ export default function LogoStuff() {
 					tracking, video telematics, fuel monitoring, and more. Empower your
 					business today. Contact us now.
 				</p>
-				<div className="flex gap-2">
-					<h1 className="px-2">1</h1>
-					<h1 className="px-2">2</h1>
-					<h1 className="px-2">3</h1>
-					<h1 className="px-2">4</h1>
-					<h1 className="px-2">5</h1>
+				<div className="flex gap-6 ps-4">
+					<Link
+						className="w-6 text-blue-700 bg-neutral-200 rounded-full"
+						href="https://facebook.com"
+						target="_blank"
+					>
+						{FacebookIcon}
+					</Link>
+					<Link
+						className="w-6 text-blue-600"
+						href="https://x.com"
+						target="_blank"
+					>
+						{TwitterIcon}
+					</Link>
+					<Link
+						className="w-6 text-pink-500"
+						href="https://instagram.com"
+						target="_blank"
+					>
+						{InstagramIcon}
+					</Link>
+					<Link
+						className="w-6 bg-neutral-200 rounded-sm"
+						href="https://tiktok.com"
+						target="_blank"
+					>
+						{TiktokIcon}
+					</Link>
 				</div>
 			</div>
 		</section>

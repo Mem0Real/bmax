@@ -138,21 +138,7 @@ export default function CustomIcons({ children }) {
 			<path d="M16 12l-4-4-4 4M12 16V9" />
 		</svg>
 	);
-	const FacebookIcon = (
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			className="icon icon-tabler icon-tabler-brand-facebook"
-			viewBox="0 0 24 24"
-			strokeWidth="1.5"
-			stroke="currentColor"
-			fill="none"
-			strokeLinecap="round"
-			strokeLinejoin="round"
-		>
-			<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-			<path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
-		</svg>
-	);
+
 	const TelegramIcon = (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -166,50 +152,6 @@ export default function CustomIcons({ children }) {
 		>
 			<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 			<path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4"></path>
-		</svg>
-	);
-	const InstagramIcon = (
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			className="icon icon-tabler icon-tabler-brand-instagram"
-			viewBox="0 0 24 24"
-			strokeWidth="1.5"
-			stroke="currentColor"
-			fill="none"
-			strokeLinecap="round"
-			strokeLinejoin="round"
-		>
-			<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-			<path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
-			<path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-			<path d="M16.5 7.5l0 .01"></path>
-		</svg>
-	);
-	const PhoneIcon = (
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			viewBox="0 0 24 24"
-			fill="none"
-			stroke="currentColor"
-			strokeWidth="1.5"
-			strokeLinecap="round"
-			strokeLinejoin="round"
-		>
-			<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-		</svg>
-	);
-	const MessageIcon = (
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			viewBox="0 0 24 24"
-			fill="none"
-			stroke="currentColor"
-			strokeWidth="1.5"
-			strokeLinecap="round"
-			strokeLinejoin="round"
-		>
-			<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-			<polyline points="22,6 12,13 2,6"></polyline>
 		</svg>
 	);
 
@@ -454,6 +396,58 @@ export default function CustomIcons({ children }) {
 		</svg>
 	);
 
+	const FacebookIcon = (
+		<svg
+			aria-hidden="true"
+			xmlns="http://www.w3.org/2000/svg"
+			fill="currentColor"
+			viewBox="0 0 24 24"
+		>
+			<path
+				fill-rule="evenodd"
+				d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
+				clip-rule="evenodd"
+			/>
+		</svg>
+	);
+
+	const TwitterIcon = (
+		<svg
+			aria-hidden="true"
+			xmlns="http://www.w3.org/2000/svg"
+			fill="currentColor"
+			viewBox="0 0 24 24"
+		>
+			<path
+				fill-rule="evenodd"
+				d="M22 5.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.343 8.343 0 0 1-2.605.981A4.13 4.13 0 0 0 15.85 4a4.068 4.068 0 0 0-4.1 4.038c0 .31.035.618.105.919A11.705 11.705 0 0 1 3.4 4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 6.1 13.635a4.192 4.192 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 2 18.184 11.732 11.732 0 0 0 8.291 20 11.502 11.502 0 0 0 19.964 8.5c0-.177 0-.349-.012-.523A8.143 8.143 0 0 0 22 5.892Z"
+				clip-rule="evenodd"
+			/>
+		</svg>
+	);
+
+	const InstagramIcon = (
+		<svg
+			aria-hidden="true"
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+		>
+			<path
+				fill="currentColor"
+				fill-rule="evenodd"
+				d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+				clip-rule="evenodd"
+			/>
+		</svg>
+	);
+
+	const TiktokIcon = (
+		<svg viewBox="0 0 512 512" id="icons" xmlns="http://www.w3.org/2000/svg">
+			<path d="M412.19,118.66a109.27,109.27,0,0,1-9.45-5.5,132.87,132.87,0,0,1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14,23.9,350,16,350.13,16H267.69V334.78c0,4.28,0,8.51-.18,12.69,0,.52-.05,1-.08,1.56,0,.23,0,.47-.05.71,0,.06,0,.12,0,.18a70,70,0,0,1-35.22,55.56,68.8,68.8,0,0,1-34.11,9c-38.41,0-69.54-31.32-69.54-70s31.13-70,69.54-70a68.9,68.9,0,0,1,21.41,3.39l.1-83.94a153.14,153.14,0,0,0-118,34.52,161.79,161.79,0,0,0-35.3,43.53c-3.48,6-16.61,30.11-18.2,69.24-1,22.21,5.67,45.22,8.85,54.73v.2c2,5.6,9.75,24.71,22.38,40.82A167.53,167.53,0,0,0,115,470.66v-.2l.2.2C155.11,497.78,199.36,496,199.36,496c7.66-.31,33.32,0,62.46-13.81,32.32-15.31,50.72-38.12,50.72-38.12a158.46,158.46,0,0,0,27.64-45.93c7.46-19.61,9.95-43.13,9.95-52.53V176.49c1,.6,14.32,9.41,14.32,9.41s19.19,12.3,49.13,20.31c21.48,5.7,50.42,6.9,50.42,6.9V131.27C453.86,132.37,433.27,129.17,412.19,118.66Z" />
+		</svg>
+	);
+
 	return (
 		<IconsContext.Provider
 			value={{
@@ -466,11 +460,7 @@ export default function CustomIcons({ children }) {
 				LoadingIcon2,
 				SearchIcon,
 				TopArrowIcon,
-				FacebookIcon,
 				TelegramIcon,
-				InstagramIcon,
-				PhoneIcon,
-				MessageIcon,
 				LockIcon,
 				FleetIcon,
 				TrackingIcon,
@@ -480,6 +470,10 @@ export default function CustomIcons({ children }) {
 				BarIcon,
 				AlarmIcon,
 				SecurityIcon,
+				FacebookIcon,
+				TwitterIcon,
+				InstagramIcon,
+				TiktokIcon,
 			}}
 		>
 			{children}

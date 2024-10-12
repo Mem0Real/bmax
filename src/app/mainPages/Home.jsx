@@ -15,7 +15,7 @@ export default function Home() {
 				<AltCards />
 				<IconList />
 				<OurWork />
-				<News />
+				{/* <News /> */}
 				<Map />
 				<SayHello />
 			</div>
