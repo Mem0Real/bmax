@@ -26,7 +26,7 @@ export default function Navbar() {
 	const [ham, setHam] = useState("");
 	const [nest, setNest] = useState([]);
 
-	const { RightIcon, LeftIcon, CloseIcon } = useIcons();
+	const { RightIcon, LeftIcon, CloseIcon, BarIcon, SearchIcon } = useIcons();
 
 	const toggleNest = (title) => {
 		setNest((prevNest) => {
@@ -94,10 +94,10 @@ export default function Navbar() {
 				</motion.div>
 
 				{/* Small screen */}
-				<div className="xl:hidden flex justify-center items-center">
+				<div className="xl:hidden flex justify-center items-center gap-4 text-darkYellow">
 					{/* hamburger btn */}
-					<motion.div onTap={() => setHam(!ham)}>Dropdown</motion.div>
-					<div>Search</div>
+					<motion.div onTap={() => setHam(!ham)}>{BarIcon}</motion.div>
+					<div>{SearchIcon}</div>
 				</div>
 			</div>
 
@@ -111,7 +111,7 @@ export default function Navbar() {
 							animate={{ opacity: 1, x: 0 }}
 							exit={{ opacity: 0, x: "-100vw" }}
 							transition={{ ease: [0.2, 0.1, 0.5, 0.1] }}
-							className="w-full h-full bg-neutral-900/30 text-neutral-200 min-h-[100vh] px-4 xl:px-12 py-6"
+							className="w-full h-full bg-neutral-900/90 text-neutral-200 min-h-[100vh] px-4 xl:px-12 py-6"
 						>
 							{/* top */}
 							<div className="w-full flex justify-end items-center pr-6">

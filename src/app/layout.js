@@ -5,6 +5,10 @@ import Navbar from "./navigation/Navbar";
 import Footer from "./navigation/Footer";
 import CustomIcons from "./components/CustomIcons";
 
+import "@mantine/core/styles.css";
+
+import { ColorSchemeScript, MantineProvider } from "@mantine/core";
+
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
 	variable: "--font-geist-sans",
@@ -30,7 +34,7 @@ export default function RootLayout({ children }) {
 				>
 					<Topbar className={geistMono.variable} />
 					<Navbar />
-					{children}
+					<MantineProvider>{children}</MantineProvider>
 					<Footer />
 				</body>
 			</CustomIcons>
