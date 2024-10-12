@@ -12,7 +12,7 @@ export default function Home() {
 	return (
 		<div className="min-h-screen text-neutral-900 w-full">
 			<div className="flex flex-col justify-center items-center">
-				<VidSlide />
+				{/* <VidSlide /> */}
 				<AltCards />
 				<IconList />
 				<OurWork />
