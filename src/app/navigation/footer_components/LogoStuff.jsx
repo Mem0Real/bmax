@@ -10,7 +10,7 @@ export default function LogoStuff() {
 	const { FacebookIcon, TwitterIcon, InstagramIcon, TiktokIcon } = useIcons();
 
 	return (
-		<section className="max-w-[30rem] md:max-w-full xl:w-full">
+		<section className="w-full">
 			<div className="flex flex-col justify-stretch items-start gap-6">
 				<div className="self-start w-full h-12 relative">
 					<Image
@@ -21,7 +21,7 @@ export default function LogoStuff() {
 						className="object-contain object-left absolute"
 					/>
 				</div>
-				<p className="text-sm xl:pl-4 xl:pr-24">
+				<p className="text-sm xl:pl-4 lg:pr-[20rem] xl:pr-24">
 					Advanced telematics solutions for seamless fleet management. GPS
 					tracking, video telematics, fuel monitoring, and more. Empower your
 					business today. Contact us now.
