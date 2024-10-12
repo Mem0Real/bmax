@@ -52,8 +52,12 @@ export default function VidSlide() {
 			</Carousel> */}
 
 			<div className="flex justify-between items-center px-24 w-full">
-				<button onClick={() => setAnim(!anim)}>{LeftArrowIcon}</button>
-				<button onClick={() => setAnim(!anim)}>{RightArrowIcon}</button>
+				<button onClick={() => setAnim(!anim)} className="text-yellow-400 w-4">
+					{LeftArrowIcon}
+				</button>
+				<button onClick={() => setAnim(!anim)} className="text-yellow-400 w-4">
+					{RightArrowIcon}
+				</button>
 			</div>
 
 			{/* Animate */}

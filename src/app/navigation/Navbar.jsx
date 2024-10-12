@@ -52,7 +52,7 @@ export default function Navbar() {
 					/>
 				</div>
 				{/* Big screen */}
-				<motion.div className=" hidden xl:flex justify-center items-center gap-3 font-semibold">
+				<motion.div className="hidden xl:flex justify-center items-center gap-3 font-semibold">
 					{navData.map(({ title, address, dropData }) => {
 						return (
 							<motion.span
@@ -64,7 +64,7 @@ export default function Navbar() {
 								<motion.div className="flex items-center gap-1">
 									<Link href={address}>{title}</Link>
 									<motion.span
-										className="cursor-pointer"
+										className="cursor-pointer w-4 text-yellow-600"
 										initial={{ rotate: 0 }}
 										animate={drop === title ? { rotate: 90 } : { rotate: 0 }}
 										transition={{ ease: easeInOut }}
@@ -75,13 +75,14 @@ export default function Navbar() {
 								<AnimatePresence>
 									{title === drop && (
 										<motion.h2
-											className="absolute top-16"
+											className="absolute top-16 z-50"
 											initial={{ opacity: 0, y: -20 }}
 											animate={{ opacity: 1, y: 0 }}
 											exit={{ opacity: 0, y: -20 }}
 											transition={{
 												duration: 0.4,
 												ease: [0.17, 0.67, 0.83, 0.95],
+												delay: 0.1,
 											}}
 										>
 											{dropData}
@@ -96,8 +97,13 @@ export default function Navbar() {
 				{/* Small screen */}
 				<div className="xl:hidden flex justify-center items-center gap-4 text-darkYellow">
 					{/* hamburger btn */}
-					<motion.div onTap={() => setHam(!ham)}>{BarIcon}</motion.div>
-					<div>{SearchIcon}</div>
+					<motion.div
+						onTap={() => setHam(!ham)}
+						className="w-8 text-neutral-200"
+					>
+						{BarIcon}
+					</motion.div>
+					<div className="w-8 text-neutral-200">{SearchIcon}</div>
 				</div>
 			</div>
 
@@ -111,7 +117,7 @@ export default function Navbar() {
 							animate={{ opacity: 1, x: 0 }}
 							exit={{ opacity: 0, x: "-100vw" }}
 							transition={{ ease: [0.2, 0.1, 0.5, 0.1] }}
-							className="w-full h-full bg-neutral-900/90 text-neutral-200 min-h-[100vh] px-4 xl:px-12 py-6"
+							className="w-full h-full bg-neutral-900/90 text-neutral-200 px-4 xl:px-12 py-6"
 						>
 							{/* top */}
 							<div className="w-full flex justify-end items-center pr-6">
@@ -133,7 +139,7 @@ export default function Navbar() {
 									{navData.map(({ title, address, dropData }) => (
 										<motion.span
 											key={title}
-											className="w-full relative"
+											className="w-full relative z-50"
 											layout="position"
 										>
 											<div className="w-full flex justify-between items-center">
@@ -146,7 +152,7 @@ export default function Navbar() {
 															: { rotate: -90 }
 													}
 													transition={{ ease: easeInOut }}
-													className="text-neutral-200"
+													className="w-4 text-yellow-500"
 													onClick={() => toggleNest(title)}
 												>
 													{dropData && LeftIcon}
@@ -163,6 +169,7 @@ export default function Navbar() {
 															duration: 0.4,
 															ease: [0.17, 0.67, 0.83, 0.95],
 														}}
+														className="z-50"
 													>
 														{dropData}
 													</motion.div>

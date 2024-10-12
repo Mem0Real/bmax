@@ -8,12 +8,10 @@ export default function CustomIcons({ children }) {
 	const LeftArrowIcon = (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="30"
-			height="30"
 			viewBox="0 0 24 24"
 			fill="none"
 			stroke="currentColor"
-			strokeWidth="2"
+			strokeWidth="1.5"
 			strokeLinecap="round"
 			strokeLinejoin="round"
 		>
@@ -23,12 +21,10 @@ export default function CustomIcons({ children }) {
 	const RightArrowIcon = (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="30"
-			height="30"
 			viewBox="0 0 24 24"
 			fill="none"
 			stroke="currentColor"
-			strokeWidth="2"
+			strokeWidth="1.5"
 			strokeLinecap="round"
 			strokeLinejoin="round"
 		>
@@ -38,12 +34,10 @@ export default function CustomIcons({ children }) {
 	const LeftIcon = (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="18"
-			height="18"
 			viewBox="0 0 24 24"
 			fill="none"
 			stroke="currentColor"
-			strokeWidth="2"
+			strokeWidth="1.5"
 			strokeLinecap="round"
 			strokeLinejoin="round"
 		>
@@ -53,12 +47,10 @@ export default function CustomIcons({ children }) {
 	const RightIcon = (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="18"
-			height="18"
 			viewBox="0 0 24 24"
 			fill="none"
 			stroke="currentColor"
-			strokeWidth="2"
+			strokeWidth="1.5"
 			strokeLinecap="round"
 			strokeLinejoin="round"
 		>
@@ -83,12 +75,10 @@ export default function CustomIcons({ children }) {
 	const LoadingIcon = (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="17"
-			height="17"
 			viewBox="0 0 24 24"
 			fill="none"
 			stroke="currentColor"
-			strokeWidth="2"
+			strokeWidth="1.5"
 			strokeLinecap="round"
 			strokeLinejoin="round"
 		>
@@ -96,13 +86,7 @@ export default function CustomIcons({ children }) {
 		</svg>
 	);
 	const LoadingIcon2 = (
-		<svg
-			width="28px"
-			height="28px"
-			viewBox="0 0 44 44"
-			fill="none"
-			xmlns="http://www.w3.org/2000/svg"
-		>
+		<svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
 			<g
 				id="SVGRepo_tracerCarrier"
@@ -114,14 +98,14 @@ export default function CustomIcons({ children }) {
 				<path
 					d="M4 24C4 35.0457 12.9543 44 24 44V44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4"
 					stroke="currentColor"
-					strokeWidth="1.488"
+					strokeWidth="1.5"
 					strokeLinecap="round"
 					strokeLineJoin="round"
 				></path>
 				<path
 					d="M36 24C36 17.3726 30.6274 12 24 12C17.3726 12 12 17.3726 12 24C12 30.6274 17.3726 36 24 36V36"
 					stroke="currentColor"
-					strokeWidth="1.488"
+					strokeWidth="1.5"
 					strokeLinecap="round"
 					strokeLineJoin="round"
 				></path>
@@ -131,7 +115,6 @@ export default function CustomIcons({ children }) {
 	const SearchIcon = (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="16"
 			height="16"
 			fill="currentColor"
 			className="bi bi-search"
@@ -143,12 +126,11 @@ export default function CustomIcons({ children }) {
 	const TopArrowIcon = (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="32"
 			height="32"
 			viewBox="0 0 24 24"
 			fill="none"
 			stroke="currentColor"
-			strokeWidth="2"
+			strokeWidth="1.5"
 			strokeLinecap="round"
 			strokeLinejoin="round"
 		>
@@ -160,10 +142,8 @@ export default function CustomIcons({ children }) {
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			className="icon icon-tabler icon-tabler-brand-facebook"
-			width={24}
-			height={24}
 			viewBox="0 0 24 24"
-			strokeWidth="2"
+			strokeWidth="1.5"
 			stroke="currentColor"
 			fill="none"
 			strokeLinecap="round"
@@ -177,10 +157,8 @@ export default function CustomIcons({ children }) {
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			className="icon icon-tabler icon-tabler-brand-telegram"
-			width={24}
-			height={24}
 			viewBox="0 0 24 24"
-			strokeWidth="1.3"
+			strokeWidth="1.5"
 			stroke="currentColor"
 			fill="none"
 			strokeLinecap="round"
@@ -194,10 +172,8 @@ export default function CustomIcons({ children }) {
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			className="icon icon-tabler icon-tabler-brand-instagram"
-			width={24}
-			height={24}
 			viewBox="0 0 24 24"
-			strokeWidth="1.3"
+			strokeWidth="1.5"
 			stroke="currentColor"
 			fill="none"
 			strokeLinecap="round"
@@ -212,12 +188,10 @@ export default function CustomIcons({ children }) {
 	const PhoneIcon = (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="20"
-			height="20"
 			viewBox="0 0 24 24"
 			fill="none"
 			stroke="currentColor"
-			strokeWidth="2"
+			strokeWidth="1.5"
 			strokeLinecap="round"
 			strokeLinejoin="round"
 		>
@@ -227,12 +201,10 @@ export default function CustomIcons({ children }) {
 	const MessageIcon = (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="20"
-			height="20"
 			viewBox="0 0 24 24"
 			fill="none"
 			stroke="currentColor"
-			strokeWidth="2"
+			strokeWidth="1.5"
 			strokeLinecap="round"
 			strokeLinejoin="round"
 		>
@@ -244,8 +216,6 @@ export default function CustomIcons({ children }) {
 	// BMax
 	const LockIcon = (
 		<svg
-			width="26px"
-			height="26px"
 			viewBox="0 0 24.00 24.00"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
@@ -259,53 +229,43 @@ export default function CustomIcons({ children }) {
 			<g id="SVGRepo_iconCarrier">
 				<path
 					d="M2 16C2 13.1716 2 11.7574 2.87868 10.8787C3.75736 10 5.17157 10 8 10H16C18.8284 10 20.2426 10 21.1213 10.8787C22 11.7574 22 13.1716 22 16C22 18.8284 22 20.2426 21.1213 21.1213C20.2426 22 18.8284 22 16 22H8C5.17157 22 3.75736 22 2.87868 21.1213C2 20.2426 2 18.8284 2 16Z"
-					stroke="#dfa70c"
+					stroke="currentColor"
 					strokeWidth="1.5"
 				></path>
 				<path
 					d="M6 10V8C6 4.68629 8.68629 2 12 2C14.7958 2 17.1449 3.91216 17.811 6.5"
-					stroke="#dfa70c"
+					stroke="currentColor"
 					strokeWidth="1.5"
 					strokeLinecap="round"
 				></path>
 				<path
 					d="M8 16H8.009M11.991 16H12M15.991 16H16"
-					stroke="#dfa70c"
-					strokeWidth="2"
+					stroke="currentColor"
+					strokeWidth="1.5"
 					strokeLinecap="round"
 					strokeLineJoin="round"
 				></path>
 			</g>
 		</svg>
 	);
-
 	const FleetIcon = (
 		<svg
 			aria-hidden="true"
 			xmlns="http://www.w3.org/2000/svg"
-			width="26px"
-			height="26px"
 			fill="none"
 			viewBox="0 0 24 24"
 		>
 			<path
-				stroke="#DFA70C"
+				stroke="currentColor"
 				strokeLinecap="round"
 				strokeLineJoin="round"
-				strokeWidth="1.3"
+				strokeWidth="1.5"
 				d="M13 7h6l2 4m-8-4v8m0-8V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v9h2m8 0H9m4 0h2m4 0h2v-4m0 0h-5m3.5 5.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm-10 0a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"
 			/>
 		</svg>
 	);
-
 	const TrackingIcon = (
-		<svg
-			width="26px"
-			height="26px"
-			viewBox="0 0 24 24"
-			fill="none"
-			xmlns="http://www.w3.org/2000/svg"
-		>
+		<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
 			<g
 				id="SVGRepo_tracerCarrier"
@@ -315,46 +275,43 @@ export default function CustomIcons({ children }) {
 			<g id="SVGRepo_iconCarrier">
 				<path
 					d="M20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z"
-					stroke="#DFA70C"
+					stroke="currentColor"
 					strokeWidth="1.5"
 				></path>
 				<path
 					d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
-					stroke="#DFA70C"
+					stroke="currentColor"
 					strokeWidth="1.5"
 				></path>
 				<path
 					d="M2 12L4 12"
-					stroke="#DFA70C"
+					stroke="currentColor"
 					strokeWidth="1.5"
 					strokeLinecap="round"
 				></path>
 				<path
 					d="M20 12L22 12"
-					stroke="#DFA70C"
+					stroke="currentColor"
 					strokeWidth="1.5"
 					strokeLinecap="round"
 				></path>
 				<path
 					d="M12 4V2"
-					stroke="#DFA70C"
+					stroke="currentColor"
 					strokeWidth="1.5"
 					strokeLinecap="round"
 				></path>
 				<path
 					d="M12 22V20"
-					stroke="#DFA70C"
+					stroke="currentColor"
 					strokeWidth="1.5"
 					strokeLinecap="round"
 				></path>
 			</g>
 		</svg>
 	);
-
 	const FuelIcon = (
 		<svg
-			width="26px"
-			height="26px"
 			viewBox="0 0 1024 1024"
 			className="icon"
 			version="1.1"
@@ -407,12 +364,9 @@ export default function CustomIcons({ children }) {
 			</g>
 		</svg>
 	);
-
 	const HardwareIcon = (
 		<svg
 			fill="#DFA70C"
-			width="26px"
-			height="26px"
 			viewBox="0 0 16 16"
 			id="hardware-16px"
 			xmlns="http://www.w3.org/2000/svg"
@@ -433,15 +387,8 @@ export default function CustomIcons({ children }) {
 			</g>
 		</svg>
 	);
-
 	const VideoIcon = (
-		<svg
-			width="26px"
-			height="26px"
-			viewBox="0 0 24 24"
-			fill="none"
-			xmlns="http://www.w3.org/2000/svg"
-		>
+		<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
 			<g
 				id="SVGRepo_tracerCarrier"
@@ -451,29 +398,58 @@ export default function CustomIcons({ children }) {
 			<g id="SVGRepo_iconCarrier">
 				<path
 					d="M16 10L18.5768 8.45392C19.3699 7.97803 19.7665 7.74009 20.0928 7.77051C20.3773 7.79703 20.6369 7.944 20.806 8.17433C21 8.43848 21 8.90095 21 9.8259V14.1741C21 15.099 21 15.5615 20.806 15.8257C20.6369 16.056 20.3773 16.203 20.0928 16.2295C19.7665 16.2599 19.3699 16.022 18.5768 15.5461L16 14M6.2 18H12.8C13.9201 18 14.4802 18 14.908 17.782C15.2843 17.5903 15.5903 17.2843 15.782 16.908C16 16.4802 16 15.9201 16 14.8V9.2C16 8.0799 16 7.51984 15.782 7.09202C15.5903 6.71569 15.2843 6.40973 14.908 6.21799C14.4802 6 13.9201 6 12.8 6H6.2C5.0799 6 4.51984 6 4.09202 6.21799C3.71569 6.40973 3.40973 6.71569 3.21799 7.09202C3 7.51984 3 8.07989 3 9.2V14.8C3 15.9201 3 16.4802 3.21799 16.908C3.40973 17.2843 3.71569 17.5903 4.09202 17.782C4.51984 18 5.07989 18 6.2 18Z"
-					stroke="#DFA70C"
-					strokeWidth="1.104"
+					stroke="currentColor"
+					strokeWidth="1.5"
 					strokeLinecap="round"
 					strokeLineJoin="round"
 				></path>
 			</g>
 		</svg>
 	);
-
 	const BarIcon = (
 		<svg
 			aria-hidden="true"
 			xmlns="http://www.w3.org/2000/svg"
-			width="20"
-			height="20"
 			fill="none"
 			viewBox="0 0 24 24"
 		>
 			<path
 				stroke="currentColor"
 				strokeLinecap="round"
-				strokeWidth="2"
+				strokeWidth="1.5"
 				d="M5 7h14M5 12h14M5 17h14"
+			/>
+		</svg>
+	);
+	const AlarmIcon = (
+		<svg
+			aria-hidden="true"
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+		>
+			<path
+				stroke="currentColor"
+				strokeLinecap="round"
+				strokeLinejoin="round"
+				strokeWidth="1.5"
+				d="M12 5.464V3.099m0 2.365a5.338 5.338 0 0 1 5.133 5.368v1.8c0 2.386 1.867 2.982 1.867 4.175C19 17.4 19 18 18.462 18H5.538C5 18 5 17.4 5 16.807c0-1.193 1.867-1.789 1.867-4.175v-1.8A5.338 5.338 0 0 1 12 5.464ZM6 5 5 4M4 9H3m15-4 1-1m1 5h1M8.54 18a3.48 3.48 0 0 0 6.92 0H8.54Z"
+			/>
+		</svg>
+	);
+	const SecurityIcon = (
+		<svg
+			aria-hidden="true"
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+		>
+			<path
+				stroke="currentColor"
+				strokeLinecap="round"
+				strokeLinejoin="round"
+				strokeWidth="1.5"
+				d="M12 14v3m-3-6V7a3 3 0 1 1 6 0v4m-8 0h10a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1Z"
 			/>
 		</svg>
 	);
@@ -502,6 +478,8 @@ export default function CustomIcons({ children }) {
 				HardwareIcon,
 				VideoIcon,
 				BarIcon,
+				AlarmIcon,
+				SecurityIcon,
 			}}
 		>
 			{children}

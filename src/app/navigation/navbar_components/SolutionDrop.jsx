@@ -50,7 +50,7 @@ export default function SolutionDrop() {
 		},
 		{
 			icon: FuelIcon,
-			header: "Feul Monitoring Solutions",
+			header: "fuel Monitoring Solutions",
 			nest: [
 				{
 					title: "Monitor Fuel Usage Prevent Theft",
@@ -81,11 +81,11 @@ export default function SolutionDrop() {
 
 	return (
 		<AnimatePresence>
-			<motion.div className="xl:w-[50rem] py-6 grid grid-flow-row grid-cols-1 md:grid-cols-2 place-items-start gap-y-2 gap-x-1 bg-transparent xl:bg-neutral-900 text-neutral-200 font-thin text-xs rounded-md">
+			<motion.div className="z-50 xl:w-[50rem] py-6 grid grid-flow-row grid-cols-1 md:grid-cols-2 place-items-start gap-y-2 gap-x-1 bg-transparent xl:bg-neutral-900 text-neutral-200 font-thin text-xs rounded-md">
 				{dropMenuData.map(({ icon, header, nest }) => (
 					<div className="flex flex-col justify-center items-start gap-4 xl:gap-2">
 						<div className="flex gap-4 items-center w-full ps-2 xl:px-6 xl:pb-3">
-							<div>{icon}</div>
+							<div className="w-8 text-yellow-500">{icon}</div>
 							<div className="text-lg font-semibold">{header}</div>
 						</div>
 						<div className="flex flex-col justify-center items-start gap-4 pb-8 ps-6 xl:pb-3 xl:ps-8">
