@@ -11,7 +11,7 @@ const Topbar = ({ className }) => {
 
 	return (
 		<div
-			className={`bg-mellow/80 text-neutral-900 font-semibold h-full min-h-8 px-12 xl:px-40 flex justify-around items-center ${className}`}
+			className={`bg-mellow/80 text-neutral-900 font-semibold h-full min-h-8 px-4 xl:px-40 flex flex-col lg:flex-row justify-around items-center gap-4 lg:gap-0 ${className}`}
 		>
 			<div className="flex justify-center items-center gap-4 flex-wrap">
 				<h1 className={className}>
