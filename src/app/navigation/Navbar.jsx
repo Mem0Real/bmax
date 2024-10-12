@@ -40,147 +40,142 @@ export default function Navbar() {
 	};
 
 	return (
-		<div className="w-full bg-neutral-900 text-neutral-300 px-4 xl:px-40 py-4 flex items-center justify-between xl:justify-between">
-			<div className="flex justify-center items-center gap-4">
-				<Image width={120} height={120} src="/images/logo.png" alt="B-Max" />
-			</div>
-			{/* xl:screen */}
-			<motion.div className="hidden xl:flex justify-center items-center gap-3 font-semibold">
-				{navData.map(({ title, address, dropData }) => {
-					return (
-						<motion.span
-							key={title}
-							onHoverStart={() => setDrop(title)}
-							onHoverEnd={() => setDrop("")}
-							className="flex flex-col justify-center items-center py-4 px-2 relative"
-						>
-							<motion.div className="flex items-center gap-1">
-								<Link href={address}>{title}</Link>
-								<motion.span
-									className="cursor-pointer"
-									initial={{ rotate: 0 }}
-									animate={drop === title ? { rotate: 90 } : { rotate: 0 }}
-									transition={{ ease: easeInOut }}
-								>
-									{dropData && RightIcon}
-								</motion.span>
-							</motion.div>
-							<AnimatePresence>
-								{title === drop && (
-									<motion.h2
-										className="absolute top-16"
-										initial={{ opacity: 0, y: -20 }}
-										animate={{ opacity: 1, y: 0 }}
-										exit={{ opacity: 0, y: -20 }}
-										transition={{
-											duration: 0.4,
-											ease: [0.17, 0.67, 0.83, 0.95],
-										}}
+		<>
+			<div className="w-screen bg-neutral-900 text-neutral-300 px-4 xl:px-40 py-4 flex items-center justify-between flex-wrap">
+				<div className="flex justify-center items-center gap-4">
+					<Image
+						width={120}
+						height={120}
+						src="/images/logo.png"
+						alt="B-Max"
+						priority
+					/>
+				</div>
+				{/* Big screen */}
+				<motion.div className=" hidden xl:flex justify-center items-center gap-3 font-semibold">
+					{navData.map(({ title, address, dropData }) => {
+						return (
+							<motion.span
+								key={title}
+								onHoverStart={() => setDrop(title)}
+								onHoverEnd={() => setDrop("")}
+								className="flex flex-col justify-center items-center py-4 px-2 relative"
+							>
+								<motion.div className="flex items-center gap-1">
+									<Link href={address}>{title}</Link>
+									<motion.span
+										className="cursor-pointer"
+										initial={{ rotate: 0 }}
+										animate={drop === title ? { rotate: 90 } : { rotate: 0 }}
+										transition={{ ease: easeInOut }}
 									>
-										{dropData}
-									</motion.h2>
-								)}
-							</AnimatePresence>
-						</motion.span>
-					);
-				})}
-			</motion.div>
-
-			<div className="flex xl:hidden items-center justify-center gap-2">
-				{/* hamburger btn */}
-				<motion.div onTap={() => setHam(!ham)}>Dropdown</motion.div>
-				{/* hamburger menu */}
-				<div className="">
-					<AnimatePresence>
-						{ham && (
-							<>
-								{/* overlay */}
-								<motion.div
-									initial={{ opacity: 0, x: "-100vw" }}
-									animate={{ opacity: 1, x: 0 }}
-									exit={{ opacity: 0, x: "-100vw" }}
-									transition={{ ease: easeInOut }}
-									className="bg-neutral-900/90 absolute right-0 top-0 w-[85%] h-[100vh]"
-								/>
-								{/* hamburger */}
-								<motion.div
-									initial={{ opacity: 0, x: "-100vw" }}
-									animate={{ opacity: 1, x: 0 }}
-									exit={{ opacity: 0, x: "-100vw" }}
-									transition={{ ease: [0.2, 0.1, 0.5, 0.1] }}
-									className="bg-neutral-900 text-neutral-200 absolute left-0 top-0 h-[100vh] flex flex-col justify-start items-start gap-8 w-[85%] p-8 pr-5"
-								>
-									{/* top */}
-									<div className="w-full flex justify-between items-center">
-										<Image
-											width={90}
-											height={90}
-											src={"/images/logo.png"}
-											alt="B-Max"
-										/>
-										<motion.button
-											onClick={() => setHam(!ham)}
-											className="text-red-500 border border-red-500 rounded-full px-2.5 py-0.5 mb-5"
-											whileTap={{ scale: 0.8 }}
-											transition={{ ease: easeInOut }}
+										{dropData && RightIcon}
+									</motion.span>
+								</motion.div>
+								<AnimatePresence>
+									{title === drop && (
+										<motion.h2
+											className="absolute top-16"
+											initial={{ opacity: 0, y: -20 }}
+											animate={{ opacity: 1, y: 0 }}
+											exit={{ opacity: 0, y: -20 }}
+											transition={{
+												duration: 0.4,
+												ease: [0.17, 0.67, 0.83, 0.95],
+											}}
 										>
-											{CloseIcon}
-										</motion.button>
-									</div>
-									<AnimatePresence>
-										{/* main */}
-										<motion.div
-											className="w-full flex flex-col justify-center items-start gap-5"
+											{dropData}
+										</motion.h2>
+									)}
+								</AnimatePresence>
+							</motion.span>
+						);
+					})}
+				</motion.div>
+
+				{/* Small screen */}
+				<div className="xl:hidden flex justify-center items-center">
+					{/* hamburger btn */}
+					<motion.div onTap={() => setHam(!ham)}>Dropdown</motion.div>
+					<div>Search</div>
+				</div>
+			</div>
+
+			{/* hamburger menu */}
+			<AnimatePresence>
+				{ham && (
+					<>
+						{/* hamburger */}
+						<motion.div
+							initial={{ opacity: 0, x: "-100vw" }}
+							animate={{ opacity: 1, x: 0 }}
+							exit={{ opacity: 0, x: "-100vw" }}
+							transition={{ ease: [0.2, 0.1, 0.5, 0.1] }}
+							className="w-[60%] h-full bg-neutral-900/80 text-neutral-200 min-h-[100vh] px-12 py-6"
+						>
+							{/* top */}
+							<div className="w-full flex justify-end items-center">
+								<motion.button
+									onClick={() => setHam(!ham)}
+									className="text-red-500 border border-red-500 rounded-full px-2.5 py-0.5 mb-5 z-20"
+									whileTap={{ scale: 0.8 }}
+									transition={{ ease: easeInOut }}
+								>
+									{CloseIcon}
+								</motion.button>
+							</div>
+							<AnimatePresence>
+								{/* main */}
+								<motion.div
+									className="flex flex-col justify-center items-start gap-5"
+									layout="position"
+								>
+									{navData.map(({ title, address, dropData }) => (
+										<motion.span
+											key={title}
+											className="w-full relative"
 											layout="position"
 										>
-											{navData.map(({ title, address, dropData }) => (
-												<motion.span
-													key={title}
-													className="w-full relative"
-													layout="position"
+											<div className="w-full flex justify-between items-center">
+												<Link href={address}>{title}</Link>
+												<motion.button
+													initial={{ rotate: -90 }}
+													animate={
+														nest.includes(title)
+															? { rotate: 90 }
+															: { rotate: -90 }
+													}
+													transition={{ ease: easeInOut }}
+													className="text-neutral-200"
+													onClick={() => toggleNest(title)}
 												>
-													<div className="w-full flex justify-between items-center">
-														<Link href={address}>{title}</Link>
-														<motion.button
-															initial={{ rotate: -90 }}
-															animate={
-																nest.includes(title)
-																	? { rotate: 90 }
-																	: { rotate: -90 }
-															}
-															transition={{ ease: easeInOut }}
-															className="text-neutral-200"
-															onClick={() => toggleNest(title)}
-														>
-															{dropData && LeftIcon}
-														</motion.button>
-													</div>
-													<AnimatePresence>
-														{nest.includes(title) && (
-															<motion.div
-																initial={{ opacity: 0, y: -20 }}
-																animate={{ opacity: 1, y: 0 }}
-																exit={{ opacity: 0, y: -20 }}
-																transition={{
-																	duration: 0.4,
-																	ease: [0.17, 0.67, 0.83, 0.95],
-																}}
-															>
-																{dropData}
-															</motion.div>
-														)}
-													</AnimatePresence>
-												</motion.span>
-											))}
-										</motion.div>
-									</AnimatePresence>
+													{dropData && LeftIcon}
+												</motion.button>
+											</div>
+											{/* Drop Data */}
+											<AnimatePresence>
+												{nest.includes(title) && (
+													<motion.div
+														initial={{ opacity: 0, y: -20 }}
+														animate={{ opacity: 1, y: 0 }}
+														exit={{ opacity: 0, y: -20 }}
+														transition={{
+															duration: 0.4,
+															ease: [0.17, 0.67, 0.83, 0.95],
+														}}
+													>
+														{dropData}
+													</motion.div>
+												)}
+											</AnimatePresence>
+										</motion.span>
+									))}
 								</motion.div>
-							</>
-						)}
-					</AnimatePresence>
-				</div>
-				<div>Search</div>
-			</div>
-		</div>
+							</AnimatePresence>
+						</motion.div>
+					</>
+				)}
+			</AnimatePresence>
+		</>
 	);
 }

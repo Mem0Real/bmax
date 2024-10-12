@@ -81,21 +81,23 @@ export default function SolutionDrop() {
 
 	return (
 		<AnimatePresence>
-			<motion.div className="w-[50rem] py-6 grid grid-flow-row grid-cols-1 xl:grid-cols-2 place-items-start gap-y-2 gap-x-1 bg-transparent xl:bg-neutral-900 text-neutral-200 font-thin text-xs">
+			<motion.div className="w-[50rem] py-6 grid grid-flow-row grid-cols-1 xl:grid-cols-2 place-items-start gap-y-2 gap-x-1 bg-transparent xl:bg-neutral-900 text-neutral-200 font-thin text-xs  rounded-md">
 				{dropMenuData.map(({ icon, header, nest }) => (
-					<div className="flex flex-col justify-center items-start gap-3">
-						<div className="flex gap-4 items-center w-full px-6 py-2 xl:py-4">
+					<div className="flex flex-col justify-center items-start gap-4 xl:gap-2">
+						<div className="flex gap-4 items-center w-full px-6 xl:pb-3">
 							<div>{icon}</div>
-							<div className="text-base font-semibold">{header}</div>
+							<div className="text-lg font-semibold">{header}</div>
 						</div>
-						{nest?.map((data) => (
-							<Link
-								className="flex flex-col justify-center items-start ps-5 text-xs"
-								href={`/${data.address}`}
-							>
-								{data.title}
-							</Link>
-						))}
+						<div className="flex flex-col justify-center items-start gap-4 pb-8 ps-6 xl:pb-3 xl:ps-8">
+							{nest?.map((data) => (
+								<Link
+									className="flex flex-col justify-center items-start ps-5 text-xs"
+									href={`/${data.address}`}
+								>
+									{data.title}
+								</Link>
+							))}
+						</div>
 					</div>
 				))}
 			</motion.div>

@@ -14,7 +14,7 @@ const dropMenuData = [
 export default function IndustryDrop() {
 	return (
 		<AnimatePresence>
-			<motion.div className="flex flex-col justify-center items-start w-56 py-2 bg-transparent xl:bg-neutral-900 text-neutral-200 font-thin text-xs">
+			<motion.div className="flex flex-col justify-center items-start w-56 py-2 bg-transparent xl:bg-neutral-900 text-neutral-200 font-thin text-xs rounded-md">
 				{dropMenuData.map(({ title, address }) => (
 					<motion.div
 						initial={{ opacity: 0.9 }}

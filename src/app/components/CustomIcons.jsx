@@ -68,7 +68,7 @@ export default function CustomIcons({ children }) {
 	const CloseIcon = (
 		<svg
 			aria-hidden="true"
-			classNameName="w-5 h-5"
+			className="w-5 h-5"
 			fill="currentColor"
 			viewBox="0 0 20 20"
 			xmlns="http://www.w3.org/2000/svg"
@@ -244,8 +244,8 @@ export default function CustomIcons({ children }) {
 	// BMax
 	const LockIcon = (
 		<svg
-			width="18px"
-			height="18px"
+			width="26px"
+			height="26px"
 			viewBox="0 0 24.00 24.00"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
@@ -283,8 +283,8 @@ export default function CustomIcons({ children }) {
 		<svg
 			aria-hidden="true"
 			xmlns="http://www.w3.org/2000/svg"
-			width="18px"
-			height="18px"
+			width="26px"
+			height="26px"
 			fill="none"
 			viewBox="0 0 24 24"
 		>
@@ -300,8 +300,8 @@ export default function CustomIcons({ children }) {
 
 	const TrackingIcon = (
 		<svg
-			width="18px"
-			height="18px"
+			width="26px"
+			height="26px"
 			viewBox="0 0 24 24"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
@@ -353,8 +353,8 @@ export default function CustomIcons({ children }) {
 
 	const FuelIcon = (
 		<svg
-			width="18px"
-			height="18px"
+			width="26px"
+			height="26px"
 			viewBox="0 0 1024 1024"
 			className="icon"
 			version="1.1"
@@ -411,8 +411,8 @@ export default function CustomIcons({ children }) {
 	const HardwareIcon = (
 		<svg
 			fill="#DFA70C"
-			width="18px"
-			height="18px"
+			width="26px"
+			height="26px"
 			viewBox="0 0 16 16"
 			id="hardware-16px"
 			xmlns="http://www.w3.org/2000/svg"
@@ -436,8 +436,8 @@ export default function CustomIcons({ children }) {
 
 	const VideoIcon = (
 		<svg
-			width="18px"
-			height="18px"
+			width="26px"
+			height="26px"
 			viewBox="0 0 24 24"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
