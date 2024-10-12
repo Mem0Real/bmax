@@ -41,7 +41,7 @@ export default function Navbar() {
 
 	return (
 		<>
-			<div className="w-screen bg-neutral-900 text-neutral-300 px-4 xl:px-40 py-4 flex items-center justify-between flex-wrap">
+			<div className="w-full bg-neutral-900 text-neutral-300 px-4 xl:px-40 py-4 flex items-center justify-between flex-wrap">
 				<div className="flex justify-center items-center gap-4">
 					<Image
 						width={120}
@@ -111,10 +111,10 @@ export default function Navbar() {
 							animate={{ opacity: 1, x: 0 }}
 							exit={{ opacity: 0, x: "-100vw" }}
 							transition={{ ease: [0.2, 0.1, 0.5, 0.1] }}
-							className="w-[60%] h-full bg-neutral-900/80 text-neutral-200 min-h-[100vh] px-12 py-6"
+							className="w-full h-full bg-neutral-900/30 text-neutral-200 min-h-[100vh] px-4 xl:px-12 py-6"
 						>
 							{/* top */}
-							<div className="w-full flex justify-end items-center">
+							<div className="w-full flex justify-end items-center pr-6">
 								<motion.button
 									onClick={() => setHam(!ham)}
 									className="text-red-500 border border-red-500 rounded-full px-2.5 py-0.5 mb-5 z-20"
@@ -127,7 +127,7 @@ export default function Navbar() {
 							<AnimatePresence>
 								{/* main */}
 								<motion.div
-									className="flex flex-col justify-center items-start gap-5"
+									className="flex flex-col justify-center items-start gap-5 px-8"
 									layout="position"
 								>
 									{navData.map(({ title, address, dropData }) => (
