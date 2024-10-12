@@ -6,6 +6,7 @@ import Footer from "./navigation/Footer";
 import CustomIcons from "./components/CustomIcons";
 
 import "@mantine/core/styles.css";
+import "@mantine/carousel/styles.css";
 
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 
