@@ -46,7 +46,55 @@ const imgList = [
 ];
 
 export default function About() {
-	const { LeftArrowIcon, RightArrowIcon } = useIcons();
+	const {
+		LeftArrowIcon,
+		RightArrowIcon,
+		CheckIcon,
+		TechnologyIcon,
+		SupportIcon,
+		ExpertIcon,
+		ScaleIcon,
+		InnovativeIcon,
+	} = useIcons();
+
+	const cardList = [
+		{
+			icon: CheckIcon,
+			title: "Tailored Solutions",
+			detail:
+				"At B-Max,  we take immense pride in crafting customized solutions that precisely address your unique business needs and challenges. Our expert team works closely with you to understand your fleet management requirements, ensuring we deliver solutions that fit your goals flawlessly.",
+		},
+		{
+			icon: TechnologyIcon,
+			title: "Advanced Technology",
+			detail:
+				"Embrace the power of advanced technologies with Autotronix. Our state-of-the-art GPS tracking, video telematics, and fuel monitoring solutions offer real-time visibility and actionable insights. Stay ahead of the competition and make data-driven decisions for your fleet's success.",
+		},
+		{
+			icon: SupportIcon,
+			title: "Exceptional Support",
+			detail:
+				"Customer satisfaction is paramount to us. Our dedicated professionals provide top-notch support, training, and assistance. Whether you have questions, need guidance, or face challenges, we ensure you have a seamless experience with our products.",
+		},
+		{
+			icon: ExpertIcon,
+			title: "Industry Expertise",
+			detail:
+				"B-Max boasts extensive experience in the fleet management industry, offering deep understanding of businesses' challenges. Trust our domain knowledge to optimize your operations and achieve operational excellence.",
+		},
+		{
+			icon: ScaleIcon,
+			title: "Scalable Solutions",
+			detail:
+				"No matter your fleet size, our solutions are designed for growth. From small fleets to large enterprises, our services adapt to accommodate your expanding needs, providing flexibility and reliability.",
+		},
+		{
+			icon: InnovativeIcon,
+			title: "Innovative Approach",
+			detail:
+				"Innovation drives us forward. We continuously strive to bring the latest technologies and best practices to our offerings, keeping your fleet at the forefront of the industry. Experience our innovative approach to excel in a rapidly evolving market.",
+		},
+	];
 
 	return (
 		<div className="w-full px-4 xl:px-40 bg-neutral-100 text-neutral-950 pb-36">
@@ -78,7 +126,7 @@ export default function About() {
 				{/* about stuff */}
 				<div className="flex flex-col xl:flex-row justify-start items-start gap-4">
 					<h1 className="basis-1/3 text-6xl font-semibold">ABOUT US_</h1>
-					<div className="basis-2/3 grid grid-cols-1 xl:grid-cols-2 grid-flow-row gap-y-16 gap-x-2 justify-start text-lg">
+					<div className="basis-2/3 grid grid-cols-1 xl:grid-cols-2 grid-flow-row gap-y-8 gap-x-2 text-base">
 						<p className="xl:pr-16">
 							At B-Max, we excel in fleet management solutions, providing
 							cutting-edge GPS tracking, telematics, and video telematics
@@ -222,6 +270,20 @@ export default function About() {
 							</motion.div>
 						</AnimatePresence>
 					</Link>
+				</div>
+
+				{/* cards */}
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-16 gap-x-24 md:gap-x-12">
+					{cardList.map(({ icon, title, detail }, index) => (
+						<div
+							key={index}
+							className="px-6 py-12 rounded-xl bg-neutral-950/80 flex flex-col justify-start items-start max-w-[30rem] gap-4"
+						>
+							<div className="w-12 text-mellow">{icon}</div>
+							<div className="text-2xl font-medium text-mellow">{title}</div>
+							<div className="text-lg text-neutral-200">{detail}</div>
+						</div>
+					))}
 				</div>
 			</div>
 		</div>
