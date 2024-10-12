@@ -3,12 +3,12 @@ import React from "react";
 export default function OurWork() {
 	return (
 		<div className="min-h-screen w-full px-4 md:px-12 xl:px-40 bg-neutral-950 text-neutral-100 flex flex-col justify-center items-center py-8">
-			<div className="w-full flex flex-col md:flex-row justify-stretch items-stretch relative gap-12 xl:gap-0">
+			<div className="w-full flex flex-col xl:flex-row justify-stretch items-stretch relative gap-12 xl:gap-0">
 				<h1 className="flex-1/4 text-6xl font-semibold capitalize xl:pr-4 text-nowrap xl:-mt-5">
 					Our Work
 				</h1>
-				<div className="w-full flex-3/4 flex flex-col gap-12 xl:gap-36">
-					<div className="flex flex-col xl:flex-row gap-12 xl:gap-0">
+				<div className="w-full flex-3/4 flex flex-col gap-12 lg:gap-20 xl:gap-36">
+					<div className="flex flex-col md:flex-row gap-12 xl:gap-0">
 						<div className="w-full">
 							<h1 className="relative inset-0 text-neutral-600/10 text-[12rem] tracking-tighter font-bold">
 								<p className="absolute top-12"> 01</p>
@@ -40,7 +40,7 @@ export default function OurWork() {
 							</div>
 						</div>
 					</div>
-					<div className="flex flex-col xl:flex-row gap-12 xl:gap-0">
+					<div className="flex flex-col md:flex-row gap-12 xl:gap-0">
 						<div className="w-full">
 							<h1 className="relative inset-0 text-neutral-600/10 text-[12rem] tracking-tighter font-bold">
 								<p className="absolute top-12"> 03</p>
