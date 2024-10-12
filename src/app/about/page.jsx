@@ -264,7 +264,7 @@ export default function About() {
 									backgroundColor: "#FFF",
 									color: "#000",
 								}}
-								className="w-fit py-4 xl:py-2 px-8 xl:px-6 border border-neutral-900 bg-neutral-900 text-white font-semibold capitalize text-nowrap"
+								className="w-fit py-4 xl:py-2 px-8 xl:px-6 border border-neutral-900 bg-neutral-900 text-white font-semibold uppercase text-nowrap"
 							>
 								HIRE US!
 							</motion.div>

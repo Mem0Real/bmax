@@ -10,7 +10,7 @@ export default function LogoStuff() {
 	const { FacebookIcon, TwitterIcon, InstagramIcon, TiktokIcon } = useIcons();
 
 	return (
-		<section className="w-full">
+		<section className="max-w-[30rem] md:max-w-full xl:w-full">
 			<div className="flex flex-col justify-stretch items-start gap-6">
 				<div className="self-start w-full h-12 relative">
 					<Image

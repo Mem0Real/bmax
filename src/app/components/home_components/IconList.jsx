@@ -57,7 +57,7 @@ export default function IconList() {
 		<div className="min-h-screen w-full px-4 xl:px-40 bg-neutral-100 py-5 xl:pb-12">
 			<div className="flex flex-col justify-center items-center gap-20">
 				<div className="flex flex-col justify-center items-center gap-2">
-					<h1 className="text-neutral-900 text-lg font-medium capitalize">
+					<h1 className="text-neutral-900 text-lg font-medium uppercase">
 						Telematics Services by Autoronix
 					</h1>
 					<h1 className="text-darkYellow text-3xl font-bold">
@@ -72,7 +72,7 @@ export default function IconList() {
 							className="xl:w-64 flex flex-col justify-center items-center gap-2"
 						>
 							<div className="text-darkYellow w-12">{icon}</div>
-							<h1 className="font-semibold text-lg capitalize">{header}</h1>
+							<h1 className="font-semibold text-lg uppercase">{header}</h1>
 							<p className="text-neutral-400 text-sm px-6 text-center">
 								{detail}
 							</p>

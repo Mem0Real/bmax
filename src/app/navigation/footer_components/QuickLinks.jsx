@@ -13,7 +13,7 @@ const links = [
 export default function QuickLinks() {
 	return (
 		<div className="w-full flex flex-col justify-center items-start gap-8">
-			<h1 className="text-4xl text-mellow capitalize">Quick Links</h1>
+			<h1 className="text-4xl text-mellow uppercase">Quick Links</h1>
 			<div className="w-[90%] mx-auto flex flex-col justify-center items-start gap-3">
 				{links.map(({ title, address }, index) => (
 					<Link href={address} key={index} className="lg:min-w-[50%]">
@@ -21,7 +21,7 @@ export default function QuickLinks() {
 							whileHover={{
 								borderColor: "#FFA500",
 							}}
-							className="py-2 md:py-0.5 xl:py-1 px-4 border border-white text-white font-base cursor-pointer capitalize"
+							className="py-2 md:py-0.5 xl:py-1 px-4 border border-white text-white font-base cursor-pointer uppercase"
 						>
 							{title}
 						</motion.div>

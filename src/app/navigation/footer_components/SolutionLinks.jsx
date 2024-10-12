@@ -30,7 +30,7 @@ export default function SolutionLinks() {
 	return (
 		<div className="min-h-56">
 			<div className="w-full flex flex-col justify-center items-start gap-8">
-				<h1 className="text-4xl text-mellow capitalize">Solutions</h1>
+				<h1 className="text-4xl text-mellow uppercase">Solutions</h1>
 				<div className="w-[90%] mx-auto grid md:grid-rows-4 xl:grid-rows-6 grid-cols-1 md:grid-cols-3 xl:grid-cols-2 grid-flow-row md:grid-flow-col justify-items-between xl:justify-items-start gap-3">
 					{links.map(({ title, address }, index) => (
 						<Link href={address} key={index} className="lg:min-w-[70%]">
@@ -38,7 +38,7 @@ export default function SolutionLinks() {
 								whileHover={{
 									borderColor: "#FFA500",
 								}}
-								className="py-2 md:py-0.5 xl:py-1 px-4 border border-white text-white font-base cursor-pointer capitalize"
+								className="py-2 md:py-0.5 xl:py-1 px-4 border border-white text-white font-base cursor-pointer uppercase"
 							>
 								{title}
 							</motion.div>

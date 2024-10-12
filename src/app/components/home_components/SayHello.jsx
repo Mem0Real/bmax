@@ -10,7 +10,7 @@ export default function SayHello() {
 			<div className="xl:h-[70vh] flex flex-col xl:flex-row justify-start items-center">
 				<div className="w-full md:max-w-[50em] xl:max-w-[80em] mx-auto flex flex-col xl:flex-row  justify-start items-start gap-2 md:gap-4 xl:gap-8">
 					<div className="w-full flex flex-col justify-start items-start gap-1 xl:gap-5">
-						<h1 className="text-5xl text-neutral-900 capitalize ms-2 xl:ms-5">
+						<h1 className="text-5xl text-neutral-900 uppercase ms-2 xl:ms-5">
 							Say Hello!
 						</h1>
 						{/* <form
@@ -80,7 +80,7 @@ export default function SayHello() {
 										backgroundColor: "#DFA70C",
 										color: "#FFF",
 									}}
-									className="px-6 py-2 border border-mellow text-mellow font-bold cursor-pointer capitalize"
+									className="px-6 py-2 border border-mellow text-mellow font-bold cursor-pointer uppercase"
 								>
 									Send _
 								</motion.h1>
@@ -90,21 +90,21 @@ export default function SayHello() {
 					<div className="w-full flex flex-col md:flex-row md:flex-wrap xl:flex-col justify-center items-start gap-4">
 						<div className="invisible h-8" />
 						<div className="flex flex-col gap-2 pr-8">
-							<h1 className="text-2xl font-semibold text-neutral-900 capitalize">
+							<h1 className="text-2xl font-semibold text-neutral-900 uppercase">
 								Address
 							</h1>
 							<p className="text-neutral-700/50 text-base">Bottom text</p>
 						</div>
 
 						<div className="flex flex-col gap-2 pr-8">
-							<h1 className="text-2xl font-semibold text-neutral-900 capitalize">
+							<h1 className="text-2xl font-semibold text-neutral-900 uppercase">
 								Call us
 							</h1>
 							<p className="text-neutral-700/50 text-base">Bottom text</p>
 						</div>
 
 						<div className="flex flex-col gap-2 pr-8">
-							<h1 className="text-2xl font-semibold text-neutral-900 capitalize">
+							<h1 className="text-2xl font-semibold text-neutral-900 uppercase">
 								Email Us
 							</h1>
 							<p className="text-neutral-700/50 text-base">Bottom text</p>
