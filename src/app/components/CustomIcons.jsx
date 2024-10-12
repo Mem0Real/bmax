@@ -91,7 +91,7 @@ export default function CustomIcons({ children }) {
 			<g
 				id="SVGRepo_tracerCarrier"
 				strokeLinecap="round"
-				strokeLineJoin="round"
+				strokeLinejoin="round"
 			></g>
 			<g id="SVGRepo_iconCarrier">
 				<rect width="48" height="48" fill="white" fill-opacity="0.01"></rect>
@@ -100,14 +100,14 @@ export default function CustomIcons({ children }) {
 					stroke="currentColor"
 					strokeWidth="1.5"
 					strokeLinecap="round"
-					strokeLineJoin="round"
+					strokeLinejoin="round"
 				></path>
 				<path
 					d="M36 24C36 17.3726 30.6274 12 24 12C17.3726 12 12 17.3726 12 24C12 30.6274 17.3726 36 24 36V36"
 					stroke="currentColor"
 					strokeWidth="1.5"
 					strokeLinecap="round"
-					strokeLineJoin="round"
+					strokeLinejoin="round"
 				></path>
 			</g>
 		</svg>
@@ -224,7 +224,7 @@ export default function CustomIcons({ children }) {
 			<g
 				id="SVGRepo_tracerCarrier"
 				strokeLinecap="round"
-				strokeLineJoin="round"
+				strokeLinejoin="round"
 			></g>
 			<g id="SVGRepo_iconCarrier">
 				<path
@@ -243,7 +243,7 @@ export default function CustomIcons({ children }) {
 					stroke="currentColor"
 					strokeWidth="1.5"
 					strokeLinecap="round"
-					strokeLineJoin="round"
+					strokeLinejoin="round"
 				></path>
 			</g>
 		</svg>
@@ -258,7 +258,7 @@ export default function CustomIcons({ children }) {
 			<path
 				stroke="currentColor"
 				strokeLinecap="round"
-				strokeLineJoin="round"
+				strokeLinejoin="round"
 				strokeWidth="1.5"
 				d="M13 7h6l2 4m-8-4v8m0-8V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v9h2m8 0H9m4 0h2m4 0h2v-4m0 0h-5m3.5 5.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm-10 0a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"
 			/>
@@ -270,7 +270,7 @@ export default function CustomIcons({ children }) {
 			<g
 				id="SVGRepo_tracerCarrier"
 				strokeLinecap="round"
-				strokeLineJoin="round"
+				strokeLinejoin="round"
 			></g>
 			<g id="SVGRepo_iconCarrier">
 				<path
@@ -322,7 +322,7 @@ export default function CustomIcons({ children }) {
 			<g
 				id="SVGRepo_tracerCarrier"
 				strokeLinecap="round"
-				strokeLineJoin="round"
+				strokeLinejoin="round"
 			></g>
 			<g id="SVGRepo_iconCarrier">
 				<path
@@ -375,7 +375,7 @@ export default function CustomIcons({ children }) {
 			<g
 				id="SVGRepo_tracerCarrier"
 				strokeLinecap="round"
-				strokeLineJoin="round"
+				strokeLinejoin="round"
 			></g>
 			<g id="SVGRepo_iconCarrier">
 				<path
@@ -393,7 +393,7 @@ export default function CustomIcons({ children }) {
 			<g
 				id="SVGRepo_tracerCarrier"
 				strokeLinecap="round"
-				strokeLineJoin="round"
+				strokeLinejoin="round"
 			></g>
 			<g id="SVGRepo_iconCarrier">
 				<path
@@ -401,7 +401,7 @@ export default function CustomIcons({ children }) {
 					stroke="currentColor"
 					strokeWidth="1.5"
 					strokeLinecap="round"
-					strokeLineJoin="round"
+					strokeLinejoin="round"
 				></path>
 			</g>
 		</svg>

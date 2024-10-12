@@ -54,7 +54,7 @@ export default function IconList() {
 	];
 
 	return (
-		<div className="min-h-screen w-full px-12 xl:px-40 bg-neutral-200">
+		<div className="min-h-screen w-full px-4 xl:px-40 bg-neutral-100 py-5 xl:pb-12">
 			<div className="flex flex-col justify-center items-center gap-20">
 				<div className="flex flex-col justify-center items-center gap-2">
 					<h1 className="text-neutral-900 text-lg font-medium capitalize">
@@ -66,11 +66,16 @@ export default function IconList() {
 				</div>
 
 				<section className="grid grid-flow-row grid-cols-1 md:grid-cols-2 xl:grid-cols-3 place-items-start gap-8 gap-y-24">
-					{listData.map(({ icon, header, detail }) => (
-						<div className="w-44 flex flex-col justify-center items-center gap-2">
+					{listData.map(({ icon, header, detail }, index) => (
+						<div
+							key={index}
+							className="xl:w-64 flex flex-col justify-center items-center gap-2"
+						>
 							<div className="text-darkYellow w-12">{icon}</div>
 							<h1 className="font-semibold text-lg capitalize">{header}</h1>
-							<p className="text-neutral-700 text-xs">{detail}</p>
+							<p className="text-neutral-400 text-sm px-6 text-center">
+								{detail}
+							</p>
 						</div>
 					))}
 				</section>
