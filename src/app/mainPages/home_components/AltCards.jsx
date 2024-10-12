@@ -101,11 +101,11 @@ export default function AltCards() {
 							<motion.div
 								id={index}
 								key={index}
-								className="flex flex-col xl:flex-row xl:odd:flex-row-reverse justify-center md:gap-9 xl:gap-6 relative px-8 xl:px-40 xl:py-12"
+								className="flex flex-col xl:flex-row xl:odd:flex-row-reverse justify-center md:gap-9 xl:gap-6 relative px-4 md:px-8 xl:px-40 xl:py-12"
 							>
 								<motion.div
-									className={`xl:flex-1 flex flex-col items-center justify-center self-center justify-self-center my-auto py-6 gap-5 xl:gap-12 text-start ${
-										++index % 2 === 0 ? "pr-8" : "pl-8"
+									className={`order-2 xl:order-1 xl:flex-1 flex flex-col items-center justify-center self-center justify-self-center my-auto py-6 gap-5 xl:gap-12 text-start ${
+										++index % 2 === 0 ? "pr-2 md:pr-8" : "pl-2 md:pl-8"
 									}`}
 									itemID={`${index}-text`}
 									initial={
@@ -161,15 +161,13 @@ export default function AltCards() {
 										itemID={`${index}-image`}
 										className="flex-1 flex flex-col items-center justify-center relative h-[70vh] my-auto"
 										initial={
-											width >= 1280
-												? ++index % 2 !== 0
-													? {
-															opacity: 0,
-															x: -30,
-															y: 0,
-													  }
-													: { opacity: 0, x: 30, y: 0 }
-												: { opacity: 0, x: 0, y: 30 }
+											++index % 2 !== 0
+												? {
+														opacity: 0,
+														x: -30,
+														y: 0,
+												  }
+												: { opacity: 0, x: 30, y: 0 }
 										}
 										whileInView={{
 											opacity: 1,
@@ -177,17 +175,6 @@ export default function AltCards() {
 											y: 0,
 											transition: { duration: 1, ease: "easeInOut" },
 										}}
-										exit={
-											width >= 1280
-												? ++index % 2 === 0
-													? {
-															opacity: 0,
-															x: -30,
-															y: 0,
-													  }
-													: { opacity: 0, x: 30, y: 0 }
-												: { opacity: 0, x: 0, y: 30 }
-										}
 									>
 										<Image
 											src={image}
@@ -199,43 +186,26 @@ export default function AltCards() {
 										/>
 									</motion.div>
 								) : (
-									<div className="h-96 drop-shadow-xl overflow-hidden">
+									<div className="order-1 w-full md:w-[70%] lg:w-[50%] h-64 md:h-96 drop-shadow-xl overflow-hidden mt-8">
 										<motion.div
 											className="relative w-full h-full mx-auto"
-											initial={
-												width >= 1280
-													? ++index % 2 !== 0
-														? {
-																opacity: 0,
-																x: -30,
-																y: 0,
-														  }
-														: { opacity: 0, x: 30, y: 0 }
-													: { opacity: 0, x: 0, y: 30 }
-											}
+											initial={{
+												opacity: 0,
+												x: 0,
+												y: -30,
+											}}
 											whileInView={{
 												opacity: 1,
 												x: 0,
 												y: 0,
 												transition: { duration: 1, ease: "easeInOut" },
 											}}
-											exit={
-												width >= 1280
-													? ++index % 2 !== 0
-														? {
-																opacity: 0,
-																x: -30,
-																y: 0,
-														  }
-														: { opacity: 0, x: 30, y: 0 }
-													: { opacity: 0, x: 0, y: 30 }
-											}
 										>
 											<Image
 												src={image}
 												alt={index}
 												fill
-												className="absolute object-contain object-center"
+												className="absolute object-contain md:object-fill object-center"
 												sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw"
 												priority
 											/>
