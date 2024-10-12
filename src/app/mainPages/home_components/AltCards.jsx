@@ -109,13 +109,13 @@ export default function AltCards() {
 									}`}
 									itemID={`${index}-text`}
 									initial={
-										++index % 2 === 0
+										++index % 2 !== 0
 											? {
 													opacity: 0,
-													x: -30,
+													x: -15,
 													y: 0,
 											  }
-											: { opacity: 0, x: 30, y: 0 }
+											: { opacity: 0, x: 15, y: 0 }
 									}
 									whileInView={{
 										opacity: 1,
@@ -124,13 +124,13 @@ export default function AltCards() {
 										transition: { duration: 1, ease: "easeInOut" },
 									}}
 									exit={
-										++index % 2 === 0
+										++index % 2 !== 0
 											? {
 													opacity: 0,
-													x: -30,
+													x: -15,
 													y: 0,
 											  }
-											: { opacity: 0, x: 30, y: 0 }
+											: { opacity: 0, x: 15, y: 0 }
 									}
 									transition={{ delay: 0.2 }}
 								>
@@ -161,13 +161,13 @@ export default function AltCards() {
 										itemID={`${index}-image`}
 										className="flex-1 flex flex-col items-center justify-center relative h-[70vh] my-auto"
 										initial={
-											++index % 2 !== 0
+											++index % 2 === 0
 												? {
 														opacity: 0,
-														x: -30,
+														x: -15,
 														y: 0,
 												  }
-												: { opacity: 0, x: 30, y: 0 }
+												: { opacity: 0, x: 15, y: 0 }
 										}
 										whileInView={{
 											opacity: 1,
@@ -175,6 +175,15 @@ export default function AltCards() {
 											y: 0,
 											transition: { duration: 1, ease: "easeInOut" },
 										}}
+										exit={
+											++index % 2 === 0
+												? {
+														opacity: 0,
+														x: -15,
+														y: 0,
+												  }
+												: { opacity: 0, x: 15, y: 0 }
+										}
 									>
 										<Image
 											src={image}
