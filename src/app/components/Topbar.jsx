@@ -3,7 +3,7 @@ import React from "react";
 const Topbar = ({ className }) => {
 	return (
 		<div
-			className={`bg-darkYellow/80 text-neutral-900 font-semibold h-full min-h-8 px-12 xl:px-40 flex justify-evenly items-center ${className}`}
+			className={`bg-mellow/80 text-neutral-900 font-semibold h-full min-h-8 px-12 xl:px-40 flex justify-evenly items-center ${className}`}
 		>
 			<div className="flex justify-center items-center gap-4 flex-wrap">
 				<h1 className={className}>Top Bar</h1>

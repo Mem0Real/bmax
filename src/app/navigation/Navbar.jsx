@@ -64,7 +64,7 @@ export default function Navbar() {
 								<motion.div className="flex items-center gap-1">
 									<Link href={address}>{title}</Link>
 									<motion.span
-										className="cursor-pointer w-4 text-yellow-600"
+										className="cursor-pointer w-4 text-mellow"
 										initial={{ rotate: 0 }}
 										animate={drop === title ? { rotate: 90 } : { rotate: 0 }}
 										transition={{ ease: easeInOut }}
@@ -152,7 +152,7 @@ export default function Navbar() {
 															: { rotate: -90 }
 													}
 													transition={{ ease: easeInOut }}
-													className="w-4 text-yellow-500"
+													className="w-4 text-mellow"
 													onClick={() => toggleNest(title)}
 												>
 													{dropData && LeftIcon}

@@ -14,7 +14,7 @@ export default function LogoStuff() {
 						className="object-contain object-left absolute"
 					/>
 				</div>
-				<p className="text-sm pl-4 pr-24">
+				<p className="text-sm xl:pl-4 xl:pr-24">
 					Advanced telematics solutions for seamless fleet management. GPS
 					tracking, video telematics, fuel monitoring, and more. Empower your
 					business today. Contact us now.
