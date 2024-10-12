@@ -44,7 +44,7 @@ const description = [
 		smallTitle: "MUCH MORE THAN TELEMATICS",
 		title: "Monitor All Your Assets",
 		detail:
-			"Unlock the power of comprehensive asset monitoring with Autotronix Telematics. From key replacement to vehicle tracking, our professional locksmith and telematics services ensure the security and visibility of your assets. Experience reliability and professionalism like never before.",
+			"Unlock the power of comprehensive asset monitoring with B-Max Telematics. From key replacement to vehicle tracking, our professional locksmith and telematics services ensure the security and visibility of your assets. Experience reliability and professionalism like never before.",
 		address: "/fleet-management-solutions",
 		image: "/images/landing-cards/monitor.png",
 	},
@@ -52,7 +52,7 @@ const description = [
 		smallTitle: "SAFETY BACKED BY TECHNOLOGY",
 		title: "Protect Your Vehicles and Cargo",
 		detail:
-			"Safeguard your vehicles and cargo with Autotronix Telematics' advanced technology. Our automotive locksmith services and vehicle tracking solutions provide enhanced safety measures, ensuring peace of mind for individuals and businesses alike. Trust us to protect what matters most.",
+			"Safeguard your vehicles and cargo with B-Max Telematics' advanced technology. Our automotive locksmith services and vehicle tracking solutions provide enhanced safety measures, ensuring peace of mind for individuals and businesses alike. Trust us to protect what matters most.",
 		address: "/",
 		image: "/images/landing-cards/protect.png",
 	},

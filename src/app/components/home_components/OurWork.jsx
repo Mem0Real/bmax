@@ -18,9 +18,9 @@ export default function OurWork() {
 									Automotive Locksmith Services
 								</h1>
 								<p className="text-neutral-200/50 pr-2 xl:pr-8 text-sm">
-									Autotronix Telematics offers key replacement, programming,
-									repair, and emergency car unlocking services with
-									professionalism and efficiency.
+									B-Max Telematics offers key replacement, programming, repair,
+									and emergency car unlocking services with professionalism and
+									efficiency.
 								</p>
 							</div>
 						</div>
@@ -33,9 +33,9 @@ export default function OurWork() {
 									Telematics Solutions
 								</h1>
 								<p className="text-neutral-200/50 pr-2 xl:pr-8 text-sm">
-									Enhance vehicle security and monitoring with Autotronix
-									Telematics' advanced solutions, including tracking, fleet
-									management, car alarms, and dashcam installations.
+									Enhance vehicle security and monitoring with B-Max Telematics'
+									advanced solutions, including tracking, fleet management, car
+									alarms, and dashcam installations.
 								</p>
 							</div>
 						</div>
@@ -50,9 +50,8 @@ export default function OurWork() {
 									Vehicle Security
 								</h1>
 								<p className="text-neutral-200/50 pr-2 xl:pr-8 text-sm">
-									Protect your vehicles with Autotronix Telematics'
-									immobilizers, GPS tracking, and anti-theft systems, ensuring
-									peace of mind.
+									Protect your vehicles with B-Max Telematics' immobilizers, GPS
+									tracking, and anti-theft systems, ensuring peace of mind.
 								</p>
 							</div>
 						</div>
@@ -65,9 +64,9 @@ export default function OurWork() {
 									Fleet Services
 								</h1>
 								<p className="text-neutral-200/50 pr-2 xl:pr-8 text-sm">
-									Optimize fleet operations with Autotronix Telematics'
-									tracking, fuel management, driver behavior monitoring, and
-									maintenance management solutions.
+									Optimize fleet operations with B-Max Telematics' tracking,
+									fuel management, driver behavior monitoring, and maintenance
+									management solutions.
 								</p>
 							</div>
 						</div>

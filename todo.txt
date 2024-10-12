@@ -5,5 +5,5 @@
 
 // Front-end stuff
     1. Add video for landing page
-    2. Add text animation
+    2. Add text animation for landing, about
     3. Add mask overlay animation for the "News" Section
