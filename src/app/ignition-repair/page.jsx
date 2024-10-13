@@ -1,8 +1,8 @@
 import React from "react";
 
-import { igData } from "@/data/solutionPage";
+import { ignitionData } from "@/data/solution";
 import GenerateSolution from "../components/GenerateSolution";
 
 export default function IgnitionRepair() {
-	return <GenerateSolution data={igData} bgImage={true} />;
+	return <GenerateSolution data={ignitionData} bgImage={true} />;
 }

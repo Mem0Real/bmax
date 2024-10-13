@@ -1,4 +1,4 @@
-export const placeData = {
+export const replacementData = {
 	location: "replacement-page",
 	linkSrc: "contact",
 	linkText: "contact us",
@@ -119,7 +119,7 @@ export const placeData = {
 	],
 };
 
-export const duplicateData = {
+export const duplicationData = {
 	location: "duplication-page",
 	linkSrc: "",
 	linkText: "",
@@ -235,7 +235,7 @@ export const duplicateData = {
 	],
 };
 
-export const igData = {
+export const ignitionData = {
 	location: "ignition-page",
 	linkSrc: "contact",
 	linkText: "call us",
@@ -357,6 +357,128 @@ export const igData = {
 			id: "satis",
 			name: "Is customer satisfaction guaranteed?",
 			nest: "Yes, at B-Max, we prioritize customer satisfaction and aim to deliver top-quality ignition and door lock repair services that leave you satisfied and pleased with our work.",
+		},
+	],
+};
+
+export const emergencyData = {
+	location: "emergency-page",
+	linkSrc: "contact",
+	linkText: "Call Us",
+
+	landing: {
+		header: "24/7 Emergency Car Unlocking Services Near You",
+		text: "Unlock your car 24/7 with Autotronix's emergency car unlocking services. We provide fast and reliable solutions. If you're locked out, we're here to help. Our professional locksmiths are equipped to handle various car models, ensuring a swift and stress-free experience. Autotronix offers dependable emergency car unlock services near you, ready to assist anytime you're in need.",
+	},
+	counter1: {
+		number: 5000,
+		symbol: "+",
+		text: "cars unlocked",
+	},
+	counter2: {
+		number: 100,
+		symbol: "%",
+		text: "Damage Free Unlocks",
+	},
+	counter3: {
+		number: 24,
+		symbol: "/7",
+		text: "Open",
+	},
+
+	card1: {
+		header: "Damage-Free Unlock",
+		text: "Trust our damage-free emergency car unlock service for a secure solution that ensures your vehicle remains in pristine condition. Our expert team employs advanced techniques to access your car safely without causing any harm. Experience efficiency and security combined, providing you with a reliable solution for unlocking your vehicle in emergencies.",
+	},
+
+	card2: {
+		header: "Mobile Service",
+		text: "Unlock peace of mind with our prompt and efficient car emergency unlocking service. Wherever you are, our responsive mobile locksmith team is ready to bring the solution to your doorstep. Count on us for swift and on-the-spot assistance, eliminating the inconvenience of being locked out of your vehicle. Your security and convenience are our top priorities.",
+	},
+
+	card3: {
+		header: "Quick Response",
+		text: "We understand that being locked out of your car is an urgent situation, and that's why we prioritize rapid response times. When you contact us for car unlocking services, our team swings into action promptly. We value your time, and our quick response ensures you get back on the road without unnecessary delays.",
+	},
+
+	card4: {
+		header: "Cutting-Edge Equipment",
+		text: "Experience swift and secure emergency car access with our state-of-the-art equipment and specialized techniques. Our team employs advanced methods tailored for precision, ensuring efficient unlocking across diverse car models and locks. Count on our innovative technology for damage-free emergency car entry, providing a seamless and secure solution to get you back on the road without delays.",
+	},
+
+	card5: {
+		header: "Wide Coverage",
+		text: "Dedicated to ensuring customer satisfaction, we extend our car unlocking services across an expansive geographical area. Wherever you find yourself, our mobile locksmiths are committed to reaching your location promptly, ensuring that help is just a call away. Our extensive coverage enables us to assist you in unlocking your car, even in remote or challenging locations. Trust us for reliable and responsive service tailored to meet your needs.",
+	},
+
+	card6: {
+		header: "Key Duplication",
+		text: "In addition to our car unlocking proficiency, we provide comprehensive key duplication services for your peace of mind. Our skilled locksmiths go beyond by cutting and programming new keys with precision, ensuring seamless functionality with your vehicle's locks. Don't risk being caught without a spare; entrust us to efficiently duplicate your keys, offering you an extra layer of security and convenience.",
+	},
+
+	hovering: [
+		{
+			header: "Efficient Solutions",
+			text: "Our locksmiths offer efficient and effective solutions, minimizing any inconvenience caused by car lockouts and swiftly resolving the issue.",
+		},
+		{
+			header: "Competitive Pricing",
+			text: "We offer competitive pricing for our emergency car unlocking services, delivering top-notch solutions without breaking the bank.",
+		},
+		{
+			header: "Customer Satisfaction",
+			text: "At B-Max, customer satisfaction is our utmost priority. Our goal is to ensure you have a stress-free experience and leave completely satisfied with our service.",
+		},
+	],
+	alt1: {
+		header: "Emergency Car Unlock: Swift and Secure Services",
+		text: "In moments of crisis, our emergency car unlock service comes to your rescue. We understand that unexpected lockouts can be stressful. That's why we prioritize swift and secure resolutions to get you back on the road, no matter the situation. Our highly skilled locksmiths are experts in dealing with various vehicle makes and models. We ensure a damage-free unlock, maintaining your vehicle's integrity. Transparent pricing and dedicated professionals make your safety our top priority. When it comes to emergency car unlocks, trust Autotronix for a hassle-free experience and peace of mind.",
+	},
+	alt2: {
+		header: "Comprehensive Car Lockout Solutions: Expert Assistance",
+		text: "Experience the excellence of Autotronix's car lockout solutions. Our skilled team excels in providing comprehensive services to resolve car lockouts efficiently. We understand the inconvenience and stress such situations can bring. Whether you've misplaced your keys, locked them inside your car, or faced any other lockout scenario, our expert locksmiths have you covered. Our swift response, cutting-edge tools, and problem-solving skills ensure you regain access to your vehicle without damage. Rest easy, knowing that you're receiving top-notch assistance from professionals who genuinely care about your safety and convenience.",
+	},
+
+	dropData: [
+		{
+			id: "locked",
+			name: "What should I do if I'm locked out of my car?",
+			nest: "If you're locked out of your car, contact us immediately, and our skilled locksmiths will swiftly come to your location for assistance.",
+		},
+		{
+			id: "damage",
+			name: "Will unlocking my car cause any damage?",
+			nest: "No, we use specialized equipment and techniques for damage-free car unlocking, ensuring the safety of your vehicle.",
+		},
+		{
+			id: "quick",
+			name: "How quickly can you unlock my car?",
+			nest: "Our team ensures prompt unlocking services, and we strive to reach you as quickly as possible to resolve your locked-out situation.",
+		},
+		{
+			id: "cost",
+			name: "What is the cost of car unlocking service?",
+			nest: "Prices may vary based on the car model and location. Rest assured, we offer competitive pricing and no hidden fees.",
+		},
+		{
+			id: "any",
+			name: "Can you unlock any car model?",
+			nest: "Yes, our skilled team is well-versed in unlocking various car models, providing efficient solutions tailored to your specific vehicle.",
+		},
+		{
+			id: "avail",
+			name: "Is your car unlocking service available 24/7?",
+			nest: "Yes, we offer 24/7 car unlocking services to assist you whenever you encounter a lockout emergency.",
+		},
+		{
+			id: "mobile",
+			name: "Do you offer mobile car unlocking services?",
+			nest: "Yes, we provide mobile unlocking services and will come to your location for added convenience.",
+		},
+		{
+			id: "certif",
+			name: "Are your locksmiths trained and certified?",
+			nest: "Absolutely, our locksmiths are highly trained and certified professionals with extensive experience in car unlocking services.",
 		},
 	],
 };

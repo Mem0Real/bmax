@@ -8,6 +8,7 @@ import { useIcons } from "../components/CustomIcons";
 import Link from "next/link";
 
 import { AnimatePresence, motion } from "framer-motion";
+import GenerateCard from "../components/GenerateCard";
 
 const whyList = [
 	{
@@ -274,16 +275,7 @@ export default function About() {
 
 				{/* cards */}
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-16 gap-x-24 md:gap-x-12">
-					{cardList.map(({ icon, title, detail }, index) => (
-						<div
-							key={index}
-							className="px-6 py-12 rounded-xl bg-neutral-950/80 flex flex-col justify-start items-start max-w-[30rem] gap-4"
-						>
-							<div className="w-12 text-mellow">{icon}</div>
-							<div className="text-2xl font-medium text-mellow">{title}</div>
-							<div className="text-lg text-neutral-200">{detail}</div>
-						</div>
-					))}
+					<GenerateCard list={cardList} />
 				</div>
 			</div>
 		</div>

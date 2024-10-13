@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export default function AlternateText({
 	header,
 	detail,
-	address = "",
+	address,
 	linkText,
 	children,
 }) {

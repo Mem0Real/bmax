@@ -1,21 +1,99 @@
+"use client";
+
 import React from "react";
+
 import Alternating from "../components/Alternating";
 import AlternateText from "../components/AlternateText";
 import AlternateImage from "../components/AlternateImage";
 
+import { emergencyData } from "@/data/solution";
+
+import { useIcons } from "../components/CustomIcons";
+import GenerateCard from "../components/GenerateCard";
+import HoverCard from "../components/HoverCard";
+
 export default function page() {
+	const { UnlockIcon, CarIcon, PhoneIcon, TechIcon, MapIcon, KeyIcon } =
+		useIcons();
+
+	const cardList = [
+		{
+			icon: UnlockIcon,
+			title: emergencyData.card1.header,
+			detail: emergencyData.card1.text,
+		},
+		{
+			icon: CarIcon,
+			title: emergencyData.card2.header,
+			detail: emergencyData.card2.text,
+		},
+		{
+			icon: PhoneIcon,
+			title: emergencyData.card3.header,
+			detail: emergencyData.card3.text,
+		},
+		{
+			icon: TechIcon,
+			title: emergencyData.card4.header,
+			detail: emergencyData.card4.text,
+		},
+		{
+			icon: MapIcon,
+			title: emergencyData.card5.header,
+			detail: emergencyData.card5.text,
+		},
+		{
+			icon: KeyIcon,
+			title: emergencyData.card6.header,
+			detail: emergencyData.card6.text,
+		},
+	];
+
 	return (
-		<div className="w-full my-auto flex flex-col justify-center items-center text-neutral-900 gap-10 md:gap-12 lg:gap-16">
+		<div className="w-full my-auto flex flex-col justify-center items-center text-neutral-900 gap-10 md:gap-12 lg:gap-16 pt-8">
 			<Alternating>
-				<AlternateImage img="replacement-page/landing.jpg" />
 				<AlternateText
-					header="trial"
-					detail="Contact us for guidance on broken door locks or ignitions. We can
-						fix many issues, and if replacement is needed, we offer a wide
-						selection of options."
-					address="emerg"
+					header={emergencyData.landing.header}
+					detail={emergencyData.landing.text}
+					address={emergencyData.linkSrc}
+					linkText={emergencyData.linkText}
 				/>
+				<AlternateImage img={`${emergencyData.location}/landing.jpg`} />
 			</Alternating>
+			<div className="flex justify-center items-center">
+				<h1 className="text-5xl">Count Animation</h1>
+			</div>
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-16 gap-x-24 md:gap-x-12">
+				<GenerateCard list={cardList} />
+			</div>
+			<div className="w-full flex flex-col justify-center items-center py-8">
+				{/* <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+					<div className="flex flex-col justify-center items-center gap-12">
+						
+					</div>
+				</div> */}
+				<HoverCard location={emergencyData.location} />
+				{/* <div className="w-full flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 xl:gap-16 overflow-hidden">
+					<motion.h1
+						className="text-black"
+						animate={hovered === "1" ? { color: "#f2f1c" } : { color: "#000" }}
+					>
+						CHANGE ME
+					</motion.h1>
+					<motion.h1
+						className="text-black"
+						animate={hovered === "2" ? { color: "#f2f1c" } : { color: "#000" }}
+					>
+						CHANGE ME
+					</motion.h1>
+					<motion.h1
+						className="text-black"
+						animate={hovered === "3" ? { color: "#f2f1c" } : { color: "#000" }}
+					>
+						CHANGE ME
+					</motion.h1>
+				</div> */}
+			</div>
 		</div>
 	);
 }

@@ -1,8 +1,8 @@
 import React from "react";
 
-import { placeData } from "@/data/solutionPage";
+import { replacementData } from "@/data/solution";
 import GenerateSolution from "../components/GenerateSolution";
 
 export default function KeyReplace() {
-	return <GenerateSolution data={placeData} />;
+	return <GenerateSolution data={replacementData} />;
 }
