@@ -487,3 +487,106 @@ export const emergencyData = {
 		},
 	],
 };
+
+export const fleetData = {
+	location: "fleet-page",
+	linkSrc: "/fleet-management",
+	linkText: "Know More",
+
+	landing: {
+		header: "Fleet Management Solutions",
+		text: "End-to-end solution for seamless management of the entire fleet ecosystem.",
+	},
+	headerText: {
+		title: "Why Choose Our Fleet Management System?",
+		header: "Enhance Efficiency, Control, and Safety",
+	},
+	alt1: {
+		header: "Exceptional Focus on Fleet Safety",
+		text: "Superior fleet safety standards ensure driver and vehicle protection through advanced features and proactive measures.",
+	},
+	alt2: {
+		header: "Lowered Operational Expenses",
+		text: "Superior fleet safety standards ensure driver and vehicle protection through advanced features and proactive measures.",
+	},
+	bgs: [
+		{
+			header: "Fuel Management",
+			text: "Maximize fuel efficiency and reduce costs with our advanced fuel management solutions for your fleet.",
+		},
+		{
+			header: "Employee Management",
+			text: "Streamline workforce operations and improve productivity with our employee management tools tailored for fleet operations.",
+		},
+		{
+			header: "Asset Management",
+			text: "Gain full visibility and control over your fleet assets with our comprehensive asset management solutions.",
+		},
+	],
+	dropData1: [
+		{
+			id: "live",
+			name: "Live GPS Fleet Tracking",
+			next: "Monitor and protect your fleet assets from theft or harm with our advanced real-time GPS tracking software.",
+		},
+		{
+			id: "fleet",
+			name: "Fleet Lock",
+			next: "With our fleet management solutions, you have the ability to activate the vehicle lock through our fleet vehicle tracking app. Rest assured that no vehicle in your fleet will start without your authorization.",
+		},
+		{
+			id: "alert",
+			name: "Live Alerts",
+			next: "Receive real-time alerts for overspeeding, entry/exit points, monitor idling, and stay updated with vehicle services and maintenance alerts.",
+		},
+	],
+	dropData2: [
+		{
+			id: "mgmt",
+			name: "Manage Fleet Operations",
+			next: "Effortlessly manage daily fleet operations with a click. Monitor drivers, assignments, and real-time geolocation with ease.",
+		},
+		{
+			id: "health",
+			name: "Health Monitoring",
+			next: "Access comprehensive diagnostic, mileage, and health reports for all fleet vehicles. Ensure your fleet's well-being and focus on business expansion with peace of mind.",
+		},
+		{
+			id: "cost",
+			name: "Fuel Cost Management",
+			next: "Leverage our commercial GPS fleet tracking to significantly reduce fuel expenses. Track driving behavior, minimize idling time, and effectively cut down on fuel-related costs.",
+		},
+	],
+	dropData3: [
+		{
+			id: "cruic",
+			name: "What is fleet management, and why is it crucial for businesses?",
+			next: "Fleet management is the strategic oversight and optimization of a group of vehicles, encompassing various activities like tracking, maintenance, fuel management, and driver management. It is crucial for businesses as it ensures operational efficiency, cost control, compliance with regulations, improved safety measures, and heightened customer satisfaction levels.",
+		},
+		{
+			id: "key",
+			name: "What are the key components and intricacies involved in effective fleet management?",
+			next: "Effective fleet management involves an intricate interplay of key components, including vehicle telematics and tracking systems, proactive maintenance scheduling, fuel management strategies, driver performance monitoring, compliance management mechanisms, and comprehensive asset management frameworks. The integration and harmonization of these components are crucial for achieving optimal fleet performance and maximizing returns on investment.",
+		},
+		{
+			id: "red",
+			name: "How do fleet management solutions help in reducing costs for businesses?",
+			next: "Fleet management solutions play a pivotal role in cost reduction by optimizing various operational aspects. These solutions facilitate efficient route planning, minimize idle time, improve fuel efficiency through advanced fuel management techniques, schedule timely vehicle maintenance to prevent breakdowns, monitor driver behavior to reduce risks, and enable proactive measures for cost control. By implementing these strategies, businesses can significantly reduce their expenses and enhance their financial performance.",
+		},
+		{
+			id: "advan",
+			name: "What are the significant advantages and value propositions of implementing a comprehensive fleet management system?",
+			next: "Implementing a comprehensive fleet management system offers several advantages and value propositions for businesses. It leads to increased productivity through streamlined operations, reduced fuel consumption and associated costs, improved driver safety through real-time monitoring and safety protocols, optimized vehicle utilization through effective scheduling and resource allocation, enhanced customer service with accurate tracking and timely deliveries, and streamlined compliance management to adhere to regulatory requirements and avoid penalties.",
+		},
+		{
+			id: "reg",
+			name: "How does fleet management ensure regulatory compliance, and what are the key aspects involved?",
+			next: "Fleet management systems play a pivotal role in ensuring regulatory compliance by providing necessary tools and functionalities to meet legal requirements. They assist in monitoring and maintaining driver hours of service records, conducting regular vehicle inspections and maintenance checks, managing compliance with safety standards and environmental regulations, and generating comprehensive reports for audits and regulatory submissions. By incorporating these aspects, businesses can effectively adhere to regulatory frameworks and avoid legal complications.",
+		},
+		{
+			id: "cust",
+			name: "Can fleet management systems be customized to meet specific business needs and operational requirements?",
+			next: "Yes, fleet management systems can be highly customizable to cater to the specific needs and operational requirements of businesses. These systems can be tailored to track specialized assets, integrate seamlessly with existing software and IT infrastructure, generate custom reports with specific data points and metrics, and offer flexible user interfaces to align with unique business workflows. By customizing fleet management systems, businesses can leverage technology to its fullest potential and achieve maximum efficiency.",
+		},
+	],
+};
