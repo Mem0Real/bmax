@@ -6,26 +6,19 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useIcons } from "./CustomIcons";
 
 export default function ExtrudeText({ dropData, className }) {
-	const [firstClick, setFirstClick] = useState(false);
-	const [selected, setSelected] = useState("");
+	const [selected, setSelected] = useState(0);
 
 	const { PlusIcon, MinusIcon } = useIcons();
 
-	const handleClick = (id) => {
-		setSelected((prev) => (prev === id ? "" : id));
-		setFirstClick(true);
+	const handleClick = (index) => {
+		setSelected((prev) => (prev === index ? -1 : index));
 	};
-
-	useEffect(() => {
-		!firstClick && setSelected(dropData[0].id);
-		console.log(dropData[0].nest.id);
-	}, []);
 
 	return (
 		<div className="w-full flex flex-col justify-center items-stretch gap-2">
-			{dropData.map(({ id, name, nest }, index) => (
+			{dropData.map(({ name, nest }, index) => (
 				<motion.div
-					key={id}
+					key={index}
 					className="flex flex-col justify-center items-stretch gap-4"
 					layout
 					transition={{ ease: "easeInOut", duration: 0.4 }}
@@ -33,14 +26,14 @@ export default function ExtrudeText({ dropData, className }) {
 					<motion.div
 						className={`${
 							className
-								? selected === id
+								? selected === index
 									? className
 									: ""
-								: selected === id
+								: selected === index
 								? "bg-mellow"
 								: "bg-mellow/50"
 						} py-8 ps-4 pe-2 flex justify-between items-center cursor-pointer`}
-						onClick={() => handleClick(id)}
+						onClick={() => handleClick(index)}
 						layout="position"
 						transition={{ ease: "easeInOut" }}
 					>
@@ -48,12 +41,12 @@ export default function ExtrudeText({ dropData, className }) {
 							{name}
 						</h1>
 						<h3 className="w-8 text-neutral-900">
-							{selected !== id ? PlusIcon : MinusIcon}
+							{selected !== index ? PlusIcon : MinusIcon}
 						</h3>
 					</motion.div>
 
 					<AnimatePresence>
-						{selected === id && (
+						{selected === index && (
 							<motion.div
 								key="dropdown"
 								initial={{ height: 0, opacity: 0 }}

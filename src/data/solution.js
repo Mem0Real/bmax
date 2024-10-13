@@ -50,71 +50,58 @@ export const replacementData = {
 
 	dropData1: [
 		{
-			id: "lost",
 			name: "Lost car key replacement",
 			nest: "Lost your car keys? Don't worry; our services are available around the clock. Whether you're stranded or need a spare, our affordable and quick locksmiths are here to help. Don't let a lost key ruin your day. Contact us now.",
 		},
 		{
-			id: "program",
 			name: "Car key programming",
 			nest: "For professional car key programming services, look no further. Our team specializes in transponder and smart key programming, ensuring seamless integration with your vehicle's security system. Wondering how to program a car key yourself? Save time and hassle by consulting our experts. When you need to program a new car key, we're the trusted choice.",
 		},
 		{
-			id: "emergency",
 			name: "Emergency car key replacement",
 			nest: "Facing a car key emergency? We've got your back. Our 24/7 emergency car key replacement services are just a call away. Whether you've lost your car keys or require a swift replacement, our expert locksmiths are here to assist. Don't stress over lost keys; contact us for urgent car key replacement, anytime, anywhere.",
 		},
 	],
 	dropData2: [
 		{
-			id: "afford",
 			name: "Affordable Car Key Replacement",
 			nest: "Are you searching for an affordable car key replacement service near you? Look no further. At B-Max, we understand the importance of cost-effective solutions. Our budget-friendly car key cutting services are designed to fit your wallet. When you need a car key replacement that won't break the bank, we're here for you. Don't compromise on quality for price, trust B-Max for reasonable car key replacement costs.",
 		},
 		{
-			id: "lostSol",
 			name: "Lost Car Key Solutions",
 			nest: "Have you lost your car keys and find yourself wondering what to do next? B-Max has the answer. Our professional lost car key replacement services are at your disposal. We know how stressful losing car keys can be, and that's why we specialize in the recovery and fast replacement of lost car keys. Our skilled locksmiths are dedicated to providing fast, efficient, and hassle-free solutions. If you're seeking lost car key locksmith services, you've come to the right place. Don't stress, contact B-Max today.",
 		},
 		{
-			id: "fob",
 			name: "Key Fob Replacement",
 			nest: "When it comes to key fob replacement services, B-Max is your trusted partner. Our expertise extends beyond traditional car keys to include keyless entry remotes and car key fob battery replacements. Wondering where to buy a key fob for your car? Look no further. B-Max is your one-stop destination for quality key fob solutions. If you've lost your key fob and need a replacement, or if your key fob battery needs changing, we're here to help. Keep your vehicle secure and operational with B-Max's key fob expertise.",
 		},
 	],
 	dropData3: [
 		{
-			id: "lost",
 			name: "I've lost my car keys. What should I do?",
 			nest: "Losing your car keys can be a frustrating experience. But don't worry; Autotronix is here to assist you. First, contact us immediately; our 24/7 emergency locksmith services are available to swiftly provide you with a replacement key. Our team of experts understands the urgency of such situations and is equipped to handle them efficiently. If you're worried about compatibility, rest assured that our car key replacement services cover a wide range of car makes and models. We prioritize your convenience and peace of mind, ensuring a hassle-free solution when you need it most.",
 		},
 		{
-			id: "provide",
 			name: "Do you provide car key replacement for all vehicle types?",
 			nest: "Absolutely! Autotronix is your one-stop solution for car key replacement services, and we cater to a diverse range of vehicles. Whether you have a car, truck, van, or any other vehicle type, our skilled locksmiths are well-versed in various key types and car models. We understand that each vehicle comes with its unique key specifications, and our comprehensive coverage ensures that we can assist you, no matter the vehicle you drive.",
 		},
 		{
-			id: "transponder",
 			name: "Can you replace transponder and smart keys?",
 			nest: "Yes, we certainly can! Autotronix specializes in transponder and smart key replacement. These advanced keys are an integral part of modern vehicles' security systems, and our experts are trained to program the new key to seamlessly integrate with your vehicle's technology. This ensures that your car remains secure, and you can regain access without a hitch. With our professional services, you can say goodbye to key-related hassles.",
 		},
 		{
-			id: "long",
 			name: "How long does it take to replace a car key?",
 			nest: "The duration required to replace a car key can vary based on several factors. These include your car's make and model, the type of key you need, and the specific technology involved. However, our primary objective is to provide swift and efficient solutions to minimize any inconvenience. When you contact Autotronix for car key replacement, our experts will gather the necessary details and provide you with an estimated timeframe based on your unique requirements.",
 		},
 		{
-			id: "damaged",
 			name: "My car key is damaged but not lost. What should I do?",
 			nest: "If your car key is damaged but still in your possession, Autotronix can assist you. Contact us, and our experienced locksmiths will assess the extent of the damage. In many cases, we can repair or refurbish damaged keys to ensure they are fully functional. Our priority is to provide you with an effective solution that allows you to continue using your key without any issues.",
 		},
 		{
-			id: "spare",
 			name: "Can I get a spare car key made even if I have the original?",
 			nest: "Certainly! Autotronix offers car key duplication services to meet your needs. Whether you have the original key or not, we can provide you with a spare key. Our advanced equipment and skilled technicians make the process seamless. This service ensures that you always have a backup key on hand, reducing the risk of being locked out of your vehicle in case of loss or damage to the original key.",
 		},
 		{
-			id: "apart",
 			name: "What sets Autotronix's car key replacement services apart?",
 			nest: "Autotronix distinguishes itself through a combination of factors that prioritize your satisfaction. Our team comprises skilled locksmiths who possess extensive experience in car key replacement. We stay updated with the latest industry technology, ensuring we can cater to various key types and vehicle models. We prioritize convenience, security, and affordability. When you choose Autotronix, you're choosing hassle-free car key replacement services tailored to your unique needs. Our goal is to ensure you have a reliable key solution, regardless of the circumstances.",
 		},
@@ -173,66 +160,54 @@ export const duplicationData = {
 
 	dropData1: [
 		{
-			id: "afford",
 			name: "Affordable Car Key Duplication",
 			nest: "Are you looking for affordable car key duplication services that won't break the bank? Our low-cost car key duplication services provide budget-friendly solutions. We understand that losing or damaging your keys can be stressful, and replacing them shouldn't add to your worries. Whether you need a spare key or a replacement for a lost one, our efficient and accurate key duplication services have got you covered. We prioritize precision to ensure your key works seamlessly with your vehicle. Trust us for cheap car key copies that don't compromise on quality. Say goodbye to overpriced key duplication and hello to savings.",
 		},
 		{
-			id: "quick",
 			name: "Quick and Accurate Car Key Copy",
 			nest: "We know that when you need a key duplicated, you need it fast. Our fast car key duplication services ensure you're back on the road without unnecessary delays. Accuracy is paramount when duplicating a key. Our experienced locksmiths take precision seriously to deliver an accurate car key copy that works flawlessly with your vehicle. Don't waste your time and money on inefficient services. We are dedicated to providing efficient key duplication that respects your time and ensures your satisfaction. Experience quick, accurate, and efficient key duplication with us.",
 		},
 		{
-			id: "quality",
 			name: "Quality Car Key Duplication",
 			nest: "Your keys are essential for your daily routines. That's why we provide durable car key copies that won't let you down. When it comes to key duplication, experience matters. Trust our skilled locksmiths for the most experienced key duplication services. We've built our reputation on being a trusted key copy service that delivers quality and reliability. Our focus is on providing you with keys that are not only accurate but also long-lasting. If you want to ensure that your key works seamlessly with your vehicle and stands the test of time, choose our quality car key duplication services. Your satisfaction is our priority.",
 		},
 	],
 	dropData2: [
 		{
-			id: "precise",
 			name: "Precision Car Key Copies",
 			nest: "Ensure your key duplication is precise with our precision car key copies. Precision is more than just a word to us; it's a commitment. When you choose our services, you can count on accurate key copies. Every key is carefully examined and cut with utmost precision. We understand the importance of a key that fits perfectly and works flawlessly with your vehicle. If you're in need of precise key duplication that prioritizes accuracy, don't hesitate to contact us. Our skilled locksmiths are ready to provide you with top-notch key copies tailored to your specific needs.",
 		},
 		{
-			id: "kdt",
 			name: "Key Duplication Technology",
 			nest: "Key duplication isn't just a craft; it's also about using the right technology. We stay updated with the latest advancements in key duplication technology to ensure we provide efficient and accurate services. Our commitment to using state-of-the-art equipment and methods sets us apart as a tech-savvy key duplication service provider. Whether you have a traditional metal key, a transponder key, or even a smart key, we have the technology and expertise to duplicate it with precision. Trust us to provide you with cutting-edge key duplication solutions that cater to your evolving needs.",
 		},
 		{
-			id: "conv",
 			name: "Convenient and Efficient Key Duplication",
 			nest: "Convenience is a key part of our key duplication service. We understand that you have a busy schedule, and you don't want to spend excessive time waiting for your key to be duplicated. Our efficient key duplication process ensures you get a new key quickly. With our streamlined and convenient service, you can have your key copied while you wait, so you can get back to your daily activities without significant interruptions. We prioritize your time and convenience, making us your best choice for efficient and convenient key duplication.",
 		},
 	],
 	dropData3: [
 		{
-			id: "model",
 			name: "Can you replace keys for all vehicle makes and models?",
 			nest: "Yes, we are fully stocked with blank keys that fit all makes and models, as well as transponder chips.",
 		},
 		{
-			id: "remote",
 			name: "Do you offer keyless and remote automobile keys?",
 			nest: "Absolutely! We have hundreds of authentic proximity (keyless) keys and remote automobile keys in stock.",
 		},
 		{
-			id: "transponder",
 			name: "Can you replace transponder and smart keys?",
 			nest: "Yes, we certainly can! B-Max specializes in transponder and smart key replacement. These advanced keys are an integral part of modern vehicles' security systems, and our experts are trained to program the new key to seamlessly integrate with your vehicle's technology. This ensures that your car remains secure, and you can regain access without a hitch. With our professional services, you can say goodbye to key-related hassles.",
 		},
 		{
-			id: "exp",
 			name: "Is car key replacement expensive with B-Max Telematics?",
 			nest: "No, unlike car dealerships in Kenya, we provide car key replacements at a far lesser cost and with more ease.",
 		},
 		{
-			id: "payment",
 			name: "What payment methods do you accept for key replacement?",
 			nest: "We accept cash, credit cards, and M-pesa payments for your convenience.",
 		},
 		{
-			id: "process",
 			name: "How does your key replacement process work?",
 			nest: "Once you're ready to proceed, our qualified technician will come to your location and safely unlock the automobile using specialist hardware. We then use cutting-edge software to cut and program the new key or remote.",
 		},
@@ -291,76 +266,62 @@ export const ignitionData = {
 
 	dropData1: [
 		{
-			id: "assess",
 			name: "Quick Assessments",
 			nest: "Our skilled technicians conduct quick assessments of broken door locks and ignitions, determining the most suitable repair or replacement option.",
 		},
 		{
-			id: "rely",
 			name: "Reliable Repairs",
 			nest: "Count on us for reliable repairs, where possible, to fix broken door locks and ignitions effectively, saving you the cost of replacements.",
 		},
 		{
-			id: "selection",
 			name: "Wide Selection of Replacements",
 			nest: "If repairs are not possible, we provide a wide selection of high-quality replacements for your convenience and needs.",
 		},
 	],
 	dropData2: [
 		{
-			id: "reserve",
 			name: "No Advance Reservations Needed",
 			nest: "You don't need to make advance reservations for diagnosis; simply reach out to us, and our team will be ready to assist you.",
 		},
 		{
-			id: "sched",
 			name: "Scheduled Repairs & Replacements",
 			nest: "Our work on repairs or replacements takes no more than a full day, and we schedule it in advance to ensure a smooth process.",
 		},
 		{
-			id: "cust",
 			name: "Customer Satisfaction",
 			nest: "We prioritize customer satisfaction and strive to exceed your expectations with every replacement service, offering professional and friendly assistance throughout the process.",
 		},
 	],
 	dropData3: [
 		{
-			id: "ign",
 			name: "Can you repair my broken ignition?",
 			nest: "Yes, we can conduct a quick assessment, and if possible, we will provide reliable repairs for your broken ignition.",
 		},
 		{
-			id: "door",
 			name: "What if my door lock is beyond repair?",
 			nest: "If your door lock is beyond repair, we offer a wide selection of replacement options to suit your needs.",
 		},
 		{
-			id: "long",
 			name: "How long does it take to repair or replace a lock or ignition?",
 			nest: "Our skilled technicians can typically complete repairs or replacements within a full day, depending on the complexity.",
 		},
 		{
-			id: "reserv",
 			name: "Do I need to make a reservation for a diagnosis?",
 			nest: "No, you do not need to make advance reservations. Contact us, and our team will promptly assess your lock or ignition.",
 		},
 		{
-			id: "entr",
 			name: "Can you fix keyless entry problems?",
 			nest: "Yes, we offer auto locksmith services to resolve keyless entry issues, including broken proximity twist ignition knobs.",
 		},
 		{
-			id: "genu",
 			name: "Do you provide genuine replacement parts for ignition knobs?",
 			nest: "Yes, we offer genuine replacement twist ignition knobs from reputable brands like Mazda, Suzuki, Mitsubishi, and Honda.",
 		},
 		{
-			id: "skil",
 			name: "Are your locksmiths skilled and professional?",
 			nest: "Absolutely, our locksmiths are highly skilled and trained professionals with extensive experience in handling ignition and door lock repairs.",
 		},
 		{
-			id: "satis",
 			name: "Is customer satisfaction guaranteed?",
 			nest: "Yes, at B-Max, we prioritize customer satisfaction and aim to deliver top-quality ignition and door lock repair services that leave you satisfied and pleased with our work.",
 		},
@@ -446,42 +407,34 @@ export const emergencyData = {
 
 	dropData: [
 		{
-			id: "locked",
 			name: "What should I do if I'm locked out of my car?",
 			nest: "If you're locked out of your car, contact us immediately, and our skilled locksmiths will swiftly come to your location for assistance.",
 		},
 		{
-			id: "damage",
 			name: "Will unlocking my car cause any damage?",
 			nest: "No, we use specialized equipment and techniques for damage-free car unlocking, ensuring the safety of your vehicle.",
 		},
 		{
-			id: "quick",
 			name: "How quickly can you unlock my car?",
 			nest: "Our team ensures prompt unlocking services, and we strive to reach you as quickly as possible to resolve your locked-out situation.",
 		},
 		{
-			id: "cost",
 			name: "What is the cost of car unlocking service?",
 			nest: "Prices may vary based on the car model and location. Rest assured, we offer competitive pricing and no hidden fees.",
 		},
 		{
-			id: "any",
 			name: "Can you unlock any car model?",
 			nest: "Yes, our skilled team is well-versed in unlocking various car models, providing efficient solutions tailored to your specific vehicle.",
 		},
 		{
-			id: "avail",
 			name: "Is your car unlocking service available 24/7?",
 			nest: "Yes, we offer 24/7 car unlocking services to assist you whenever you encounter a lockout emergency.",
 		},
 		{
-			id: "mobile",
 			name: "Do you offer mobile car unlocking services?",
 			nest: "Yes, we provide mobile unlocking services and will come to your location for added convenience.",
 		},
 		{
-			id: "certif",
 			name: "Are your locksmiths trained and certified?",
 			nest: "Absolutely, our locksmiths are highly trained and certified professionals with extensive experience in car unlocking services.",
 		},
@@ -525,68 +478,56 @@ export const fleetData = {
 	],
 	dropData1: [
 		{
-			id: "live",
 			name: "Live GPS Fleet Tracking",
-			next: "Monitor and protect your fleet assets from theft or harm with our advanced real-time GPS tracking software.",
+			nest: "Monitor and protect your fleet assets from theft or harm with our advanced real-time GPS tracking software.",
 		},
 		{
-			id: "fleet",
 			name: "Fleet Lock",
-			next: "With our fleet management solutions, you have the ability to activate the vehicle lock through our fleet vehicle tracking app. Rest assured that no vehicle in your fleet will start without your authorization.",
+			nest: "With our fleet management solutions, you have the ability to activate the vehicle lock through our fleet vehicle tracking app. Rest assured that no vehicle in your fleet will start without your authorization.",
 		},
 		{
-			id: "alert",
 			name: "Live Alerts",
-			next: "Receive real-time alerts for overspeeding, entry/exit points, monitor idling, and stay updated with vehicle services and maintenance alerts.",
+			nest: "Receive real-time alerts for overspeeding, entry/exit points, monitor idling, and stay updated with vehicle services and maintenance alerts.",
 		},
 	],
 	dropData2: [
 		{
-			id: "mgmt",
 			name: "Manage Fleet Operations",
-			next: "Effortlessly manage daily fleet operations with a click. Monitor drivers, assignments, and real-time geolocation with ease.",
+			nest: "Effortlessly manage daily fleet operations with a click. Monitor drivers, assignments, and real-time geolocation with ease.",
 		},
 		{
-			id: "health",
 			name: "Health Monitoring",
-			next: "Access comprehensive diagnostic, mileage, and health reports for all fleet vehicles. Ensure your fleet's well-being and focus on business expansion with peace of mind.",
+			nest: "Access comprehensive diagnostic, mileage, and health reports for all fleet vehicles. Ensure your fleet's well-being and focus on business expansion with peace of mind.",
 		},
 		{
-			id: "cost",
 			name: "Fuel Cost Management",
-			next: "Leverage our commercial GPS fleet tracking to significantly reduce fuel expenses. Track driving behavior, minimize idling time, and effectively cut down on fuel-related costs.",
+			nest: "Leverage our commercial GPS fleet tracking to significantly reduce fuel expenses. Track driving behavior, minimize idling time, and effectively cut down on fuel-related costs.",
 		},
 	],
 	dropData3: [
 		{
-			id: "cruic",
 			name: "What is fleet management, and why is it crucial for businesses?",
-			next: "Fleet management is the strategic oversight and optimization of a group of vehicles, encompassing various activities like tracking, maintenance, fuel management, and driver management. It is crucial for businesses as it ensures operational efficiency, cost control, compliance with regulations, improved safety measures, and heightened customer satisfaction levels.",
+			nest: "Fleet management is the strategic oversight and optimization of a group of vehicles, encompassing various activities like tracking, maintenance, fuel management, and driver management. It is crucial for businesses as it ensures operational efficiency, cost control, compliance with regulations, improved safety measures, and heightened customer satisfaction levels.",
 		},
 		{
-			id: "key",
 			name: "What are the key components and intricacies involved in effective fleet management?",
-			next: "Effective fleet management involves an intricate interplay of key components, including vehicle telematics and tracking systems, proactive maintenance scheduling, fuel management strategies, driver performance monitoring, compliance management mechanisms, and comprehensive asset management frameworks. The integration and harmonization of these components are crucial for achieving optimal fleet performance and maximizing returns on investment.",
+			nest: "Effective fleet management involves an intricate interplay of key components, including vehicle telematics and tracking systems, proactive maintenance scheduling, fuel management strategies, driver performance monitoring, compliance management mechanisms, and comprehensive asset management frameworks. The integration and harmonization of these components are crucial for achieving optimal fleet performance and maximizing returns on investment.",
 		},
 		{
-			id: "red",
 			name: "How do fleet management solutions help in reducing costs for businesses?",
-			next: "Fleet management solutions play a pivotal role in cost reduction by optimizing various operational aspects. These solutions facilitate efficient route planning, minimize idle time, improve fuel efficiency through advanced fuel management techniques, schedule timely vehicle maintenance to prevent breakdowns, monitor driver behavior to reduce risks, and enable proactive measures for cost control. By implementing these strategies, businesses can significantly reduce their expenses and enhance their financial performance.",
+			nest: "Fleet management solutions play a pivotal role in cost reduction by optimizing various operational aspects. These solutions facilitate efficient route planning, minimize idle time, improve fuel efficiency through advanced fuel management techniques, schedule timely vehicle maintenance to prevent breakdowns, monitor driver behavior to reduce risks, and enable proactive measures for cost control. By implementing these strategies, businesses can significantly reduce their expenses and enhance their financial performance.",
 		},
 		{
-			id: "advan",
 			name: "What are the significant advantages and value propositions of implementing a comprehensive fleet management system?",
-			next: "Implementing a comprehensive fleet management system offers several advantages and value propositions for businesses. It leads to increased productivity through streamlined operations, reduced fuel consumption and associated costs, improved driver safety through real-time monitoring and safety protocols, optimized vehicle utilization through effective scheduling and resource allocation, enhanced customer service with accurate tracking and timely deliveries, and streamlined compliance management to adhere to regulatory requirements and avoid penalties.",
+			nest: "Implementing a comprehensive fleet management system offers several advantages and value propositions for businesses. It leads to increased productivity through streamlined operations, reduced fuel consumption and associated costs, improved driver safety through real-time monitoring and safety protocols, optimized vehicle utilization through effective scheduling and resource allocation, enhanced customer service with accurate tracking and timely deliveries, and streamlined compliance management to adhere to regulatory requirements and avoid penalties.",
 		},
 		{
-			id: "reg",
 			name: "How does fleet management ensure regulatory compliance, and what are the key aspects involved?",
-			next: "Fleet management systems play a pivotal role in ensuring regulatory compliance by providing necessary tools and functionalities to meet legal requirements. They assist in monitoring and maintaining driver hours of service records, conducting regular vehicle inspections and maintenance checks, managing compliance with safety standards and environmental regulations, and generating comprehensive reports for audits and regulatory submissions. By incorporating these aspects, businesses can effectively adhere to regulatory frameworks and avoid legal complications.",
+			nest: "Fleet management systems play a pivotal role in ensuring regulatory compliance by providing necessary tools and functionalities to meet legal requirements. They assist in monitoring and maintaining driver hours of service records, conducting regular vehicle inspections and maintenance checks, managing compliance with safety standards and environmental regulations, and generating comprehensive reports for audits and regulatory submissions. By incorporating these aspects, businesses can effectively adhere to regulatory frameworks and avoid legal complications.",
 		},
 		{
-			id: "cust",
 			name: "Can fleet management systems be customized to meet specific business needs and operational requirements?",
-			next: "Yes, fleet management systems can be highly customizable to cater to the specific needs and operational requirements of businesses. These systems can be tailored to track specialized assets, integrate seamlessly with existing software and IT infrastructure, generate custom reports with specific data points and metrics, and offer flexible user interfaces to align with unique business workflows. By customizing fleet management systems, businesses can leverage technology to its fullest potential and achieve maximum efficiency.",
+			nest: "Yes, fleet management systems can be highly customizable to cater to the specific needs and operational requirements of businesses. These systems can be tailored to track specialized assets, integrate seamlessly with existing software and IT infrastructure, generate custom reports with specific data points and metrics, and offer flexible user interfaces to align with unique business workflows. By customizing fleet management systems, businesses can leverage technology to its fullest potential and achieve maximum efficiency.",
 		},
 	],
 };
