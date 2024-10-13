@@ -31,23 +31,25 @@ export default function page() {
 				<AlternateImage img={`${emergencyData.location}/landing.jpg`} />
 			</Alternating>
 			{/* counter */}
-			<div className="flex justify-center items-center gap-10">
+			<div className="px-4 xl:px-40 w-full xl:w-1/2 flex flex-col md:flex-row justify-center xl:justify-between items-center gap-8 xl:gap-10 pb-8">
 				{emergencyData.counter.map(({ number, symbol, text }, index) => {
 					return (
 						<div
 							key={index}
 							className="flex flex-col justify-center items-center"
 						>
-							<h1 className="text-5xl font-mono">
+							<h1 className="text-6xl lg:text-6xl font-mono font-black">
 								<AnimatedCounter from={0} to={number} />
 								{symbol}
 							</h1>
-							<p className="w-full text-neutral-900 text-lg">{text}</p>
+							<p className="w-full text-neutral-900 text-2xl font-semibold uppercase text-center">
+								{text}
+							</p>
 						</div>
 					);
 				})}
 			</div>
-			<div className="px-4 xl:px-44 grid grid-cols-1 md:grid-cols-2 gap-16 gap-x-24 md:gap-x-12">
+			<div className="w-full px-4 xl:px-44 grid grid-cols-1 md:grid-cols-2 gap-16 gap-x-24 md:gap-x-12 ">
 				<GenerateCard icons={iconList} data={emergencyData.cards} />
 			</div>
 			<div className="w-full flex flex-col justify-center items-center py-8">

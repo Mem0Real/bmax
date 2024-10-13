@@ -159,17 +159,7 @@ export default function GenerateSolution({ data, bgImage }) {
 					</p>
 				</div>
 
-				<BackgroundCard
-					location={data.location}
-					data={data.background.bgs}
-
-					// header1={data.background.bg1.header}
-					// text1={data.background.bg1.text}
-					// header2={data.background.bg2.header}
-					// text2={data.background.bg2.text}
-					// header3={data.background.bg3.header}
-					// text3={data.background.bg3.text}
-				/>
+				<BackgroundCard location={data.location} data={data.background.bgs} />
 			</div>
 			<Alternating>
 				<AlternateImage img={`${data.location}/alt3.png`} />

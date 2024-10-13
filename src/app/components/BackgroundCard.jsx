@@ -32,46 +32,6 @@ export default function BackgroundCard({
 					</div>
 				);
 			})}
-			{/* <div
-				className="w-full md:w-[30%] h-[25rem] md:h-[30rem] bg-no-repeat bg-cover bg-center flex flex-col justify-end items-center p-6 rounded-xl"
-				style={{
-					backgroundImage: `url("/images/${location}/bg1.jpg")`,
-					backdropFilter: "brightness 0.4",
-				}}
-			>
-				<div className="flex flex-col gap-5 text-white min-h-12 md:min-h-44 lg:min-h-36 xl:min-h-32 backdrop-blur-sm backdrop-brightness-50 px-2">
-					<h1 className="text-xl font-base text-darkYellow capitalize">
-						{header1}
-					</h1>
-					<p className="font-medium">{text1}</p>
-				</div>
-			</div>
-			<div
-				className="w-full md:w-[30%] h-[25rem] md:h-[30rem] bg-no-repeat bg-cover bg-center flex flex-col justify-end items-center p-6 rounded-xl"
-				style={{
-					backgroundImage: `url("/images/${location}/bg2.jpg")`,
-				}}
-			>
-				<div className="flex flex-col gap-5 text-white min-h-24 md:min-h-44 lg:min-h-36 xl:min-h-32 backdrop-blur-sm backdrop-brightness-50 px-2">
-					<h1 className="text-xl font-base text-darkYellow capitalize">
-						{header2}
-					</h1>
-					<p className="font-medium">{text2}</p>
-				</div>
-			</div>
-			<div
-				className="w-full md:w-[30%] h-[25rem] md:h-[30rem] bg-no-repeat bg-cover bg-center flex flex-col justify-end items-center p-6 rounded-xl"
-				style={{
-					backgroundImage: `url("/images/${location}/bg3.jpg")`,
-				}}
-			>
-				<div className="flex flex-col gap-5 text-white min-h-24 md:min-h-44 lg:min-h-36 xl:min-h-32 backdrop-blur-sm backdrop-brightness-50 px-2">
-					<h1 className="text-xl font-base text-darkYellow capitalize">
-						{header3}
-					</h1>
-					<p className="font-medium">{text3}</p>
-				</div>
-			</div> */}
 		</div>
 	);
 }
