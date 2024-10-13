@@ -8,7 +8,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useIcons } from "../components/CustomIcons";
 
 export default function KeyReplace() {
-	const [selected, setSelected] = useState("");
+	const [selectedOne, setSelectedOne] = useState("");
+	const [selectedTwo, setSelectedTwo] = useState("");
 
 	const { PlusIcon, MinusIcon } = useIcons();
 
@@ -27,6 +28,24 @@ export default function KeyReplace() {
 			id: "emergency",
 			name: "Emergency car key replacement",
 			nest: "Facing a car key emergency? We've got your back. Our 24/7 emergency car key replacement services are just a call away. Whether you've lost your car keys or require a swift replacement, our expert locksmiths are here to assist. Don't stress over lost keys; contact us for urgent car key replacement, anytime, anywhere.",
+		},
+	];
+
+	const dropData2 = [
+		{
+			id: "afford",
+			name: "Affordable Car Key Replacement",
+			nest: "Are you searching for an affordable car key replacement service near you? Look no further. At B-Max, we understand the importance of cost-effective solutions. Our budget-friendly car key cutting services are designed to fit your wallet. When you need a car key replacement that won't break the bank, we're here for you. Don't compromise on quality for price, trust B-Max for reasonable car key replacement costs.",
+		},
+		{
+			id: "lostSol",
+			name: "Lost Car Key Solutions",
+			nest: "Have you lost your car keys and find yourself wondering what to do next? B-Max has the answer. Our professional lost car key replacement services are at your disposal. We know how stressful losing car keys can be, and that's why we specialize in the recovery and fast replacement of lost car keys. Our skilled locksmiths are dedicated to providing fast, efficient, and hassle-free solutions. If you're seeking lost car key locksmith services, you've come to the right place. Don't stress, contact B-Max today.",
+		},
+		{
+			id: "fob",
+			name: "Key Fob Replacement",
+			nest: "When it comes to key fob replacement services, B-Max is your trusted partner. Our expertise extends beyond traditional car keys to include keyless entry remotes and car key fob battery replacements. Wondering where to buy a key fob for your car? Look no further. B-Max is your one-stop destination for quality key fob solutions. If you've lost your key fob and need a replacement, or if your key fob battery needs changing, we're here to help. Keep your vehicle secure and operational with B-Max's key fob expertise.",
 		},
 	];
 	return (
@@ -62,7 +81,8 @@ export default function KeyReplace() {
 					replacement, trust us for efficient and professional assistance.
 				</p>
 			</div>
-			<div className="w-full flex flex-col md:flex-row justify-center items-start gap-8 md:gap-3 lg:gap-4">
+			{/* alternating */}
+			<div className="w-full flex flex-col md:flex-row justify-center items-start gap-8 md:gap-3 lg:gap-4 pb-8">
 				<div className="basis-1/2 relative w-full h-[35rem]">
 					<Image
 						src="/images/replacement-page/keys.png"
@@ -88,8 +108,12 @@ export default function KeyReplace() {
 								layout
 							>
 								<motion.div
-									className="bg-mellow/70 py-8 ps-4 pe-2 flex justify-between items-center cursor-pointer"
-									onClick={() => setSelected((prev) => (prev === id ? "" : id))}
+									className={`${
+										selectedOne === id ? "bg-mellow" : "bg-mellow/50"
+									} py-8 ps-4 pe-2 flex justify-between items-center cursor-pointer`}
+									onClick={() =>
+										setSelectedOne((prev) => (prev === id ? "" : id))
+									}
 									layout="position"
 									transition={{
 										type: "spring",
@@ -99,19 +123,19 @@ export default function KeyReplace() {
 								>
 									<h1 className=" text-2xl font-semibold uppercase">{name}</h1>
 									<h3 className="w-8 text-neutral-900">
-										{selected !== id ? PlusIcon : MinusIcon}
+										{selectedOne !== id ? PlusIcon : MinusIcon}
 									</h3>
 								</motion.div>
 
 								<AnimatePresence>
-									{selected === id && (
+									{selectedOne === id && (
 										<motion.div
 											key="dropdown"
 											initial={{ height: 0, opacity: 0 }}
 											animate={{ height: "auto", opacity: 1 }}
 											exit={{ height: 0, opacity: 0 }}
 											transition={{ ease: "easeInOut", duration: 0.2 }}
-											className="overflow-hidden w-[80%] mx-auto"
+											className="overflow-hidden w-[90%] mx-auto text-base"
 											layout
 										>
 											{nest}
@@ -121,6 +145,70 @@ export default function KeyReplace() {
 							</motion.div>
 						))}
 					</div>
+				</div>
+			</div>
+			<div className="w-full flex flex-col md:flex-row justify-center items-start gap-8 md:gap-3 lg:gap-4 pb-8">
+				<div className="basis-1/2 flex flex-col justify-center items-start gap-8">
+					<h1 className="text-3xl font-bold uppercase">
+						Reliable Replacement Services
+					</h1>
+					<p className="text-base text-neutral-950/90">
+						Trust us for efficient, professional assistance, whether you've
+						lost, need a spare, or require a damaged key replacement.
+					</p>
+					<div className="w-full flex flex-col justify-center items-stretch gap-2">
+						{dropData2.map(({ id, name, nest }) => (
+							<motion.div
+								key={id}
+								className="flex flex-col justify-center items-stretch gap-4"
+								layout
+							>
+								<motion.div
+									className={`${
+										selectedTwo === id ? "bg-mellow" : "bg-mellow/50"
+									} py-8 ps-4 pe-2 flex justify-between items-center cursor-pointer`}
+									onClick={() =>
+										setSelectedTwo((prev) => (prev === id ? "" : id))
+									}
+									layout="position"
+									transition={{
+										type: "spring",
+										stiffness: 600, // Higher values make it snappier
+										damping: 100, // Higher values reduce the bounciness
+									}}
+								>
+									<h1 className=" text-2xl font-semibold uppercase">{name}</h1>
+									<h3 className="w-8 text-neutral-900">
+										{selectedTwo !== id ? PlusIcon : MinusIcon}
+									</h3>
+								</motion.div>
+
+								<AnimatePresence>
+									{selectedTwo === id && (
+										<motion.div
+											key="dropdown"
+											initial={{ height: 0, opacity: 0 }}
+											animate={{ height: "auto", opacity: 1 }}
+											exit={{ height: 0, opacity: 0 }}
+											transition={{ ease: "easeInOut", duration: 0.2 }}
+											className="overflow-hidden w-[90%] mx-auto text-base"
+											layout
+										>
+											{nest}
+										</motion.div>
+									)}
+								</AnimatePresence>
+							</motion.div>
+						))}
+					</div>
+				</div>
+				<div className="basis-1/2 relative w-full h-[35rem]">
+					<Image
+						src="/images/replacement-page/key-bunch.png"
+						fill
+						className="object-contain object-center absolute"
+						alt="Replacement"
+					/>
 				</div>
 			</div>
 		</div>
