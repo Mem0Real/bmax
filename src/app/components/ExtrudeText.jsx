@@ -16,6 +16,7 @@ export default function ExtrudeText({ dropData, className }) {
 					key={id}
 					className="flex flex-col justify-center items-stretch gap-4"
 					layout
+					transition={{ ease: "easeInOut", duration: 0.4 }}
 				>
 					<motion.div
 						className={`${
@@ -29,11 +30,7 @@ export default function ExtrudeText({ dropData, className }) {
 						} py-8 ps-4 pe-2 flex justify-between items-center cursor-pointer`}
 						onClick={() => setSelected((prev) => (prev === id ? "" : id))}
 						layout="position"
-						transition={{
-							type: "spring",
-							stiffness: 600, // Higher values make it snappier
-							damping: 100, // Higher values reduce the bounciness
-						}}
+						transition={{ ease: "easeInOut" }}
 					>
 						<h1 className="text-xl md:text-2xl font-medium capitalize">
 							{name}
