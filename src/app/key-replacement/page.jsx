@@ -49,7 +49,7 @@ export default function KeyReplace() {
 		},
 	];
 	return (
-		<div className="px-4 md:px-12 xl:px-48 w-full min-h-[90vh] my-auto flex flex-col justify-center items-center text-neutral-950 gap-16">
+		<div className="px-4 xl:px-48 w-full min-h-[90vh] my-auto flex flex-col justify-center items-center text-neutral-950 lg:gap-16">
 			<div className="w-full flex flex-col md:flex-row justify-center items-center">
 				<div className="basis-[40%] flex flex-col justify-center items-start gap-8">
 					<h1 className="text-5xl font-medium uppercase">
@@ -63,7 +63,7 @@ export default function KeyReplace() {
 					</p>
 				</div>
 
-				<div className="basis-[60%] relative w-full h-[35rem]">
+				<div className="lg:basis-[60%] relative w-full h-[35rem]">
 					<Image
 						src="/images/replacement-page/landing.jpg"
 						fill
@@ -72,18 +72,18 @@ export default function KeyReplace() {
 					/>
 				</div>
 			</div>
-			<div className="w-full flex flex-col justify-center items-center py-12">
+			<div className="w-full flex flex-col justify-center items-center py-12 gap-8 lg:gap-0">
 				<h1 className="text-5xl font-semibold uppercase text-center">
 					How to replace your car keys
 				</h1>
-				<p className="text-base text-neutral-950/90">
+				<p className="text-base text-neutral-950/90 w-[90%] md:w-[60%] lg:w-auto text-center lg:text-balance">
 					Whether you've lost your keys, need a spare, or require a damaged key
 					replacement, trust us for efficient and professional assistance.
 				</p>
 			</div>
 			{/* alternating */}
 			<div className="w-full flex flex-col md:flex-row justify-center items-start gap-8 md:gap-3 lg:gap-4 pb-8">
-				<div className="basis-1/2 relative w-full h-[35rem]">
+				<div className="lg:basis-1/2 relative w-full h-[35rem]">
 					<Image
 						src="/images/replacement-page/keys.png"
 						fill
@@ -148,7 +148,7 @@ export default function KeyReplace() {
 				</div>
 			</div>
 			<div className="w-full flex flex-col md:flex-row justify-center items-start gap-8 md:gap-3 lg:gap-4 pb-8">
-				<div className="basis-1/2 flex flex-col justify-center items-start gap-8">
+				<div className="order-2 lg:order-1 basis-1/2 flex flex-col justify-center items-start gap-8">
 					<h1 className="text-3xl font-bold uppercase">
 						Reliable Replacement Services
 					</h1>
@@ -202,7 +202,7 @@ export default function KeyReplace() {
 						))}
 					</div>
 				</div>
-				<div className="basis-1/2 relative w-full h-[35rem]">
+				<div className="order-1 lg:order-2 lg:basis-1/2 relative w-full h-[35rem]">
 					<Image
 						src="/images/replacement-page/key-bunch.png"
 						fill
