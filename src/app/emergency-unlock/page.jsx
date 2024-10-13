@@ -63,37 +63,30 @@ export default function page() {
 			<div className="flex justify-center items-center">
 				<h1 className="text-5xl">Count Animation</h1>
 			</div>
-			<div className="grid grid-cols-1 md:grid-cols-2 gap-16 gap-x-24 md:gap-x-12">
+			<div className="px-4 xl:px-44 grid grid-cols-1 md:grid-cols-2 gap-16 gap-x-24 md:gap-x-12">
 				<GenerateCard list={cardList} />
 			</div>
 			<div className="w-full flex flex-col justify-center items-center py-8">
-				{/* <div className="flex flex-col md:flex-row justify-center items-center gap-8">
-					<div className="flex flex-col justify-center items-center gap-12">
-						
-					</div>
-				</div> */}
 				<HoverCard location={emergencyData.location} />
-				{/* <div className="w-full flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 xl:gap-16 overflow-hidden">
-					<motion.h1
-						className="text-black"
-						animate={hovered === "1" ? { color: "#f2f1c" } : { color: "#000" }}
-					>
-						CHANGE ME
-					</motion.h1>
-					<motion.h1
-						className="text-black"
-						animate={hovered === "2" ? { color: "#f2f1c" } : { color: "#000" }}
-					>
-						CHANGE ME
-					</motion.h1>
-					<motion.h1
-						className="text-black"
-						animate={hovered === "3" ? { color: "#f2f1c" } : { color: "#000" }}
-					>
-						CHANGE ME
-					</motion.h1>
-				</div> */}
 			</div>
+			<Alternating>
+				<AlternateImage img={`${emergencyData.location}/alt1.png`} />
+				<AlternateText
+					header={emergencyData.alt1.header}
+					detail={emergencyData.alt1.text}
+					address={emergencyData.linkSrc}
+					linkText={emergencyData.linkText}
+				/>
+			</Alternating>
+			<Alternating>
+				<AlternateText
+					header={emergencyData.alt2.header}
+					detail={emergencyData.alt2.text}
+					address={emergencyData.linkSrc}
+					linkText={emergencyData.linkText}
+				/>
+				<AlternateImage img={`${emergencyData.location}/alt2.png`} />
+			</Alternating>
 		</div>
 	);
 }
