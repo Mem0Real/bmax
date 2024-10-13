@@ -5,6 +5,7 @@ import Alternating from "../components/Alternating";
 import AlternateImage from "../components/AlternateImage";
 import AlternateText from "../components/AlternateText";
 import BackgroundCard from "../components/BackgroundCard";
+import { duplicateData } from "@/data/solutionPage";
 
 const dropData1 = [
 	{
@@ -94,15 +95,10 @@ export default function IgnitionRepair() {
 			>
 				<div className="ps-4 lg:ps-12 py-5 lg:py-0 flex flex-col justify-center items-center gap-2 lg:gap-8 backdrop-blur-3xl md:backdrop-blur-lg text-black">
 					<h1 className="text-2xl md:text-3xl xl:text-6xl font-medium uppercase">
-						Reliable Solutions for Broken Locks and Ignitions
+						{duplicateData.landing.header}
 					</h1>
 					<p className="text-base text-black/90 py-8 font-medium">
-						Contact us for guidance on broken door locks or ignitions. We can
-						fix many issues, and if replacement is needed, we offer a wide
-						selection of options. Our skilled technicians provide quick
-						assessments, repairs, and replacements, ensuring lasting solutions.
-						No advance reservations are necessary for diagnosis, and our
-						efficient repair or replacement work can be scheduled in advance.
+						{duplicateData.landing.text}
 					</p>
 				</div>
 			</div>

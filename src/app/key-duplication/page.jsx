@@ -7,6 +7,8 @@ import AlternateImage from "../components/AlternateImage";
 import ExtrudeText from "../components/ExtrudeText";
 import BackgroundCard from "../components/BackgroundCard";
 
+import { duplicateData } from "@/data/solutionPage";
+
 const dropData1 = [
 	{
 		id: "afford",
@@ -82,12 +84,10 @@ export default function KeyDuplicate() {
 			<div className="px-4 xl:px-48 w-full flex flex-col md:flex-row justify-center items-center pt-8 md:py-2 gap-4 md:gap-8">
 				<div className="basis-[40%] flex flex-col justify-start items-center md:items-start gap-4 md:gap-8">
 					<h1 className="text-3xl md:text-4xl font-medium uppercase text-center md:text-start">
-						Efficient Car Key Duplication Services
+						{duplicateData.landing.header}
 					</h1>
 					<p className="text-base text-neutral-950/90">
-						B-Max offers seamless car key duplication services, ensuring you get
-						spare keys affordably and efficiently. Trust our experts for
-						hassle-free solutions.
+						{duplicateData.landing.text}
 					</p>
 				</div>
 
@@ -102,422 +102,80 @@ export default function KeyDuplicate() {
 			</div>
 			<div className="w-full flex flex-col justify-center items-center gap-2 md:gap-8 lg:gap-0">
 				<h1 className="text-3xl md:text-4xl font-medium uppercase text-center">
-					Replicating Chipped Keys
+					{duplicateData.headerText.header}
 				</h1>
 				<p className="text-base text-neutral-950/90 w-[90%] md:w-[60%] lg:w-auto text-center lg:text-balance">
-					We duplicate all types of transponder keys for over 5,000 vehicle
-					models, with a vast stock of transponders for various makes.
+					{duplicateData.headerText.text}
 				</p>
 			</div>
 
 			<Alternating extrude>
 				<AlternateImage img="duplication-page/dup.png" />
 				<AlternateText
-					header="All your duplication services"
-					detail="B-Max Telematics offers efficient car key duplication services for
-						various scenarios, providing quick solutions while you wait."
+					header={duplicateData.alt1.header}
+					detail={duplicateData.alt1.text}
 				>
 					<ExtrudeText dropData={dropData1} />
 				</AlternateText>
 			</Alternating>
 			<Alternating extrude>
 				<AlternateText
-					header="Convenient and Efficient Key Duplication"
-					detail="Get your key copied while you wait with our convenient and efficient
-						key duplication service. We prioritize your time and convenience."
+					header={duplicateData.alt2.header}
+					detail={duplicateData.alt2.text}
 				>
 					<ExtrudeText dropData={dropData2} />
 				</AlternateText>
 				<AlternateImage img="duplication-page/conv.png" />
 			</Alternating>
 
-			{/* alternating */}
-			{/* <div className="w-full flex flex-col md:flex-row justify-center items-start gap-8 md:gap-3 lg:gap-4">
-				<div className="lg:basis-1/2 relative w-full h-[20rem] md:h-[25rem] lg:h-[30rem]">
-					<Image
-						src="/images/duplication-page/dup.png"
-						fill
-						className="object-contain object-center absolute"
-						alt="Replacement"
-					/>
-				</div>
-				<div className="basis-1/2 flex flex-col justify-center items-start gap-8">
-					<h1 className="text-3xl md:text-4xl font-medium">
-						All your duplication services
-					</h1>
-					<p className="text-base text-neutral-950/90">
-						B-Max Telematics offers efficient car key duplication services for
-						various scenarios, providing quick solutions while you wait.
-					</p>
-					<div className="w-full flex flex-col justify-center items-stretch gap-2">
-						{dropData1.map(({ id, name, nest }) => (
-							<motion.div
-								key={id}
-								className="flex flex-col justify-center items-stretch gap-4"
-								layout
-							>
-								<motion.div
-									className={`${
-										selectedOne === id ? "bg-mellow" : "bg-mellow/50"
-									} py-8 ps-4 pe-2 flex justify-between items-center cursor-pointer`}
-									onClick={() =>
-										setSelectedOne((prev) => (prev === id ? "" : id))
-									}
-									layout="position"
-									transition={{
-										type: "spring",
-										stiffness: 600, // Higher values make it snappier
-										damping: 100, // Higher values reduce the bounciness
-									}}
-								>
-									<h1 className="text-xl md:text-2xl font-medium capitalize">
-										{name}
-									</h1>
-									<h3 className="w-8 text-neutral-900">
-										{selectedOne !== id ? PlusIcon : MinusIcon}
-									</h3>
-								</motion.div>
-
-								<AnimatePresence>
-									{selectedOne === id && (
-										<motion.div
-											key="dropdown"
-											initial={{ height: 0, opacity: 0 }}
-											animate={{ height: "auto", opacity: 1 }}
-											exit={{ height: 0, opacity: 0 }}
-											transition={{ ease: "easeInOut", duration: 0.2 }}
-											className="overflow-hidden w-[90%] mx-auto text-base"
-											layout
-										>
-											{nest}
-										</motion.div>
-									)}
-								</AnimatePresence>
-							</motion.div>
-						))}
-					</div>
-				</div>
-			</div>
-			<div className="w-full flex flex-col md:flex-row justify-center items-start gap-8 md:gap-3 lg:gap-4 pb-8">
-				<div className="order-2 lg:order-1 basis-1/2 flex flex-col justify-center items-start gap-8">
-					<h1 className="text-3xl md:text-4xl font-medium">
-						Convenient and Efficient Key Duplication
-					</h1>
-					<p className="text-base text-neutral-950/90">
-						Get your key copied while you wait with our convenient and efficient
-						key duplication service. We prioritize your time and convenience.
-					</p>
-					<div className="w-full flex flex-col justify-center items-stretch gap-2">
-						{dropData2.map(({ id, name, nest }) => (
-							<motion.div
-								key={id}
-								className="flex flex-col justify-center items-stretch gap-4"
-								layout
-							>
-								<motion.div
-									className={`${
-										selectedTwo === id ? "bg-mellow" : "bg-mellow/50"
-									} py-8 ps-4 pe-2 flex justify-between items-center cursor-pointer`}
-									onClick={() =>
-										setSelectedTwo((prev) => (prev === id ? "" : id))
-									}
-									layout="position"
-									transition={{
-										type: "spring",
-										stiffness: 600, // Higher values make it snappier
-										damping: 100, // Higher values reduce the bounciness
-									}}
-								>
-									<h1 className="text-xl md:text-2xl font-medium capitalize">
-										{name}
-									</h1>
-									<h3 className="w-8 text-neutral-900">
-										{selectedTwo !== id ? PlusIcon : MinusIcon}
-									</h3>
-								</motion.div>
-
-								<AnimatePresence>
-									{selectedTwo === id && (
-										<motion.div
-											key="dropdown"
-											initial={{ height: 0, opacity: 0 }}
-											animate={{ height: "auto", opacity: 1 }}
-											exit={{ height: 0, opacity: 0 }}
-											transition={{ ease: "easeInOut", duration: 0.2 }}
-											className="overflow-hidden w-[90%] mx-auto text-base"
-											layout
-										>
-											{nest}
-										</motion.div>
-									)}
-								</AnimatePresence>
-							</motion.div>
-						))}
-					</div>
-				</div>
-				<div className="order-1 lg:order-2 lg:basis-1/2 relative w-full h-[20rem] md:h-[25rem] lg:h-[30rem]">
-					<Image
-						src="/images/duplication-page/conv.png"
-						fill
-						className="object-contain object-center absolute"
-						alt="Replacement"
-					/>
-				</div>
-			</div> */}
-
 			{/* background */}
 			<div className="flex flex-col w-full justify-center items-center gap-5">
 				<div className="flex flex-col justify-center items-center gap-2 text-center md:text-balance">
 					<h3 className="text-base md:text-lg text-neutral-900 capitalize font-medium">
-						Our Key Duplication Expertise
+						{duplicateData.background.title}
 					</h3>
 					<h2 className="text-2xl md:text-3xl font-medium text-mellow capitalize">
-						Car Key Duplication: Expert Solutions for Your Convenience
+						{duplicateData.background.header}
 					</h2>
 					<p className="text-base text-neutral-900/80 text-center">
-						When it comes to car key duplication, B-Max stands out with
-						precision, reliability, and advanced technology. Our expert
-						locksmiths excel in duplicating a wide range of car keys, from
-						traditional to smart keys. This expertise, coupled with
-						state-of-the-art key duplication technology, ensures you receive
-						flawless copies tailored to your specific needs. Discover the
-						convenience and efficiency of B-Max's key duplication services,
-						where your satisfaction and security are our top priorities.
+						{duplicateData.background.detail}
 					</p>
 				</div>
 
 				{/* images */}
 				<BackgroundCard
-					src1="duplication-page/bg1.jpg"
-					src2="duplication-page/bg2.jpg"
-					src3="duplication-page/bg3.jpg"
-					header1="Precision Duplication"
-					text1="Experience top-notch key duplication, tailored to your needs, ensuring the highest security for your vehicle."
-					header2="Key Variety"
-					text2="From traditional to smart keys, our experts handle them all, providing reliable, customized copies for your car's security."
-					header3="Fast Turnaround"
-					text3="At B-Max, we understand the urgency of car key replacement
-								needs. Our services are designed for quick turnaround times,
-								getting you back on the road promptly."
+					location={duplicateData.background.location}
+					header1={duplicateData.background.bg1.header}
+					text1={duplicateData.background.bg1.text}
+					header2={duplicateData.background.bg2.header}
+					text2={duplicateData.background.bg2.text}
+					header3={duplicateData.background.bg3.header}
+					text3={duplicateData.background.bg3.text}
 				/>
-				{/* <div className="w-full flex flex-col md:flex-row flex-shrink justify-evenly items-center pb-8 gap-6 md:gap-0">
-					<div
-						className="w-full md:w-[30%] h-[25rem] md:h-[30rem] bg-no-repeat bg-cover bg-center flex flex-col justify-end items-center p-6 rounded-xl"
-						style={{
-							backgroundImage: 'url("/images/duplication-page/bg1.jpg")',
-							backdropFilter: "brightness 0.4",
-						}}
-					>
-						<div className="flex flex-col gap-5 text-white min-h-24 md:min-h-44 lg:min-h-36 xl:min-h-32 backdrop-blur-sm backdrop-brightness-50 px-2">
-							<h1 className="text-xl font-base text-darkYellow capitalize">
-								Precision Duplication
-							</h1>
-							<p className="font-medium">
-								Experience top-notch key duplication, tailored to your needs,
-								ensuring the highest security for your vehicle.
-							</p>
-						</div>
-					</div>
-					<div
-						className="w-full md:w-[30%] h-[25rem] md:h-[30rem] bg-no-repeat bg-cover bg-center flex flex-col justify-end items-center p-6 rounded-xl"
-						style={{
-							backgroundImage: 'url("/images/duplication-page/bg2.jpg")',
-						}}
-					>
-						<div className="flex flex-col gap-5 text-white min-h-24 md:min-h-44 lg:min-h-36 xl:min-h-32 backdrop-blur-sm backdrop-brightness-50 px-2">
-							<h1 className="text-xl font-base text-darkYellow capitalize">
-								Key Variety
-							</h1>
-							<p className="font-medium">
-								From traditional to smart keys, our experts handle them all,
-								providing reliable, customized copies for your car's security.
-							</p>
-						</div>
-					</div>
-					<div
-						className="w-full md:w-[30%] h-[25rem] md:h-[30rem] bg-no-repeat bg-cover bg-center flex flex-col justify-end items-center p-6 rounded-xl"
-						style={{
-							backgroundImage: 'url("/images/duplication-page/bg3.jpg")',
-						}}
-					>
-						<div className="flex flex-col gap-5 text-white min-h-24 md:min-h-44 lg:min-h-36 xl:min-h-32 backdrop-blur-sm backdrop-brightness-50 px-2">
-							<h1 className="text-xl font-base text-darkYellow capitalize">
-								Fast Turnaround
-							</h1>
-							<p className="font-medium">
-								At B-Max, we understand the urgency of car key replacement
-								needs. Our services are designed for quick turnaround times,
-								getting you back on the road promptly.
-							</p>
-						</div>
-					</div>
-				</div> */}
 			</div>
 
 			<Alternating>
 				<AlternateImage img="duplication-page/alt2.png" />
 				<AlternateText
-					header="We Make You Spare Keys"
-					detail="At B-Max, we understand the importance of having spare keys for your
-						vehicle. That's why we offer efficient solutions for spare car keys
-						that prioritize your convenience and peace of mind. Our experienced
-						locksmiths use cutting-edge technology to create high-quality spare
-						keys tailored to your car's security system. Whether you need a
-						traditional key or a smart key with advanced features, we've got you
-						covered. We know that life can be unpredictable, and losing your car
-						keys or having them damaged is a hassle you don't want to deal with.
-						That's why we've designed our spare key services to be swift and
-						reliable, ensuring that you can get back on the road without
-						disruptions. Don't let the fear of losing your only set of car keys
-						hold you back. B-Max's efficient spare key solutions offer a
-						hassle-free experience, giving you the confidence and convenience
-						you deserve."
+					header={duplicateData.alt3.header}
+					detail={duplicateData.alt3.text}
 					linkText="Contact Us"
 					address="contact"
 				/>
 			</Alternating>
 			<Alternating>
 				<AlternateText
-					header="Key Duplication Made Easy"
-					detail="At B-Max, key duplication is a breeze. We understand the importance
-						of having spare keys for your vehicle, ensuring you're never locked
-						out or stranded due to a lost or damaged key. Our professional
-						locksmiths use state-of-the-art technology to provide efficient and
-						precise key duplication services. Whether you need an extra
-						traditional key or a smart key with advanced features, we can
-						quickly and accurately duplicate your key, guaranteeing seamless
-						compatibility with your vehicle's security system. With B-Max,
-						there's no need to worry about being locked out or stranded in
-						emergencies. Our key duplication services are designed for your
-						convenience and peace of mind. We prioritize efficiency, ensuring
-						that you have the spare keys you need when you need them. Discover
-						the ease of key duplication at B-Max and enjoy the confidence that
-						comes with having reliable spare keys at your fingertips. Don't let
-						a lost key disrupt your day, rely on B-Max for swift, professional
-						key duplication services."
+					header={duplicateData.alt4.header}
+					detail={duplicateData.alt4.text}
 					linkText="Contact Us"
 					address="contact"
 				/>
 				<AlternateImage img="duplication-page/alt1.png" />
 			</Alternating>
 
-			{/* alternating again */}
-			{/* <div className="w-full flex flex-col md:flex-row justify-center items-center gap-8 md:gap-3 lg:gap-4 pb-8">
-				<div className="lg:basis-1/2 relative w-full h-[20rem] md:h-[25rem] lg:h-[30rem]">
-					<Image
-						src="/images/duplication-page/alt1.png"
-						fill
-						className="object-contain object-center absolute"
-						alt="Replacement"
-					/>
-				</div>
-				<div className="basis-1/2 flex flex-col justify-center items-start gap-8">
-					<h1 className="text-3xl md:text-4xl font-medium">
-						We Make You Spare Keys
-					</h1>
-					<p className="text-base text-neutral-950/90">
-						At B-Max, we understand the importance of having spare keys for your
-						vehicle. That's why we offer efficient solutions for spare car keys
-						that prioritize your convenience and peace of mind. Our experienced
-						locksmiths use cutting-edge technology to create high-quality spare
-						keys tailored to your car's security system. Whether you need a
-						traditional key or a smart key with advanced features, we've got you
-						covered. We know that life can be unpredictable, and losing your car
-						keys or having them damaged is a hassle you don't want to deal with.
-						That's why we've designed our spare key services to be swift and
-						reliable, ensuring that you can get back on the road without
-						disruptions. Don't let the fear of losing your only set of car keys
-						hold you back. B-Max's efficient spare key solutions offer a
-						hassle-free experience, giving you the confidence and convenience
-						you deserve.
-					</p>
-				</div>
-			</div>
-			<div className="w-full flex flex-col md:flex-row justify-center items-center gap-8 md:gap-3 lg:gap-4 pb-8">
-				<div className="order-2 lg:order-1 basis-1/2 flex flex-col justify-center items-start gap-8">
-					<h1 className="text-3xl md:text-4xl font-medium capitalize">
-						Key Duplication Made Easy
-					</h1>
-					<p className="text-base text-neutral-950/90">
-						At B-Max, key duplication is a breeze. We understand the importance
-						of having spare keys for your vehicle, ensuring you're never locked
-						out or stranded due to a lost or damaged key. Our professional
-						locksmiths use state-of-the-art technology to provide efficient and
-						precise key duplication services. Whether you need an extra
-						traditional key or a smart key with advanced features, we can
-						quickly and accurately duplicate your key, guaranteeing seamless
-						compatibility with your vehicle's security system. With B-Max,
-						there's no need to worry about being locked out or stranded in
-						emergencies. Our key duplication services are designed for your
-						convenience and peace of mind. We prioritize efficiency, ensuring
-						that you have the spare keys you need when you need them. Discover
-						the ease of key duplication at B-Max and enjoy the confidence that
-						comes with having reliable spare keys at your fingertips. Don't let
-						a lost key disrupt your day, rely on B-Max for swift, professional
-						key duplication services.
-					</p>
-				</div>
-				<div className="order-1 lg:order-2 lg:basis-1/2 relative w-full h-[20rem] md:h-[25rem] lg:h-[30rem]">
-					<Image
-						src="/images/duplication-page/alt2.png"
-						fill
-						className="object-contain object-center absolute"
-						alt="Replacement"
-					/>
-				</div>
-			</div> */}
-
 			<div className="px-4 xl:px-48 w-full flex flex-col justify-center items-stretch gap-2 pb-12">
 				<ExtrudeText dropData={dropData3} className="bg-neutral-200/80" />
 			</div>
-			{/* extruding */}
-			{/* <div className="w-full flex flex-col justify-center items-stretch gap-2 pb-12">
-				{dropData3.map(({ id, name, nest }) => (
-					<motion.div
-						key={id}
-						className="flex flex-col justify-center items-stretch gap-4"
-						layout
-					>
-						<motion.div
-							className={`${
-								selectedThree === id ? "bg-neutral-200/80" : ""
-							} py-8 ps-4 pe-2 flex justify-between items-center cursor-pointer`}
-							onClick={() =>
-								setSelectedThree((prev) => (prev === id ? "" : id))
-							}
-							layout="position"
-							transition={{
-								type: "spring",
-								stiffness: 200, // Higher values make it snappier
-								damping: 100, // Higher values reduce the bounciness
-							}}
-						>
-							<h1 className="text-xl md:text-2xl font-medium capitalize">
-								{name}
-							</h1>
-							<h3 className="w-8 text-neutral-900">
-								{selectedThree !== id ? PlusIcon : MinusIcon}
-							</h3>
-						</motion.div>
-
-						<AnimatePresence>
-							{selectedThree === id && (
-								<motion.div
-									key="dropdown"
-									initial={{ height: 0, opacity: 0 }}
-									animate={{ height: "auto", opacity: 1 }}
-									exit={{ height: 0, opacity: 0 }}
-									transition={{ ease: "easeInOut", duration: 0.2 }}
-									className="overflow-hidden w-[90%] mx-auto text-base"
-									layout
-								>
-									{nest}
-								</motion.div>
-							)}
-						</AnimatePresence>
-					</motion.div>
-				))}
-			</div> */}
 		</div>
 	);
 }

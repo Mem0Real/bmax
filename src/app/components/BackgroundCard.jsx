@@ -7,16 +7,14 @@ export default function BackgroundCard({
 	text2,
 	header3,
 	text3,
-	src1,
-	src2,
-	src3,
+	location,
 }) {
 	return (
 		<div className="px-4 xl:px-48 w-full flex flex-col md:flex-row flex-shrink justify-evenly items-center pb-8 gap-6 md:gap-0">
 			<div
 				className="w-full md:w-[30%] h-[25rem] md:h-[30rem] bg-no-repeat bg-cover bg-center flex flex-col justify-end items-center p-6 rounded-xl"
 				style={{
-					backgroundImage: `url("/images/${src1}")`,
+					backgroundImage: `url("/images/${location}/bg1.jpg")`,
 					backdropFilter: "brightness 0.4",
 				}}
 			>
@@ -30,7 +28,7 @@ export default function BackgroundCard({
 			<div
 				className="w-full md:w-[30%] h-[25rem] md:h-[30rem] bg-no-repeat bg-cover bg-center flex flex-col justify-end items-center p-6 rounded-xl"
 				style={{
-					backgroundImage: `url("/images/${src2}")`,
+					backgroundImage: `url("/images/${location}/bg2.jpg")`,
 				}}
 			>
 				<div className="flex flex-col gap-5 text-white min-h-24 md:min-h-44 lg:min-h-36 xl:min-h-32 backdrop-blur-sm backdrop-brightness-50 px-2">
@@ -43,7 +41,7 @@ export default function BackgroundCard({
 			<div
 				className="w-full md:w-[30%] h-[25rem] md:h-[30rem] bg-no-repeat bg-cover bg-center flex flex-col justify-end items-center p-6 rounded-xl"
 				style={{
-					backgroundImage: `url("/images/${src3}")`,
+					backgroundImage: `url("/images/${location}/bg3.jpg")`,
 				}}
 			>
 				<div className="flex flex-col gap-5 text-white min-h-24 md:min-h-44 lg:min-h-36 xl:min-h-32 backdrop-blur-sm backdrop-brightness-50 px-2">

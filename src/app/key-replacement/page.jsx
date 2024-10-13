@@ -7,6 +7,8 @@ import AlternateImage from "../components/AlternateImage";
 import ExtrudeText from "../components/ExtrudeText";
 import BackgroundCard from "../components/BackgroundCard";
 
+import { placeData } from "@/data/solutionPage";
+
 const dropData1 = [
 	{
 		id: "lost",
@@ -87,13 +89,10 @@ export default function KeyReplace() {
 			<div className="px-4 xl:px-48 w-full flex flex-col md:flex-row justify-center items-center pt-8 md:py-2 gap-4 md:gap-8">
 				<div className="basis-[40%] flex flex-col justify-center items-center md:items-start gap-4 md:gap-8">
 					<h1 className="text-3xl md:text-4xl font-medium uppercase text-center md:text-start">
-						Car Key Replacement
+						{placeData.landing.header}
 					</h1>
 					<p className="text-base text-neutral-950/90">
-						Lost your car keys? Trust B-Max for efficient car key replacement
-						services by highly skilled locksmiths, using cutting-edge technology
-						for swift solutions and getting you back on the road with your car
-						keys intact. Trust B-Max for all your car key needs.
+						{placeData.landing.text}
 					</p>
 				</div>
 
@@ -108,28 +107,26 @@ export default function KeyReplace() {
 			</div>
 			<div className="w-full flex flex-col justify-center items-center gap-2 md:gap-8 lg:gap-0">
 				<h1 className="text-3xl md:text-4xl font-medium uppercase text-center">
-					How to replace your car keys
+					{placeData.headerText.header}
 				</h1>
 				<p className="text-base text-neutral-950/90 w-[90%] md:w-[60%] lg:w-auto text-center lg:text-balance">
-					Whether you've lost your keys, need a spare, or require a damaged key
-					replacement, trust us for efficient and professional assistance.
+					{placeData.headerText.text}
 				</p>
 			</div>
 
 			<Alternating extrude>
 				<AlternateImage img="replacement-page/keys.png" />
 				<AlternateText
-					header="Seamless Car Key Replacement Assistance"
-					detail="Seamless car key replacement with skilled locksmiths and advanced tech for a hassle-free experience."
+					header={placeData.alt1.header}
+					detail={placeData.alt1.text}
 				>
 					<ExtrudeText dropData={dropData1} />
 				</AlternateText>
 			</Alternating>
 			<Alternating extrude>
 				<AlternateText
-					header="Reliable Replacement Services"
-					detail="Trust us for efficient, professional assistance, whether you've
-						lost, need a spare, or require a damaged key replacement."
+					header={placeData.alt2.header}
+					detail={placeData.alt2.text}
 				>
 					<ExtrudeText dropData={dropData2} />
 				</AlternateText>
@@ -140,61 +137,39 @@ export default function KeyReplace() {
 			<div className="flex flex-col w-full justify-center items-center gap-5">
 				<div className="flex flex-col justify-center items-center gap-2 text-center md:text-balance">
 					<h3 className="text-base md:text-lg text-neutral-900 capitalize font-medium">
-						Expert Car Key Replacement Services
+						{placeData.background.title}
 					</h3>
 					<h2 className="text-2xl md:text-3xl font-medium text-mellow capitalize">
-						Swift, Affordable, and Reliable Solutions
+						{placeData.background.header}
 					</h2>
 					<p className="text-base text-neutral-900/80 text-center">
-						B-Max offers expert car key replacement services, ensuring swift,
-						affordable, and reliable solutions when you're locked out or need a
-						spare. Trust our skilled locksmiths for hassle-free key
-						replacements.
+						{placeData.background.detail}
 					</p>
 				</div>
 
 				<BackgroundCard
-					src1="replacement-page/bg1.jpg"
-					src2="replacement-page/bg2.jpg"
-					src3="replacement-page/bg3.jpg"
-					header1="Comprehensive Key Selection"
-					text1="Choose from a wide range of blank car keys suitable for all vehicle models."
-					header2="Cutting-Edge Transponder Chips"
-					text2="Cutting-Edge Transponder Chips"
-					header3="Keyless Entry Solutions"
-					text3="Experience the convenience of keyless entry with our authentic proximity keys."
+					location={placeData.background.location}
+					header1={placeData.background.bg1.header}
+					text1={placeData.background.bg1.text}
+					header2={placeData.background.bg2.header}
+					text2={placeData.background.bg2.text}
+					header3={placeData.background.bg3.header}
+					text3={placeData.background.bg3.text}
 				/>
 			</div>
 			<Alternating>
 				<AlternateImage img="replacement-page/merkey.png" />
 				<AlternateText
-					header="Comprehensive Car Key Replacement Solutions"
-					detail="Discover B-Max's comprehensive car key replacement services. Whether
-						you've lost your car keys, need a spare, or require a transponder
-						key, we've got you covered. Our skilled locksmiths are equipped with
-						the latest technology to swiftly replace your keys, ensuring you're
-						back on the road in no time. We specialize in a wide range of car
-						makes and models, offering affordable and efficient solutions. Don't
-						let lost or damaged keys disrupt your day. Contact B-Max for
-						hassle-free car key replacement services that prioritize your
-						convenience and security."
+					header={placeData.alt3.header}
+					detail={placeData.alt3.text}
 					linkText="Contact Us"
 					address="contact"
 				/>
 			</Alternating>
 			<Alternating>
 				<AlternateText
-					header="Swift and Reliable Car Key Replacements"
-					detail="At B-Max, we understand the frustration of losing car keys or
-						dealing with damaged ones. That's why we offer swift and reliable
-						car key replacement services. Our expert locksmiths are skilled in
-						handling various key types and car models, ensuring a hassle-free
-						experience. We utilize cutting-edge technology for precision and
-						accuracy, so you can trust us for seamless key replacements. Whether
-						you need a traditional key, transponder key, or smart key, we've got
-						the expertise to assist. Don't stress over lost or broken keys;
-						choose B-Max for quick and dependable car key replacements that get
-						you back behind the wheel without delay."
+					header={placeData.alt4.header}
+					detail={placeData.alt4.text}
 					linkText="Contact Us"
 					address="contact"
 				/>
