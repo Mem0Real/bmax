@@ -138,7 +138,6 @@ export default function CustomIcons({ children }) {
 			<path d="M16 12l-4-4-4 4M12 16V9" />
 		</svg>
 	);
-
 	const TelegramIcon = (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -525,7 +524,38 @@ export default function CustomIcons({ children }) {
 			<path d="M5 3a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5Zm14 18a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h4ZM5 11a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2H5Zm14 2a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4Z" />
 		</svg>
 	);
-
+	const PlusIcon = (
+		<svg
+			aria-hidden="true"
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+		>
+			<path
+				stroke="currentColor"
+				strokeLinecap="round"
+				strokeLinejoin="round"
+				strokeWidth="1.5"
+				d="M5 12h14m-7 7V5"
+			/>
+		</svg>
+	);
+	const MinusIcon = (
+		<svg
+			aria-hidden="true"
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+		>
+			<path
+				stroke="currentColor"
+				strokeLinecap="round"
+				strokeLinejoin="round"
+				strokeWidth="1.5"
+				d="M5 12h14"
+			/>
+		</svg>
+	);
 	return (
 		<IconsContext.Provider
 			value={{
@@ -558,6 +588,8 @@ export default function CustomIcons({ children }) {
 				ExpertIcon,
 				ScaleIcon,
 				InnovativeIcon,
+				PlusIcon,
+				MinusIcon,
 			}}
 		>
 			{children}
