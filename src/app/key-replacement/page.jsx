@@ -90,10 +90,10 @@ export default function KeyReplace() {
 	const { PlusIcon, MinusIcon } = useIcons();
 
 	return (
-		<div className="px-4 xl:px-48 w-full min-h-[90vh] my-auto flex flex-col justify-center items-center text-neutral-950 lg:gap-16">
-			<div className="w-full flex flex-col md:flex-row justify-center items-center">
-				<div className="basis-[40%] flex flex-col justify-center items-start gap-8">
-					<h1 className="text-5xl font-medium uppercase">
+		<div className="px-4 xl:px-48 w-full min-h-[90vh] my-auto flex flex-col justify-center items-center text-neutral-950 gap-10 md:gap-12 lg:gap-16 pt-12">
+			<div className="w-full flex flex-col md:flex-row justify-center items-center pt-8 md:py-2 gap-4 md:gap-8">
+				<div className="basis-[40%] flex flex-col justify-center items-center md:items-start gap-4 md:gap-8">
+					<h1 className="text-3xl md:text-4xl font-medium uppercase text-center md:text-start">
 						Car Key Replacement
 					</h1>
 					<p className="text-base text-neutral-950/90">
@@ -104,7 +104,7 @@ export default function KeyReplace() {
 					</p>
 				</div>
 
-				<div className="lg:basis-[60%] relative w-full h-[35rem]">
+				<div className="md:basis-[60%] relative w-full h-[20rem] md:h-[25rem] lg:h-[30rem]">
 					<Image
 						src="/images/replacement-page/landing.jpg"
 						fill
@@ -113,8 +113,8 @@ export default function KeyReplace() {
 					/>
 				</div>
 			</div>
-			<div className="w-full flex flex-col justify-center items-center py-12 gap-8 lg:gap-0">
-				<h1 className="text-5xl font-semibold uppercase text-center">
+			<div className="w-full flex flex-col justify-center items-center gap-2 md:gap-8 lg:gap-0">
+				<h1 className="text-3xl md:text-4xl font-medium uppercase text-center">
 					How to replace your car keys
 				</h1>
 				<p className="text-base text-neutral-950/90 w-[90%] md:w-[60%] lg:w-auto text-center lg:text-balance">
@@ -124,8 +124,8 @@ export default function KeyReplace() {
 			</div>
 
 			{/* alternating */}
-			<div className="w-full flex flex-col md:flex-row justify-center items-start gap-8 md:gap-3 lg:gap-4 pb-8">
-				<div className="lg:basis-1/2 relative w-full h-[35rem]">
+			<div className="w-full flex flex-col md:flex-row justify-center items-start gap-8 md:gap-3 lg:gap-4">
+				<div className="lg:basis-1/2 relative w-full h-[20rem] md:h-[25rem] lg:h-[30rem]">
 					<Image
 						src="/images/replacement-page/keys.png"
 						fill
@@ -134,7 +134,7 @@ export default function KeyReplace() {
 					/>
 				</div>
 				<div className="basis-1/2 flex flex-col justify-center items-start gap-8">
-					<h1 className="text-3xl font-bold uppercase">
+					<h1 className="text-3xl md:text-4xl font-medium">
 						Seamless Car Key Replacement Assistance
 					</h1>
 					<p className="text-base text-neutral-950/90">
@@ -163,7 +163,9 @@ export default function KeyReplace() {
 										damping: 100, // Higher values reduce the bounciness
 									}}
 								>
-									<h1 className=" text-2xl font-semibold uppercase">{name}</h1>
+									<h1 className="text-xl md:text-2xl font-medium capitalize">
+										{name}
+									</h1>
 									<h3 className="w-8 text-neutral-900">
 										{selectedOne !== id ? PlusIcon : MinusIcon}
 									</h3>
@@ -191,7 +193,7 @@ export default function KeyReplace() {
 			</div>
 			<div className="w-full flex flex-col md:flex-row justify-center items-start gap-8 md:gap-3 lg:gap-4 pb-8">
 				<div className="order-2 lg:order-1 basis-1/2 flex flex-col justify-center items-start gap-8">
-					<h1 className="text-3xl font-bold uppercase">
+					<h1 className="text-3xl md:text-4xl font-medium">
 						Reliable Replacement Services
 					</h1>
 					<p className="text-base text-neutral-950/90">
@@ -219,7 +221,9 @@ export default function KeyReplace() {
 										damping: 100, // Higher values reduce the bounciness
 									}}
 								>
-									<h1 className=" text-2xl font-semibold uppercase">{name}</h1>
+									<h1 className="text-xl md:text-2xl font-medium capitalize">
+										{name}
+									</h1>
 									<h3 className="w-8 text-neutral-900">
 										{selectedTwo !== id ? PlusIcon : MinusIcon}
 									</h3>
@@ -244,7 +248,7 @@ export default function KeyReplace() {
 						))}
 					</div>
 				</div>
-				<div className="order-1 lg:order-2 lg:basis-1/2 relative w-full h-[35rem]">
+				<div className="order-1 lg:order-2 lg:basis-1/2 relative w-full h-[20rem] md:h-[25rem] lg:h-[30rem]">
 					<Image
 						src="/images/replacement-page/key-bunch.png"
 						fill
@@ -256,11 +260,11 @@ export default function KeyReplace() {
 
 			{/* background */}
 			<div className="flex flex-col w-full justify-center items-center gap-5">
-				<div className="flex flex-col justify-center items-center gap-2">
-					<h3 className="text-lg text-neutral-900 font-semibold uppercase">
+				<div className="flex flex-col justify-center items-center gap-2 text-center md:text-balance">
+					<h3 className="text-base md:text-lg text-neutral-900 capitalize font-medium">
 						Expert Car Key Replacement Services
 					</h3>
-					<h2 className="text-2xl text-mellow font-semibold uppercase">
+					<h2 className="text-2xl md:text-3xl font-medium text-mellow capitalize">
 						Swift, Affordable, and Reliable Solutions
 					</h2>
 					<p className="text-base text-neutral-900/80 text-center">
@@ -327,7 +331,7 @@ export default function KeyReplace() {
 
 			{/* alternating again */}
 			<div className="w-full flex flex-col md:flex-row justify-center items-center gap-8 md:gap-3 lg:gap-4 pb-8">
-				<div className="lg:basis-1/2 relative w-full h-[35rem]">
+				<div className="lg:basis-1/2 relative w-full h-[20rem] md:h-[25rem] lg:h-[30rem]">
 					<Image
 						src="/images/replacement-page/merkey.png"
 						fill
@@ -336,7 +340,7 @@ export default function KeyReplace() {
 					/>
 				</div>
 				<div className="basis-1/2 flex flex-col justify-center items-start gap-8">
-					<h1 className="text-3xl font-bold uppercase">
+					<h1 className="text-3xl md:text-4xl font-medium">
 						Comprehensive Car Key Replacement Solutions
 					</h1>
 					<p className="text-base text-neutral-950/90">
@@ -365,7 +369,7 @@ export default function KeyReplace() {
 			</div>
 			<div className="w-full flex flex-col md:flex-row justify-center items-center gap-8 md:gap-3 lg:gap-4 pb-8">
 				<div className="order-2 lg:order-1 basis-1/2 flex flex-col justify-center items-start gap-8">
-					<h1 className="text-3xl font-bold uppercase">
+					<h1 className="text-3xl md:text-4xl font-medium capitalize">
 						Swift and Reliable Car Key Replacements
 					</h1>
 					<p className="text-base text-neutral-950/90">
@@ -392,7 +396,7 @@ export default function KeyReplace() {
 						</motion.h1>
 					</Link>
 				</div>
-				<div className="order-1 lg:order-2 lg:basis-1/2 relative w-full h-[35rem]">
+				<div className="order-1 lg:order-2 lg:basis-1/2 relative w-full h-[20rem] md:h-[25rem] lg:h-[30rem]">
 					<Image
 						src="/images/replacement-page/benkey.png"
 						fill
@@ -424,7 +428,9 @@ export default function KeyReplace() {
 								damping: 100, // Higher values reduce the bounciness
 							}}
 						>
-							<h1 className=" text-2xl font-semibold uppercase">{name}</h1>
+							<h1 className="text-xl md:text-2xl font-medium capitalize">
+								{name}
+							</h1>
 							<h3 className="w-8 text-neutral-900">
 								{selectedThree !== id ? PlusIcon : MinusIcon}
 							</h3>
