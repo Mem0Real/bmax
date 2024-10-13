@@ -7,6 +7,10 @@ import { AnimatePresence, motion } from "framer-motion";
 
 import { useIcons } from "../components/CustomIcons";
 import Link from "next/link";
+import ExtrudeText from "../components/ExtrudeText";
+import Alternating from "../components/Alternating";
+import AlternateImage from "../components/AlternateImage";
+import AlternateText from "../components/AlternateText";
 
 const dropData1 = [
 	{
@@ -123,9 +127,20 @@ export default function IgnitionRepair() {
 					repair or replacement work can be scheduled in advance.
 				</p>
 			</div>
+			<Alternating extrude>
+				<AlternateImage img="ignition-page/handle.png" />
+				<AlternateText
+					header="Swift Repairs and Replacements"
+					detail="Our auto locksmith services offer swift repairs and replacements for
+						broken door locks and ignitions. Trust us for efficient solutions to
+						get you back on the road without delays"
+				>
+					<ExtrudeText dropData={dropData1} />
+				</AlternateText>
+			</Alternating>
 
 			{/* alternating */}
-			<div className="px-4 xl:px-48 w-full flex flex-col md:flex-row justify-center items-start gap-8 md:gap-3 lg:gap-4">
+			{/* <div className="px-4 xl:px-48 w-full flex flex-col md:flex-row justify-center items-start gap-8 md:gap-3 lg:gap-4">
 				<div className="lg:basis-1/2 relative w-full h-[20rem] md:h-[25rem] lg:h-[30rem]">
 					<Image
 						src="/images/ignition-page/handle.png"
@@ -134,6 +149,7 @@ export default function IgnitionRepair() {
 						alt="Replacement"
 					/>
 				</div>
+
 				<div className="basis-1/2 flex flex-col justify-center items-start gap-8">
 					<h1 className="text-3xl md:text-4xl font-medium">
 						Swift Repairs and Replacements
@@ -191,7 +207,8 @@ export default function IgnitionRepair() {
 						))}
 					</div>
 				</div>
-			</div>
+            </div> */}
+
 			<div className="px-4 xl:px-48 w-full flex flex-col md:flex-row justify-center items-start gap-8 md:gap-3 lg:gap-4 pb-8">
 				<div className="order-2 lg:order-1 basis-1/2 flex flex-col justify-center items-start gap-8">
 					<h1 className="text-3xl md:text-4xl font-medium">
