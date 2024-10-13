@@ -5,7 +5,7 @@ export const replacementData = {
 
 	landing: {
 		header: "Car Key Replacement",
-		text: "Lost your car keys? Trust Autotronix for efficient car key replacement services by highly skilled locksmiths, using cutting-edge technology for swift solutions and getting you back on the road with your car keys intact. Trust Autotronix for all your car key needs.",
+		text: "Lost your car keys? Trust B-Max for efficient car key replacement services by highly skilled locksmiths, using cutting-edge technology for swift solutions and getting you back on the road with your car keys intact. Trust B-Max for all your car key needs.",
 	},
 	headerText: {
 		header: "How to replace your car keys",
@@ -79,31 +79,31 @@ export const replacementData = {
 	dropData3: [
 		{
 			name: "I've lost my car keys. What should I do?",
-			nest: "Losing your car keys can be a frustrating experience. But don't worry; Autotronix is here to assist you. First, contact us immediately; our 24/7 emergency locksmith services are available to swiftly provide you with a replacement key. Our team of experts understands the urgency of such situations and is equipped to handle them efficiently. If you're worried about compatibility, rest assured that our car key replacement services cover a wide range of car makes and models. We prioritize your convenience and peace of mind, ensuring a hassle-free solution when you need it most.",
+			nest: "Losing your car keys can be a frustrating experience. But don't worry; B-Max is here to assist you. First, contact us immediately; our 24/7 emergency locksmith services are available to swiftly provide you with a replacement key. Our team of experts understands the urgency of such situations and is equipped to handle them efficiently. If you're worried about compatibility, rest assured that our car key replacement services cover a wide range of car makes and models. We prioritize your convenience and peace of mind, ensuring a hassle-free solution when you need it most.",
 		},
 		{
 			name: "Do you provide car key replacement for all vehicle types?",
-			nest: "Absolutely! Autotronix is your one-stop solution for car key replacement services, and we cater to a diverse range of vehicles. Whether you have a car, truck, van, or any other vehicle type, our skilled locksmiths are well-versed in various key types and car models. We understand that each vehicle comes with its unique key specifications, and our comprehensive coverage ensures that we can assist you, no matter the vehicle you drive.",
+			nest: "Absolutely! B-Max is your one-stop solution for car key replacement services, and we cater to a diverse range of vehicles. Whether you have a car, truck, van, or any other vehicle type, our skilled locksmiths are well-versed in various key types and car models. We understand that each vehicle comes with its unique key specifications, and our comprehensive coverage ensures that we can assist you, no matter the vehicle you drive.",
 		},
 		{
 			name: "Can you replace transponder and smart keys?",
-			nest: "Yes, we certainly can! Autotronix specializes in transponder and smart key replacement. These advanced keys are an integral part of modern vehicles' security systems, and our experts are trained to program the new key to seamlessly integrate with your vehicle's technology. This ensures that your car remains secure, and you can regain access without a hitch. With our professional services, you can say goodbye to key-related hassles.",
+			nest: "Yes, we certainly can! B-Max specializes in transponder and smart key replacement. These advanced keys are an integral part of modern vehicles' security systems, and our experts are trained to program the new key to seamlessly integrate with your vehicle's technology. This ensures that your car remains secure, and you can regain access without a hitch. With our professional services, you can say goodbye to key-related hassles.",
 		},
 		{
 			name: "How long does it take to replace a car key?",
-			nest: "The duration required to replace a car key can vary based on several factors. These include your car's make and model, the type of key you need, and the specific technology involved. However, our primary objective is to provide swift and efficient solutions to minimize any inconvenience. When you contact Autotronix for car key replacement, our experts will gather the necessary details and provide you with an estimated timeframe based on your unique requirements.",
+			nest: "The duration required to replace a car key can vary based on several factors. These include your car's make and model, the type of key you need, and the specific technology involved. However, our primary objective is to provide swift and efficient solutions to minimize any inconvenience. When you contact B-Max for car key replacement, our experts will gather the necessary details and provide you with an estimated timeframe based on your unique requirements.",
 		},
 		{
 			name: "My car key is damaged but not lost. What should I do?",
-			nest: "If your car key is damaged but still in your possession, Autotronix can assist you. Contact us, and our experienced locksmiths will assess the extent of the damage. In many cases, we can repair or refurbish damaged keys to ensure they are fully functional. Our priority is to provide you with an effective solution that allows you to continue using your key without any issues.",
+			nest: "If your car key is damaged but still in your possession, B-Max can assist you. Contact us, and our experienced locksmiths will assess the extent of the damage. In many cases, we can repair or refurbish damaged keys to ensure they are fully functional. Our priority is to provide you with an effective solution that allows you to continue using your key without any issues.",
 		},
 		{
 			name: "Can I get a spare car key made even if I have the original?",
-			nest: "Certainly! Autotronix offers car key duplication services to meet your needs. Whether you have the original key or not, we can provide you with a spare key. Our advanced equipment and skilled technicians make the process seamless. This service ensures that you always have a backup key on hand, reducing the risk of being locked out of your vehicle in case of loss or damage to the original key.",
+			nest: "Certainly! B-Max offers car key duplication services to meet your needs. Whether you have the original key or not, we can provide you with a spare key. Our advanced equipment and skilled technicians make the process seamless. This service ensures that you always have a backup key on hand, reducing the risk of being locked out of your vehicle in case of loss or damage to the original key.",
 		},
 		{
-			name: "What sets Autotronix's car key replacement services apart?",
-			nest: "Autotronix distinguishes itself through a combination of factors that prioritize your satisfaction. Our team comprises skilled locksmiths who possess extensive experience in car key replacement. We stay updated with the latest industry technology, ensuring we can cater to various key types and vehicle models. We prioritize convenience, security, and affordability. When you choose Autotronix, you're choosing hassle-free car key replacement services tailored to your unique needs. Our goal is to ensure you have a reliable key solution, regardless of the circumstances.",
+			name: "What sets B-Max's car key replacement services apart?",
+			nest: "B-Max distinguishes itself through a combination of factors that prioritize your satisfaction. Our team comprises skilled locksmiths who possess extensive experience in car key replacement. We stay updated with the latest industry technology, ensuring we can cater to various key types and vehicle models. We prioritize convenience, security, and affordability. When you choose B-Max, you're choosing hassle-free car key replacement services tailored to your unique needs. Our goal is to ensure you have a reliable key solution, regardless of the circumstances.",
 		},
 	],
 };
@@ -123,7 +123,7 @@ export const duplicationData = {
 	},
 	alt1: {
 		header: "All your duplication services",
-		text: "B-Max Telematics offers efficient car key duplication services for various scenarios, providing quick solutions while you wait.",
+		text: "B-Max Auto Solutions offers efficient car key duplication services for various scenarios, providing quick solutions while you wait.",
 	},
 	alt2: {
 		header: "Convenient and Efficient Key Duplication",
@@ -200,7 +200,7 @@ export const duplicationData = {
 			nest: "Yes, we certainly can! B-Max specializes in transponder and smart key replacement. These advanced keys are an integral part of modern vehicles' security systems, and our experts are trained to program the new key to seamlessly integrate with your vehicle's technology. This ensures that your car remains secure, and you can regain access without a hitch. With our professional services, you can say goodbye to key-related hassles.",
 		},
 		{
-			name: "Is car key replacement expensive with B-Max Telematics?",
+			name: "Is car key replacement expensive with B-Max Auto Solutions?",
 			nest: "No, unlike car dealerships in Kenya, we provide car key replacements at a far lesser cost and with more ease.",
 		},
 		{
@@ -335,7 +335,7 @@ export const emergencyData = {
 
 	landing: {
 		header: "24/7 Emergency Car Unlocking Services Near You",
-		text: "Unlock your car 24/7 with Autotronix's emergency car unlocking services. We provide fast and reliable solutions. If you're locked out, we're here to help. Our professional locksmiths are equipped to handle various car models, ensuring a swift and stress-free experience. Autotronix offers dependable emergency car unlock services near you, ready to assist anytime you're in need.",
+		text: "Unlock your car 24/7 with B-Max's emergency car unlocking services. We provide fast and reliable solutions. If you're locked out, we're here to help. Our professional locksmiths are equipped to handle various car models, ensuring a swift and stress-free experience. B-Max offers dependable emergency car unlock services near you, ready to assist anytime you're in need.",
 	},
 	counter: [
 		{
@@ -398,11 +398,11 @@ export const emergencyData = {
 	],
 	alt1: {
 		header: "Emergency Car Unlock: Swift and Secure Services",
-		text: "In moments of crisis, our emergency car unlock service comes to your rescue. We understand that unexpected lockouts can be stressful. That's why we prioritize swift and secure resolutions to get you back on the road, no matter the situation. Our highly skilled locksmiths are experts in dealing with various vehicle makes and models. We ensure a damage-free unlock, maintaining your vehicle's integrity. Transparent pricing and dedicated professionals make your safety our top priority. When it comes to emergency car unlocks, trust Autotronix for a hassle-free experience and peace of mind.",
+		text: "In moments of crisis, our emergency car unlock service comes to your rescue. We understand that unexpected lockouts can be stressful. That's why we prioritize swift and secure resolutions to get you back on the road, no matter the situation. Our highly skilled locksmiths are experts in dealing with various vehicle makes and models. We ensure a damage-free unlock, maintaining your vehicle's integrity. Transparent pricing and dedicated professionals make your safety our top priority. When it comes to emergency car unlocks, trust B-Max for a hassle-free experience and peace of mind.",
 	},
 	alt2: {
 		header: "Comprehensive Car Lockout Solutions: Expert Assistance",
-		text: "Experience the excellence of Autotronix's car lockout solutions. Our skilled team excels in providing comprehensive services to resolve car lockouts efficiently. We understand the inconvenience and stress such situations can bring. Whether you've misplaced your keys, locked them inside your car, or faced any other lockout scenario, our expert locksmiths have you covered. Our swift response, cutting-edge tools, and problem-solving skills ensure you regain access to your vehicle without damage. Rest easy, knowing that you're receiving top-notch assistance from professionals who genuinely care about your safety and convenience.",
+		text: "Experience the excellence of B-Max's car lockout solutions. Our skilled team excels in providing comprehensive services to resolve car lockouts efficiently. We understand the inconvenience and stress such situations can bring. Whether you've misplaced your keys, locked them inside your car, or faced any other lockout scenario, our expert locksmiths have you covered. Our swift response, cutting-edge tools, and problem-solving skills ensure you regain access to your vehicle without damage. Rest easy, knowing that you're receiving top-notch assistance from professionals who genuinely care about your safety and convenience.",
 	},
 
 	dropData: [
@@ -515,7 +515,7 @@ export const fleetData = {
 		},
 		{
 			name: "What are the key components and intricacies involved in effective fleet management?",
-			nest: "Effective fleet management involves an intricate interplay of key components, including vehicle telematics and tracking systems, proactive maintenance scheduling, fuel management strategies, driver performance monitoring, compliance management mechanisms, and comprehensive asset management frameworks. The integration and harmonization of these components are crucial for achieving optimal fleet performance and maximizing returns on investment.",
+			nest: "Effective fleet management involves an intricate interplay of key components, including vehicle Auto Solutions and tracking systems, proactive maintenance scheduling, fuel management strategies, driver performance monitoring, compliance management mechanisms, and comprehensive asset management frameworks. The integration and harmonization of these components are crucial for achieving optimal fleet performance and maximizing returns on investment.",
 		},
 		{
 			name: "How do fleet management solutions help in reducing costs for businesses?",
@@ -532,6 +532,120 @@ export const fleetData = {
 		{
 			name: "Can fleet management systems be customized to meet specific business needs and operational requirements?",
 			nest: "Yes, fleet management systems can be highly customizable to cater to the specific needs and operational requirements of businesses. These systems can be tailored to track specialized assets, integrate seamlessly with existing software and IT infrastructure, generate custom reports with specific data points and metrics, and offer flexible user interfaces to align with unique business workflows. By customizing fleet management systems, businesses can leverage technology to its fullest potential and achieve maximum efficiency.",
+		},
+	],
+};
+
+export const cGpsData = {
+	location: "cgps-page",
+	linkSrc: "contact",
+	linkText: "get service",
+
+	landing: {
+		header: "GPS Car Tracking in Ethiopia",
+		text: "Upgrade your vehicle security with B-Max's advanced car GPS trackers, designed for various car models. From sleek sedans to robust SUVs, our cutting-edge devices offer real-time location tracking tailored to your specific car make, including popular models like Toyota, Honda, Ford, and more. Drive confidently, knowing your investment is safeguarded with B-Max's state-of-the-art GPS solutions. Elevate your driving experience with precision and security",
+	},
+	headerText: {
+		header: "Track Your Car",
+		text: "With real-time tracking and advanced GPS technology, monitor your car's location, speed, and movement on a digital map for enhanced security.",
+	},
+	alt1: {
+		header: "Utilizing Cutting-Edge GPS Technology",
+		text: "Our advanced GPS tracking technology enables real-time monitoring of your car's location, speed, and movements on a digital map, providing enhanced security and peace of mind.",
+	},
+	alt2: {
+		header: "Comprehensive Personal Car Tracking Solutions",
+		text: "B-Max Auto Solutions Ltd provides comprehensive personal car tracking services, empowering you with real-time visibility, data insights, expert installation, and dedicated customer support for a seamless and secure driving experience.",
+	},
+	background: {
+		title: "Secure Your Vehicle, Drive Confidently",
+		header: "Enjoy Increased Security and Peace of Mind",
+		detail:
+			"Personal car tracking by B-Max Auto Solutions ensures security, safety, and confidence on the road.",
+		bgs: [
+			{
+				header: "Real-Time Monitoring",
+				text: "Track your car's location and movements in real-time using advanced GPS technology.",
+			},
+			{
+				header: "Geofencing & Alerts",
+				text: "Set virtual boundaries and receive alerts when your car enters or exits specified areas.",
+			},
+			{
+				header: "Driving Insights",
+				text: "Access historical data and analyze driving behavior for a safer driving experience.",
+			},
+		],
+	},
+	alt3: {
+		header: "Unbeatable GPS Tracker Prices with B-Max",
+		text: "Simplify car fleet management with B-Max's user-friendly car GPS tracker and mobile app, offered at the best prices in the market. Benefit from hassle-free installation and real-time updates on your car's location. Take control of your car management experience with our unbeatable GPS tracker prices.",
+	},
+	alt4: {
+		header: "Advanced GPS Tracking for Enhanced Control",
+		text: "B-Max's GPS tracking system empowers you to take charge of your car's location, ensuring safe and timely arrivals and promoting responsible driving. With real-time updates and complete visibility, monitor your vehicle's movements and enhance overall car security.",
+	},
+
+	dropData1: [
+		{
+			name: "Geofencing and Alerts",
+			nest: "Set geofences and receive instant alerts to enhance your car's safety and prevent unauthorized use or theft.",
+		},
+		{
+			name: "Emergency Location Tracking",
+			nest: "In emergencies, the tracking system provides precise vehicle location, enabling swift response from emergency services.",
+		},
+		{
+			name: "Analyze Driving Behavior",
+			nest: "Monitor speed, acceleration, and braking to promote responsible driving habits and road safety.",
+		},
+	],
+	dropData2: [
+		{
+			name: "Access Historical Data",
+			nest: "Gain insights into your car's routes, mileage, and stoppages through user-friendly interfaces for optimized driving experiences.",
+		},
+		{
+			name: "Professional Installation",
+			nest: "Skilled technicians provide seamless integration of the tracking system into your vehicle for reliable performance.",
+		},
+		{
+			name: "Ongoing Support",
+			nest: "B-Max Auto Solutions offers prompt support, addressing any concerns to ensure a smooth and satisfactory experience.",
+		},
+	],
+	dropData3: [
+		{
+			name: "How does personal car tracking work?",
+			nest: "Personal car tracking works through the use of GPS technology installed in your vehicle. The GPS device sends real-time location data to a central server, allowing you to monitor your car's movements on a digital map through a web-based platform or a mobile app.",
+		},
+		{
+			name: "Can I track my car in real-time?",
+			nest: "Yes, with personal car tracking, you can track your car's location in real-time. The GPS device continuously updates the vehicle's position, enabling you to see its exact whereabouts on the tracking platform or app.",
+		},
+		{
+			name: "What is geofencing, and how does it enhance vehicle security?",
+			nest: "Geofencing is a virtual boundary you can set around specific areas on the map. When your car enters or exits these predefined areas, the tracking system sends alerts to notify you. Geofencing enhances vehicle security by providing instant notifications if your car deviates from designated safe zones.",
+		},
+		{
+			name: "Will I receive alerts if my car is in an unauthorized area?",
+			nest: "Yes, the personal car tracking system can be set up to send alerts if your car enters or exits unauthorized areas, helping you quickly respond to potential security breaches.",
+		},
+		{
+			name: "How does personal car tracking promote responsible driving?",
+			nest: "Personal car tracking monitors various driving behaviors such as speed, acceleration, and braking. By analyzing this data, you can identify any reckless driving habits and take corrective measures, promoting safer driving practices.",
+		},
+		{
+			name: "Can I access historical data of my car's routes and stops?",
+			nest: "Yes, personal car tracking systems store historical data of your car's routes and stops. You can access this data through the tracking platform or app to review past trips and analyze driving patterns.",
+		},
+		{
+			name: "Is professional installation necessary for personal car tracking?",
+			nest: "Yes, for optimal performance and accuracy, professional installation of the personal car tracking device is recommended. Skilled technicians from B-Max Auto ensure a seamless integration into your vehicle.",
+		},
+		{
+			name: "What ongoing support does B-Max Auto provide for personal car tracking customers?",
+			nest: "B-Max Auto offers dedicated customer support to assist with any inquiries or concerns related to personal car tracking. Our team ensures a smooth and satisfactory experience, addressing customer needs promptly.",
 		},
 	],
 };
