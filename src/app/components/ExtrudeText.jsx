@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useIcons } from "./CustomIcons";
 
-export default function ExtrudeText({ dropData }) {
+export default function ExtrudeText({ dropData, className }) {
 	const [selected, setSelected] = useState("");
 	const { PlusIcon, MinusIcon } = useIcons();
 
@@ -19,7 +19,13 @@ export default function ExtrudeText({ dropData }) {
 				>
 					<motion.div
 						className={`${
-							selected === id ? "bg-mellow" : "bg-mellow/50"
+							className
+								? selected === id
+									? className
+									: ""
+								: selected === id
+								? "bg-mellow"
+								: "bg-mellow/50"
 						} py-8 ps-4 pe-2 flex justify-between items-center cursor-pointer`}
 						onClick={() => setSelected((prev) => (prev === id ? "" : id))}
 						layout="position"

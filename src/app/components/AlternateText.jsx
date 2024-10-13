@@ -5,12 +5,18 @@ import Link from "next/link";
 
 import { motion } from "framer-motion";
 
-export default function AlternateText({ header, detail, address, children }) {
+export default function AlternateText({
+	header,
+	detail,
+	address = "",
+	linkText,
+	children,
+}) {
 	return (
 		<div className="basis-1/2 flex flex-col justify-center items-start gap-8">
 			<h1 className="text-3xl md:text-4xl font-medium">{header}</h1>
 			<p className="text-base text-neutral-950/90">{detail}</p>
-			{address && (
+			{linkText && (
 				<Link href={`/${address}`}>
 					<motion.h1
 						whileHover={{
@@ -19,7 +25,7 @@ export default function AlternateText({ header, detail, address, children }) {
 						}}
 						className="px-4 py-3 border border-darkYellow text-darkYellow font-bold uppercase"
 					>
-						Get Service
+						{linkText}
 					</motion.h1>
 				</Link>
 			)}

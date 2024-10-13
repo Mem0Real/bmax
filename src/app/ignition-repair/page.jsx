@@ -150,8 +150,6 @@ export default function IgnitionRepair() {
 				</AlternateText>
 				<AlternateImage img="ignition-page/kb.png" />
 			</Alternating>
-
-			{/* background */}
 			<div className="px-4 xl:px-48 flex flex-col w-full justify-center items-center gap-5">
 				<div className="flex flex-col justify-center items-center gap-2 text-center md:text-balance">
 					<h3 className="text-base md:text-lg text-neutral-900 capitalize font-medium">
@@ -182,180 +180,37 @@ export default function IgnitionRepair() {
 								needs. Our services are designed for quick turnaround times,
 								getting you back on the road promptly."
 				/>
-
-				{/* images */}
-				{/* <div className="w-full flex flex-col md:flex-row flex-shrink justify-evenly items-center pb-8 gap-6 md:gap-0">
-					<div
-						className="w-full md:w-[30%] h-[25rem] md:h-[30rem] bg-no-repeat bg-cover bg-center flex flex-col justify-end items-center p-6 rounded-xl"
-						style={{
-							backgroundImage: 'url("/images/ignition-page/bg1.jpg")',
-							backdropFilter: "brightness 0.4",
-						}}
-					>
-						<div className="flex flex-col gap-5 text-white min-h-12 md:min-h-44 lg:min-h-36 xl:min-h-32 backdrop-blur-sm backdrop-brightness-50 px-2">
-							<h1 className="text-xl font-base text-darkYellow capitalize">
-								Precision Duplication
-							</h1>
-							<p className="font-medium">
-								Experience top-notch key duplication, tailored to your needs,
-								ensuring the highest security for your vehicle.
-							</p>
-						</div>
-					</div>
-					<div
-						className="w-full md:w-[30%] h-[25rem] md:h-[30rem] bg-no-repeat bg-cover bg-center flex flex-col justify-end items-center p-6 rounded-xl"
-						style={{
-							backgroundImage: 'url("/images/ignition-page/bg2.jpg")',
-						}}
-					>
-						<div className="flex flex-col gap-5 text-white min-h-24 md:min-h-44 lg:min-h-36 xl:min-h-32 backdrop-blur-sm backdrop-brightness-50 px-2">
-							<h1 className="text-xl font-base text-darkYellow capitalize">
-								Key Variety
-							</h1>
-							<p className="font-medium">
-								From traditional to smart keys, our experts handle them all,
-								providing reliable, customized copies for your car's security.
-							</p>
-						</div>
-					</div>
-					<div
-						className="w-full md:w-[30%] h-[25rem] md:h-[30rem] bg-no-repeat bg-cover bg-center flex flex-col justify-end items-center p-6 rounded-xl"
-						style={{
-							backgroundImage: 'url("/images/ignition-page/bg3.jpg")',
-						}}
-					>
-						<div className="flex flex-col gap-5 text-white min-h-24 md:min-h-44 lg:min-h-36 xl:min-h-32 backdrop-blur-sm backdrop-brightness-50 px-2">
-							<h1 className="text-xl font-base text-darkYellow capitalize">
-								Fast Turnaround
-							</h1>
-							<p className="font-medium">
-								At B-Max, we understand the urgency of car key replacement
-								needs. Our services are designed for quick turnaround times,
-								getting you back on the road promptly.
-							</p>
-						</div>
-					</div>
-				</div> */}
 			</div>
-
-			{/* alternating again */}
-			<div className="px-4 xl:px-48 w-full flex flex-col md:flex-row justify-center items-center gap-8 md:gap-3 lg:gap-4 pb-8">
-				<div className="lg:basis-1/2 relative w-full h-[20rem] md:h-[25rem] lg:h-[30rem]">
-					<Image
-						src="/images/ignition-page/alt1.png"
-						fill
-						className="object-contain object-center absolute"
-						alt="Replacement"
-					/>
-				</div>
-				<div className="basis-1/2 flex flex-col justify-center items-start gap-8">
-					<h1 className="text-3xl md:text-4xl font-medium">
-						Secure and Professional Ignition & Door Lock Repair
-					</h1>
-					<p className="text-base text-neutral-950/90">
-						B-Max is your trusted partner for expert ignition and door lock
+			<Alternating>
+				<AlternateImage img="ignition-page/alt1.png" />
+				<AlternateText
+					header="Secure and Professional Ignition & Door Lock Repair"
+					detail="B-Max is your trusted partner for expert ignition and door lock
 						repair services. With a team of skilled technicians and a wide
 						selection of genuine replacement parts, we deliver secure and
-						professional solutions for your car’s lock and ignition problems.
-						Whether it’s a quick repair or a replacement, our efficient services
+						professional solutions for your car's lock and ignition problems.
+						Whether it's a quick repair or a replacement, our efficient services
 						will get you back on the road in no time. Contact us for swift and
-						reliable solutions you can rely on.
-					</p>
-					<Link href="/">
-						<motion.h1
-							whileHover={{
-								backgroundColor: "#DFA70C",
-								color: "#FFF",
-							}}
-							className="px-4 py-3 border border-darkYellow text-darkYellow font-bold uppercase"
-						>
-							Get Service
-						</motion.h1>
-					</Link>
-				</div>
-			</div>
-			<div className="px-4 xl:px-48 w-full flex flex-col md:flex-row justify-center items-center gap-8 md:gap-3 lg:gap-4 pb-8">
-				<div className="order-2 lg:order-1 basis-1/2 flex flex-col justify-center items-start gap-8">
-					<h1 className="text-3xl md:text-4xl font-medium capitalize">
-						Top-Quality Ignition & Door Lock Repair
-					</h1>
-					<p className="text-base text-neutral-950/90">
-						At B-Max, customer satisfaction is our top priority. We strive to
+						reliable solutions you can rely on."
+					linkText="Get Service"
+				/>
+			</Alternating>
+			<Alternating>
+				<AlternateText
+					header="Top-Quality Ignition & Door Lock Repair"
+					detail="At B-Max, customer satisfaction is our top priority. We strive to
 						provide top-quality ignition and door lock repair services that meet
 						and exceed your expectations. Our skilled team ensures a damage-free
 						and efficient repair process, ensuring your car's safety and
 						functionality. Trust in our dedicated service for all your ignition
-						and door lock needs.
-					</p>
-					<Link href="/">
-						<motion.h1
-							whileHover={{
-								backgroundColor: "#DFA70C",
-								color: "#FFF",
-							}}
-							className="px-4 py-3 border border-darkYellow text-darkYellow font-bold uppercase"
-						>
-							Get Service
-						</motion.h1>
-					</Link>
-				</div>
-				<div className="order-1 lg:order-2 lg:basis-1/2 relative w-full h-[20rem] md:h-[25rem] lg:h-[30rem]">
-					<Image
-						src="/images/ignition-page/alt2.png"
-						fill
-						className="object-contain object-center absolute"
-						alt="Replacement"
-					/>
-				</div>
-			</div>
+						and door lock needs."
+					linkText="Get Service"
+				/>
+				<AlternateImage img="ignition-page/alt2.png" />
+			</Alternating>
 
-			{/* extruding */}
 			<div className="px-4 xl:px-48 w-full flex flex-col justify-center items-stretch gap-2 pb-12">
-				{dropData3.map(({ id, name, nest }) => (
-					<motion.div
-						key={id}
-						className="flex flex-col justify-center items-stretch gap-4"
-						layout
-					>
-						<motion.div
-							className={`${
-								selectedThree === id ? "bg-neutral-200/80" : ""
-							} py-8 ps-4 pe-2 flex justify-between items-center cursor-pointer`}
-							onClick={() =>
-								setSelectedThree((prev) => (prev === id ? "" : id))
-							}
-							layout="position"
-							transition={{
-								type: "spring",
-								stiffness: 200, // Higher values make it snappier
-								damping: 100, // Higher values reduce the bounciness
-							}}
-						>
-							<h1 className="text-xl md:text-2xl font-medium capitalize">
-								{name}
-							</h1>
-							<h3 className="w-8 text-neutral-900">
-								{selectedThree !== id ? PlusIcon : MinusIcon}
-							</h3>
-						</motion.div>
-
-						<AnimatePresence>
-							{selectedThree === id && (
-								<motion.div
-									key="dropdown"
-									initial={{ height: 0, opacity: 0 }}
-									animate={{ height: "auto", opacity: 1 }}
-									exit={{ height: 0, opacity: 0 }}
-									transition={{ ease: "easeInOut", duration: 0.2 }}
-									className="overflow-hidden w-[90%] mx-auto text-base"
-									layout
-								>
-									{nest}
-								</motion.div>
-							)}
-						</AnimatePresence>
-					</motion.div>
-				))}
+				<ExtrudeText dropData={dropData3} className="bg-neutral-200/80" />
 			</div>
 		</div>
 	);
