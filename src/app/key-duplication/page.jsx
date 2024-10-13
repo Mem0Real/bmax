@@ -58,11 +58,11 @@ const dropData3 = [
 	{
 		id: "transponder",
 		name: "Can you replace transponder and smart keys?",
-		nest: "Yes, we certainly can! Autotronix specializes in transponder and smart key replacement. These advanced keys are an integral part of modern vehicles' security systems, and our experts are trained to program the new key to seamlessly integrate with your vehicle's technology. This ensures that your car remains secure, and you can regain access without a hitch. With our professional services, you can say goodbye to key-related hassles.",
+		nest: "Yes, we certainly can! B-Max specializes in transponder and smart key replacement. These advanced keys are an integral part of modern vehicles' security systems, and our experts are trained to program the new key to seamlessly integrate with your vehicle's technology. This ensures that your car remains secure, and you can regain access without a hitch. With our professional services, you can say goodbye to key-related hassles.",
 	},
 	{
 		id: "exp",
-		name: "Is car key replacement expensive with Autotronix Telematics?",
+		name: "Is car key replacement expensive with B-Max Telematics?",
 		nest: "No, unlike car dealerships in Kenya, we provide car key replacements at a far lesser cost and with more ease.",
 	},
 	{
@@ -92,8 +92,8 @@ export default function KeyDuplicate() {
 						Efficient Car Key Duplication Services
 					</h1>
 					<p className="text-base text-neutral-950/90">
-						Autotronix offers seamless car key duplication services, ensuring
-						you get spare keys affordably and efficiently. Trust our experts for
+						B-Max offers seamless car key duplication services, ensuring you get
+						spare keys affordably and efficiently. Trust our experts for
 						hassle-free solutions.
 					</p>
 				</div>
@@ -132,8 +132,8 @@ export default function KeyDuplicate() {
 						All your duplication services
 					</h1>
 					<p className="text-base text-neutral-950/90">
-						Autotronix Telematics offers efficient car key duplication services
-						for various scenarios, providing quick solutions while you wait.
+						B-Max Telematics offers efficient car key duplication services for
+						various scenarios, providing quick solutions while you wait.
 					</p>
 					<div className="w-full flex flex-col justify-center items-stretch gap-2">
 						{dropData1.map(({ id, name, nest }) => (
@@ -187,11 +187,11 @@ export default function KeyDuplicate() {
 			<div className="w-full flex flex-col md:flex-row justify-center items-start gap-8 md:gap-3 lg:gap-4 pb-8">
 				<div className="order-2 lg:order-1 basis-1/2 flex flex-col justify-center items-start gap-8">
 					<h1 className="text-3xl md:text-4xl font-medium">
-						Reliable Replacement Services
+						Convenient and Efficient Key Duplication
 					</h1>
 					<p className="text-base text-neutral-950/90">
-						Trust us for efficient, professional assistance, whether you've
-						lost, need a spare, or require a damaged key replacement.
+						Get your key copied while you wait with our convenient and efficient
+						key duplication service. We prioritize your time and convenience.
 					</p>
 					<div className="w-full flex flex-col justify-center items-stretch gap-2">
 						{dropData2.map(({ id, name, nest }) => (
@@ -261,13 +261,13 @@ export default function KeyDuplicate() {
 						Car Key Duplication: Expert Solutions for Your Convenience
 					</h2>
 					<p className="text-base text-neutral-900/80 text-center">
-						When it comes to car key duplication, Autotronix stands out with
+						When it comes to car key duplication, B-Max stands out with
 						precision, reliability, and advanced technology. Our expert
 						locksmiths excel in duplicating a wide range of car keys, from
 						traditional to smart keys. This expertise, coupled with
 						state-of-the-art key duplication technology, ensures you receive
 						flawless copies tailored to your specific needs. Discover the
-						convenience and efficiency of Autotronix's key duplication services,
+						convenience and efficiency of B-Max's key duplication services,
 						where your satisfaction and security are our top priorities.
 					</p>
 				</div>
@@ -318,7 +318,7 @@ export default function KeyDuplicate() {
 								Fast Turnaround
 							</h1>
 							<p className="font-medium">
-								At Autotronix, we understand the urgency of car key replacement
+								At B-Max, we understand the urgency of car key replacement
 								needs. Our services are designed for quick turnaround times,
 								getting you back on the road promptly.
 							</p>
@@ -339,60 +339,49 @@ export default function KeyDuplicate() {
 				</div>
 				<div className="basis-1/2 flex flex-col justify-center items-start gap-8">
 					<h1 className="text-3xl md:text-4xl font-medium">
-						Comprehensive Car Key Replacement Solutions
+						We Make You Spare Keys
 					</h1>
 					<p className="text-base text-neutral-950/90">
-						Discover B-Max's comprehensive car key replacement services. Whether
-						you've lost your car keys, need a spare, or require a transponder
-						key, we've got you covered. Our skilled locksmiths are equipped with
-						the latest technology to swiftly replace your keys, ensuring you're
-						back on the road in no time. We specialize in a wide range of car
-						makes and models, offering affordable and efficient solutions. Don't
-						let lost or damaged keys disrupt your day. Contact B-Max for
-						hassle-free car key replacement services that prioritize your
-						convenience and security.
+						At B-Max, we understand the importance of having spare keys for your
+						vehicle. That's why we offer efficient solutions for spare car keys
+						that prioritize your convenience and peace of mind. Our experienced
+						locksmiths use cutting-edge technology to create high-quality spare
+						keys tailored to your car's security system. Whether you need a
+						traditional key or a smart key with advanced features, we've got you
+						covered. We know that life can be unpredictable, and losing your car
+						keys or having them damaged is a hassle you don't want to deal with.
+						That's why we've designed our spare key services to be swift and
+						reliable, ensuring that you can get back on the road without
+						disruptions. Don't let the fear of losing your only set of car keys
+						hold you back. B-Max's efficient spare key solutions offer a
+						hassle-free experience, giving you the confidence and convenience
+						you deserve.
 					</p>
-					<Link href="/">
-						<motion.h1
-							whileHover={{
-								backgroundColor: "#DFA70C",
-								color: "#FFF",
-							}}
-							className="px-4 py-3 border border-darkYellow text-darkYellow font-bold uppercase"
-						>
-							Contact Us
-						</motion.h1>
-					</Link>
 				</div>
 			</div>
 			<div className="w-full flex flex-col md:flex-row justify-center items-center gap-8 md:gap-3 lg:gap-4 pb-8">
 				<div className="order-2 lg:order-1 basis-1/2 flex flex-col justify-center items-start gap-8">
 					<h1 className="text-3xl md:text-4xl font-medium capitalize">
-						Swift and Reliable Car Key Replacements
+						Key Duplication Made Easy
 					</h1>
 					<p className="text-base text-neutral-950/90">
-						At B-Max, we understand the frustration of losing car keys or
-						dealing with damaged ones. That's why we offer swift and reliable
-						car key replacement services. Our expert locksmiths are skilled in
-						handling various key types and car models, ensuring a hassle-free
-						experience. We utilize cutting-edge technology for precision and
-						accuracy, so you can trust us for seamless key replacements. Whether
-						you need a traditional key, transponder key, or smart key, we've got
-						the expertise to assist. Don't stress over lost or broken keys;
-						choose B-Max for quick and dependable car key replacements that get
-						you back behind the wheel without delay.
+						At B-Max, key duplication is a breeze. We understand the importance
+						of having spare keys for your vehicle, ensuring you're never locked
+						out or stranded due to a lost or damaged key. Our professional
+						locksmiths use state-of-the-art technology to provide efficient and
+						precise key duplication services. Whether you need an extra
+						traditional key or a smart key with advanced features, we can
+						quickly and accurately duplicate your key, guaranteeing seamless
+						compatibility with your vehicle's security system. With B-Max,
+						there's no need to worry about being locked out or stranded in
+						emergencies. Our key duplication services are designed for your
+						convenience and peace of mind. We prioritize efficiency, ensuring
+						that you have the spare keys you need when you need them. Discover
+						the ease of key duplication at B-Max and enjoy the confidence that
+						comes with having reliable spare keys at your fingertips. Don't let
+						a lost key disrupt your day, rely on B-Max for swift, professional
+						key duplication services.
 					</p>
-					<Link href="/">
-						<motion.h1
-							whileHover={{
-								backgroundColor: "#DFA70C",
-								color: "#FFF",
-							}}
-							className="px-4 py-3 border border-darkYellow text-darkYellow font-bold uppercase"
-						>
-							Contact Us
-						</motion.h1>
-					</Link>
 				</div>
 				<div className="order-1 lg:order-2 lg:basis-1/2 relative w-full h-[20rem] md:h-[25rem] lg:h-[30rem]">
 					<Image
