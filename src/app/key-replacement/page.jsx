@@ -1,12 +1,11 @@
-"use client";
-
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 
-import { AnimatePresence, motion } from "framer-motion";
-
-import { useIcons } from "../components/CustomIcons";
-import Link from "next/link";
+import Alternating from "../components/Alternating";
+import AlternateText from "../components/AlternateText";
+import AlternateImage from "../components/AlternateImage";
+import ExtrudeText from "../components/ExtrudeText";
+import BackgroundCard from "../components/BackgroundCard";
 
 const dropData1 = [
 	{
@@ -83,15 +82,9 @@ const dropData3 = [
 ];
 
 export default function KeyReplace() {
-	const [selectedOne, setSelectedOne] = useState("");
-	const [selectedTwo, setSelectedTwo] = useState("");
-	const [selectedThree, setSelectedThree] = useState("");
-
-	const { PlusIcon, MinusIcon } = useIcons();
-
 	return (
-		<div className="px-4 xl:px-48 w-full min-h-[90vh] my-auto flex flex-col justify-center items-center text-neutral-950 gap-10 md:gap-12 lg:gap-16 pt-12">
-			<div className="w-full flex flex-col md:flex-row justify-center items-center pt-8 md:py-2 gap-4 md:gap-8">
+		<div className="min-h-[90vh] my-auto flex flex-col justify-center items-center text-neutral-950 gap-10 md:gap-12 lg:gap-16 pt-12">
+			<div className="px-4 xl:px-48 w-full flex flex-col md:flex-row justify-center items-center pt-8 md:py-2 gap-4 md:gap-8">
 				<div className="basis-[40%] flex flex-col justify-center items-center md:items-start gap-4 md:gap-8">
 					<h1 className="text-3xl md:text-4xl font-medium uppercase text-center md:text-start">
 						Car Key Replacement
@@ -123,140 +116,25 @@ export default function KeyReplace() {
 				</p>
 			</div>
 
-			{/* alternating */}
-			<div className="w-full flex flex-col md:flex-row justify-center items-start gap-8 md:gap-3 lg:gap-4">
-				<div className="lg:basis-1/2 relative w-full h-[20rem] md:h-[25rem] lg:h-[30rem]">
-					<Image
-						src="/images/replacement-page/keys.png"
-						fill
-						className="object-contain object-center absolute"
-						alt="Replacement"
-					/>
-				</div>
-				<div className="basis-1/2 flex flex-col justify-center items-start gap-8">
-					<h1 className="text-3xl md:text-4xl font-medium">
-						Seamless Car Key Replacement Assistance
-					</h1>
-					<p className="text-base text-neutral-950/90">
-						Seamless Car Key Replacement Assistance Seamless car key replacement
-						with skilled locksmiths and advanced tech for a hassle-free
-						experience.
-					</p>
-					<div className="w-full flex flex-col justify-center items-stretch gap-2">
-						{dropData1.map(({ id, name, nest }) => (
-							<motion.div
-								key={id}
-								className="flex flex-col justify-center items-stretch gap-4"
-								layout
-							>
-								<motion.div
-									className={`${
-										selectedOne === id ? "bg-mellow" : "bg-mellow/50"
-									} py-8 ps-4 pe-2 flex justify-between items-center cursor-pointer`}
-									onClick={() =>
-										setSelectedOne((prev) => (prev === id ? "" : id))
-									}
-									layout="position"
-									transition={{
-										type: "spring",
-										stiffness: 600, // Higher values make it snappier
-										damping: 100, // Higher values reduce the bounciness
-									}}
-								>
-									<h1 className="text-xl md:text-2xl font-medium capitalize">
-										{name}
-									</h1>
-									<h3 className="w-8 text-neutral-900">
-										{selectedOne !== id ? PlusIcon : MinusIcon}
-									</h3>
-								</motion.div>
-
-								<AnimatePresence>
-									{selectedOne === id && (
-										<motion.div
-											key="dropdown"
-											initial={{ height: 0, opacity: 0 }}
-											animate={{ height: "auto", opacity: 1 }}
-											exit={{ height: 0, opacity: 0 }}
-											transition={{ ease: "easeInOut", duration: 0.2 }}
-											className="overflow-hidden w-[90%] mx-auto text-base"
-											layout
-										>
-											{nest}
-										</motion.div>
-									)}
-								</AnimatePresence>
-							</motion.div>
-						))}
-					</div>
-				</div>
-			</div>
-			<div className="w-full flex flex-col md:flex-row justify-center items-start gap-8 md:gap-3 lg:gap-4 pb-8">
-				<div className="order-2 lg:order-1 basis-1/2 flex flex-col justify-center items-start gap-8">
-					<h1 className="text-3xl md:text-4xl font-medium">
-						Reliable Replacement Services
-					</h1>
-					<p className="text-base text-neutral-950/90">
-						Trust us for efficient, professional assistance, whether you've
-						lost, need a spare, or require a damaged key replacement.
-					</p>
-					<div className="w-full flex flex-col justify-center items-stretch gap-2">
-						{dropData2.map(({ id, name, nest }) => (
-							<motion.div
-								key={id}
-								className="flex flex-col justify-center items-stretch gap-4"
-								layout
-							>
-								<motion.div
-									className={`${
-										selectedTwo === id ? "bg-mellow" : "bg-mellow/50"
-									} py-8 ps-4 pe-2 flex justify-between items-center cursor-pointer`}
-									onClick={() =>
-										setSelectedTwo((prev) => (prev === id ? "" : id))
-									}
-									layout="position"
-									transition={{
-										type: "spring",
-										stiffness: 600, // Higher values make it snappier
-										damping: 100, // Higher values reduce the bounciness
-									}}
-								>
-									<h1 className="text-xl md:text-2xl font-medium capitalize">
-										{name}
-									</h1>
-									<h3 className="w-8 text-neutral-900">
-										{selectedTwo !== id ? PlusIcon : MinusIcon}
-									</h3>
-								</motion.div>
-
-								<AnimatePresence>
-									{selectedTwo === id && (
-										<motion.div
-											key="dropdown"
-											initial={{ height: 0, opacity: 0 }}
-											animate={{ height: "auto", opacity: 1 }}
-											exit={{ height: 0, opacity: 0 }}
-											transition={{ ease: "easeInOut", duration: 0.2 }}
-											className="overflow-hidden w-[90%] mx-auto text-base"
-											layout
-										>
-											{nest}
-										</motion.div>
-									)}
-								</AnimatePresence>
-							</motion.div>
-						))}
-					</div>
-				</div>
-				<div className="order-1 lg:order-2 lg:basis-1/2 relative w-full h-[20rem] md:h-[25rem] lg:h-[30rem]">
-					<Image
-						src="/images/replacement-page/key-bunch.png"
-						fill
-						className="object-contain object-center absolute"
-						alt="Replacement"
-					/>
-				</div>
-			</div>
+			<Alternating extrude>
+				<AlternateImage img="replacement-page/keys.png" />
+				<AlternateText
+					header="Seamless Car Key Replacement Assistance"
+					detail="Seamless car key replacement with skilled locksmiths and advanced tech for a hassle-free experience."
+				>
+					<ExtrudeText dropData={dropData1} />
+				</AlternateText>
+			</Alternating>
+			<Alternating extrude>
+				<AlternateText
+					header="Reliable Replacement Services"
+					detail="Trust us for efficient, professional assistance, whether you've
+						lost, need a spare, or require a damaged key replacement."
+				>
+					<ExtrudeText dropData={dropData2} />
+				</AlternateText>
+				<AlternateImage img="ignition-page/kb.png" />
+			</Alternating>
 
 			{/* background */}
 			<div className="flex flex-col w-full justify-center items-center gap-5">
@@ -275,76 +153,23 @@ export default function KeyReplace() {
 					</p>
 				</div>
 
-				{/* images */}
-				<div className="w-full flex flex-col md:flex-row flex-shrink justify-evenly items-center pb-8 gap-6 md:gap-0">
-					<div
-						className="w-full md:w-[30%] h-[25rem] md:h-[30rem] bg-no-repeat bg-cover bg-center flex flex-col justify-end items-center p-6 rounded-xl"
-						style={{
-							backgroundImage: 'url("/images/replacement-page/bg1.jpg")',
-							backdropFilter: "brightness 0.4",
-						}}
-					>
-						<div className="flex flex-col gap-5 text-white min-h-24 md:min-h-44 lg:min-h-36 xl:min-h-32 backdrop-blur-sm backdrop-brightness-50 px-2">
-							<h1 className="text-xl font-base text-darkYellow capitalize">
-								Comprehensive Key Selection
-							</h1>
-							<p className="font-medium">
-								Choose from a wide range of blank car keys suitable for all
-								vehicle models.
-							</p>
-						</div>
-					</div>
-					<div
-						className="w-full md:w-[30%] h-[25rem] md:h-[30rem] bg-no-repeat bg-cover bg-center flex flex-col justify-end items-center p-6 rounded-xl"
-						style={{
-							backgroundImage: 'url("/images/replacement-page/bg2.jpg")',
-						}}
-					>
-						<div className="flex flex-col gap-5 text-white min-h-24 md:min-h-44 lg:min-h-36 xl:min-h-32 backdrop-blur-sm backdrop-brightness-50 px-2">
-							<h1 className="text-xl font-base text-darkYellow capitalize">
-								Cutting-Edge Transponder Chips
-							</h1>
-							<p className="font-medium">
-								Our advanced transponder chips guarantee secure key programming
-								for your car.
-							</p>
-						</div>
-					</div>
-					<div
-						className="w-full md:w-[30%] h-[25rem] md:h-[30rem] bg-no-repeat bg-cover bg-center flex flex-col justify-end items-center p-6 rounded-xl"
-						style={{
-							backgroundImage: 'url("/images/replacement-page/bg3.jpg")',
-						}}
-					>
-						<div className="flex flex-col gap-5 text-white min-h-24 md:min-h-44 lg:min-h-36 xl:min-h-32 backdrop-blur-sm backdrop-brightness-50 px-2">
-							<h1 className="text-xl font-base text-darkYellow capitalize">
-								Keyless Entry Solutions
-							</h1>
-							<p className="font-medium">
-								Experience the convenience of keyless entry with our authentic
-								proximity keys.
-							</p>
-						</div>
-					</div>
-				</div>
+				<BackgroundCard
+					src1="replacement-page/bg1.jpg"
+					src2="replacement-page/bg2.jpg"
+					src3="replacement-page/bg3.jpg"
+					header1="Comprehensive Key Selection"
+					text1="Choose from a wide range of blank car keys suitable for all vehicle models."
+					header2="Cutting-Edge Transponder Chips"
+					text2="Cutting-Edge Transponder Chips"
+					header3="Keyless Entry Solutions"
+					text3="Experience the convenience of keyless entry with our authentic proximity keys."
+				/>
 			</div>
-
-			{/* alternating again */}
-			<div className="w-full flex flex-col md:flex-row justify-center items-center gap-8 md:gap-3 lg:gap-4 pb-8">
-				<div className="lg:basis-1/2 relative w-full h-[20rem] md:h-[25rem] lg:h-[30rem]">
-					<Image
-						src="/images/replacement-page/merkey.png"
-						fill
-						className="object-contain object-center absolute"
-						alt="Replacement"
-					/>
-				</div>
-				<div className="basis-1/2 flex flex-col justify-center items-start gap-8">
-					<h1 className="text-3xl md:text-4xl font-medium">
-						Comprehensive Car Key Replacement Solutions
-					</h1>
-					<p className="text-base text-neutral-950/90">
-						Discover B-Max's comprehensive car key replacement services. Whether
+			<Alternating>
+				<AlternateImage img="replacement-page/merkey.png" />
+				<AlternateText
+					header="Comprehensive Car Key Replacement Solutions"
+					detail="Discover B-Max's comprehensive car key replacement services. Whether
 						you've lost your car keys, need a spare, or require a transponder
 						key, we've got you covered. Our skilled locksmiths are equipped with
 						the latest technology to swiftly replace your keys, ensuring you're
@@ -352,28 +177,15 @@ export default function KeyReplace() {
 						makes and models, offering affordable and efficient solutions. Don't
 						let lost or damaged keys disrupt your day. Contact B-Max for
 						hassle-free car key replacement services that prioritize your
-						convenience and security.
-					</p>
-					<Link href="/">
-						<motion.h1
-							whileHover={{
-								backgroundColor: "#DFA70C",
-								color: "#FFF",
-							}}
-							className="px-4 py-3 border border-darkYellow text-darkYellow font-bold uppercase"
-						>
-							Contact Us
-						</motion.h1>
-					</Link>
-				</div>
-			</div>
-			<div className="w-full flex flex-col md:flex-row justify-center items-center gap-8 md:gap-3 lg:gap-4 pb-8">
-				<div className="order-2 lg:order-1 basis-1/2 flex flex-col justify-center items-start gap-8">
-					<h1 className="text-3xl md:text-4xl font-medium capitalize">
-						Swift and Reliable Car Key Replacements
-					</h1>
-					<p className="text-base text-neutral-950/90">
-						At B-Max, we understand the frustration of losing car keys or
+						convenience and security."
+					linkText="Contact Us"
+					address="contact"
+				/>
+			</Alternating>
+			<Alternating>
+				<AlternateText
+					header="Swift and Reliable Car Key Replacements"
+					detail="At B-Max, we understand the frustration of losing car keys or
 						dealing with damaged ones. That's why we offer swift and reliable
 						car key replacement services. Our expert locksmiths are skilled in
 						handling various key types and car models, ensuring a hassle-free
@@ -382,77 +194,15 @@ export default function KeyReplace() {
 						you need a traditional key, transponder key, or smart key, we've got
 						the expertise to assist. Don't stress over lost or broken keys;
 						choose B-Max for quick and dependable car key replacements that get
-						you back behind the wheel without delay.
-					</p>
-					<Link href="/">
-						<motion.h1
-							whileHover={{
-								backgroundColor: "#DFA70C",
-								color: "#FFF",
-							}}
-							className="px-4 py-3 border border-darkYellow text-darkYellow font-bold uppercase"
-						>
-							Contact Us
-						</motion.h1>
-					</Link>
-				</div>
-				<div className="order-1 lg:order-2 lg:basis-1/2 relative w-full h-[20rem] md:h-[25rem] lg:h-[30rem]">
-					<Image
-						src="/images/replacement-page/benkey.png"
-						fill
-						className="object-contain object-center absolute"
-						alt="Replacement"
-					/>
-				</div>
-			</div>
+						you back behind the wheel without delay."
+					linkText="Contact Us"
+					address="contact"
+				/>
+				<AlternateImage img="replacement-page/benkey.png" />
+			</Alternating>
 
-			{/* extruding */}
-			<div className="w-full flex flex-col justify-center items-stretch gap-2 pb-12">
-				{dropData3.map(({ id, name, nest }) => (
-					<motion.div
-						key={id}
-						className="flex flex-col justify-center items-stretch gap-4"
-						layout
-					>
-						<motion.div
-							className={`${
-								selectedThree === id ? "bg-neutral-200/80" : ""
-							} py-8 ps-4 pe-2 flex justify-between items-center cursor-pointer`}
-							onClick={() =>
-								setSelectedThree((prev) => (prev === id ? "" : id))
-							}
-							layout="position"
-							transition={{
-								type: "spring",
-								stiffness: 200, // Higher values make it snappier
-								damping: 100, // Higher values reduce the bounciness
-							}}
-						>
-							<h1 className="text-xl md:text-2xl font-medium capitalize">
-								{name}
-							</h1>
-							<h3 className="w-8 text-neutral-900">
-								{selectedThree !== id ? PlusIcon : MinusIcon}
-							</h3>
-						</motion.div>
-
-						<AnimatePresence>
-							{selectedThree === id && (
-								<motion.div
-									key="dropdown"
-									initial={{ height: 0, opacity: 0 }}
-									animate={{ height: "auto", opacity: 1 }}
-									exit={{ height: 0, opacity: 0 }}
-									transition={{ ease: "easeInOut", duration: 0.2 }}
-									className="overflow-hidden w-[90%] mx-auto text-base"
-									layout
-								>
-									{nest}
-								</motion.div>
-							)}
-						</AnimatePresence>
-					</motion.div>
-				))}
+			<div className="px-4 xl:px-48 w-full flex flex-col justify-center items-stretch gap-2 pb-12">
+				<ExtrudeText dropData={dropData3} className="bg-neutral-200/80" />
 			</div>
 		</div>
 	);

@@ -1,12 +1,5 @@
-"use client";
+import React from "react";
 
-import Image from "next/image";
-import React, { useState } from "react";
-
-import { AnimatePresence, motion } from "framer-motion";
-
-import { useIcons } from "../components/CustomIcons";
-import Link from "next/link";
 import ExtrudeText from "../components/ExtrudeText";
 import Alternating from "../components/Alternating";
 import AlternateImage from "../components/AlternateImage";
@@ -93,12 +86,6 @@ const dropData3 = [
 ];
 
 export default function IgnitionRepair() {
-	const [selectedOne, setSelectedOne] = useState("");
-	const [selectedTwo, setSelectedTwo] = useState("");
-	const [selectedThree, setSelectedThree] = useState("");
-
-	const { PlusIcon, MinusIcon } = useIcons();
-
 	return (
 		<div className="w-full my-auto flex flex-col justify-center items-center text-neutral-900 gap-10 md:gap-12 lg:gap-16">
 			<div
@@ -167,18 +154,14 @@ export default function IgnitionRepair() {
 
 				<BackgroundCard
 					src1="ignition-page/bg1.jpg"
-					header1="Precision Duplication"
-					text1="Experience top-notch key duplication, tailored to your needs,
-								ensuring the highest security for your vehicle."
+					header1="Genuine Replacement Knobs"
+					text1="We offer genuine Mazda, Suzuki, Mitsubishi, and Honda replacement twist ignition knobs for your car's security and functionality."
 					src2="ignition-page/bg2.jpg"
-					header2="Key Variety"
-					text2="From traditional to smart keys, our experts handle them all,
-								providing reliable, customized copies for your car's security."
+					header2="Skilled Auto Locksmiths"
+					text2="Our skilled auto locksmiths are equipped to handle keyless entry problems, including repairing or replacing broken ignition knobs."
 					src3="ignition-page/bg3.jpg"
-					header3="Fast Turnaround"
-					text3="At B-Max, we understand the urgency of car key replacement
-								needs. Our services are designed for quick turnaround times,
-								getting you back on the road promptly."
+					header3="Fast and Reliable Service"
+					text3="Trust in our fast and reliable service to get your car's keyless entry functioning smoothly with a new twist ignition knob."
 				/>
 			</div>
 			<Alternating>

@@ -1,12 +1,11 @@
-"use client";
-
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 
-import { AnimatePresence, motion } from "framer-motion";
-
-import { useIcons } from "../components/CustomIcons";
-import Link from "next/link";
+import Alternating from "../components/Alternating";
+import AlternateText from "../components/AlternateText";
+import AlternateImage from "../components/AlternateImage";
+import ExtrudeText from "../components/ExtrudeText";
+import BackgroundCard from "../components/BackgroundCard";
 
 const dropData1 = [
 	{
@@ -78,15 +77,9 @@ const dropData3 = [
 ];
 
 export default function KeyDuplicate() {
-	const [selectedOne, setSelectedOne] = useState("");
-	const [selectedTwo, setSelectedTwo] = useState("");
-	const [selectedThree, setSelectedThree] = useState("");
-
-	const { PlusIcon, MinusIcon } = useIcons();
-
 	return (
-		<div className="px-4 xl:px-48 w-full min-h-[90vh] my-auto flex flex-col justify-center items-center text-neutral-950 gap-10 md:gap-12 lg:gap-16 pt-12">
-			<div className="w-full flex flex-col md:flex-row justify-center items-center pt-8 md:py-2 gap-4 md:gap-8">
+		<div className="w-full min-h-[90vh] my-auto flex flex-col justify-center items-center text-neutral-950 gap-10 md:gap-12 lg:gap-16 pt-12">
+			<div className="px-4 xl:px-48 w-full flex flex-col md:flex-row justify-center items-center pt-8 md:py-2 gap-4 md:gap-8">
 				<div className="basis-[40%] flex flex-col justify-start items-center md:items-start gap-4 md:gap-8">
 					<h1 className="text-3xl md:text-4xl font-medium uppercase text-center md:text-start">
 						Efficient Car Key Duplication Services
@@ -117,8 +110,29 @@ export default function KeyDuplicate() {
 				</p>
 			</div>
 
+			<Alternating extrude>
+				<AlternateImage img="duplication-page/dup.png" />
+				<AlternateText
+					header="All your duplication services"
+					detail="B-Max Telematics offers efficient car key duplication services for
+						various scenarios, providing quick solutions while you wait."
+				>
+					<ExtrudeText dropData={dropData1} />
+				</AlternateText>
+			</Alternating>
+			<Alternating extrude>
+				<AlternateText
+					header="Convenient and Efficient Key Duplication"
+					detail="Get your key copied while you wait with our convenient and efficient
+						key duplication service. We prioritize your time and convenience."
+				>
+					<ExtrudeText dropData={dropData2} />
+				</AlternateText>
+				<AlternateImage img="duplication-page/conv.png" />
+			</Alternating>
+
 			{/* alternating */}
-			<div className="w-full flex flex-col md:flex-row justify-center items-start gap-8 md:gap-3 lg:gap-4">
+			{/* <div className="w-full flex flex-col md:flex-row justify-center items-start gap-8 md:gap-3 lg:gap-4">
 				<div className="lg:basis-1/2 relative w-full h-[20rem] md:h-[25rem] lg:h-[30rem]">
 					<Image
 						src="/images/duplication-page/dup.png"
@@ -249,7 +263,7 @@ export default function KeyDuplicate() {
 						alt="Replacement"
 					/>
 				</div>
-			</div>
+			</div> */}
 
 			{/* background */}
 			<div className="flex flex-col w-full justify-center items-center gap-5">
@@ -273,7 +287,20 @@ export default function KeyDuplicate() {
 				</div>
 
 				{/* images */}
-				<div className="w-full flex flex-col md:flex-row flex-shrink justify-evenly items-center pb-8 gap-6 md:gap-0">
+				<BackgroundCard
+					src1="duplication-page/bg1.jpg"
+					src2="duplication-page/bg2.jpg"
+					src3="duplication-page/bg3.jpg"
+					header1="Precision Duplication"
+					text1="Experience top-notch key duplication, tailored to your needs, ensuring the highest security for your vehicle."
+					header2="Key Variety"
+					text2="From traditional to smart keys, our experts handle them all, providing reliable, customized copies for your car's security."
+					header3="Fast Turnaround"
+					text3="At B-Max, we understand the urgency of car key replacement
+								needs. Our services are designed for quick turnaround times,
+								getting you back on the road promptly."
+				/>
+				{/* <div className="w-full flex flex-col md:flex-row flex-shrink justify-evenly items-center pb-8 gap-6 md:gap-0">
 					<div
 						className="w-full md:w-[30%] h-[25rem] md:h-[30rem] bg-no-repeat bg-cover bg-center flex flex-col justify-end items-center p-6 rounded-xl"
 						style={{
@@ -324,11 +351,58 @@ export default function KeyDuplicate() {
 							</p>
 						</div>
 					</div>
-				</div>
+				</div> */}
 			</div>
 
+			<Alternating>
+				<AlternateImage img="duplication-page/alt2.png" />
+				<AlternateText
+					header="We Make You Spare Keys"
+					detail="At B-Max, we understand the importance of having spare keys for your
+						vehicle. That's why we offer efficient solutions for spare car keys
+						that prioritize your convenience and peace of mind. Our experienced
+						locksmiths use cutting-edge technology to create high-quality spare
+						keys tailored to your car's security system. Whether you need a
+						traditional key or a smart key with advanced features, we've got you
+						covered. We know that life can be unpredictable, and losing your car
+						keys or having them damaged is a hassle you don't want to deal with.
+						That's why we've designed our spare key services to be swift and
+						reliable, ensuring that you can get back on the road without
+						disruptions. Don't let the fear of losing your only set of car keys
+						hold you back. B-Max's efficient spare key solutions offer a
+						hassle-free experience, giving you the confidence and convenience
+						you deserve."
+					linkText="Contact Us"
+					address="contact"
+				/>
+			</Alternating>
+			<Alternating>
+				<AlternateText
+					header="Key Duplication Made Easy"
+					detail="At B-Max, key duplication is a breeze. We understand the importance
+						of having spare keys for your vehicle, ensuring you're never locked
+						out or stranded due to a lost or damaged key. Our professional
+						locksmiths use state-of-the-art technology to provide efficient and
+						precise key duplication services. Whether you need an extra
+						traditional key or a smart key with advanced features, we can
+						quickly and accurately duplicate your key, guaranteeing seamless
+						compatibility with your vehicle's security system. With B-Max,
+						there's no need to worry about being locked out or stranded in
+						emergencies. Our key duplication services are designed for your
+						convenience and peace of mind. We prioritize efficiency, ensuring
+						that you have the spare keys you need when you need them. Discover
+						the ease of key duplication at B-Max and enjoy the confidence that
+						comes with having reliable spare keys at your fingertips. Don't let
+						a lost key disrupt your day, rely on B-Max for swift, professional
+						key duplication services."
+					linkText="Contact Us"
+					address="contact"
+				/>
+				<AlternateImage img="duplication-page/alt1.png" />
+			</Alternating>
+
 			{/* alternating again */}
-			<div className="w-full flex flex-col md:flex-row justify-center items-center gap-8 md:gap-3 lg:gap-4 pb-8">
+			{/* <div className="w-full flex flex-col md:flex-row justify-center items-center gap-8 md:gap-3 lg:gap-4 pb-8">
 				<div className="lg:basis-1/2 relative w-full h-[20rem] md:h-[25rem] lg:h-[30rem]">
 					<Image
 						src="/images/duplication-page/alt1.png"
@@ -391,10 +465,13 @@ export default function KeyDuplicate() {
 						alt="Replacement"
 					/>
 				</div>
-			</div>
+			</div> */}
 
+			<div className="px-4 xl:px-48 w-full flex flex-col justify-center items-stretch gap-2 pb-12">
+				<ExtrudeText dropData={dropData3} className="bg-neutral-200/80" />
+			</div>
 			{/* extruding */}
-			<div className="w-full flex flex-col justify-center items-stretch gap-2 pb-12">
+			{/* <div className="w-full flex flex-col justify-center items-stretch gap-2 pb-12">
 				{dropData3.map(({ id, name, nest }) => (
 					<motion.div
 						key={id}
@@ -440,7 +517,7 @@ export default function KeyDuplicate() {
 						</AnimatePresence>
 					</motion.div>
 				))}
-			</div>
+			</div> */}
 		</div>
 	);
 }
