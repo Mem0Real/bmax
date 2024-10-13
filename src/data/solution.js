@@ -24,18 +24,20 @@ export const replacementData = {
 		header: "Swift, Affordable, and Reliable Solutions",
 		detail:
 			"B-Max offers expert car key replacement services, ensuring swift, affordable, and reliable solutions when you're locked out or need a spare. Trust our skilled locksmiths for hassle-free key replacements.",
-		bg1: {
-			header: "Comprehensive Key Selection",
-			text: "Choose from a wide range of blank car keys suitable for all vehicle models.",
-		},
-		bg2: {
-			header: "Cutting-Edge Transponder Chips",
-			text: "Cutting-Edge Transponder Chips",
-		},
-		bg3: {
-			header: "Keyless Entry Solutions",
-			text: "Experience the convenience of keyless entry with our authentic proximity keys.",
-		},
+		bgs: [
+			{
+				header: "Comprehensive Key Selection",
+				text: "Choose from a wide range of blank car keys suitable for all vehicle models.",
+			},
+			{
+				header: "Cutting-Edge Transponder Chips",
+				text: "Cutting-Edge Transponder Chips",
+			},
+			{
+				header: "Keyless Entry Solutions",
+				text: "Experience the convenience of keyless entry with our authentic proximity keys.",
+			},
+		],
 	},
 	alt3: {
 		header: "Comprehensive Car Key Replacement Solutions",
@@ -145,18 +147,20 @@ export const duplicationData = {
 		header: "Car Key Duplication: Expert Solutions for Your Convenience",
 		detail:
 			"When it comes to car key duplication, B-Max stands out with precision, reliability, and advanced technology. Our expert locksmiths excel in duplicating a wide range of car keys, from traditional to smart keys. This expertise, coupled with state-of-the-art key duplication technology, ensures you receive flawless copies tailored to your specific needs. Discover the convenience and efficiency of B-Max's key duplication services, where your satisfaction and security are our top priorities.",
-		bg1: {
-			header: "Precision Duplication",
-			text: "Experience top-notch key duplication, tailored to your needs, ensuring the highest security for your vehicle.",
-		},
-		bg2: {
-			header: "Key Variety",
-			text: "From traditional to smart keys, our experts handle them all, providing reliable, customized copies for your car's security.",
-		},
-		bg3: {
-			header: "Fast Turnaround",
-			text: "At B-Max, we understand the urgency of car key replacement needs. Our services are designed for quick turnaround times, getting you back on the road promptly.",
-		},
+		bgs: [
+			{
+				header: "Precision Duplication",
+				text: "Experience top-notch key duplication, tailored to your needs, ensuring the highest security for your vehicle.",
+			},
+			{
+				header: "Key Variety",
+				text: "From traditional to smart keys, our experts handle them all, providing reliable, customized copies for your car's security.",
+			},
+			{
+				header: "Fast Turnaround",
+				text: "At B-Max, we understand the urgency of car key replacement needs. Our services are designed for quick turnaround times, getting you back on the road promptly.",
+			},
+		],
 	},
 	alt3: {
 		header: "We Make You Spare Keys",
@@ -261,18 +265,20 @@ export const ignitionData = {
 		header: "Auto Locksmith Services for Broken Ignition Knobs",
 		detail:
 			"Having trouble starting your car with keyless entry due to a broken proximity twist ignition knob? Don't worry! Rely on our auto locksmith services to resolve the issue.",
-		bg1: {
-			header: "Genuine Replacement Knobs",
-			text: "We offer genuine Mazda, Suzuki, Mitsubishi, and Honda replacement twist ignition knobs for your car's security and functionality.",
-		},
-		bg2: {
-			header: "Key Variety",
-			text: "From traditional to smart keys, our experts handle them all, providing reliable, customized copies for your car's security.",
-		},
-		bg3: {
-			header: "Fast Turnaround",
-			text: "At B-Max, we understand the urgency of car key replacement needs. Our services are designed for quick turnaround times, getting you back on the road promptly.",
-		},
+		bgs: [
+			{
+				header: "Genuine Replacement Knobs",
+				text: "We offer genuine Mazda, Suzuki, Mitsubishi, and Honda replacement twist ignition knobs for your car's security and functionality.",
+			},
+			{
+				header: "Key Variety",
+				text: "From traditional to smart keys, our experts handle them all, providing reliable, customized copies for your car's security.",
+			},
+			{
+				header: "Fast Turnaround",
+				text: "At B-Max, we understand the urgency of car key replacement needs. Our services are designed for quick turnaround times, getting you back on the road promptly.",
+			},
+		],
 	},
 	alt3: {
 		header: "Secure and Professional Ignition & Door Lock Repair",
@@ -370,51 +376,50 @@ export const emergencyData = {
 		header: "24/7 Emergency Car Unlocking Services Near You",
 		text: "Unlock your car 24/7 with Autotronix's emergency car unlocking services. We provide fast and reliable solutions. If you're locked out, we're here to help. Our professional locksmiths are equipped to handle various car models, ensuring a swift and stress-free experience. Autotronix offers dependable emergency car unlock services near you, ready to assist anytime you're in need.",
 	},
-	counter1: {
-		number: 5000,
-		symbol: "+",
-		text: "cars unlocked",
-	},
-	counter2: {
-		number: 100,
-		symbol: "%",
-		text: "Damage Free Unlocks",
-	},
-	counter3: {
-		number: 24,
-		symbol: "/7",
-		text: "Open",
-	},
+	counter: [
+		{
+			number: 5000,
+			symbol: "+",
+			text: "cars unlocked",
+		},
+		{
+			number: 100,
+			symbol: "%",
+			text: "Damage Free Unlocks",
+		},
+		{
+			number: 24,
+			symbol: "/7",
+			text: "Open",
+		},
+	],
 
-	card1: {
-		header: "Damage-Free Unlock",
-		text: "Trust our damage-free emergency car unlock service for a secure solution that ensures your vehicle remains in pristine condition. Our expert team employs advanced techniques to access your car safely without causing any harm. Experience efficiency and security combined, providing you with a reliable solution for unlocking your vehicle in emergencies.",
-	},
-
-	card2: {
-		header: "Mobile Service",
-		text: "Unlock peace of mind with our prompt and efficient car emergency unlocking service. Wherever you are, our responsive mobile locksmith team is ready to bring the solution to your doorstep. Count on us for swift and on-the-spot assistance, eliminating the inconvenience of being locked out of your vehicle. Your security and convenience are our top priorities.",
-	},
-
-	card3: {
-		header: "Quick Response",
-		text: "We understand that being locked out of your car is an urgent situation, and that's why we prioritize rapid response times. When you contact us for car unlocking services, our team swings into action promptly. We value your time, and our quick response ensures you get back on the road without unnecessary delays.",
-	},
-
-	card4: {
-		header: "Cutting-Edge Equipment",
-		text: "Experience swift and secure emergency car access with our state-of-the-art equipment and specialized techniques. Our team employs advanced methods tailored for precision, ensuring efficient unlocking across diverse car models and locks. Count on our innovative technology for damage-free emergency car entry, providing a seamless and secure solution to get you back on the road without delays.",
-	},
-
-	card5: {
-		header: "Wide Coverage",
-		text: "Dedicated to ensuring customer satisfaction, we extend our car unlocking services across an expansive geographical area. Wherever you find yourself, our mobile locksmiths are committed to reaching your location promptly, ensuring that help is just a call away. Our extensive coverage enables us to assist you in unlocking your car, even in remote or challenging locations. Trust us for reliable and responsive service tailored to meet your needs.",
-	},
-
-	card6: {
-		header: "Key Duplication",
-		text: "In addition to our car unlocking proficiency, we provide comprehensive key duplication services for your peace of mind. Our skilled locksmiths go beyond by cutting and programming new keys with precision, ensuring seamless functionality with your vehicle's locks. Don't risk being caught without a spare; entrust us to efficiently duplicate your keys, offering you an extra layer of security and convenience.",
-	},
+	cards: [
+		{
+			header: "Damage-Free Unlock",
+			text: "Trust our damage-free emergency car unlock service for a secure solution that ensures your vehicle remains in pristine condition. Our expert team employs advanced techniques to access your car safely without causing any harm. Experience efficiency and security combined, providing you with a reliable solution for unlocking your vehicle in emergencies.",
+		},
+		{
+			header: "Mobile Service",
+			text: "Unlock peace of mind with our prompt and efficient car emergency unlocking service. Wherever you are, our responsive mobile locksmith team is ready to bring the solution to your doorstep. Count on us for swift and on-the-spot assistance, eliminating the inconvenience of being locked out of your vehicle. Your security and convenience are our top priorities.",
+		},
+		{
+			header: "Quick Response",
+			text: "We understand that being locked out of your car is an urgent situation, and that's why we prioritize rapid response times. When you contact us for car unlocking services, our team swings into action promptly. We value your time, and our quick response ensures you get back on the road without unnecessary delays.",
+		},
+		{
+			header: "Cutting-Edge Equipment",
+			text: "Experience swift and secure emergency car access with our state-of-the-art equipment and specialized techniques. Our team employs advanced methods tailored for precision, ensuring efficient unlocking across diverse car models and locks. Count on our innovative technology for damage-free emergency car entry, providing a seamless and secure solution to get you back on the road without delays.",
+		},
+		{
+			header: "Wide Coverage",
+			text: "Dedicated to ensuring customer satisfaction, we extend our car unlocking services across an expansive geographical area. Wherever you find yourself, our mobile locksmiths are committed to reaching your location promptly, ensuring that help is just a call away. Our extensive coverage enables us to assist you in unlocking your car, even in remote or challenging locations. Trust us for reliable and responsive service tailored to meet your needs.",
+		},
+		{
+			header: "Key Duplication",
+			text: "In addition to our car unlocking proficiency, we provide comprehensive key duplication services for your peace of mind. Our skilled locksmiths go beyond by cutting and programming new keys with precision, ensuring seamless functionality with your vehicle's locks. Don't risk being caught without a spare; entrust us to efficiently duplicate your keys, offering you an extra layer of security and convenience.",
+		},
+	],
 
 	hovering: [
 		{
