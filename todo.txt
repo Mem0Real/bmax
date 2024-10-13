@@ -2,6 +2,7 @@
     1. News blog posting & comment
     2. Email send (say hello)
     3. Email subscription (maybe)
+    4. (Just maybe) search function
 
 // Front-end stuff
     1. Add video for landing page
