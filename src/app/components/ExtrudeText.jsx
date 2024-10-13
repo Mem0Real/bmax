@@ -1,17 +1,29 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useIcons } from "./CustomIcons";
 
 export default function ExtrudeText({ dropData, className }) {
+	const [firstClick, setFirstClick] = useState(false);
 	const [selected, setSelected] = useState("");
+
 	const { PlusIcon, MinusIcon } = useIcons();
+
+	const handleClick = (id) => {
+		setSelected((prev) => (prev === id ? "" : id));
+		setFirstClick(true);
+	};
+
+	useEffect(() => {
+		!firstClick && setSelected(dropData[0].id);
+		console.log(dropData[0].nest.id);
+	}, []);
 
 	return (
 		<div className="w-full flex flex-col justify-center items-stretch gap-2">
-			{dropData.map(({ id, name, nest }) => (
+			{dropData.map(({ id, name, nest }, index) => (
 				<motion.div
 					key={id}
 					className="flex flex-col justify-center items-stretch gap-4"
@@ -28,7 +40,7 @@ export default function ExtrudeText({ dropData, className }) {
 								? "bg-mellow"
 								: "bg-mellow/50"
 						} py-8 ps-4 pe-2 flex justify-between items-center cursor-pointer`}
-						onClick={() => setSelected((prev) => (prev === id ? "" : id))}
+						onClick={() => handleClick(id)}
 						layout="position"
 						transition={{ ease: "easeInOut" }}
 					>
