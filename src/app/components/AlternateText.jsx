@@ -23,7 +23,7 @@ export default function AlternateText({
 							backgroundColor: "#DFA70C",
 							color: "#FFF",
 						}}
-						className="px-4 py-3 border border-darkYellow text-darkYellow font-bold uppercase"
+						className="px-12 py-3 border border-darkYellow text-darkYellow font-bold uppercase"
 					>
 						{linkText}
 					</motion.h1>
