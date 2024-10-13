@@ -211,6 +211,76 @@ export default function KeyReplace() {
 					/>
 				</div>
 			</div>
+
+			<div className="flex flex-col w-full justify-center items-center gap-5">
+				<div className="flex flex-col justify-center items-center gap-2">
+					<h3 className="text-lg text-neutral-900 font-semibold uppercase">
+						Expert Car Key Replacement Services
+					</h3>
+					<h2 className="text-2xl text-mellow font-semibold uppercase">
+						Swift, Affordable, and Reliable Solutions
+					</h2>
+					<p className="text-base text-neutral-900/80 text-center">
+						B-Max offers expert car key replacement services, ensuring swift,
+						affordable, and reliable solutions when you're locked out or need a
+						spare. Trust our skilled locksmiths for hassle-free key
+						replacements.
+					</p>
+				</div>
+
+				{/* images */}
+				<div className="w-full flex flex-col md:flex-row flex-shrink justify-evenly items-center pb-8 gap-6 md:gap-0">
+					<div
+						className="w-full md:w-[30%] h-[25rem] md:h-[30rem] bg-no-repeat bg-cover bg-center flex flex-col justify-end items-center p-6 rounded-xl"
+						style={{
+							backgroundImage: 'url("/images/replacement-page/bg1.jpg")',
+							backdropFilter: "brightness 0.4",
+						}}
+					>
+						<div className="flex flex-col gap-5 text-white min-h-24 md:min-h-44 lg:min-h-36 xl:min-h-32 backdrop-blur-sm backdrop-brightness-50 px-2">
+							<h1 className="text-xl font-base text-darkYellow capitalize">
+								Comprehensive Key Selection
+							</h1>
+							<p className="font-medium">
+								Choose from a wide range of blank car keys suitable for all
+								vehicle models.
+							</p>
+						</div>
+					</div>
+					<div
+						className="w-full md:w-[30%] h-[25rem] md:h-[30rem] bg-no-repeat bg-cover bg-center flex flex-col justify-end items-center p-6 rounded-xl"
+						style={{
+							backgroundImage: 'url("/images/replacement-page/bg2.jpg")',
+						}}
+					>
+						<div className="flex flex-col gap-5 text-white min-h-24 md:min-h-44 lg:min-h-36 xl:min-h-32 backdrop-blur-sm backdrop-brightness-50 px-2">
+							<h1 className="text-xl font-base text-darkYellow capitalize">
+								Cutting-Edge Transponder Chips
+							</h1>
+							<p className="font-medium">
+								Our advanced transponder chips guarantee secure key programming
+								for your car.
+							</p>
+						</div>
+					</div>
+					<div
+						className="w-full md:w-[30%] h-[25rem] md:h-[30rem] bg-no-repeat bg-cover bg-center flex flex-col justify-end items-center p-6 rounded-xl"
+						style={{
+							backgroundImage: 'url("/images/replacement-page/bg3.jpg")',
+						}}
+					>
+						<div className="flex flex-col gap-5 text-white min-h-24 md:min-h-44 lg:min-h-36 xl:min-h-32 backdrop-blur-sm backdrop-brightness-50 px-2">
+							<h1 className="text-xl font-base text-darkYellow capitalize">
+								Keyless Entry Solutions
+							</h1>
+							<p className="font-medium">
+								Experience the convenience of keyless entry with our authentic
+								proximity keys.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 }
