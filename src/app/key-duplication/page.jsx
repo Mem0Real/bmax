@@ -8,6 +8,7 @@ import ExtrudeText from "../components/ExtrudeText";
 import BackgroundCard from "../components/BackgroundCard";
 
 import { duplicateData } from "@/data/solutionPage";
+import GenerateSolution from "../components/GenerateSolution";
 
 const dropData1 = [
 	{
@@ -79,103 +80,105 @@ const dropData3 = [
 ];
 
 export default function KeyDuplicate() {
-	return (
-		<div className="w-full min-h-[90vh] my-auto flex flex-col justify-center items-center text-neutral-950 gap-10 md:gap-12 lg:gap-16 pt-12">
-			<div className="px-4 xl:px-48 w-full flex flex-col md:flex-row justify-center items-center pt-8 md:py-2 gap-4 md:gap-8">
-				<div className="basis-[40%] flex flex-col justify-start items-center md:items-start gap-4 md:gap-8">
-					<h1 className="text-3xl md:text-4xl font-medium uppercase text-center md:text-start">
-						{duplicateData.landing.header}
-					</h1>
-					<p className="text-base text-neutral-950/90">
-						{duplicateData.landing.text}
-					</p>
-				</div>
+	// return (
+	// 	<div className="w-full min-h-[90vh] my-auto flex flex-col justify-center items-center text-neutral-950 gap-10 md:gap-12 lg:gap-16 pt-12">
+	// 		<div className="px-4 xl:px-48 w-full flex flex-col md:flex-row justify-center items-center pt-8 md:py-2 gap-4 md:gap-8">
+	// 			<div className="basis-[40%] flex flex-col justify-start items-center md:items-start gap-4 md:gap-8">
+	// 				<h1 className="text-3xl md:text-4xl font-medium uppercase text-center md:text-start">
+	// 					{duplicateData.landing.header}
+	// 				</h1>
+	// 				<p className="text-base text-neutral-950/90">
+	// 					{duplicateData.landing.text}
+	// 				</p>
+	// 			</div>
 
-				<div className="md:basis-[60%] relative w-full h-[20rem] md:h-[25rem] lg:h-[30rem]">
-					<Image
-						src="/images/duplication-page/landing.png"
-						fill
-						className="object-contain object-center absolute"
-						alt="Replacement"
-					/>
-				</div>
-			</div>
-			<div className="w-full flex flex-col justify-center items-center gap-2 md:gap-8 lg:gap-0">
-				<h1 className="text-3xl md:text-4xl font-medium uppercase text-center">
-					{duplicateData.headerText.header}
-				</h1>
-				<p className="text-base text-neutral-950/90 w-[90%] md:w-[60%] lg:w-auto text-center lg:text-balance">
-					{duplicateData.headerText.text}
-				</p>
-			</div>
+	// 			<div className="md:basis-[60%] relative w-full h-[20rem] md:h-[25rem] lg:h-[30rem]">
+	// 				<Image
+	// 					src="/images/duplication-page/landing.png"
+	// 					fill
+	// 					className="object-contain object-center absolute"
+	// 					alt="Replacement"
+	// 				/>
+	// 			</div>
+	// 		</div>
+	// 		<div className="w-full flex flex-col justify-center items-center gap-2 md:gap-8 lg:gap-0">
+	// 			<h1 className="text-3xl md:text-4xl font-medium uppercase text-center">
+	// 				{duplicateData.headerText.header}
+	// 			</h1>
+	// 			<p className="text-base text-neutral-950/90 w-[90%] md:w-[60%] lg:w-auto text-center lg:text-balance">
+	// 				{duplicateData.headerText.text}
+	// 			</p>
+	// 		</div>
 
-			<Alternating extrude>
-				<AlternateImage img="duplication-page/dup.png" />
-				<AlternateText
-					header={duplicateData.alt1.header}
-					detail={duplicateData.alt1.text}
-				>
-					<ExtrudeText dropData={dropData1} />
-				</AlternateText>
-			</Alternating>
-			<Alternating extrude>
-				<AlternateText
-					header={duplicateData.alt2.header}
-					detail={duplicateData.alt2.text}
-				>
-					<ExtrudeText dropData={dropData2} />
-				</AlternateText>
-				<AlternateImage img="duplication-page/conv.png" />
-			</Alternating>
+	// 		<Alternating extrude>
+	// 			<AlternateImage img="duplication-page/dup.png" />
+	// 			<AlternateText
+	// 				header={duplicateData.alt1.header}
+	// 				detail={duplicateData.alt1.text}
+	// 			>
+	// 				<ExtrudeText dropData={dropData1} />
+	// 			</AlternateText>
+	// 		</Alternating>
+	// 		<Alternating extrude>
+	// 			<AlternateText
+	// 				header={duplicateData.alt2.header}
+	// 				detail={duplicateData.alt2.text}
+	// 			>
+	// 				<ExtrudeText dropData={dropData2} />
+	// 			</AlternateText>
+	// 			<AlternateImage img="duplication-page/conv.png" />
+	// 		</Alternating>
 
-			{/* background */}
-			<div className="flex flex-col w-full justify-center items-center gap-5">
-				<div className="flex flex-col justify-center items-center gap-2 text-center md:text-balance">
-					<h3 className="text-base md:text-lg text-neutral-900 capitalize font-medium">
-						{duplicateData.background.title}
-					</h3>
-					<h2 className="text-2xl md:text-3xl font-medium text-mellow capitalize">
-						{duplicateData.background.header}
-					</h2>
-					<p className="text-base text-neutral-900/80 text-center">
-						{duplicateData.background.detail}
-					</p>
-				</div>
+	// 		{/* background */}
+	// 		<div className="flex flex-col w-full justify-center items-center gap-5">
+	// 			<div className="flex flex-col justify-center items-center gap-2 text-center md:text-balance">
+	// 				<h3 className="text-base md:text-lg text-neutral-900 capitalize font-medium">
+	// 					{duplicateData.background.title}
+	// 				</h3>
+	// 				<h2 className="text-2xl md:text-3xl font-medium text-mellow capitalize">
+	// 					{duplicateData.background.header}
+	// 				</h2>
+	// 				<p className="text-base text-neutral-900/80 text-center">
+	// 					{duplicateData.background.detail}
+	// 				</p>
+	// 			</div>
 
-				{/* images */}
-				<BackgroundCard
-					location={duplicateData.background.location}
-					header1={duplicateData.background.bg1.header}
-					text1={duplicateData.background.bg1.text}
-					header2={duplicateData.background.bg2.header}
-					text2={duplicateData.background.bg2.text}
-					header3={duplicateData.background.bg3.header}
-					text3={duplicateData.background.bg3.text}
-				/>
-			</div>
+	// 			{/* images */}
+	// 			<BackgroundCard
+	// 				location={duplicateData.background.location}
+	// 				header1={duplicateData.background.bg1.header}
+	// 				text1={duplicateData.background.bg1.text}
+	// 				header2={duplicateData.background.bg2.header}
+	// 				text2={duplicateData.background.bg2.text}
+	// 				header3={duplicateData.background.bg3.header}
+	// 				text3={duplicateData.background.bg3.text}
+	// 			/>
+	// 		</div>
 
-			<Alternating>
-				<AlternateImage img="duplication-page/alt2.png" />
-				<AlternateText
-					header={duplicateData.alt3.header}
-					detail={duplicateData.alt3.text}
-					linkText="Contact Us"
-					address="contact"
-				/>
-			</Alternating>
-			<Alternating>
-				<AlternateText
-					header={duplicateData.alt4.header}
-					detail={duplicateData.alt4.text}
-					linkText="Contact Us"
-					address="contact"
-				/>
-				<AlternateImage img="duplication-page/alt1.png" />
-			</Alternating>
+	// 		<Alternating>
+	// 			<AlternateImage img="duplication-page/alt2.png" />
+	// 			<AlternateText
+	// 				header={duplicateData.alt3.header}
+	// 				detail={duplicateData.alt3.text}
+	// 				linkText="Contact Us"
+	// 				address="contact"
+	// 			/>
+	// 		</Alternating>
+	// 		<Alternating>
+	// 			<AlternateText
+	// 				header={duplicateData.alt4.header}
+	// 				detail={duplicateData.alt4.text}
+	// 				linkText="Contact Us"
+	// 				address="contact"
+	// 			/>
+	// 			<AlternateImage img="duplication-page/alt1.png" />
+	// 		</Alternating>
 
-			<div className="px-4 xl:px-48 w-full flex flex-col justify-center items-stretch gap-2 pb-12">
-				<ExtrudeText dropData={dropData3} className="bg-neutral-200/80" />
-			</div>
-		</div>
-	);
+	// 		<div className="px-4 xl:px-48 w-full flex flex-col justify-center items-stretch gap-2 pb-12">
+	// 			<ExtrudeText dropData={dropData3} className="bg-neutral-200/80" />
+	// 		</div>
+	// 	</div>
+	// );
+
+	return <GenerateSolution data={duplicateData} />;
 }
