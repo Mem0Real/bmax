@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { useIcons } from "../components/CustomIcons";
+import Link from "next/link";
 
 export default function KeyReplace() {
 	const [selectedOne, setSelectedOne] = useState("");
@@ -212,6 +213,7 @@ export default function KeyReplace() {
 				</div>
 			</div>
 
+			{/* background */}
 			<div className="flex flex-col w-full justify-center items-center gap-5">
 				<div className="flex flex-col justify-center items-center gap-2">
 					<h3 className="text-lg text-neutral-900 font-semibold uppercase">
@@ -279,6 +281,83 @@ export default function KeyReplace() {
 							</p>
 						</div>
 					</div>
+				</div>
+			</div>
+
+			{/* alternating again */}
+			<div className="w-full flex flex-col md:flex-row justify-center items-center gap-8 md:gap-3 lg:gap-4 pb-8">
+				<div className="lg:basis-1/2 relative w-full h-[35rem]">
+					<Image
+						src="/images/replacement-page/merkey.png"
+						fill
+						className="object-contain object-center absolute"
+						alt="Replacement"
+					/>
+				</div>
+				<div className="basis-1/2 flex flex-col justify-center items-start gap-8">
+					<h1 className="text-3xl font-bold uppercase">
+						Comprehensive Car Key Replacement Solutions
+					</h1>
+					<p className="text-base text-neutral-950/90">
+						Discover B-Max's comprehensive car key replacement services. Whether
+						you've lost your car keys, need a spare, or require a transponder
+						key, we've got you covered. Our skilled locksmiths are equipped with
+						the latest technology to swiftly replace your keys, ensuring you're
+						back on the road in no time. We specialize in a wide range of car
+						makes and models, offering affordable and efficient solutions. Don't
+						let lost or damaged keys disrupt your day. Contact B-Max for
+						hassle-free car key replacement services that prioritize your
+						convenience and security.
+					</p>
+					<Link href="/">
+						<motion.h1
+							whileHover={{
+								backgroundColor: "#DFA70C",
+								color: "#FFF",
+							}}
+							className="px-4 py-3 border border-darkYellow text-darkYellow font-bold uppercase"
+						>
+							Contact Us
+						</motion.h1>
+					</Link>
+				</div>
+			</div>
+			<div className="w-full flex flex-col md:flex-row justify-center items-center gap-8 md:gap-3 lg:gap-4 pb-8">
+				<div className="order-2 lg:order-1 basis-1/2 flex flex-col justify-center items-start gap-8">
+					<h1 className="text-3xl font-bold uppercase">
+						Swift and Reliable Car Key Replacements
+					</h1>
+					<p className="text-base text-neutral-950/90">
+						At B-Max, we understand the frustration of losing car keys or
+						dealing with damaged ones. That's why we offer swift and reliable
+						car key replacement services. Our expert locksmiths are skilled in
+						handling various key types and car models, ensuring a hassle-free
+						experience. We utilize cutting-edge technology for precision and
+						accuracy, so you can trust us for seamless key replacements. Whether
+						you need a traditional key, transponder key, or smart key, we've got
+						the expertise to assist. Don't stress over lost or broken keys;
+						choose B-Max for quick and dependable car key replacements that get
+						you back behind the wheel without delay.
+					</p>
+					<Link href="/">
+						<motion.h1
+							whileHover={{
+								backgroundColor: "#DFA70C",
+								color: "#FFF",
+							}}
+							className="px-4 py-3 border border-darkYellow text-darkYellow font-bold uppercase"
+						>
+							Contact Us
+						</motion.h1>
+					</Link>
+				</div>
+				<div className="order-1 lg:order-2 lg:basis-1/2 relative w-full h-[35rem]">
+					<Image
+						src="/images/replacement-page/benkey.png"
+						fill
+						className="object-contain object-center absolute"
+						alt="Replacement"
+					/>
 				</div>
 			</div>
 		</div>
