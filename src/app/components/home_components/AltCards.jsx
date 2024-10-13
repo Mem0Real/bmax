@@ -188,10 +188,9 @@ export default function AltCards() {
 										<Image
 											src={image}
 											alt={index}
-											fill
 											className="absolute object-contain object-center"
-											sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw"
 											priority
+											sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 										/>
 									</motion.div>
 								) : (
@@ -215,7 +214,7 @@ export default function AltCards() {
 												alt={index}
 												fill
 												className="absolute object-contain md:object-fill object-center"
-												sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw"
+												sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 												priority
 											/>
 										</motion.div>

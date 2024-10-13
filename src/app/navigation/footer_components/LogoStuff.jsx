@@ -19,6 +19,7 @@ export default function LogoStuff() {
 						alt="B-Max"
 						priority
 						className="object-contain object-left absolute"
+						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 					/>
 				</div>
 				<p className="text-sm xl:pl-4 lg:pr-[20rem] xl:pr-24">

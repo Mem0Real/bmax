@@ -103,6 +103,7 @@ export default function GenerateSolution({ data, bgImage }) {
 							fill
 							className="object-fill md:object-contain object-center absolute"
 							alt={data.location}
+							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 						/>
 					</div>
 				</div>

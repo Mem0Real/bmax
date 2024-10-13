@@ -9,6 +9,7 @@ export default function AlternateImage({ img }) {
 				fill
 				className="object-fill md:object-contain object-center absolute"
 				alt={img}
+				sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 			/>
 		</div>
 	);

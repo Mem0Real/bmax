@@ -6,12 +6,13 @@ import Alternating from "../components/Alternating";
 import AlternateText from "../components/AlternateText";
 import AlternateImage from "../components/AlternateImage";
 
-import { emergencyData } from "@/data/solution";
-
-import { useIcons } from "../components/CustomIcons";
 import GenerateCard from "../components/GenerateCard";
 import HoverCard from "../components/HoverCard";
 import AnimatedCounter from "../components/AnimatedCounter";
+
+import { emergencyData } from "@/data/solution";
+
+import { useIcons } from "../components/CustomIcons";
 
 export default function page() {
 	const { UnlockIcon, CarIcon, PhoneIcon, TechIcon, MapIcon, KeyIcon } =
@@ -31,7 +32,7 @@ export default function page() {
 				<AlternateImage img={`${emergencyData.location}/landing.jpg`} />
 			</Alternating>
 			{/* counter */}
-			<div className="px-4 xl:px-40 w-full xl:w-1/2 flex flex-col md:flex-row justify-center xl:justify-between items-center gap-8 xl:gap-10 pb-8">
+			<div className="px-4 xl:px-40 w-full flex flex-col md:flex-row justify-center xl:justify-between items-center gap-8 xl:gap-10 pb-8">
 				{emergencyData.counter.map(({ number, symbol, text }, index) => {
 					return (
 						<div
@@ -49,7 +50,7 @@ export default function page() {
 					);
 				})}
 			</div>
-			<div className="w-full px-4 xl:px-44 grid grid-cols-1 md:grid-cols-2 gap-16 gap-x-24 md:gap-x-12 ">
+			<div className="w-full px-4 xl:px-40 flex justify-center xl:justify-evenly items-center gap-8 lg:gap-4 xl:gap-20 flex-wrap">
 				<GenerateCard icons={iconList} data={emergencyData.cards} />
 			</div>
 			<div className="w-full flex flex-col justify-center items-center py-8">

@@ -57,6 +57,7 @@ export default function Clients() {
 									alt={id}
 									src={`/images/clients/${source}`}
 									className="object-contain object-center absolute"
+									sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 								/>
 							</motion.div>
 						))}

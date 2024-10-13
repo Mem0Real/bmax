@@ -443,16 +443,20 @@ export const emergencyData = {
 
 export const fleetData = {
 	location: "fleet-page",
-	linkSrc: "/fleet-management",
+	linkSrc: "fleet-management",
 	linkText: "Know More",
 
 	landing: {
 		header: "Fleet Management Solutions",
 		text: "End-to-end solution for seamless management of the entire fleet ecosystem.",
 	},
-	headerText: {
-		title: "Why Choose Our Fleet Management System?",
+	headerText1: {
+		text: "Why Choose Our Fleet Management System?",
 		header: "Enhance Efficiency, Control, and Safety",
+	},
+	headerText2: {
+		text: "Need More Reason to Choose Our Fleet Management System?",
+		header: "Take a Look Below",
 	},
 	alt1: {
 		header: "Exceptional Focus on Fleet Safety",

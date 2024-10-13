@@ -49,6 +49,7 @@ export default function Navbar() {
 						src="/images/logo.png"
 						alt="B-Max"
 						priority
+						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 					/>
 				</div>
 				{/* Big screen */}
