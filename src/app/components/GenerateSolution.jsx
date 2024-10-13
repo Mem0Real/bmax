@@ -101,7 +101,7 @@ export default function GenerateSolution({ data, bgImage }) {
 						<Image
 							src={`/images/${data.location}/landing.jpg`}
 							fill
-							className="object-contain object-center absolute"
+							className="object-fill md:object-contain object-center absolute"
 							alt={data.location}
 						/>
 					</div>
@@ -135,26 +135,26 @@ export default function GenerateSolution({ data, bgImage }) {
 			<Alternating extrude>
 				<AlternateImage img={`${data.location}/alt1.png`} />
 				<AlternateText header={data.alt1.header} detail={data.alt1.text}>
-					<ExtrudeText dropData={dropData1} />
+					<ExtrudeText dropData={data.dropData1} />
 				</AlternateText>
 			</Alternating>
 			<Alternating extrude>
 				<AlternateText header={data.alt2.header} detail={data.alt2.text}>
-					<ExtrudeText dropData={dropData2} />
+					<ExtrudeText dropData={data.dropData2} />
 				</AlternateText>
 				<AlternateImage img={`${data.location}/alt2.png`} />
 			</Alternating>
 
 			{/* background */}
 			<div className="flex flex-col w-full justify-center items-center gap-5">
-				<div className="flex flex-col justify-center items-center gap-2 text-center md:text-balance">
+				<div className="xl:px-4 flex flex-col justify-center items-center gap-2 text-center md:text-balance">
 					<h3 className="text-base md:text-lg text-neutral-900 capitalize font-medium">
 						{data.background.title}
 					</h3>
 					<h2 className="text-2xl md:text-3xl font-medium text-mellow capitalize">
 						{data.background.header}
 					</h2>
-					<p className="text-base text-neutral-900/80 text-center">
+					<p className="text-base text-neutral-900/80 text-center px-2 md:px-0 xl:px-8">
 						{data.background.detail}
 					</p>
 				</div>
@@ -189,7 +189,7 @@ export default function GenerateSolution({ data, bgImage }) {
 			</Alternating>
 
 			<div className="px-4 xl:px-48 w-full flex flex-col justify-center items-stretch gap-2 pb-12">
-				<ExtrudeText dropData={dropData3} className="bg-neutral-200/80" />
+				<ExtrudeText dropData={data.dropData3} className="bg-neutral-200/80" />
 			</div>
 		</div>
 	);
