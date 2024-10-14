@@ -21,7 +21,7 @@ export default function AlternateText({
 		: "text-3xl md:text-4xl font-medium";
 
 	return (
-		<div className="basis-1/2 flex flex-col justify-center items-start gap-8">
+		<div className="w-full basis-1/2 flex flex-col justify-center items-start gap-8">
 			<h1 className={headSize}>{header}</h1>
 			<p className={tailColor}>{detail}</p>
 			{!swap && linkText && (
