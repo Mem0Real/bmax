@@ -1186,3 +1186,83 @@ export const videoData = {
 		},
 	],
 };
+
+export const fourGData = {
+	location: "video-page",
+
+	landing: {
+		header: "Innovative Video Telematics",
+		text: "Explore the cutting-edge world of video telematics with Autotronix, where technology meets safety and efficiency. Our comprehensive solutions incorporate advanced in-cab cameras, real-time video insights, and AI-powered analytics to revolutionize fleet monitoring. Whether you're focused on road safety, driver behavior analytics, or logistics optimization, Autotronix's video telematics technology provides unparalleled visibility into your fleet's operations.",
+	},
+	headerText1: {
+		header: "Features",
+	},
+	alt1: {
+		header: "Driver Monitoring System (DMS)",
+		text1:
+			"Our device uses artificial intelligence to detect various driver behaviors, including fatigue, phone usage, smoking, distracted driving, and driver absence. When detected, the system alerts the driver with a voice warning to stay focused on the road.",
+		text2:
+			"You can also receive push notifications about alerts through our platform or app, allowing you to view event videos on your mobile device or online.",
+	},
+	alt2: {
+		header: "Advanced Driver Assistance Systems (ADAS)",
+		text1:
+			"Advanced Driver Assistance Systems (ADAS) utilize algorithms to assist drivers in operating vehicles more safely and conveniently. These systems enable devices to monitor events such as lane departure, forward collision, pedestrian detection, following distance too close, emergency braking, and rapid acceleration.",
+		text2:
+			"They provide real-time alerts to drivers, enhancing overall safety during driving.",
+	},
+
+	headerText2: {
+		header: "Enhanced Safety and Security on the Road",
+		text: "Installing a dashcam provides numerous benefits, such as capturing real-time road conditions, identifying risky driving behaviors, simplifying insurance claims, and offering proactive driver coaching. With dashcams, you gain comprehensive security and effective risk management for your fleet.",
+	},
+	cards: [
+		{
+			header: "Real-Time Bus Tracking",
+			text: "With our Bus GPS Tracker, you can monitor your buses in real-time, allowing you to track their location, speed, and movement at any moment. This real-time tracking feature ensures timely arrivals and improved operational efficiency.",
+		},
+		{
+			header: "Enhanced Bus Security",
+			text: "Ensure the safety of your passengers and assets with our Bus GPS Tracker's enhanced security features. Receive instant alerts for any unauthorized movement or deviations from planned routes, empowering you to take immediate action in case of emergencies.",
+		},
+		{
+			header: "Efficient Route Planning",
+			text: "Our Bus GPS Tracker enables you to optimize route planning, helping you find the most efficient paths to reduce fuel consumption and travel time. This results in cost savings and a more eco-friendly approach to bus operations.",
+		},
+		{
+			header: "Comprehensive Fleet Management",
+			text: "Streamline your fleet management with our Bus GPS Tracker's comprehensive insights. Access historical data, driving behavior, and maintenance reports to make informed decisions and improve the overall performance of your bus fleet.",
+		},
+		{
+			header: "Seamless Integration",
+			text: "Our Bus GPS Tracker seamlessly integrates with your existing systems and is easy to install, ensuring a hassle-free implementation process. Benefit from our user-friendly interface and intuitive tools to manage your bus fleet effortlessly.",
+		},
+		{
+			header: "Efficiency",
+			text: "Take charge of your bus fleet's performance and safety with B-Max's Bus GPS Tracker. Experience the efficiency, reliability, and peace of mind that comes with our advanced tracking solutions. Get in touch with us today to transform your bus operations.",
+		},
+	],
+	headerText3: {
+		header: "Enhanced Safety and Security on the Road",
+		text: "Installing a dashcam provides numerous benefits, such as capturing real-time road conditions, identifying risky driving behaviors, simplifying insurance claims, and offering proactive driver coaching. With dashcams, you gain comprehensive security and effective risk management for your fleet.",
+	},
+
+	data: {
+		obj1: {
+			header: "Hardware",
+			table: [
+				{ title: "", value: "" },
+				{ title: "", value: "" },
+				{ title: "", value: "" },
+				{ title: "", value: "" },
+				{ title: "", value: "" },
+				{ title: "", value: "" },
+				{ title: "", value: "" },
+				{ title: "", value: "" },
+				{ title: "", value: "" },
+				{ title: "", value: "" },
+				{ title: "", value: "" },
+			],
+		},
+	},
+};
