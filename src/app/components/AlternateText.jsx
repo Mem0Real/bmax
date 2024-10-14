@@ -13,6 +13,7 @@ export default function AlternateText({
 	children,
 	swap,
 	light,
+	dark,
 }) {
 	let tailColor = !light
 		? swap
@@ -29,13 +30,23 @@ export default function AlternateText({
 		<div className="w-full basis-1/2 flex flex-col justify-center items-start gap-8">
 			<h1 className={headSize}>{header}</h1>
 			{Array.isArray(detail) ? (
-				<div className="flex flex-col justify-center items-center gap-8">
-					{detail?.map((text, index) => (
-						<p key={index} className="text-neutral-200 text-lg text-start">
-							{text}
-						</p>
-					))}
-				</div>
+				dark ? (
+					<div className="flex flex-col justify-center items-center gap-8">
+						{detail?.map((text, index) => (
+							<p key={index} className="text-neutral-900 text-lg text-start">
+								{text}
+							</p>
+						))}
+					</div>
+				) : (
+					<div className="flex flex-col justify-center items-center gap-8">
+						{detail?.map((text, index) => (
+							<p key={index} className="text-neutral-200 text-lg text-start">
+								{text}
+							</p>
+						))}
+					</div>
+				)
 			) : (
 				<p className={tailColor}>{detail}</p>
 			)}

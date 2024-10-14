@@ -1189,6 +1189,8 @@ export const videoData = {
 
 export const aiDashData = {
 	location: "aidash-page",
+	linkSrc: "contact",
+	linkText: "get service",
 
 	landing: {
 		header: "4G AI Built-in Dashcam",

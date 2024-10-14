@@ -45,7 +45,7 @@ export default function SolutionDrop() {
 			icon: VideoIcon,
 			header: "Video Safety",
 			nest: [
-				{ title: "4G AI Built-in Dashcam", address: "/4g-ai-builtin-dashcam" },
+				{ title: "4G AI Built-in Dashcam", address: "/ai-dashcam" },
 				{ title: "Dashcam", address: "/dashcam" },
 				{ title: "Video Telematics", address: "/video-telematics" },
 			],
