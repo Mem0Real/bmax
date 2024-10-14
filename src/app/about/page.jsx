@@ -181,7 +181,7 @@ export default function About() {
 				{/* why be max */}
 				<div className="flex flex-col justify-center items-start gap-8">
 					<h1 className="text-6xl font-semibold">Why Choose B-Max?</h1>
-					{whyList.map(({ title, detail }, index) => (
+					{whyList?.map(({ title, detail }, index) => (
 						<>
 							<h1 key={index} className="text-2xl font-semibold">
 								{++index}.{title}
