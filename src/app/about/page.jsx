@@ -55,8 +55,6 @@ export default function About() {
 	} = useIcons();
 
 	const iconList = [
-		LeftArrowIcon,
-		RightArrowIcon,
 		CheckIcon,
 		TechnologyIcon,
 		SupportIcon,
@@ -282,7 +280,7 @@ export default function About() {
 
 				{/* cards */}
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-16 gap-x-24 md:gap-x-12">
-					<GenerateCard icons={iconList} data={aboutData.cards} />
+					<GenerateCard icons={iconList} data={aboutData.cards} size="sm" />
 				</div>
 			</div>
 		</div>
