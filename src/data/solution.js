@@ -851,3 +851,104 @@ export const busGpsData = {
 		},
 	],
 };
+
+export const tGpsData = {
+	location: "truck-page",
+	linkSrc: "contact",
+	linkText: "get service",
+
+	landing: {
+		header: "Optimize Fleet Performance with Truck GPS Tracking Solutions",
+		text: "Experience enhanced fleet efficiency and optimize performance with our Truck GPS tracking system. Gain real-time insights into your trucks' location, speed, and routes, enabling you to identify opportunities for improvement, reduce idle time, and enhance overall productivity. Stay in control of your fleet operations and drive success with Autotronix Telematics' advanced tracking solutions.",
+	},
+	headerText: {
+		header: "Real-Time Visibility and Fleet Monitoring",
+		text: "Our Truck GPS tracking system provides real-time visibility into the location and status of each truck in your fleet. Track your trucks on a digital map, monitor speed, and receive real-time updates on routes and activities. With this information at your fingertips, you can make informed decisions, ensure timely deliveries, and respond quickly to any unforeseen events.",
+	},
+	cards: [
+		{
+			header: "Geo-Fencing and Enhanced Security",
+			text: "Take advantage of geo-fencing capabilities to set virtual boundaries for your trucks. Receive instant alerts whenever a truck enters or exits predefined zones. This feature helps improve security, prevent unauthorized usage, and enables quick response in case of any deviations from planned routes.",
+		},
+		{
+			header: "Driver Behavior Analysis and Safety Measures",
+			text: "Our Truck GPS tracking system allows you to monitor driver behavior, including speeding, harsh braking, and rapid acceleration. Analyze driving patterns to promote safe driving habits and reduce the risk of accidents. By promoting responsible driving practices, you can enhance the safety of your drivers and the public.",
+		},
+		{
+			header: "Route Optimization and Fuel Efficiency",
+			text: "Optimize truck routes to minimize travel time, reduce fuel consumption, and cut operational costs. Our GPS tracking system provides valuable data to identify the most efficient routes for your trucks, ensuring timely deliveries and reducing unnecessary mileage.",
+		},
+		{
+			header: "Maintenance Management and Diagnostics",
+			text: "Stay on top of your truck fleet's maintenance with our GPS tracking system's diagnostic capabilities. Receive alerts for scheduled maintenance, engine health, and potential issues. Proactively managing maintenance ensures that your trucks operate at peak performance and minimizes unexpected breakdowns.",
+		},
+		{
+			header: "Comprehensive Reporting and Analytics",
+			text: "Access comprehensive reports and analytics on your truck fleet's performance. Track key metrics such as fuel consumption, idle time, and mileage. Use these insights to make data-driven decisions, optimize operations, and improve your fleet's overall efficiency.",
+		},
+		{
+			header: "Seamless Integration and Customization",
+			text: "Our Truck GPS tracking solutions are designed to seamlessly integrate with your existing fleet management systems. Customize the tracking features to meet your specific needs and gain full control over your truck fleet management. Our team will assist you in tailoring the system to fit your unique requirements.",
+		},
+	],
+
+	background: {
+		header: "24/7 Customer Support and Training",
+		detail:
+			"We provide 24/7 customer support to ensure smooth operation and immediate assistance whenever you need it. Additionally, our team offers training sessions to help your staff maximize the benefits of our GPS tracking solutions and streamline fleet management processes.",
+		bgs: [
+			{
+				header: "Real-Time Tracking and Monitoring",
+				text: "Our Truck GPS tracking system provides real-time location updates, enabling you to monitor your trucks' movements on a digital map.",
+			},
+			{
+				header: "Enhanced Security with Geo-Fencing",
+				text: " Set virtual boundaries and receive instant alerts when your trucks enter or exit predefined zones, ensuring better security and accountability.",
+			},
+			{
+				header: "Route Optimization for Fuel Efficiency",
+				text: "Optimize truck routes to reduce fuel consumption, minimize travel time, and enhance operational efficiency for cost savings and improved productivity.",
+			},
+		],
+	},
+
+	alt1: {
+		header: "Streamline Your Fleet Operations with Truck GPS Solutions",
+		text: "Our comprehensive Truck GPS solutions empower you to streamline fleet operations, enhance efficiency, and make data-driven decisions. Monitor real-time truck locations, optimize routes, and proactively manage maintenance for a more productive and cost-effective fleet management experience.",
+	},
+	alt2: {
+		header: "Boost Productivity with Advanced Truck GPS Technology",
+		text: "Embrace the power of advanced Truck GPS technology to boost productivity in your fleet management. From real-time tracking and route optimization to driver behavior analysis, our solutions provide valuable insights for better decision-making and improved overall performance. Stay ahead in the competitive market with Autotronix Telematics' cutting-edge GPS solutions.",
+	},
+
+	dropData: [
+		{
+			name: "Is Truck GPS tracking compatible with all types of trucks?",
+			nest: "Yes, our Truck GPS tracking system is designed to be compatible with various types of trucks, including commercial vehicles, delivery trucks, and heavy-duty vehicles.",
+		},
+		{
+			name: "Can I track multiple trucks simultaneously with the GPS system?",
+			nest: "Absolutely! Our Truck GPS tracking system allows you to monitor and track multiple trucks simultaneously, providing real-time updates for each vehicle.",
+		},
+		{
+			name: "How accurate is the location data provided by the GPS tracking system?",
+			nest: "Our Truck GPS tracking system uses advanced GPS technology to provide highly accurate location data, ensuring precise monitoring of your trucks' movements.",
+		},
+		{
+			name: "Can the GPS system help in improving driver behavior?",
+			nest: "Yes, our Truck GPS tracking system can monitor driver behavior, such as speeding and harsh braking, allowing you to encourage safe driving practices and improve overall fleet safety.",
+		},
+		{
+			name: "Will the GPS tracking system be affected by bad weather or signal interference?",
+			nest: "Our Truck GPS tracking system is designed to function effectively in various weather conditions, and signal interference is minimized through the use of advanced GPS technology.",
+		},
+		{
+			name: "Can I receive customizable alerts for specific events?",
+			nest: "Yes, our Truck GPS tracking system allows you to set up customizable alerts for specific events, such as vehicle idle time, unauthorized use, or geofence breaches.",
+		},
+		{
+			name: "How can Truck GPS tracking help in reducing operational costs?",
+			nest: "By providing valuable data on fuel consumption, route optimization, and vehicle maintenance, our Truck GPS tracking system enables you to make informed decisions that can lead to reduced operational costs and increased efficiency in fleet management.",
+		},
+	],
+};

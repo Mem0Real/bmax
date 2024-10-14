@@ -1,6 +1,7 @@
 import React from "react";
 
-export default function BackgroundCard({ data, location }) {
+export default function BackgroundCard({ data, location, light }) {
+	let opacity = light ? "opacity-40" : "opacity-60";
 	return (
 		<div className="px-4 xl:px-48 w-full flex flex-col md:flex-row flex-shrink justify-evenly items-center pb-8 gap-6 md:gap-0">
 			{data.map(({ header, text }, index) => {
@@ -15,7 +16,9 @@ export default function BackgroundCard({ data, location }) {
 							backdropFilter: "brightness 0.4",
 						}}
 					>
-						<div className="absolute inset-0 bg-black opacity-60 rounded-xl"></div>
+						<div
+							className={`absolute inset-0 bg-black rounded-xl ${opacity}`}
+						></div>
 
 						<div className="w-full relative flex flex-col justify-stretch items-stretch gap-5 text-white min-h-36 md:min-h-44 lg:min-h-48 xl:min-h-48 backdrop-blur-sm px-2 pt-2">
 							<h1 className="text-xl lg:text-2xl capitalize">{header}</h1>
