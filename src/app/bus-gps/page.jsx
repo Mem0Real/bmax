@@ -13,16 +13,22 @@ import ExtrudeText from "../components/ExtrudeText";
 import { useIcons } from "../components/CustomIcons";
 
 export default function page() {
-	const { ClockIcon, LockedIcon, WifiIcon, CycleIcon, MonitorIcon, BikeIcon } =
-		useIcons();
+	const {
+		ClockIcon,
+		LockedIcon,
+		RouteIcon,
+		BusIcon,
+		IntegrateIcon,
+		EfficientIcon,
+	} = useIcons();
 
 	const iconList = [
 		ClockIcon,
 		LockedIcon,
-		WifiIcon,
-		CycleIcon,
-		MonitorIcon,
-		BikeIcon,
+		RouteIcon,
+		BusIcon,
+		IntegrateIcon,
+		EfficientIcon,
 	];
 
 	return (
