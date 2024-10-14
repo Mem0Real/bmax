@@ -142,6 +142,7 @@ export default function Navbar() {
 											key={title}
 											className="w-full relative z-50"
 											layout="position"
+											onClick={() => toggleNest(title)}
 										>
 											<div className="w-full flex justify-between items-center">
 												<Link href={address}>{title}</Link>
@@ -154,7 +155,6 @@ export default function Navbar() {
 													}
 													transition={{ ease: easeInOut }}
 													className="w-4 text-mellow"
-													onClick={() => toggleNest(title)}
 												>
 													{dropData && LeftIcon}
 												</motion.button>

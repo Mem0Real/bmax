@@ -5,14 +5,7 @@ import Link from "next/link";
 import { useIcons } from "@/app/components/CustomIcons";
 
 export default function SolutionDrop() {
-	const {
-		LockIcon,
-		FleetIcon,
-		TrackingIcon,
-		FuelIcon,
-		HardwareIcon,
-		VideoIcon,
-	} = useIcons();
+	const { LockIcon, FleetIcon, TrackingIcon, FuelIcon, VideoIcon } = useIcons();
 
 	const dropMenuData = [
 		{
@@ -29,6 +22,16 @@ export default function SolutionDrop() {
 			],
 		},
 		{
+			icon: FuelIcon,
+			header: "fuel Monitoring Solutions",
+			nest: [
+				{
+					title: "Monitor Fuel Usage Prevent Theft",
+					address: "/fuel-monitoring",
+				},
+			],
+		},
+		{
 			icon: FleetIcon,
 			header: "Fleet management solutions",
 			nest: [
@@ -36,6 +39,15 @@ export default function SolutionDrop() {
 					title: "Single software platform for all your fleet needs",
 					address: "/fleet-management",
 				},
+			],
+		},
+		{
+			icon: VideoIcon,
+			header: "Video Safety",
+			nest: [
+				{ title: "4G AI Built-in Dashcam", address: "/4g-ai-builtin-dashcam" },
+				{ title: "Dashcam", address: "/dashcam" },
+				{ title: "Video Telematics", address: "/video-telematics" },
 			],
 		},
 		{
@@ -48,40 +60,11 @@ export default function SolutionDrop() {
 				{ title: "Truck Tracking System", address: "/truck-gps" },
 			],
 		},
-		{
-			icon: FuelIcon,
-			header: "fuel Monitoring Solutions",
-			nest: [
-				{
-					title: "Monitor Fuel Usage Prevent Theft",
-					address: "/fuel-monitoring",
-				},
-			],
-		},
-		{
-			icon: HardwareIcon,
-			header: "Hardware & Software Combinations",
-			nest: [
-				{ title: "Dashcam", address: "/dashcam" },
-				{ title: "Video Telematics", address: "/video-telematics" },
-			],
-		},
-		{
-			icon: VideoIcon,
-			header: "Video Safety",
-			nest: [
-				{ title: "4G AI Built-in Dashcam", address: "/4g-ai-builtin-dashcam" },
-				{
-					title: "Enhance safety and reduce liability risk",
-					address: "/video-telematics",
-				},
-			],
-		},
 	];
 
 	return (
 		<AnimatePresence>
-			<motion.div className="z-50 xl:w-[50rem] py-6 grid grid-flow-row grid-cols-1 md:grid-cols-2 place-items-start gap-y-2 gap-x-1 bg-transparent xl:bg-neutral-900 text-neutral-200 font-thin text-xs rounded-md">
+			<motion.div className="z-50 xl:min-w-[50rem] md:max-h-[30rem] py-6 xl:py-12 flex flex-col justify-end xl:justify-start items-start gap-4 md:flex-wrap xl:bg-neutral-900 text-neutral-200 font-thin text-xs rounded-md">
 				{dropMenuData.map(({ icon, header, nest }, index) => (
 					<div
 						key={`${index} - header`}
