@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import AboutDrop from "./navbar_components/AboutDrop";
 import SolutionDrop from "./navbar_components/SolutionDrop";
@@ -28,11 +29,13 @@ const navData = [
 export default function Nav() {
 	const [drop, setDrop] = useState("");
 	const [nest, setNest] = useState([]);
+	const [currentPath, setCurrentPath] = useState("");
 
 	const [opened, { open, close }] = useDisclosure(false);
 	const { RightIcon, LeftIcon, CloseIcon, BarIcon, SearchIcon } = useIcons();
 
 	const matches = useMediaQuery("(min-width: 1024px)");
+	const pathname = usePathname();
 
 	const toggleNest = (title) => {
 		setNest((prevNest) => {
@@ -48,6 +51,12 @@ export default function Nav() {
 	useEffect(() => {
 		if (matches) close();
 	}, [matches, close]);
+
+	useEffect(() => {
+		if (!currentPath) setCurrentPath(pathname);
+		else if (currentPath !== pathname) close();
+	}, [pathname]);
+
 	return (
 		<>
 			<div className="w-full bg-neutral-900 text-neutral-300 px-4 lg:px-16 xl:px-40 py-4 flex items-center justify-between flex-wrap">
