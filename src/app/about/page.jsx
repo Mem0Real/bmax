@@ -189,12 +189,12 @@ export default function About() {
 				<div className="flex flex-col justify-center items-start gap-8">
 					<h1 className="text-6xl font-semibold">Why Choose B-Max?</h1>
 					{aboutData.whyList.map(({ header, text }, index) => (
-						<>
-							<h1 key={index} className="text-2xl font-semibold">
+						<React.Fragment key={index}>
+							<h1 className="text-2xl font-semibold">
 								{++index}.{header}
 							</h1>
 							<p className="font-thin text-lg">{text}</p>
-						</>
+						</React.Fragment>
 					))}
 				</div>
 
