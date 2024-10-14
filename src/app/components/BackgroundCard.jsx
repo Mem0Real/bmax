@@ -4,7 +4,7 @@ export default function BackgroundCard({ data, location, light }) {
 	let opacity = light ? "opacity-40" : "opacity-60";
 	return (
 		<div className="px-4 xl:px-48 w-full flex flex-col md:flex-row flex-shrink justify-evenly items-center pb-8 gap-6 md:gap-0">
-			{data.map(({ header, text }, index) => {
+			{data?.map(({ header, text }, index) => {
 				let count = index + 1;
 
 				return (

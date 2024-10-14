@@ -214,7 +214,7 @@ export default function About() {
 						}
 						slideSize={{ base: "100%", sm: "50%", lg: "33%" }}
 					>
-						{imgList.map((source, index) => (
+						{imgList?.map((source, index) => (
 							<React.Fragment key={index}>
 								<CarouselSlide>
 									<Image
