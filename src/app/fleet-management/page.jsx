@@ -9,10 +9,7 @@ import CustomBgCard from "./CustomBgCard";
 
 export default function FleetManagement() {
 	return (
-		<div
-			className="min-h-[90vh] my-auto flex flex-col justify-center items-center text-neutral-950 gap-10 md:gap-12 lg:gap-16 ${
-				pt-12"
-		>
+		<div className="min-h-[90vh] my-auto flex flex-col justify-center items-center text-neutral-950 gap-10 md:gap-12 lg:gap-16 pt-12">
 			<Alternating>
 				<AlternateText
 					header={fleetData.landing.header}

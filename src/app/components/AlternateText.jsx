@@ -11,12 +11,20 @@ export default function AlternateText({
 	address,
 	linkText,
 	children,
+	swap,
 }) {
+	let tailColor = swap ? "text-nutral-200/80" : "text-neutral-950/90";
+	tailColor += swap ? " text-xl" : " text-base";
+
+	let headSize = swap
+		? "text-4xl md:text-6xl font-bold"
+		: "text-3xl md:text-4xl font-medium";
+
 	return (
 		<div className="basis-1/2 flex flex-col justify-center items-start gap-8">
-			<h1 className="text-3xl md:text-4xl font-medium">{header}</h1>
-			<p className="text-base text-neutral-950/90">{detail}</p>
-			{linkText && (
+			<h1 className={headSize}>{header}</h1>
+			<p className={tailColor}>{detail}</p>
+			{!swap && linkText && (
 				<Link href={`/${address}`}>
 					<motion.h1
 						whileHover={{

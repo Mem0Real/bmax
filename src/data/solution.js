@@ -649,3 +649,104 @@ export const cGpsData = {
 		},
 	],
 };
+
+export const bikeGpsData = {
+	location: "bike-page",
+	linkSrc: "contact",
+	linkText: "Know more",
+
+	landing: {
+		header: "Need a GPS tracker for your bike?",
+		text: "With Autotronix's GPS tracking device, gain complete visibility over your bike's movements and ensure proper parking.",
+	},
+	headerText: {
+		header: "Real-Time Bike Tracking Solutions",
+		text: "Why choose us?",
+	},
+	cards: [
+		{
+			header: "Real-Time Bike Tracking Solutions",
+			text: "With Autotronix's intelligent motorcycle GPS tracker, you can ensure your bike's safety and security at all times. Our state-of-the-art GPS system offers real-time monitoring, providing instant updates on your bike's location and movements. Say goodbye to worries about theft or unauthorized use with our robust tracking solutions, designed to prevent potential security breaches.",
+		},
+		{
+			header: "Bike Lock & Remote Control",
+			text: "Take complete control of your bike's security with Autotronix's advanced motorcycle GPS system. Our GPS locator for bikes allows you to remotely lock and unlock your vehicle with ease. Whether you want to secure your bike from a distance or grant access to trusted individuals, our remote control functionality empowers you to manage your bike's safety conveniently.",
+		},
+		{
+			header: "Live Alerts & Maintenance Management",
+			text: "Stay informed and proactive with Autotronix's bike GPS security system. Receive live alerts for various events, including speeding, unauthorized entry, and excessive idling. Our GPS tracking device keeps you well-informed about your bike's activities and any potential risks. Additionally, you can efficiently manage servicing and maintenance tasks through our user-friendly platform, ensuring your bike is in optimal condition at all times.",
+		},
+		{
+			header: "Enhanced Two-Wheeler Security",
+			text: "Gain comprehensive visibility over your bike's movements and ensure its security with Autotronix's GPS tracking device. Our advanced technology offers real-time tracking, enabling you to monitor your bike's location with precision. With our bike GPS system, you can rest assured that your vehicle is parked in designated areas, enhancing its overall security and reducing the risk of potential theft or misuse.",
+		},
+		{
+			header: "Efficient Fuel Expense Monitoring",
+			text: "Keep your operational costs in check and save on fuel expenditures with Autotronix's online GPS location tracker for bikes. Our GPS system allows you to monitor your driver's behavior, identify instances of excessive idling, and optimize fuel consumption. With our cost-effective solutions, you can efficiently manage your fleet and promote responsible driving practices.",
+		},
+		{
+			header: "Comprehensive Bike Tracking Solution",
+			text: "Explore the unparalleled bike GPS tracker by Autotronix, designed to deliver top-notch performance on Indian roads. Our cutting-edge technology ensures a seamless and secure bike tracking experience. With our comprehensive solutions, you can enhance safety, streamline bike management, and boost operational efficiency like never before.",
+		},
+	],
+
+	background: {
+		header: "Simplified Bike Management",
+		detail:
+			"Autotronix's bike navigation GPS goes beyond basic route guidance, offering a holistic view of your bike's performance and health. With our comprehensive tracking and reporting features, you can effortlessly manage your bike's well-being, track service intervals, and optimize maintenance tasks. Experience hassle-free bike management on a single platform with Autotronix's advanced GPS solutions.",
+		bgs: [
+			{
+				header: "Real-Time Tracking Solutions",
+				text: "Monitor your vehicle's location, speed, and movement in real-time with our advanced GPS tracking system.",
+			},
+			{
+				header: "Enhanced Security Features",
+				text: "Take complete control of your motorbike's security with our remote locking and anti-theft measures, ensuring your bike's safety.",
+			},
+			{
+				header: "Complete Bike Insights",
+				text: "Access comprehensive diagnostic reports, including mileage and engine health, for a seamless and secure riding experience with our motorbike GPS tracking solution.",
+			},
+		],
+	},
+
+	alt1: {
+		header: "Simplified Bike Management",
+		text: "Autotronix's bike navigation GPS goes beyond basic route guidance, offering a holistic view of your bike's performance and health. With our comprehensive tracking and reporting features, you can effortlessly manage your bike's well-being, track service intervals, and optimize maintenance tasks. Experience hassle-free bike management on a single platform with Autotronix's advanced GPS solutions.",
+	},
+	alt2: {
+		header: "Seamless Key Replacement Process Tailored to Your Needs",
+		text: "Our professional team at Autotronix Telematics understands the urgency of key replacement. Whether you've lost your keys, need a spare, or require a damaged key replacement, we provide efficient and reliable solutions to get you back on the road swiftly. Our technicians are equipped with cutting-edge technology to cut and program the new key or remote precisely. You can count on our expertise for a seamless and stress-free experience, ensuring your satisfaction with our top-notch service.",
+	},
+
+	dropData: [
+		{
+			name: "How does motorbike GPS tracking work?",
+			nest: "Our motorbike GPS tracking system uses advanced satellite technology to determine your bike's location, speed, and movement in real-time. It sends this data to a secure online platform accessible to you.",
+		},
+		{
+			name: "Can I track my motorbike in real-time?",
+			nest: "Yes, with our motorbike GPS tracking system, you can monitor your bike's location and movements in real-time through our user-friendly mobile app or web interface.",
+		},
+		{
+			name: "What is geofencing, and how does it enhance motorbike security?",
+			nest: "Geofencing allows you to set virtual boundaries for your motorbike. If your bike enters or exits these predefined areas, you receive instant alerts, enhancing the security and preventing unauthorized use.",
+		},
+		{
+			name: "Will I receive alerts if my motorbike is in an unauthorized area?",
+			nest: "Yes, our motorbike GPS tracking system sends immediate alerts when your bike enters or leaves geofenced areas or if any unauthorized movement is detected.",
+		},
+		{
+			name: "How does motorbike GPS tracking promote responsible riding?",
+			nest: "Our system provides valuable insights into your bike's speed and driving behavior. By monitoring this data, you can identify and address any reckless riding habits, promoting safer and more responsible riding.",
+		},
+		{
+			name: "Can I access historical data of my motorbike's routes and stops?",
+			nest: "Yes, our motorbike GPS tracking system stores historical data, allowing you to access past routes, stops, and driving patterns for better analysis and informed decision-making.",
+		},
+		{
+			name: "Is professional installation necessary for motorbike GPS tracking?",
+			nest: "Our motorbike GPS trackers are designed for easy self-installation. However, we also offer professional installation services for your convenience and peace of mind.",
+		},
+	],
+};
