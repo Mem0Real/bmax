@@ -23,7 +23,7 @@ export default function SolutionDrop() {
 		},
 		{
 			icon: FuelIcon,
-			header: "fuel Monitoring Solutions",
+			header: "Fuel Monitoring Solutions",
 			nest: [
 				{
 					title: "Monitor Fuel Usage Prevent Theft",
@@ -64,20 +64,20 @@ export default function SolutionDrop() {
 
 	return (
 		<AnimatePresence>
-			<motion.div className="z-50 xl:min-w-[50rem] md:max-h-[30rem] py-6 xl:py-12 flex flex-col justify-end xl:justify-start items-start gap-4 md:flex-wrap xl:bg-neutral-900 text-neutral-200 font-thin text-xs rounded-md">
+			<motion.div className="z-50 lg:w-[50rem] lg:max-h-[35rem] py-6 lg:py-12 flex flex-col justify-end lg:justify-start items-start gap-4 lg:flex-wrap lg:bg-neutral-900 text-neutral-200 font-thin text-xs rounded-md">
 				{dropMenuData.map(({ icon, header, nest }, index) => (
 					<div
 						key={`${index} - header`}
-						className="flex flex-col justify-center items-start gap-4 xl:gap-2"
+						className="flex flex-col justify-center items-start gap-4 lg:gap-2"
 					>
-						<div className="flex gap-4 items-center w-full ps-2 xl:px-6 xl:pb-3">
+						<div className="flex gap-4 items-center w-full ps-2 lg:px-6 lg:pb-3">
 							<div className="w-8 text-mellow">{icon}</div>
 							<div className="text-lg font-semibold">{header}</div>
 						</div>
-						<div className="flex flex-col justify-center items-start gap-4 pb-8 ps-6 xl:pb-3 xl:ps-8">
+						<div className="flex flex-col justify-center items-start gap-4 pb-8 ps-6 lg:pb-3 lg:ps-8">
 							{nest?.map(({ address, title }, index) => (
 								<Link
-									className="flex flex-col justify-center items-start ps-5 text-xs"
+									className="flex flex-col justify-center items-start ps-5 text-sm"
 									key={index}
 									href={address}
 								>

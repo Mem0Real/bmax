@@ -118,7 +118,7 @@ export default function Navbar() {
 							animate={{ opacity: 1, x: 0 }}
 							exit={{ opacity: 0, x: "-100vw" }}
 							transition={{ ease: [0.2, 0.1, 0.5, 0.1] }}
-							className="w-full h-full bg-neutral-900/90 text-neutral-200 px-4 xl:px-12 py-6"
+							className="w-[30rem] h-full bg-neutral-900/90 text-neutral-200 px-4 xl:px-12 py-6"
 						>
 							{/* top */}
 							<div className="w-full flex justify-end items-center pr-6">

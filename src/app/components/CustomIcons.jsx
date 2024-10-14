@@ -58,18 +58,28 @@ export default function CustomIcons({ children }) {
 		</svg>
 	);
 	const CloseIcon = (
+		// <svg
+		// 	aria-hidden="true"
+		// 	className="w-5 h-5"
+		// 	fill="currentColor"
+		// viewBox="0 0 20 20"
+		// 	xmlns="http://www.w3.org/2000/svg"
+		// >
+		// 	<path
+		// 		fillRule="evenodd"
+		// 		d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+		// 		clipRule="evenodd"
+		// 	></path>
+		// </svg>
 		<svg
-			aria-hidden="true"
-			className="w-5 h-5"
-			fill="currentColor"
-			viewBox="0 0 20 20"
 			xmlns="http://www.w3.org/2000/svg"
+			fillRule="evenodd"
+			clipRule="evenodd"
+			fill="none"
+			stroke="currentColor"
+			viewBox="0 0 24 24"
 		>
-			<path
-				fillRule="evenodd"
-				d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-				clipRule="evenodd"
-			></path>
+			<path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm0 10.293l5.293-5.293.707.707-5.293 5.293 5.293 5.293-.707.707-5.293-5.293-5.293 5.293-.707-.707 5.293-5.293-5.293-5.293.707-.707 5.293 5.293z" />
 		</svg>
 	);
 	const LoadingIcon = (
