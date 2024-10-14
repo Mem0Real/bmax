@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
 import AboutDrop from "./navbar_components/AboutDrop";
@@ -11,8 +11,9 @@ import { AnimatePresence, easeInOut, motion } from "framer-motion";
 import { useIcons } from "../components/CustomIcons";
 import Image from "next/image";
 
-import { useDisclosure } from "@mantine/hooks";
-import { Drawer, Button } from "@mantine/core";
+import { Drawer } from "@mantine/core";
+
+import { useDisclosure, useMediaQuery } from "@mantine/hooks";
 
 const navData = [
 	{ title: "Home", address: "/" },
@@ -31,6 +32,8 @@ export default function Nav() {
 	const [opened, { open, close }] = useDisclosure(false);
 	const { RightIcon, LeftIcon, CloseIcon, BarIcon, SearchIcon } = useIcons();
 
+	const matches = useMediaQuery("(min-width: 1024px)");
+
 	const toggleNest = (title) => {
 		setNest((prevNest) => {
 			if (prevNest.includes(title)) {
@@ -41,6 +44,10 @@ export default function Nav() {
 			}
 		});
 	};
+
+	useEffect(() => {
+		if (matches) close();
+	}, [matches]);
 	return (
 		<>
 			<div className="w-full bg-neutral-900 text-neutral-300 px-4 lg:px-16 xl:px-40 py-4 flex items-center justify-between flex-wrap">
