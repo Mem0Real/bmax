@@ -11,7 +11,7 @@ import AlternateImage from "../components/AlternateImage";
 import { useIcons } from "../components/CustomIcons";
 import GenerateCard from "../components/GenerateCard";
 
-export default function page() {
+export default function Page() {
 	const { ClockIcon, LockedIcon, WifiIcon, CycleIcon, SecureIcon, RiskIcon } =
 		useIcons();
 

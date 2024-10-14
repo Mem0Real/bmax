@@ -9,7 +9,7 @@ import ExtrudeText from "../components/ExtrudeText";
 
 import { fuelData } from "@/data/solution";
 
-export default function page() {
+export default function Page() {
 	return (
 		<div className="relative w-full flex flex-col">
 			<div

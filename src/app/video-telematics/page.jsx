@@ -11,7 +11,7 @@ import { videoData } from "@/data/solution";
 import { useIcons } from "../components/CustomIcons";
 import BackgroundCard from "../components/BackgroundCard";
 
-export default function page() {
+export default function Page() {
 	const {
 		SafetyIcon,
 		GaugeIcon,

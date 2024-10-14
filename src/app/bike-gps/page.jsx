@@ -11,7 +11,7 @@ import { useIcons } from "../components/CustomIcons";
 import BackgroundCard from "../components/BackgroundCard";
 import ExtrudeText from "../components/ExtrudeText";
 
-export default function page() {
+export default function Page() {
 	const { ClockIcon, LockedIcon, WifiIcon, CycleIcon, MonitorIcon, BikeIcon } =
 		useIcons();
 

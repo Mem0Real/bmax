@@ -12,7 +12,7 @@ import ExtrudeText from "../components/ExtrudeText";
 
 import { useIcons } from "../components/CustomIcons";
 
-export default function page() {
+export default function Page() {
 	const { SignIcon, PersonIcon, MapIcon, TruckIcon, HeartIcon, PinIcon } =
 		useIcons();
 

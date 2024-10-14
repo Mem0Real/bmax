@@ -24,7 +24,7 @@ const whyList = [
 	{
 		title: "Custom Solutions",
 		detail:
-			"At B-Max, we understand that every vehicle and client has unique requirements. That's why we offer personalized solutions tailored to your specific needs, whether it's replacing lost keys, enhancing vehicle security, or optimizing fleet management.",
+			"At B-Max, we understand that every vehicle and client has unique requirements. That&apos;s why we offer personalized solutions tailored to your specific needs, whether it&apos;s replacing lost keys, enhancing vehicle security, or optimizing fleet management.",
 	},
 	{
 		title: "Prompt Service",
@@ -69,7 +69,7 @@ export default function About() {
 			icon: TechnologyIcon,
 			title: "Advanced Technology",
 			detail:
-				"Embrace the power of advanced technologies with Autotronix. Our state-of-the-art GPS tracking, video telematics, and fuel monitoring solutions offer real-time visibility and actionable insights. Stay ahead of the competition and make data-driven decisions for your fleet's success.",
+				"Embrace the power of advanced technologies with Autotronix. Our state-of-the-art GPS tracking, video telematics, and fuel monitoring solutions offer real-time visibility and actionable insights. Stay ahead of the competition and make data-driven decisions for your fleet&apos;s success.",
 		},
 		{
 			icon: SupportIcon,
@@ -81,7 +81,7 @@ export default function About() {
 			icon: ExpertIcon,
 			title: "Industry Expertise",
 			detail:
-				"B-Max boasts extensive experience in the fleet management industry, offering deep understanding of businesses' challenges. Trust our domain knowledge to optimize your operations and achieve operational excellence.",
+				"B-Max boasts extensive experience in the fleet management industry, offering deep understanding of businesses&apos; challenges. Trust our domain knowledge to optimize your operations and achieve operational excellence.",
 		},
 		{
 			icon: ScaleIcon,
@@ -103,8 +103,8 @@ export default function About() {
 				{/* landing text */}
 				<div className="flex flex-col justify-center items-center gap-6">
 					<p className="text-2xl font-semibold">
-						At B-Max, we're passionate about keeping you on the road safely and
-						securely. As experts in car key replacement, programming, GPS
+						At B-Max, we&apos;re passionate about keeping you on the road safely
+						and securely. As experts in car key replacement, programming, GPS
 						tracking, car alarm systems, and fleet management in Kenya, we offer
 						a comprehensive range of services to meet all your automotive
 						security and management needs.
@@ -147,9 +147,9 @@ export default function About() {
 							informed decisions about their fleet management needs. With
 							cutting-edge technology and customized solutions, we enable
 							businesses to streamline fleet operations and achieve their goals
-							efficiently. Whether it's fleet optimization, real-time tracking,
-							or improving operational efficiency, B-Max has the expertise and
-							solutions to drive your fleet to success.
+							efficiently. Whether it&apos;s fleet optimization, real-time
+							tracking, or improving operational efficiency, B-Max has the
+							expertise and solutions to drive your fleet to success.
 						</p>
 						<p className="xl:pr-16">
 							Our GPS tracking systems empower businesses with real-time

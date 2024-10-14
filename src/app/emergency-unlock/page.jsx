@@ -14,7 +14,7 @@ import { emergencyData } from "@/data/solution";
 
 import { useIcons } from "../components/CustomIcons";
 
-export default function page() {
+export default function Page() {
 	const { UnlockIcon, CarIcon, PhoneIcon, TechIcon, MapIcon, KeyIcon } =
 		useIcons();
 
