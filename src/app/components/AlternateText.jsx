@@ -12,8 +12,13 @@ export default function AlternateText({
 	linkText,
 	children,
 	swap,
+	light,
 }) {
-	let tailColor = swap ? "text-nutral-200/80" : "text-neutral-950/90";
+	let tailColor = !light
+		? swap
+			? "text-nutral-200/80"
+			: "text-neutral-950/90"
+		: "text-nutral-200/80";
 	tailColor += swap ? " text-xl" : " text-base";
 
 	let headSize = swap

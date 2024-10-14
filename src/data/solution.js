@@ -952,3 +952,105 @@ export const tGpsData = {
 		},
 	],
 };
+
+export const fuelData = {
+	location: "fuel-page",
+	linkSrc: "contact",
+	linkText: "Know more",
+
+	landing: {
+		header: "Optimize Fuel Efficiency with our Fuel Monitoring Solution",
+		text: "Maximize fuel efficiency and streamline your fuel management with Autotronix's advanced solutions. Our comprehensive fuel management system empowers businesses to reduce costs, enhance operational efficiency, and contribute to environmental sustainability.",
+	},
+	headerText: {
+		header: "Real-Time Fuel Monitoring",
+		text: "Optimize Fuel Efficiency with our Fuel Monitoring Solution. Our real-time fuel monitoring system empowers businesses to optimize fuel efficiency, reduce costs, and improve fleet performance.",
+	},
+	alt1: {
+		header: "Advanced Fuel Sensors",
+		text: "Our advanced fuel sensors ensure precise and reliable measurement of fuel levels, minimizing discrepancies and enhancing data accuracy.",
+	},
+	alt2: {
+		header: "Fuel Efficiency Solutions",
+		text: "Our advanced fuel monitoring system enables you to optimize fuel consumption, prevent theft, and minimize environmental impact, resulting in significant cost savings.",
+	},
+	background: {
+		title: "Improve Fleet Efficiency",
+		header: "Smart Fuel Management Solution",
+		detail:
+			"Embrace our fuel monitoring system to drive efficiency, reduce costs, and boost productivity across your fleet operations.",
+		bgs: [
+			{
+				header: "Monitor Fuel Levels on the Go",
+				text: "Keep a constant eye on your fleet's fuel consumption with our real-time fuel tracking system, enabling informed decisions for optimal efficiency.",
+			},
+			{
+				header: "Safeguard Against Fuel Pilferage",
+				text: "Enhance security and protect your valuable resources by using our advanced fuel monitoring technology to detect and prevent fuel theft incidents.",
+			},
+			{
+				header: "Embrace Sustainability Efforts",
+				text: "Reduce your fleet's environmental impact and promote eco-friendly practices with our fuel monitoring system, contributing to a greener future.",
+			},
+		],
+	},
+	alt3: {
+		header: "Customized Solution Catered to Your Business",
+		text: "Our fuel monitoring system is expertly designed to seamlessly integrate with your existing fleet management tools, offering a customized solution tailored to the specific needs and requirements of your business. This streamlined integration ensures a smooth and efficient fuel monitoring process without disrupting your current operations.",
+	},
+	alt4: {
+		header: "Comprehensive Support Services for Optimal Performance",
+		text: "We pride ourselves on providing top-notch support services to help you get the most out of our fuel monitoring system. Our team of experts is dedicated to assisting you every step of the way, from installation and setup to ongoing maintenance. Moreover, we offer comprehensive training resources to empower your staff with the knowledge and skills needed to leverage the full potential of our fuel monitoring solution. With our support and training, you can confidently implement and manage the system with ease, ensuring optimal performance and benefits for your business.",
+	},
+
+	dropData1: [
+		{
+			name: "Real-Time Alerts",
+			nest: " Receive instant notifications on fuel theft, abnormal consumption, and refueling events, allowing prompt action to prevent losses and improve fuel management.",
+		},
+		{
+			name: "Data Analytics and Reports",
+			nest: "Analyze fuel consumption patterns, trends, and generate detailed reports for better decision-making and operational efficiency.",
+		},
+		{
+			name: "Integrated Fleet Management",
+			nest: "Seamlessly integrate our fuel monitoring system with your existing fleet management software for streamlined operations and enhanced insights.",
+		},
+	],
+	dropData2: [
+		{
+			name: "Fuel Consumption Optimization",
+			nest: "Identify fuel-wasting practices and implement strategies to optimize fuel consumption, leading to substantial cost savings.",
+		},
+		{
+			name: "Prevent Fuel Theft",
+			nest: "Our system helps detect and prevent fuel theft by monitoring unauthorized fueling events and providing security alerts.",
+		},
+		{
+			name: "Reduce Environmental Impact",
+			nest: "With efficient fuel management, reduce your fleet's carbon footprint and contribute to a more sustainable environment.",
+		},
+	],
+	dropData3: [
+		{
+			name: "How does the fuel monitoring system work?",
+			nest: "The fuel monitoring system utilizes advanced sensors and telematics technology to track fuel levels, consumption, and related data in real-time.",
+		},
+		{
+			name: "Can the fuel monitoring system be integrated with existing fleet management software?",
+			nest: "Yes, our fuel monitoring system is designed to seamlessly integrate with various fleet management tools, providing customized solutions for your business needs.",
+		},
+		{
+			name: "How does the system help prevent fuel theft?",
+			nest: "Our system includes security features to detect and prevent fuel theft incidents, such as unauthorized fueling alerts and monitoring of fueling events.",
+		},
+		{
+			name: "What benefits does the fuel monitoring system offer for my business?",
+			nest: "The fuel monitoring system allows you to optimize fuel consumption, reduce operational costs, prevent fuel theft, and contribute to a more sustainable environment.",
+		},
+		{
+			name: "Is training provided for using the fuel monitoring system?",
+			nest: "Yes, we offer comprehensive support services that include expert training and resources to help you make the most of our fuel monitoring system's potential.",
+		},
+	],
+};
