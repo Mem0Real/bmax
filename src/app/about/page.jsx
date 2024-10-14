@@ -223,7 +223,6 @@ export default function About() {
 										width={400}
 										height={400}
 										className="object-contain md:object-cover lg:object-contain object-center"
-										sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 									/>
 								</CarouselSlide>
 							</React.Fragment>
