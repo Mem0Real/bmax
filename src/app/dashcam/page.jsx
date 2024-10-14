@@ -7,7 +7,6 @@ import { dashcamData } from "@/data/solution";
 import Alternating from "../components/Alternating";
 import AlternateText from "../components/AlternateText";
 import AlternateImage from "../components/AlternateImage";
-import ExtrudeText from "../components/ExtrudeText";
 
 import { useIcons } from "../components/CustomIcons";
 import GenerateCard from "../components/GenerateCard";
@@ -27,7 +26,7 @@ export default function page() {
 	return (
 		<div className="relative w-full flex flex-col">
 			<div
-				className=" min-h-screen bg-cover bg-bottom bg-no-repeat"
+				className="min-h-screen bg-cover bg-bottom bg-no-repeat"
 				style={{ backgroundImage: "url(/images/dashcam-page/background.jpg)" }}
 			>
 				<div className="absolute inset-0 bg-black opacity-50" />

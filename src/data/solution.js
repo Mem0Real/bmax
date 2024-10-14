@@ -657,7 +657,7 @@ export const bikeGpsData = {
 
 	landing: {
 		header: "Need a GPS tracker for your bike?",
-		text: "With Autotronix's GPS tracking device, gain complete visibility over your bike's movements and ensure proper parking.",
+		text: "With B-Max's GPS tracking device, gain complete visibility over your bike's movements and ensure proper parking.",
 	},
 	headerText: {
 		header: "Real-Time Bike Tracking Solutions",
@@ -666,34 +666,34 @@ export const bikeGpsData = {
 	cards: [
 		{
 			header: "Real-Time Bike Tracking Solutions",
-			text: "With Autotronix's intelligent motorcycle GPS tracker, you can ensure your bike's safety and security at all times. Our state-of-the-art GPS system offers real-time monitoring, providing instant updates on your bike's location and movements. Say goodbye to worries about theft or unauthorized use with our robust tracking solutions, designed to prevent potential security breaches.",
+			text: "With B-Max's intelligent motorcycle GPS tracker, you can ensure your bike's safety and security at all times. Our state-of-the-art GPS system offers real-time monitoring, providing instant updates on your bike's location and movements. Say goodbye to worries about theft or unauthorized use with our robust tracking solutions, designed to prevent potential security breaches.",
 		},
 		{
 			header: "Bike Lock & Remote Control",
-			text: "Take complete control of your bike's security with Autotronix's advanced motorcycle GPS system. Our GPS locator for bikes allows you to remotely lock and unlock your vehicle with ease. Whether you want to secure your bike from a distance or grant access to trusted individuals, our remote control functionality empowers you to manage your bike's safety conveniently.",
+			text: "Take complete control of your bike's security with B-Max's advanced motorcycle GPS system. Our GPS locator for bikes allows you to remotely lock and unlock your vehicle with ease. Whether you want to secure your bike from a distance or grant access to trusted individuals, our remote control functionality empowers you to manage your bike's safety conveniently.",
 		},
 		{
 			header: "Live Alerts & Maintenance Management",
-			text: "Stay informed and proactive with Autotronix's bike GPS security system. Receive live alerts for various events, including speeding, unauthorized entry, and excessive idling. Our GPS tracking device keeps you well-informed about your bike's activities and any potential risks. Additionally, you can efficiently manage servicing and maintenance tasks through our user-friendly platform, ensuring your bike is in optimal condition at all times.",
+			text: "Stay informed and proactive with B-Max's bike GPS security system. Receive live alerts for various events, including speeding, unauthorized entry, and excessive idling. Our GPS tracking device keeps you well-informed about your bike's activities and any potential risks. Additionally, you can efficiently manage servicing and maintenance tasks through our user-friendly platform, ensuring your bike is in optimal condition at all times.",
 		},
 		{
 			header: "Enhanced Two-Wheeler Security",
-			text: "Gain comprehensive visibility over your bike's movements and ensure its security with Autotronix's GPS tracking device. Our advanced technology offers real-time tracking, enabling you to monitor your bike's location with precision. With our bike GPS system, you can rest assured that your vehicle is parked in designated areas, enhancing its overall security and reducing the risk of potential theft or misuse.",
+			text: "Gain comprehensive visibility over your bike's movements and ensure its security with B-Max's GPS tracking device. Our advanced technology offers real-time tracking, enabling you to monitor your bike's location with precision. With our bike GPS system, you can rest assured that your vehicle is parked in designated areas, enhancing its overall security and reducing the risk of potential theft or misuse.",
 		},
 		{
 			header: "Efficient Fuel Expense Monitoring",
-			text: "Keep your operational costs in check and save on fuel expenditures with Autotronix's online GPS location tracker for bikes. Our GPS system allows you to monitor your driver's behavior, identify instances of excessive idling, and optimize fuel consumption. With our cost-effective solutions, you can efficiently manage your fleet and promote responsible driving practices.",
+			text: "Keep your operational costs in check and save on fuel expenditures with B-Max's online GPS location tracker for bikes. Our GPS system allows you to monitor your driver's behavior, identify instances of excessive idling, and optimize fuel consumption. With our cost-effective solutions, you can efficiently manage your fleet and promote responsible driving practices.",
 		},
 		{
 			header: "Comprehensive Bike Tracking Solution",
-			text: "Explore the unparalleled bike GPS tracker by Autotronix, designed to deliver top-notch performance on Indian roads. Our cutting-edge technology ensures a seamless and secure bike tracking experience. With our comprehensive solutions, you can enhance safety, streamline bike management, and boost operational efficiency like never before.",
+			text: "Explore the unparalleled bike GPS tracker by B-Max, designed to deliver top-notch performance on Indian roads. Our cutting-edge technology ensures a seamless and secure bike tracking experience. With our comprehensive solutions, you can enhance safety, streamline bike management, and boost operational efficiency like never before.",
 		},
 	],
 
 	background: {
 		header: "Simplified Bike Management",
 		detail:
-			"Autotronix's bike navigation GPS goes beyond basic route guidance, offering a holistic view of your bike's performance and health. With our comprehensive tracking and reporting features, you can effortlessly manage your bike's well-being, track service intervals, and optimize maintenance tasks. Experience hassle-free bike management on a single platform with Autotronix's advanced GPS solutions.",
+			"B-Max's bike navigation GPS goes beyond basic route guidance, offering a holistic view of your bike's performance and health. With our comprehensive tracking and reporting features, you can effortlessly manage your bike's well-being, track service intervals, and optimize maintenance tasks. Experience hassle-free bike management on a single platform with B-Max's advanced GPS solutions.",
 		bgs: [
 			{
 				header: "Real-Time Tracking Solutions",
@@ -712,11 +712,11 @@ export const bikeGpsData = {
 
 	alt1: {
 		header: "Simplified Bike Management",
-		text: "Autotronix's bike navigation GPS goes beyond basic route guidance, offering a holistic view of your bike's performance and health. With our comprehensive tracking and reporting features, you can effortlessly manage your bike's well-being, track service intervals, and optimize maintenance tasks. Experience hassle-free bike management on a single platform with Autotronix's advanced GPS solutions.",
+		text: "B-Max's bike navigation GPS goes beyond basic route guidance, offering a holistic view of your bike's performance and health. With our comprehensive tracking and reporting features, you can effortlessly manage your bike's well-being, track service intervals, and optimize maintenance tasks. Experience hassle-free bike management on a single platform with B-Max's advanced GPS solutions.",
 	},
 	alt2: {
 		header: "Seamless Key Replacement Process Tailored to Your Needs",
-		text: "Our professional team at Autotronix Telematics understands the urgency of key replacement. Whether you've lost your keys, need a spare, or require a damaged key replacement, we provide efficient and reliable solutions to get you back on the road swiftly. Our technicians are equipped with cutting-edge technology to cut and program the new key or remote precisely. You can count on our expertise for a seamless and stress-free experience, ensuring your satisfaction with our top-notch service.",
+		text: "Our professional team at B-Max Telematics understands the urgency of key replacement. Whether you've lost your keys, need a spare, or require a damaged key replacement, we provide efficient and reliable solutions to get you back on the road swiftly. Our technicians are equipped with cutting-edge technology to cut and program the new key or remote precisely. You can count on our expertise for a seamless and stress-free experience, ensuring your satisfaction with our top-notch service.",
 	},
 
 	dropData: [
@@ -758,11 +758,11 @@ export const busGpsData = {
 
 	landing: {
 		header: "Efficiently Manage and Track Your Bus",
-		text: "Autotronix offers a fast and secure solution to manage and track your buses using our reliable Bus GPS Tracker. Gain complete visibility over your fleet, ensuring safety, security, and optimization of your bus operations.",
+		text: "B-Max offers a fast and secure solution to manage and track your buses using our reliable Bus GPS Tracker. Gain complete visibility over your fleet, ensuring safety, security, and optimization of your bus operations.",
 	},
 	headerText: {
 		header: "Smart Solutions for Efficient Fleet Management",
-		text: "At Autotronix, we offer cutting-edge telematics and GPS tracking solutions that empower businesses to optimize their fleet operations. From real-time tracking to comprehensive insights, our smart solutions ensure efficiency, safety, and cost-effectiveness for your fleet.",
+		text: "At B-Max, we offer cutting-edge telematics and GPS tracking solutions that empower businesses to optimize their fleet operations. From real-time tracking to comprehensive insights, our smart solutions ensure efficiency, safety, and cost-effectiveness for your fleet.",
 	},
 	cards: [
 		{
@@ -787,14 +787,14 @@ export const busGpsData = {
 		},
 		{
 			header: "Efficiency",
-			text: "Take charge of your bus fleet's performance and safety with Autotronix's Bus GPS Tracker. Experience the efficiency, reliability, and peace of mind that comes with our advanced tracking solutions. Get in touch with us today to transform your bus operations.",
+			text: "Take charge of your bus fleet's performance and safety with B-Max's Bus GPS Tracker. Experience the efficiency, reliability, and peace of mind that comes with our advanced tracking solutions. Get in touch with us today to transform your bus operations.",
 		},
 	],
 
 	background: {
 		header: "Optimize Your Bus Fleet Operations with Advanced GPS Tracking",
 		detail:
-			"Autotronix's Bus GPS tracking system provides real-time monitoring and intelligent insights for your bus fleet. Stay in control of your buses' locations, driving behavior, and maintenance needs, ensuring smooth operations and passenger safety.",
+			"B-Max's Bus GPS tracking system provides real-time monitoring and intelligent insights for your bus fleet. Stay in control of your buses' locations, driving behavior, and maintenance needs, ensuring smooth operations and passenger safety.",
 		bgs: [
 			{
 				header: "Real-Time Bus Monitoring",
@@ -813,11 +813,11 @@ export const busGpsData = {
 
 	alt1: {
 		header: "Efficiency and Safety Combined: Bus GPS Tracking",
-		text: "Autotronix's Bus GPS tracking system ensures efficiency and safety for your bus fleet. With real-time monitoring, intelligent insights, and enhanced security features, you can streamline operations and deliver a smooth and secure experience for your passengers.",
+		text: "B-Max's Bus GPS tracking system ensures efficiency and safety for your bus fleet. With real-time monitoring, intelligent insights, and enhanced security features, you can streamline operations and deliver a smooth and secure experience for your passengers.",
 	},
 	alt2: {
 		header: "Streamline Your Bus Operations with GPS Tracking",
-		text: "Optimize your bus fleet operations with Autotronix's advanced GPS tracking solution. Gain real-time visibility, access comprehensive fleet insights, and improve route planning to reduce costs and enhance overall efficiency. Take control of your bus fleet today for a more successful and reliable transportation service.",
+		text: "Optimize your bus fleet operations with B-Max's advanced GPS tracking solution. Gain real-time visibility, access comprehensive fleet insights, and improve route planning to reduce costs and enhance overall efficiency. Take control of your bus fleet today for a more successful and reliable transportation service.",
 	},
 
 	dropData: [
@@ -859,7 +859,7 @@ export const tGpsData = {
 
 	landing: {
 		header: "Optimize Fleet Performance with Truck GPS Tracking Solutions",
-		text: "Experience enhanced fleet efficiency and optimize performance with our Truck GPS tracking system. Gain real-time insights into your trucks' location, speed, and routes, enabling you to identify opportunities for improvement, reduce idle time, and enhance overall productivity. Stay in control of your fleet operations and drive success with Autotronix Telematics' advanced tracking solutions.",
+		text: "Experience enhanced fleet efficiency and optimize performance with our Truck GPS tracking system. Gain real-time insights into your trucks' location, speed, and routes, enabling you to identify opportunities for improvement, reduce idle time, and enhance overall productivity. Stay in control of your fleet operations and drive success with B-Max Telematics' advanced tracking solutions.",
 	},
 	headerText: {
 		header: "Real-Time Visibility and Fleet Monitoring",
@@ -918,7 +918,7 @@ export const tGpsData = {
 	},
 	alt2: {
 		header: "Boost Productivity with Advanced Truck GPS Technology",
-		text: "Embrace the power of advanced Truck GPS technology to boost productivity in your fleet management. From real-time tracking and route optimization to driver behavior analysis, our solutions provide valuable insights for better decision-making and improved overall performance. Stay ahead in the competitive market with Autotronix Telematics' cutting-edge GPS solutions.",
+		text: "Embrace the power of advanced Truck GPS technology to boost productivity in your fleet management. From real-time tracking and route optimization to driver behavior analysis, our solutions provide valuable insights for better decision-making and improved overall performance. Stay ahead in the competitive market with B-Max Telematics' cutting-edge GPS solutions.",
 	},
 
 	dropData: [
@@ -960,7 +960,7 @@ export const fuelData = {
 
 	landing: {
 		header: "Optimize Fuel Efficiency with our Fuel Monitoring Solution",
-		text: "Maximize fuel efficiency and streamline your fuel management with Autotronix's advanced solutions. Our comprehensive fuel management system empowers businesses to reduce costs, enhance operational efficiency, and contribute to environmental sustainability.",
+		text: "Maximize fuel efficiency and streamline your fuel management with B-Max's advanced solutions. Our comprehensive fuel management system empowers businesses to reduce costs, enhance operational efficiency, and contribute to environmental sustainability.",
 	},
 	headerText: {
 		header: "Real-Time Fuel Monitoring",
@@ -1062,11 +1062,11 @@ export const dashcamData = {
 
 	landing: {
 		header: "Empower Your Drive with Advanced Dashcams",
-		text: "Upgrade your driving experience with Autotronix's advanced dashcams, designed to provide safety, security, and peace of mind on the road. Our cutting-edge dashcam technology combines high-resolution video capture with intelligent features, ensuring you have a reliable eyewitness on every journey.",
+		text: "Upgrade your driving experience with B-Max's advanced dashcams, designed to provide safety, security, and peace of mind on the road. Our cutting-edge dashcam technology combines high-resolution video capture with intelligent features, ensuring you have a reliable eyewitness on every journey.",
 	},
 	alt1: {
 		header: "Elevate Road Safety and Security with State-of-the-Art Dashcams",
-		text: "At Autotronix, we offer advanced dashcams designed to enhance road safety and protect your vehicle. Our cutting-edge dashcam technology provides real-time recording, collision detection, and driver monitoring, ensuring you have a comprehensive view of your driving experience. Whether you want to capture stunning scenery during your road trips or safeguard your fleet against accidents and fraud, our dashcams deliver unmatched performance and reliability. Trust Autotronix to empower your drive with the latest in dashcam innovation.",
+		text: "At B-Max, we offer advanced dashcams designed to enhance road safety and protect your vehicle. Our cutting-edge dashcam technology provides real-time recording, collision detection, and driver monitoring, ensuring you have a comprehensive view of your driving experience. Whether you want to capture stunning scenery during your road trips or safeguard your fleet against accidents and fraud, our dashcams deliver unmatched performance and reliability. Trust B-Max to empower your drive with the latest in dashcam innovation.",
 	},
 	headerText: {
 		header: "Enhanced Safety and Security on the Road",
@@ -1119,6 +1119,70 @@ export const dashcamData = {
 		{
 			name: "Can dashcams improve driver behavior?",
 			nest: "Yes, dashcams can help improve driver behavior as they offer real-time monitoring and feedback. Fleet managers can use dashcam footage to identify risky driving habits and provide targeted coaching for safer driving practices.",
+		},
+	],
+};
+
+export const videoData = {
+	location: "video-page",
+
+	landing: {
+		header: "Innovative Video Telematics",
+		text: "Explore the cutting-edge world of video telematics with Autotronix, where technology meets safety and efficiency. Our comprehensive solutions incorporate advanced in-cab cameras, real-time video insights, and AI-powered analytics to revolutionize fleet monitoring. Whether you're focused on road safety, driver behavior analytics, or logistics optimization, Autotronix's video telematics technology provides unparalleled visibility into your fleet's operations.",
+	},
+	alt: {
+		text1:
+			"B-Max's video solutions go beyond traditional GPS tracking, offering a holistic approach to fleet management. Our connected vehicle solutions provide a seamless integration of GPS telematics devices and incident detection systems, ensuring real-time monitoring and actionable insights. Commercial vehicle telematics have never been more sophisticated, empowering businesses to enhance safety, reduce risks, and optimize operations with intelligent video surveillance technology.",
+		text2:
+			"Experience the power of B-Max's fleet management software, designed to meet the evolving demands of the modern business landscape. Our video telematics solutions not only improve safety and compliance but also provide a strategic advantage in logistics and operations. From in-depth driver behavior analytics to incident detection and AI-driven video analytics, B-Max's innovative approach to video telematics sets a new standard for businesses looking to transform their fleet management practices.",
+	},
+	background: {
+		header: "Revolutionize Fleet Safety with Autotronix",
+		detail:
+			"Innovative video telematics solutions ensuring real-time insights, safety optimization, and efficient fleet management for unparalleled operational excellence.",
+		bgs: [
+			{
+				header: "Enhanced Safety Monitoring",
+				text: "Video telematics ensures constant surveillance, promoting safe driving behaviors and reducing accidents through real-time monitoring and alerts.",
+			},
+			{
+				header: "Operational Efficiency Boost",
+				text: "Improve fleet efficiency with video telematics, optimizing routes, reducing fuel costs, and enhancing overall logistics operations for businesses.",
+			},
+			{
+				header: "Risk Mitigation and Compliance:",
+				text: "Ensure regulatory compliance and mitigate risks by utilizing video telematics for accurate incident reporting, aiding in insurance claims and audits.",
+			},
+		],
+	},
+	headerText: {
+		header: "Boost Safety and Minimize Liability",
+	},
+
+	cards: [
+		{
+			header: "Real-time Safety Insights",
+			text: "Elevate safety with video telematics. Our real-time insights monitor driver behavior, detect risky events, and create a secure operating environment. This enhances road safety compliance and reduces the likelihood of accidents, ensuring a safer urban environment for both drivers and pedestrians.",
+		},
+		{
+			header: "Operational Efficiency Optimization",
+			text: "Optimize logistics using video telematics. Improve route planning, reduce fuel costs, and streamline operations for efficient urban transportation. This results in reduced congestion, lower carbon emissions, and overall enhanced operational sustainability in Nairobi's dynamic business landscape.",
+		},
+		{
+			header: "Compliance Assurance",
+			text: "Ensure regulatory compliance in Nairobi with video telematics. Accurately report incidents, facilitate audits, and meet local transportation regulations for a risk-free and compliant business. This helps businesses operate seamlessly within Nairobi's regulatory framework, fostering trust and reliability in the local market.",
+		},
+		{
+			header: "Driver Performance Enhancement",
+			text: "Boost driver performance with video telematics. Provide targeted feedback, coaching, and training to enhance skills, creating a professional and efficient workforce. This approach contributes to improved road safety, reduced traffic incidents, and increased overall efficiency in Nairobi's bustling urban environment.",
+		},
+		{
+			header: "Cost Reduction Strategies",
+			text: "Implement cost reduction strategies tailored for Nairobi with video telematics. Identify fuel inefficiencies, reduce maintenance costs, and optimize resource allocation, contributing to sustainable financial growth. Businesses in Nairobi can enjoy improved profitability and operational resilience through strategic cost-saving measures.",
+		},
+		{
+			header: "Insurance Claim Support",
+			text: "Support insurance claims efficiently in Nairobi with video telematics. Provide accurate incident footage for faster claim processing, reducing downtime and improving insurance outcomes. This helps businesses in Nairobi navigate insurance procedures seamlessly, ensuring a swift and reliable claims process for enhanced business continuity.d.",
 		},
 	],
 };

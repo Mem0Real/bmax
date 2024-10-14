@@ -18,7 +18,7 @@ export default function AlternateText({
 		? swap
 			? "text-nutral-200/80"
 			: "text-neutral-950/90"
-		: "text-nutral-200/80";
+		: "text-neutral-200/80";
 	tailColor += swap ? " text-xl" : " text-base";
 
 	let headSize = swap
@@ -28,7 +28,17 @@ export default function AlternateText({
 	return (
 		<div className="w-full basis-1/2 flex flex-col justify-center items-start gap-8">
 			<h1 className={headSize}>{header}</h1>
-			<p className={tailColor}>{detail}</p>
+			{Array.isArray(detail) ? (
+				<div className="flex flex-col justify-center items-center gap-8">
+					{detail?.map((text, index) => (
+						<p key={index} className="text-neutral-200 text-lg text-start">
+							{text}
+						</p>
+					))}
+				</div>
+			) : (
+				<p className={tailColor}>{detail}</p>
+			)}
 			{!swap && linkText && (
 				<Link href={`/${address}`}>
 					<motion.h1
