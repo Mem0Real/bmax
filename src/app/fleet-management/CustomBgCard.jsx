@@ -8,6 +8,7 @@ export default function CustomBgCard({ data, location }) {
 
 				return (
 					<div
+						key={index}
 						className={`relative w-full md:w-[20rem] h-[30rem] md:h-[40rem] bg-no-repeat bg-cover bg-center flex flex-col justify-end items-center p-6`}
 						style={{
 							backgroundImage: `url("/images/${location}/bg${count}.jpg")`,

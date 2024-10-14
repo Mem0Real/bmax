@@ -75,7 +75,7 @@ export default function Clients() {
 							<li>
 								<span className="font-medium">Individual Vehicle Owners:</span>
 								We cater to individuals who seek advanced security solutions for
-								their personal vehicles. Whether it's GPS tracking, remote
+								their personal vehicles. Whether it&apos;s GPS tracking, remote
 								immobilization, or alarm systems, we provide personalized
 								security solutions.
 							</li>
@@ -110,7 +110,7 @@ export default function Clients() {
 							</li>
 							<li>
 								<span className="font-medium">Customization:</span>
-								We understand that each client's security needs are unique.
+								We understand that each client&apos;s security needs are unique.
 								Therefore, we offer tailored solutions to precisely match their
 								requirements, ensuring optimal security measures.
 							</li>

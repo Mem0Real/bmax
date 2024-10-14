@@ -47,7 +47,7 @@ export default function Nav() {
 
 	useEffect(() => {
 		if (matches) close();
-	}, [matches]);
+	}, [matches, close]);
 	return (
 		<>
 			<div className="w-full bg-neutral-900 text-neutral-300 px-4 lg:px-16 xl:px-40 py-4 flex items-center justify-between flex-wrap">
