@@ -35,10 +35,10 @@ export default function page() {
 
 				<div className="relative w-full h-full grid grid-cols-6 grid-flow-row text-neutral-100">
 					<div className="col-start-2 col-span-3 place-content-center space-y-3">
-						<h1 className="text-4xl md:text-6xl font-bold uppercase">
+						<h1 className="text-4xl md:text-6xl font-bold">
 							{tGpsData.landing.header}
 						</h1>
-						<p className="text-nutral-200/80 text-xl">
+						<p className="text-neutral-100/90 text-lg">
 							{tGpsData.landing.text}
 						</p>
 					</div>

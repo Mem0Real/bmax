@@ -1054,3 +1054,71 @@ export const fuelData = {
 		},
 	],
 };
+
+export const dashcamData = {
+	location: "dashcam-page",
+	linkSrc: "contact",
+	linkText: "get service",
+
+	landing: {
+		header: "Empower Your Drive with Advanced Dashcams",
+		text: "Upgrade your driving experience with Autotronix's advanced dashcams, designed to provide safety, security, and peace of mind on the road. Our cutting-edge dashcam technology combines high-resolution video capture with intelligent features, ensuring you have a reliable eyewitness on every journey.",
+	},
+	alt1: {
+		header: "Elevate Road Safety and Security with State-of-the-Art Dashcams",
+		text: "At Autotronix, we offer advanced dashcams designed to enhance road safety and protect your vehicle. Our cutting-edge dashcam technology provides real-time recording, collision detection, and driver monitoring, ensuring you have a comprehensive view of your driving experience. Whether you want to capture stunning scenery during your road trips or safeguard your fleet against accidents and fraud, our dashcams deliver unmatched performance and reliability. Trust Autotronix to empower your drive with the latest in dashcam innovation.",
+	},
+	headerText: {
+		header: "Enhanced Safety and Security on the Road",
+		text: "Installing a dashcam provides numerous benefits, such as capturing real-time road conditions, identifying risky driving behaviors, simplifying insurance claims, and offering proactive driver coaching. With dashcams, you gain comprehensive security and effective risk management for your fleet.",
+	},
+
+	cards: [
+		{
+			header: "Seamless Fleet Monitoring",
+			text: "Enhance fleet management efficiency with dashcams that provide real-time updates on road conditions, including traffic, weather, and speed limits.",
+		},
+		{
+			header: "Enhanced Driver Performance",
+			text: "Implement targeted driver training by leveraging dashcam footage to identify and address unsafe driving practices, improving driver skills and performance.",
+		},
+		{
+			header: "Streamlined Insurance Processes",
+			text: "Ensure hassle-free insurance claims and potential premium reductions by utilizing dashcams as reliable documentation tools after accidents.",
+		},
+		{
+			header: "Proactive Driving Assistance",
+			text: "Facilitate proactive driver coaching and prevent future incidents by analyzing dashcam footage to offer tailored training for improvement.",
+		},
+		{
+			header: "Complete Fleet Security",
+			text: "Enhance fleet security with dashcams that provide complete 360-degree views, ensuring effective theft deterrence from all angles.",
+		},
+		{
+			header: "Advanced Risk Mitigation",
+			text: "Utilize in-vehicle dashcams to maintain safety standards, mitigate risks, and protect your brand reputation by monitoring driver behavior and vehicle safety.",
+		},
+	],
+	dropData: [
+		{
+			name: "How do dashcams work?",
+			nest: "Dashcams are compact cameras mounted on a vehicle's dashboard or windshield, constantly recording video footage while the vehicle is in motion.",
+		},
+		{
+			name: "Can dashcams help with insurance claims?",
+			nest: "Yes, dashcams can be valuable evidence in insurance claims, providing clear video footage of accidents or incidents to support your case.",
+		},
+		{
+			name: "Are dashcams legal to use?",
+			nest: "Yes, dashcams are legal in most countries, but it's essential to check local laws and regulations regarding their usage and where they can be positioned in your vehicle.",
+		},
+		{
+			name: "How much storage do dashcams require?",
+			nest: "Dashcams record video footage continuously, and the amount of storage required depends on the resolution and recording settings. Many dashcams use loop recording to overwrite old footage when the storage is full.",
+		},
+		{
+			name: "Can dashcams improve driver behavior?",
+			nest: "Yes, dashcams can help improve driver behavior as they offer real-time monitoring and feedback. Fleet managers can use dashcam footage to identify risky driving habits and provide targeted coaching for safer driving practices.",
+		},
+	],
+};

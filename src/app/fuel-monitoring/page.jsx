@@ -1,28 +1,15 @@
-"use client";
 import React from "react";
-
-import { fuelData } from "@/data/solution";
 
 import Alternating from "../components/Alternating";
 import AlternateText from "../components/AlternateText";
 import AlternateImage from "../components/AlternateImage";
-import { useIcons } from "../components/CustomIcons";
+
 import BackgroundCard from "../components/BackgroundCard";
 import ExtrudeText from "../components/ExtrudeText";
 
+import { fuelData } from "@/data/solution";
+
 export default function page() {
-	const { ClockIcon, LockedIcon, WifiIcon, CycleIcon, MonitorIcon, BikeIcon } =
-		useIcons();
-
-	const iconList = [
-		ClockIcon,
-		LockedIcon,
-		WifiIcon,
-		CycleIcon,
-		MonitorIcon,
-		BikeIcon,
-	];
-
 	return (
 		<div className="relative w-full flex flex-col">
 			<div
