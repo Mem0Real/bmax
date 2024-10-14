@@ -1251,17 +1251,87 @@ export const fourGData = {
 		obj1: {
 			header: "Hardware",
 			table: [
-				{ title: "", value: "" },
-				{ title: "", value: "" },
-				{ title: "", value: "" },
-				{ title: "", value: "" },
-				{ title: "", value: "" },
-				{ title: "", value: "" },
-				{ title: "", value: "" },
-				{ title: "", value: "" },
-				{ title: "", value: "" },
-				{ title: "", value: "" },
-				{ title: "", value: "" },
+				{ title: "Operating System", value: "Linux" },
+				{ title: "CPU", value: "Dual-core CPU+NPU@1.0T" },
+				{ title: "Memory", value: "DDR 2G + TF card (Max.512G)" },
+				{ title: "GNSS", value: "GPS+BDS (with external G-mouse)" },
+				{ title: "G-sensor", value: "3-axis acceleration sensor" },
+				{ title: "Speaker", value: "Yes" },
+				{ title: "Mic", value: "Yes" },
+				{ title: "Sim card	", value: "Micro SIM" },
+				{ title: "USB	", value: "Yes" },
+				{
+					title: "LED",
+					value: "Red (Power), Green (Internet & Video recording)",
+				},
+				{
+					title: "I/O ports	",
+					value: "2 * digital inputs, 1 * digital output, 1 * RS232",
+				},
+			],
+		},
+		obj2: {
+			header: "Network",
+			table: [
+				{ title: "Cellular", value: "LTE + WCDMA + GSM" },
+				{
+					title: "Bands",
+					value:
+						"FDD LTE: B1/B3/B5/B7/B8/B20/B28 TDD LTE: B38/B40/B41 WCDMA: B1/B5/B8 GSM: B3/B8",
+				},
+				{
+					title: "Bands",
+					value:
+						"FDD LTE: B1/B2/B3/B4/B5/B7/B8/B28/B66 TDD LTE: B40 WCDMA: B1/B2/B4/B5/B8 GSM: B2/B3/B5/B8",
+				},
+				{
+					title: "Bands",
+					value: "FDD LTE: B2/B4/B5/B12/B13/B14/B66/B71 WCDMA: B2/B4/B5",
+				},
+				{ title: "WiFi", value: "2.4GHz, 802.11 b/g/n" },
+				{
+					title: "Protocol",
+					value: "JT/T808-2011, JT/T808-2019 JT/T1076-2016, JT/T1078-2016",
+				},
+			],
+		},
+		obj3: {
+			header: "Cameras",
+			table: [
+				{ title: "Front", value: "1080P ADAS/125° (HFoV)" },
+				{ title: "Cabin", value: "720P IR night vision DMS/105° (HFoV)" },
+				{ title: "External 1", value: "720P" },
+				{ title: "External 2", value: "720P" },
+				{ title: "Video Encoding", value: "H.264/H.265, default H.264" },
+				{ title: "Video Standards", value: "PAL, NTSC" },
+				{
+					title: "Video Resolution",
+					value: "Options: 1080P/720P/D1 Total 1080P at 100 fps",
+				},
+				{ title: "Compression Format", value: "G.711A" },
+			],
+		},
+		obj4: {
+			header: "Others",
+			table: [
+				{ title: "Power Supply", value: "DC: +9V ~ +36V" },
+				{
+					title: "Operation Temperature",
+					value: "-20℃ to +70℃",
+				},
+				{
+					title: "Operation Humidity",
+					value: "20% to 80%",
+				},
+				{
+					title: "Net Weight",
+					value: "240g",
+				},
+				{ title: "Dimensions", value: "120mm * 77mm * 55mm" },
+				{
+					title: "Certification",
+					value: "CE/FCC/RoHS",
+				},
 			],
 		},
 	},
