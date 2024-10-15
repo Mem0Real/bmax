@@ -129,8 +129,8 @@ export const fbData = {
 			nest: "Question: How does Autotronix address food safety compliance for Kenyan food businesses? \n Answer: Autotronix is committed to ensuring food safety compliance for Kenyan businesses. Our comprehensive solutions cover documentation, monitoring, and reporting to meet local and international food safety standards. Autotronix's software provides real-time tracking, traceability, and quality control, ensuring that your products meet the highest safety and quality standards.",
 		},
 		{
-			name: "Question: How does Autotronix enhance restaurant operations with Point of Sale (POS) systems? ",
-			nest: "\n Answer: Autotronix revolutionizes restaurant operations in Kenya with advanced Point of Sale (POS) systems. Our solutions streamline order processing, payment transactions, and inventory management. From menu customization to customer analytics, Autotronix's POS systems empower restaurants to enhance customer experiences, improve efficiency, and drive profitability.",
+			name: "Point of Sale (POS) Systems for Restaurants",
+			nest: "Question: How does Autotronix enhance restaurant operations with Point of Sale (POS) systems? \n Answer: Autotronix revolutionizes restaurant operations in Kenya with advanced Point of Sale (POS) systems. Our solutions streamline order processing, payment transactions, and inventory management. From menu customization to customer analytics, Autotronix's POS systems empower restaurants to enhance customer experiences, improve efficiency, and drive profitability.",
 		},
 	],
 	dropData3: [
@@ -155,4 +155,159 @@ export const fbData = {
 			nest: "Once you're ready to proceed, our qualified technician will come to your location and safely unlock the automobile using specialist hardware. We then use cutting-edge software to cut and program the new key or remote.",
 		},
 	],
+};
+export const pharmaData = {
+	location: "pharma-page",
+	linkSrc: "contact",
+	linkText: "get service",
+
+	landing: {
+		header: "Innovative Pharma Solutions by B-Max",
+		text: "Discover Autotronix's cutting-edge healthcare solutions in Kenya. From pharmaceutical manufacturing optimization to regulatory compliance and clinical trial management, our advanced software tools revolutionize the industry. With a focus on drug production efficiency, supply chain optimization, and quality control, Autotronix leads in healthcare technology innovations. Experience seamless pharmaceutical logistics management and explore the future of digital transformation in healthcare. Our comprehensive suite addresses diverse needs, ensuring patient data security and compliance with pharmaceutical industry regulations. Trust Autotronix for state-of-the-art pharmaceutical solutions tailored for the Kenyan market.",
+	},
+	headerText: {
+		header: "Streamlined Pharmaceutical Logistics Solutions",
+		text: "Efficiently navigate the pharmaceutical supply chain with Autotronix's advanced logistics solutions in Kenya. We optimize our distribution to ensure compliance, and elevate efficiency for seamless pharmaceutical operations.",
+	},
+	alt1: {
+		header: "Innovative Solutions Shaping Pharmaceutical Excellence",
+		text: "Explore Autotronix's advanced tools, optimizing logistics, ensuring compliance, and driving digital transformation in pharmaceutical operations.",
+	},
+	alt2: {
+		header: "Achieve Peak Operational Performance",
+		text: "Unlock your potential with streamlined processes",
+	},
+	background: {
+		bgs: [
+			{
+				header: "Seamless Logistics",
+				text: "Streamline your supply chain with real-time temperature control and cargo safety.",
+			},
+			{
+				header: "Fleet Optimization",
+				text: "Maximize fleet efficiency and uptime with advanced monitoring and predictive maintenance.",
+			},
+			{
+				header: "Reliable Scheduling",
+				text: "Ensure on-time deliveries and adhere to schedules with optimized route planning and tracking.",
+			},
+		],
+	},
+
+	dropData1: [
+		{
+			name: "Pharmaceutical Logistics Excellence",
+			nest: "Question: How does Autotronix optimize pharmaceutical logistics in Kenya? \n Answer: Autotronix specializes in pharmaceutical logistics solutions, streamlining the supply chain with cutting-edge technology. Our software ensures efficient distribution, inventory control, and compliance management, addressing the unique challenges of the pharmaceutical industry in Kenya. From real-time tracking to temperature-sensitive transport, Autotronix's logistics expertise guarantees the integrity and timely delivery of pharmaceutical products, meeting the highest industry standards.",
+		},
+		{
+			name: "Regulatory Compliance Solutions for Pharma",
+			nest: "Question: How does Autotronix ensure regulatory compliance in the pharmaceutical sector? \n Answer: Autotronix takes a comprehensive approach to regulatory compliance in the pharmaceutical industry. Our solutions cover documentation, reporting, and adherence to local and international pharmaceutical regulations. From quality control systems to data security measures, Autotronix's software guarantees that pharmaceutical companies in Kenya meet and exceed compliance standards. Stay confident in the compliance of your operations with Autotronix's tailored regulatory solutions.",
+		},
+		{
+			name: "Digital Transformation in Pharma Operations",
+			nest: "Question: How does Autotronix contribute to the digital transformation of pharmaceutical operations in Kenya? \n Answer: Autotronix is at the forefront of digital transformation in the pharmaceutical sector. Our software solutions encompass Pharma ERP, inventory control systems, and data analytics tools, revolutionizing traditional processes. By embracing technology, Autotronix empowers pharmaceutical companies in Kenya to enhance operational efficiency, make data-driven decisions, and stay competitive in an evolving industry landscape. Experience the future of pharmaceutical operations with Autotronix's digital transformation solutions.",
+		},
+	],
+	dropData2: [
+		{
+			name: "Quality Control in Pharma Manufacturing",
+			nest: "Question: How does Autotronix enhance quality control in pharmaceutical manufacturing?\n Answer: Autotronix revolutionizes pharmaceutical manufacturing with advanced quality control solutions. Our software ensures precision, consistency, and compliance throughout the production process. From raw material sourcing to final product inspection, Autotronix guarantees the highest quality standards, empowering pharmaceutical companies in Kenya to deliver safe and effective medications.",
+		},
+		{
+			name: "Clinical Trial Management Excellence",
+			nest: "Question: How does Autotronix contribute to efficient clinical trial management in Kenya?\n Answer: Autotronix excels in clinical trial management, offering comprehensive software solutions for the pharmaceutical industry in Kenya. Our tools streamline trial processes, from participant recruitment to data analysis. Autotronix ensures transparency, compliance, and data security, facilitating successful clinical trials and accelerating the development of life-changing medications.",
+		},
+		{
+			name: "Sustainable Pharmaceutical Supply Chain",
+			nest: "Question: How does Autotronix contribute to a sustainable pharmaceutical supply chain?\n Answer: Autotronix embraces sustainability in the pharmaceutical supply chain. Our solutions optimize distribution routes, reduce waste, and enhance energy efficiency. By implementing eco-friendly practices, Autotronix supports pharmaceutical companies in Kenya in building a more sustainable future while meeting the increasing demand for responsible business operations.",
+		},
+	],
+	dropData3: [
+		{
+			name: "What is the benefit of real-time temperature control for pharmaceutical shipments?",
+			nest: "Real-time temperature control ensures that pharmaceutical shipments maintain the required temperature range, preserving the integrity of sensitive products and preventing spoilage during transit.",
+		},
+		{
+			name: "How does Autotronix ensure cargo safety during transportation?",
+			nest: "Autotronix employs advanced tracking and monitoring systems to keep a close eye on cargo at all times, providing real-time alerts for any deviations or potential security risks.",
+		},
+		{
+			name: "Can Autotronix help optimize fleet operations for pharmaceutical logistics?",
+			nest: "Yes, Autotronix offers comprehensive fleet optimization solutions, including predictive maintenance, route planning, and driver performance monitoring, to enhance operational efficiency.",
+		},
+		{
+			name: "What measures does Autotronix take to avoid liability risks during shipment?",
+			nest: "Autotronix implements robust safety protocols and compliance measures to ensure that all shipments adhere to regulations and industry standards, minimizing liability risks for our customers.",
+		},
+		{
+			name: "How can Autotronix's solutions improve supply chain visibility for pharmaceutical companies?",
+			nest: "Autotronix provides end-to-end supply chain visibility, enabling pharmaceutical companies to track their shipments in real-time, maintain accurate inventory levels, and make data-driven decisions for better efficiency and productivity.",
+		},
+	],
+};
+
+export const healthData = {
+	location: "health-page",
+	linkSrc: "contact",
+	linkText: "get service",
+
+	landing: {
+		header: "Revolutionize Healthcare Management with Autotronix",
+		text: "Experience excellence in healthcare management with Autotronix. From strategic planning to risk management, our comprehensive suite covers hospital administration, medical facility operations, and organizational development. Explore innovative solutions for clinical and project management, ensuring quality, compliance, and performance optimization. Our expert team combines leadership and technology to drive efficiency in healthcare processes, making us a pioneer in healthcare administration. Discover how Autotronix empowers healthcare leaders with cutting-edge solutions, shaping the future of medical practice, facility planning, and overall healthcare excellence.",
+	},
+	headerText: {
+		header: "Innovative Healthcare Management Solutions",
+		text: "Experience Autotronix's transformative suite covering hospital administration, clinical management, project optimization, ensuring quality, compliance, and performance in medical facilities. Revolutionize healthcare excellence with cutting-edge solutions.",
+	},
+	cards: [
+		{
+			header: "Strategic Planning Mastery",
+			text: "Unlock the power of Autotronix's innovative tools for strategic planning in healthcare management. Our solutions offer comprehensive analytics, robust forecasting capabilities, and decision-making support. Empowering administrators to optimize resources and streamline processes, Autotronix ensures enhanced organizational performance and resilience in the ever-evolving healthcare landscape.",
+		},
+		{
+			header: "Clinical Efficiency Solutions",
+			text: "Embark on a transformative journey with Autotronix's clinical management solutions. Our cutting-edge technologies optimize patient care from appointment scheduling to treatment tracking. Experience streamlined processes, improved patient outcomes, and enhanced healthcare delivery as Autotronix redefines clinical efficiency.",
+		},
+		{
+			header: "Enhanced Patient Care with Timely Deliveries",
+			text: "Autotronix's efficient fleet management solutions enable healthcare providers to optimize route planning and delivery schedules. With real-time tracking and smart routing, medical facilities can ensure timely deliveries of critical medical equipment and supplies, enhancing patient care and minimizing disruptions in healthcare services.",
+		},
+		{
+			header: "Comprehensive Fleet Visibility",
+			text: "Gain comprehensive visibility into your healthcare fleet with Autotronix's advanced telematics solutions. Monitor vehicle location, performance, and driver behavior in real-time. This level of insight allows healthcare providers to make data-driven decisions, improve operational efficiency, and reduce operational costs.",
+		},
+		{
+			header: "Seamless Integration with Existing Systems",
+			text: "Autotronix's healthcare solutions seamlessly integrate with existing systems and workflows, allowing for a smooth implementation process. Our user-friendly interfaces and easy-to-use platforms ensure that healthcare professionals can efficiently manage their fleet and focus on delivering quality patient care.",
+		},
+		{
+			header: "Expert Support and Training",
+			text: "Autotronix provides dedicated support and training for healthcare organizations to maximize the benefits of our telematics solutions. Our team of experts is available to assist with any inquiries and ensure that healthcare providers make the most out of our advanced technology.",
+		},
+	],
+	background: {
+		bgs: [
+			{
+				header: "Medical Asset Tracking",
+			},
+			{
+				header: "Healthcare Analytics and Insights",
+			},
+			{
+				header: "Medication Management and Dispensing",
+			},
+		],
+	},
+	alt1: {
+		header: "Manage Your Fleet Seamlessly",
+		text: "Autotronix offers a comprehensive fleet management system that allows you to efficiently manage your entire fleet from a single, user-friendly platform. Gain real-time visibility into your vehicles’ locations, monitor driver behavior, optimize routes, and receive insightful reports for better decision-making. With our seamless fleet management solutions, enhance productivity, improve safety, and reduce operational costs.",
+	},
+	alt2: {
+		header: "Advanced Video Telematics",
+		text: "Autotronix’s advanced video telematics technology revolutionizes fleet management by providing real-time video insights into driver behavior and road conditions. Our cutting-edge cameras and AI-powered software capture and analyze critical moments, such as collisions or risky driving behavior. Experience enhanced safety, reduced accident rates, and improved driver performance with our video telematics solutions.",
+	},
+	alt3: {
+		header: "Fuel Monitoring",
+		text: "Autotronix’s fuel monitoring system helps you take control of your fleet’s fuel consumption and expenses. Keep track of fuel levels, detect fuel theft, and analyze fuel usage patterns with our intuitive monitoring tools. By optimizing fuel usage, you can reduce costs, improve environmental sustainability, and ensure efficient fleet operations. Maximize your fuel efficiency and drive your business forward with Autotronix’s fuel monitoring solutions.",
+	},
 };

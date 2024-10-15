@@ -79,40 +79,52 @@ export default function GenerateSolution({
 
 			{/* background */}
 			<div className="flex flex-col w-full justify-center items-center gap-5">
-				<div className="xl:px-4 flex flex-col justify-center items-center gap-2 text-center md:text-balance">
-					<h3 className="text-base md:text-lg text-neutral-900 capitalize font-medium">
-						{data.background.title}
-					</h3>
-					<h2 className="text-2xl md:text-3xl font-medium text-mellow capitalize">
-						{data.background.header}
-					</h2>
-					<p className="text-base text-neutral-900/80 text-center px-2 md:px-0 xl:px-8">
-						{data.background.detail}
-					</p>
-				</div>
+				{data.background && (
+					<div className="xl:px-4 flex flex-col justify-center items-center gap-2 text-center md:text-balance">
+						{data.background.title && (
+							<h3 className="text-base md:text-lg text-neutral-900 capitalize font-medium">
+								{data.background.title}
+							</h3>
+						)}
+						{data.background.header && (
+							<h2 className="text-2xl md:text-3xl font-medium text-mellow capitalize">
+								{data.background.header}
+							</h2>
+						)}
+						{data.background.detail && (
+							<p className="text-base text-neutral-900/80 text-center px-2 md:px-0 xl:px-8">
+								{data.background.detail}
+							</p>
+						)}
+					</div>
+				)}
 
 				<BackgroundCard location={data.location} data={data.background.bgs} />
 			</div>
 			{!noExtra && (
 				<>
-					<Alternating>
-						<AlternateImage img={`${data.location}/alt3.png`} />
-						<AlternateText
-							header={data.alt3.header}
-							detail={data.alt3.text}
-							linkText={data.linkText}
-							address={data.linkSrc}
-						/>
-					</Alternating>
-					<Alternating>
-						<AlternateText
-							header={data.alt4.header}
-							detail={data.alt4.text}
-							linkText={data.linkText}
-							address={data.linkSrc}
-						/>
-						<AlternateImage img={`${data.location}/alt4.png`} />
-					</Alternating>
+					{data.alt3 && (
+						<Alternating>
+							<AlternateImage img={`${data.location}/alt3.png`} />
+							<AlternateText
+								header={data.alt3.header}
+								detail={data.alt3.text}
+								linkText={data.linkText}
+								address={data.linkSrc}
+							/>
+						</Alternating>
+					)}
+					{data.alt4 && (
+						<Alternating>
+							<AlternateText
+								header={data.alt4.header}
+								detail={data.alt4.text}
+								linkText={data.linkText}
+								address={data.linkSrc}
+							/>
+							<AlternateImage img={`${data.location}/alt4.png`} />
+						</Alternating>
+					)}
 				</>
 			)}
 

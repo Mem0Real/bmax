@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-import { bikeGpsData } from "@/data/solution";
+import { healthData } from "@/data/industry";
 
 import Alternating from "../components/Alternating";
 import AlternateText from "../components/AlternateText";
@@ -9,7 +9,6 @@ import AlternateImage from "../components/AlternateImage";
 import GenerateCard from "../components/GenerateCard";
 import { useIcons } from "../components/CustomIcons";
 import BackgroundCard from "../components/BackgroundCard";
-import ExtrudeText from "../components/ExtrudeText";
 import GeneratePageWithBg from "../components/GeneratePageWithBg";
 
 export default function Page() {
@@ -25,5 +24,11 @@ export default function Page() {
 		BikeIcon,
 	];
 
-	return <GeneratePageWithBg iconList={iconList} data={bikeGpsData} />;
+	return (
+		<GeneratePageWithBg
+			iconList={iconList}
+			data={healthData}
+			landingType="png"
+		/>
+	);
 }
