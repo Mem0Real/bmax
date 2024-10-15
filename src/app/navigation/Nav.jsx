@@ -29,9 +29,7 @@ const navData = [
 		address: "/transport-industry",
 		dropData: <IndustryDrop />,
 	},
-	{ title: "Reviews", address: "/reviews" },
 	{ title: "Contact Us", address: "/contact" },
-	{ title: "Blog", address: "/blog" },
 ];
 
 export default function Nav() {
@@ -69,11 +67,11 @@ export default function Nav() {
 		<>
 			<div className="w-full bg-neutral-900 text-neutral-300 px-4 lg:px-16 xl:px-40 py-4 flex items-center justify-between flex-wrap">
 				<Link
-					className="relative flex justify-center items-center w-[6.5rem] h-[2.5rem]"
+					className="relative flex justify-center items-center w-[7.5rem] h-[4.2rem]"
 					href="/"
 				>
 					<Image
-						src="/images/logo.png"
+						src="/images/logo1.png"
 						alt="B-Max"
 						fill
 						priority

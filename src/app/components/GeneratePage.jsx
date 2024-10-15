@@ -30,6 +30,7 @@ export default function GeneratePage({ data, bgImage, noExtra, type = "jpg" }) {
 							className="object-fill md:object-contain object-center absolute"
 							alt={data.location}
 							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+							priority
 						/>
 					</div>
 				</div>

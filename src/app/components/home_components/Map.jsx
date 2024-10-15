@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Map() {
 	return (
-		<div className="relative h-[60vh]  w-full">
+		<div className="relative h-[60vh] w-full">
 			<span className="z-1">
 				<iframe
 					width="100%"

@@ -5,9 +5,9 @@ import SolutionLinks from "./footer_components/SolutionLinks";
 
 export default function Footer() {
 	return (
-		<div className="min-h-[30rem] bg-neutral-900 pt-12 flex flex-col justify-around items-center">
-			<div className="px-4 md:px-8 xl:px-40 min-h-[24rem] flex flex-col xl:flex-row justify-center items-stretch gap-8 md:gap-5 text-neutral-200 pb-8 xl:pb-0">
-				<div className="basis-1/4">
+		<div className="min-h-[35rem] bg-neutral-900 pt-12 flex flex-col justify-around items-center">
+			<div className="xl:w-full px-4 md:px-8 min-h-[24rem] flex flex-col xl:flex-row justify-between items-stretch gap-8 md:gap-24 text-neutral-200 pb-8 xl:pb-0">
+				<div className="basis-1/4 -mt-8">
 					<LogoStuff />
 				</div>
 				<div className="basis-1/2 -mt-2">
