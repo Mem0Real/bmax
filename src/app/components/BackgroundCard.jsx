@@ -2,6 +2,10 @@ import React from "react";
 
 export default function BackgroundCard({ data, location, light }) {
 	let opacity = light ? "opacity-40" : "opacity-60";
+	let count = data.length;
+
+	let width = count === 3 ? "md:w-[30%]" : "md:w-[22%]";
+
 	return (
 		<div className="px-4 xl:px-48 w-full flex flex-col md:flex-row flex-shrink justify-evenly items-center pb-8 gap-6 md:gap-0">
 			{data?.map(({ header, text }, index) => {
@@ -10,7 +14,7 @@ export default function BackgroundCard({ data, location, light }) {
 				return (
 					<div
 						key={index}
-						className="relative w-full md:w-[30%] h-[25rem] md:h-[25rem] lg:h-[30rem] bg-no-repeat bg-cover bg-center flex flex-col justify-end items-center rounded-xl"
+						className={`relative w-full h-[25rem] md:h-[25rem] lg:h-[30rem] bg-no-repeat bg-cover bg-center flex flex-col justify-end items-center rounded-xl ${width}`}
 						style={{
 							backgroundImage: `url("/images/${location}/bg${count}.jpg")`,
 							backdropFilter: "brightness 0.4",
