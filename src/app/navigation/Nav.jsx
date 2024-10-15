@@ -138,13 +138,13 @@ export default function Nav() {
 				overlayProps={{ backgroundOpacity: 0.5, blur: 4 }}
 				closeButtonProps={{
 					icon: (
-						<motion.button
+						<motion.span
 							className="text-red-600/80 w-6"
 							whileTap={{ scale: 0.8 }}
 							transition={{ ease: "easeInOut" }}
 						>
 							{CloseIcon}
-						</motion.button>
+						</motion.span>
 					),
 				}}
 				styles={{

@@ -21,12 +21,14 @@ const Topbar = ({ className }) => {
 			</div>
 			<AnimatePresence>
 				<div className="flex justify-center items-center gap-4 flex-wrap">
-					<Link target="_blank" href="https://facebook.com">
+					<Link
+						target="_blank"
+						href="https://facebook.com"
+						className="text-black"
+					>
 						<motion.h1
 							className="w-6"
-							initial={{ color: "#000" }}
 							whileHover={{ color: "blue" }}
-							exit={{ color: "#000" }}
 							transition={{ ease: "easeInOut", duration: 0.6 }}
 						>
 							{FacebookIcon}
@@ -34,10 +36,8 @@ const Topbar = ({ className }) => {
 					</Link>
 					<Link target="_blank" href="https://x.com">
 						<motion.h1
-							className="w-6"
-							initial={{ color: "#000" }}
+							className="text-black w-6"
 							whileHover={{ color: "lightblue" }}
-							exit={{ color: "#000" }}
 							transition={{ ease: "easeInOut", duration: 0.6 }}
 						>
 							{TwitterIcon}
@@ -45,10 +45,8 @@ const Topbar = ({ className }) => {
 					</Link>
 					<Link target="_blank" href="https://instagram.com">
 						<motion.h1
-							className="w-6"
-							initial={{ color: "#000" }}
+							className="text-black w-6"
 							whileHover={{ color: "pink" }}
-							exit={{ color: "#000" }}
 							transition={{ ease: "easeInOut", duration: 0.6 }}
 						>
 							{InstagramIcon}

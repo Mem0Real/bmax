@@ -12,16 +12,22 @@ import BackgroundCard from "../components/BackgroundCard";
 import GeneratePageWithBg from "../components/GeneratePageWithBg";
 
 export default function Page() {
-	const { ClockIcon, LockedIcon, WifiIcon, CycleIcon, MonitorIcon, BikeIcon } =
-		useIcons();
+	const {
+		ThermoIcon,
+		ClinicIcon,
+		HospitalIcon,
+		AmbulanceIcon,
+		IntegrationIcon,
+		ExpertsIcon,
+	} = useIcons();
 
 	const iconList = [
-		ClockIcon,
-		LockedIcon,
-		WifiIcon,
-		CycleIcon,
-		MonitorIcon,
-		BikeIcon,
+		ThermoIcon,
+		ClinicIcon,
+		HospitalIcon,
+		AmbulanceIcon,
+		IntegrationIcon,
+		ExpertsIcon,
 	];
 
 	return (
@@ -29,6 +35,7 @@ export default function Page() {
 			iconList={iconList}
 			data={healthData}
 			landingType="png"
+			size="md"
 		/>
 	);
 }
