@@ -1,7 +1,7 @@
 import React from "react";
-import GenerateSolution from "../components/GenerateSolution";
+import GeneratePage from "../components/GeneratePage";
 import { fbData } from "@/data/industry";
 
 export default function FbPage() {
-	return <GenerateSolution data={fbData} noExtra type="png" />;
+	return <GeneratePage data={fbData} noExtra type="png" />;
 }

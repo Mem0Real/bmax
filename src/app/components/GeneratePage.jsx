@@ -1,18 +1,13 @@
 import React from "react";
 import Image from "next/image";
 
-import Alternating from "../components/Alternating";
-import AlternateText from "../components/AlternateText";
-import AlternateImage from "../components/AlternateImage";
-import ExtrudeText from "../components/ExtrudeText";
-import BackgroundCard from "../components/BackgroundCard";
+import Alternating from "./Alternating";
+import AlternateText from "./AlternateText";
+import AlternateImage from "./AlternateImage";
+import ExtrudeText from "./ExtrudeText";
+import BackgroundCard from "./BackgroundCard";
 
-export default function GenerateSolution({
-	data,
-	bgImage,
-	noExtra,
-	type = "jpg",
-}) {
+export default function GeneratePage({ data, bgImage, noExtra, type = "jpg" }) {
 	return (
 		<div
 			className={`min-h-[90vh] my-auto flex flex-col justify-center items-center text-neutral-950 gap-10 md:gap-12 lg:gap-16 ${
@@ -55,14 +50,20 @@ export default function GenerateSolution({
 					</div>
 				</div>
 			)}
-			<div className="w-full flex flex-col justify-center items-center gap-2 md:gap-8 lg:gap-0">
-				<h1 className="text-3xl md:text-4xl font-medium uppercase text-center">
-					{data.headerText.header}
-				</h1>
-				<p className="text-base text-neutral-950/90 w-[90%] md:w-[60%] lg:w-auto text-center lg:text-balance">
-					{data.headerText.text}
-				</p>
-			</div>
+			{data.headerText && (
+				<div className="w-full flex flex-col justify-center items-center gap-2 md:gap-8 lg:gap-0">
+					{data.headerText.header && (
+						<h1 className="text-3xl md:text-4xl font-medium uppercase text-center">
+							{data.headerText.header}
+						</h1>
+					)}
+					{data.headerText.text && (
+						<p className="text-base text-neutral-950/90 w-[90%] md:w-[60%] lg:w-auto text-center lg:text-balance">
+							{data.headerText.text}
+						</p>
+					)}
+				</div>
+			)}
 
 			<Alternating extrude>
 				<AlternateImage img={`${data.location}/alt1.png`} />

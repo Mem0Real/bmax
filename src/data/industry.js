@@ -9,7 +9,7 @@ export const transportData = {
 	},
 	alt1: {
 		header: "Streamlined Logistics Excellence",
-		text: "Elevate your logistics operations with our comprehensive and efficient transport solutions. From international shipping to urban mobility, we prioritize innovation, sustainability, and reliability. Our logistics services cover freight forwarding, last-mile delivery, and cutting-edge technology to optimize supply chain management. With a focus on intermodal transportation and advanced tracking systems, we ensure transparency and efficiency. Whether you’re in need of seamless cargo shipping, sustainable transport options, or comprehensive fleet management, our transport solutions cater to diverse needs. Experience excellence in every mile, where our commitment to quality and innovation sets the standard for the transport industry.",
+		text: "Elevate your logistics operations with our comprehensive and efficient transport solutions. From international shipping to urban mobility, we prioritize innovation, sustainability, and reliability. Our logistics services cover freight forwarding, last-mile delivery, and cutting-edge technology to optimize supply chain management. With a focus on intermodal transportation and advanced tracking systems, we ensure transparency and efficiency. Whether you're in need of seamless cargo shipping, sustainable transport options, or comprehensive fleet management, our transport solutions cater to diverse needs. Experience excellence in every mile, where our commitment to quality and innovation sets the standard for the transport industry.",
 	},
 	cards: [
 		{
@@ -67,6 +67,7 @@ export const transportData = {
 		text: "Embark on a journey of transformation with B-Max, a pioneer in delivering innovative transport solutions. From efficient logistics and sustainable shipping to advanced urban mobility options, our comprehensive suite is designed to elevate your business. Seamlessly integrating cutting-edge transportation technology, our third-party logistics (3PL) services redefine industry benchmarks. B-Max prioritizes sustainability, transparency, and efficiency, ensuring that your business not only keeps pace but leads in the dynamic transport sector. Embrace the future with our eco-friendly practices, robust freight tracking systems, and expertise in cross-border logistics, positioning your brand at the forefront of modern transport innovation.",
 	},
 };
+
 export const fbData = {
 	location: "fb-page",
 	linkSrc: "contact",
@@ -74,25 +75,25 @@ export const fbData = {
 
 	landing: {
 		header: "Innovative F&B Solutions",
-		text: "Unlock the potential of Autotronix's cutting-edge food and beverage solutions in Kenya. From automated food processing and beverage quality control to supply chain optimization and sustainability measures, our comprehensive suite redefines efficiency in the industry. Explore our ERP for F&B, point of sale systems, and inventory management tools, ensuring compliance with food safety standards. Experience the future with Autotronix, where technology meets the unique demands of Kenyan food and beverage businesses, enhancing production, quality, and sustainability.",
+		text: "Unlock the potential of B-Max's cutting-edge food and beverage solutions in Ethiopia. From automated food processing and beverage quality control to supply chain optimization and sustainability measures, our comprehensive suite redefines efficiency in the industry. Explore our ERP for F&B, point of sale systems, and inventory management tools, ensuring compliance with food safety standards. Experience the future with B-Max, where technology meets the unique demands of Ethiopian food and beverage businesses, enhancing production, quality, and sustainability.",
 	},
 	headerText: {
 		header: "Revolutionize F&B Operations",
-		text: "Elevate efficiency with Autotronix's innovative solutions for Kenyan food and beverage businesses. From production to distribution, we redefine industry standards.",
+		text: "Elevate efficiency with B-Max's innovative solutions for Ethiopian food and beverage businesses. From production to distribution, we redefine industry standards.",
 	},
 	alt1: {
 		header: "Optimal F&B Management",
-		text: "Experience excellence in Kenyan food and beverage management with Autotronix. Streamline operations, ensure compliance, and enhance sustainability for industry success.",
+		text: "Experience excellence in Ethiopian food and beverage management with B-Max. Streamline operations, ensure compliance, and enhance sustainability for industry success.",
 	},
 	alt2: {
 		header: "Efficient Food Production",
-		text: "Transform your Kenyan food production with Autotronix's efficiency-driven solutions. From streamlined processing to sustainable supply chains, we redefine industry standards.",
+		text: "Transform your Ethiopian food production with B-Max's efficiency-driven solutions. From streamlined processing to sustainable supply chains, we redefine industry standards.",
 	},
 	background: {
 		bgs: [
 			{
 				header: "Cargo Security",
-				text: "Ensure your cargo's safety with Autotronix's advanced tracking and real-time monitoring. Trust us to protect your shipments from theft and unauthorized access.",
+				text: "Ensure your cargo's safety with B-Max's advanced tracking and real-time monitoring. Trust us to protect your shipments from theft and unauthorized access.",
 			},
 			{
 				header: "Load Sensors",
@@ -108,29 +109,29 @@ export const fbData = {
 	dropData1: [
 		{
 			name: "Automated Food Processing",
-			nest: "Question: How does Autotronix automate food processing for Kenyan businesses? \n Answer: Autotronix introduces advanced automation to food processing in Kenya. Our solutions optimize production lines, reduce manual labor, and enhance overall efficiency. From ingredient handling to packaging, Autotronix's technology ensures precision and consistency, meeting the demands of modern food processing standards.",
+			nest: "Question: How does B-Max automate food processing for Ethiopian businesses? \n Answer: B-Max introduces advanced automation to food processing in Ethiopia. Our solutions optimize production lines, reduce manual labor, and enhance overall efficiency. From ingredient handling to packaging, B-Max's technology ensures precision and consistency, meeting the demands of modern food processing standards.",
 		},
 		{
 			name: "Beverage Quality Control Systems",
-			nest: "Question: How does Autotronix ensure quality control in beverage production? \n Answer: Autotronix's beverage quality control systems set a new standard in Kenyan production. Our software monitors every stage of beverage manufacturing, ensuring consistency, taste, and safety. From raw materials to the final product, Autotronix guarantees the highest quality in every sip.",
+			nest: "Question: How does B-Max ensure quality control in beverage production? \n Answer: B-Max's beverage quality control systems set a new standard in Ethiopian production. Our software monitors every stage of beverage manufacturing, ensuring consistency, taste, and safety. From raw materials to the final product, B-Max guarantees the highest quality in every sip.",
 		},
 		{
 			name: "Sustainable Supply Chain Solutions",
-			nest: "Question: How does Autotronix contribute to sustainable supply chains in the F&B industry? \n Answer: Autotronix champions sustainability in the Kenyan food and beverage industry. Our supply chain solutions optimize routes, reduce waste, and promote eco-friendly practices. By integrating sustainability into every aspect of the supply chain, Autotronix empowers businesses to meet environmental goals while ensuring efficient and responsible operations.",
+			nest: "Question: How does B-Max contribute to sustainable supply chains in the F&B industry? \n Answer: B-Max champions sustainability in the Ethiopian food and beverage industry. Our supply chain solutions optimize routes, reduce waste, and promote eco-friendly practices. By integrating sustainability into every aspect of the supply chain, B-Max empowers businesses to meet environmental goals while ensuring efficient and responsible operations.",
 		},
 	],
 	dropData2: [
 		{
 			name: "Inventory Management for Food",
-			nest: "Question: How does Autotronix optimize inventory management for the food industry in Kenya \n Answer: Autotronix introduces advanced inventory management solutions tailored for the Kenyan food industry. Our software optimizes stock levels, reduces waste, and ensures timely restocking. From ingredient tracking to expiration alerts, Autotronix empowers businesses to maintain optimal inventory levels, reducing costs and enhancing overall operational efficiency.",
+			nest: "Question: How does B-Max optimize inventory management for the food industry in Ethiopia \n Answer: B-Max introduces advanced inventory management solutions tailored for the Ethiopian food industry. Our software optimizes stock levels, reduces waste, and ensures timely restocking. From ingredient tracking to expiration alerts, B-Max empowers businesses to maintain optimal inventory levels, reducing costs and enhancing overall operational efficiency.",
 		},
 		{
 			name: "Food Safety Compliance Solutions",
-			nest: "Question: How does Autotronix address food safety compliance for Kenyan food businesses? \n Answer: Autotronix is committed to ensuring food safety compliance for Kenyan businesses. Our comprehensive solutions cover documentation, monitoring, and reporting to meet local and international food safety standards. Autotronix's software provides real-time tracking, traceability, and quality control, ensuring that your products meet the highest safety and quality standards.",
+			nest: "Question: How does B-Max address food safety compliance for Ethiopian food businesses? \n Answer: B-Max is committed to ensuring food safety compliance for Ethiopian businesses. Our comprehensive solutions cover documentation, monitoring, and reporting to meet local and international food safety standards. B-Max's software provides real-time tracking, traceability, and quality control, ensuring that your products meet the highest safety and quality standards.",
 		},
 		{
 			name: "Point of Sale (POS) Systems for Restaurants",
-			nest: "Question: How does Autotronix enhance restaurant operations with Point of Sale (POS) systems? \n Answer: Autotronix revolutionizes restaurant operations in Kenya with advanced Point of Sale (POS) systems. Our solutions streamline order processing, payment transactions, and inventory management. From menu customization to customer analytics, Autotronix's POS systems empower restaurants to enhance customer experiences, improve efficiency, and drive profitability.",
+			nest: "Question: How does B-Max enhance restaurant operations with Point of Sale (POS) systems? \n Answer: B-Max revolutionizes restaurant operations in Ethiopia with advanced Point of Sale (POS) systems. Our solutions streamline order processing, payment transactions, and inventory management. From menu customization to customer analytics, B-Max's POS systems empower restaurants to enhance customer experiences, improve efficiency, and drive profitability.",
 		},
 	],
 	dropData3: [
@@ -143,8 +144,8 @@ export const fbData = {
 			nest: "Absolutely! We have hundreds of authentic proximity (keyless) keys and remote automobile keys in stock.",
 		},
 		{
-			name: "Is car key replacement expensive with Autotronix Telematics?",
-			nest: "No, unlike car dealerships in Kenya, we provide car key replacements at a far lesser cost and with more ease.",
+			name: "Is car key replacement expensive with B-Max Auto Solutions?",
+			nest: "No, unlike car dealerships in Ethiopia, we provide car key replacements at a far lesser cost and with more ease.",
 		},
 		{
 			name: "What payment methods do you accept for key replacement?",
@@ -156,6 +157,7 @@ export const fbData = {
 		},
 	],
 };
+
 export const pharmaData = {
 	location: "pharma-page",
 	linkSrc: "contact",
@@ -163,15 +165,15 @@ export const pharmaData = {
 
 	landing: {
 		header: "Innovative Pharma Solutions by B-Max",
-		text: "Discover Autotronix's cutting-edge healthcare solutions in Kenya. From pharmaceutical manufacturing optimization to regulatory compliance and clinical trial management, our advanced software tools revolutionize the industry. With a focus on drug production efficiency, supply chain optimization, and quality control, Autotronix leads in healthcare technology innovations. Experience seamless pharmaceutical logistics management and explore the future of digital transformation in healthcare. Our comprehensive suite addresses diverse needs, ensuring patient data security and compliance with pharmaceutical industry regulations. Trust Autotronix for state-of-the-art pharmaceutical solutions tailored for the Kenyan market.",
+		text: "Discover B-Max's cutting-edge healthcare solutions in Ethiopia. From pharmaceutical manufacturing optimization to regulatory compliance and clinical trial management, our advanced software tools revolutionize the industry. With a focus on drug production efficiency, supply chain optimization, and quality control, B-Max leads in healthcare technology innovations. Experience seamless pharmaceutical logistics management and explore the future of digital transformation in healthcare. Our comprehensive suite addresses diverse needs, ensuring patient data security and compliance with pharmaceutical industry regulations. Trust B-Max for state-of-the-art pharmaceutical solutions tailored for the Ethiopian market.",
 	},
 	headerText: {
 		header: "Streamlined Pharmaceutical Logistics Solutions",
-		text: "Efficiently navigate the pharmaceutical supply chain with Autotronix's advanced logistics solutions in Kenya. We optimize our distribution to ensure compliance, and elevate efficiency for seamless pharmaceutical operations.",
+		text: "Efficiently navigate the pharmaceutical supply chain with B-Max's advanced logistics solutions in Ethiopia. We optimize our distribution to ensure compliance, and elevate efficiency for seamless pharmaceutical operations.",
 	},
 	alt1: {
 		header: "Innovative Solutions Shaping Pharmaceutical Excellence",
-		text: "Explore Autotronix's advanced tools, optimizing logistics, ensuring compliance, and driving digital transformation in pharmaceutical operations.",
+		text: "Explore B-Max's advanced tools, optimizing logistics, ensuring compliance, and driving digital transformation in pharmaceutical operations.",
 	},
 	alt2: {
 		header: "Achieve Peak Operational Performance",
@@ -197,29 +199,29 @@ export const pharmaData = {
 	dropData1: [
 		{
 			name: "Pharmaceutical Logistics Excellence",
-			nest: "Question: How does Autotronix optimize pharmaceutical logistics in Kenya? \n Answer: Autotronix specializes in pharmaceutical logistics solutions, streamlining the supply chain with cutting-edge technology. Our software ensures efficient distribution, inventory control, and compliance management, addressing the unique challenges of the pharmaceutical industry in Kenya. From real-time tracking to temperature-sensitive transport, Autotronix's logistics expertise guarantees the integrity and timely delivery of pharmaceutical products, meeting the highest industry standards.",
+			nest: "Question: How does B-Max optimize pharmaceutical logistics in Ethiopia? \n Answer: B-Max specializes in pharmaceutical logistics solutions, streamlining the supply chain with cutting-edge technology. Our software ensures efficient distribution, inventory control, and compliance management, addressing the unique challenges of the pharmaceutical industry in Ethiopia. From real-time tracking to temperature-sensitive transport, B-Max's logistics expertise guarantees the integrity and timely delivery of pharmaceutical products, meeting the highest industry standards.",
 		},
 		{
 			name: "Regulatory Compliance Solutions for Pharma",
-			nest: "Question: How does Autotronix ensure regulatory compliance in the pharmaceutical sector? \n Answer: Autotronix takes a comprehensive approach to regulatory compliance in the pharmaceutical industry. Our solutions cover documentation, reporting, and adherence to local and international pharmaceutical regulations. From quality control systems to data security measures, Autotronix's software guarantees that pharmaceutical companies in Kenya meet and exceed compliance standards. Stay confident in the compliance of your operations with Autotronix's tailored regulatory solutions.",
+			nest: "Question: How does B-Max ensure regulatory compliance in the pharmaceutical sector? \n Answer: B-Max takes a comprehensive approach to regulatory compliance in the pharmaceutical industry. Our solutions cover documentation, reporting, and adherence to local and international pharmaceutical regulations. From quality control systems to data security measures, B-Max's software guarantees that pharmaceutical companies in Ethiopia meet and exceed compliance standards. Stay confident in the compliance of your operations with B-Max's tailored regulatory solutions.",
 		},
 		{
 			name: "Digital Transformation in Pharma Operations",
-			nest: "Question: How does Autotronix contribute to the digital transformation of pharmaceutical operations in Kenya? \n Answer: Autotronix is at the forefront of digital transformation in the pharmaceutical sector. Our software solutions encompass Pharma ERP, inventory control systems, and data analytics tools, revolutionizing traditional processes. By embracing technology, Autotronix empowers pharmaceutical companies in Kenya to enhance operational efficiency, make data-driven decisions, and stay competitive in an evolving industry landscape. Experience the future of pharmaceutical operations with Autotronix's digital transformation solutions.",
+			nest: "Question: How does B-Max contribute to the digital transformation of pharmaceutical operations in Ethiopia? \n Answer: B-Max is at the forefront of digital transformation in the pharmaceutical sector. Our software solutions encompass Pharma ERP, inventory control systems, and data analytics tools, revolutionizing traditional processes. By embracing technology, B-Max empowers pharmaceutical companies in Ethiopia to enhance operational efficiency, make data-driven decisions, and stay competitive in an evolving industry landscape. Experience the future of pharmaceutical operations with B-Max's digital transformation solutions.",
 		},
 	],
 	dropData2: [
 		{
 			name: "Quality Control in Pharma Manufacturing",
-			nest: "Question: How does Autotronix enhance quality control in pharmaceutical manufacturing?\n Answer: Autotronix revolutionizes pharmaceutical manufacturing with advanced quality control solutions. Our software ensures precision, consistency, and compliance throughout the production process. From raw material sourcing to final product inspection, Autotronix guarantees the highest quality standards, empowering pharmaceutical companies in Kenya to deliver safe and effective medications.",
+			nest: "Question: How does B-Max enhance quality control in pharmaceutical manufacturing?\n Answer: B-Max revolutionizes pharmaceutical manufacturing with advanced quality control solutions. Our software ensures precision, consistency, and compliance throughout the production process. From raw material sourcing to final product inspection, B-Max guarantees the highest quality standards, empowering pharmaceutical companies in Ethiopia to deliver safe and effective medications.",
 		},
 		{
 			name: "Clinical Trial Management Excellence",
-			nest: "Question: How does Autotronix contribute to efficient clinical trial management in Kenya?\n Answer: Autotronix excels in clinical trial management, offering comprehensive software solutions for the pharmaceutical industry in Kenya. Our tools streamline trial processes, from participant recruitment to data analysis. Autotronix ensures transparency, compliance, and data security, facilitating successful clinical trials and accelerating the development of life-changing medications.",
+			nest: "Question: How does B-Max contribute to efficient clinical trial management in Ethiopia?\n Answer: B-Max excels in clinical trial management, offering comprehensive software solutions for the pharmaceutical industry in Ethiopia. Our tools streamline trial processes, from participant recruitment to data analysis. B-Max ensures transparency, compliance, and data security, facilitating successful clinical trials and accelerating the development of life-changing medications.",
 		},
 		{
 			name: "Sustainable Pharmaceutical Supply Chain",
-			nest: "Question: How does Autotronix contribute to a sustainable pharmaceutical supply chain?\n Answer: Autotronix embraces sustainability in the pharmaceutical supply chain. Our solutions optimize distribution routes, reduce waste, and enhance energy efficiency. By implementing eco-friendly practices, Autotronix supports pharmaceutical companies in Kenya in building a more sustainable future while meeting the increasing demand for responsible business operations.",
+			nest: "Question: How does B-Max contribute to a sustainable pharmaceutical supply chain?\n Answer: B-Max embraces sustainability in the pharmaceutical supply chain. Our solutions optimize distribution routes, reduce waste, and enhance energy efficiency. By implementing eco-friendly practices, B-Max supports pharmaceutical companies in Ethiopia in building a more sustainable future while meeting the increasing demand for responsible business operations.",
 		},
 	],
 	dropData3: [
@@ -228,20 +230,20 @@ export const pharmaData = {
 			nest: "Real-time temperature control ensures that pharmaceutical shipments maintain the required temperature range, preserving the integrity of sensitive products and preventing spoilage during transit.",
 		},
 		{
-			name: "How does Autotronix ensure cargo safety during transportation?",
-			nest: "Autotronix employs advanced tracking and monitoring systems to keep a close eye on cargo at all times, providing real-time alerts for any deviations or potential security risks.",
+			name: "How does B-Max ensure cargo safety during transportation?",
+			nest: "B-Max employs advanced tracking and monitoring systems to keep a close eye on cargo at all times, providing real-time alerts for any deviations or potential security risks.",
 		},
 		{
-			name: "Can Autotronix help optimize fleet operations for pharmaceutical logistics?",
-			nest: "Yes, Autotronix offers comprehensive fleet optimization solutions, including predictive maintenance, route planning, and driver performance monitoring, to enhance operational efficiency.",
+			name: "Can B-Max help optimize fleet operations for pharmaceutical logistics?",
+			nest: "Yes, B-Max offers comprehensive fleet optimization solutions, including predictive maintenance, route planning, and driver performance monitoring, to enhance operational efficiency.",
 		},
 		{
-			name: "What measures does Autotronix take to avoid liability risks during shipment?",
-			nest: "Autotronix implements robust safety protocols and compliance measures to ensure that all shipments adhere to regulations and industry standards, minimizing liability risks for our customers.",
+			name: "What measures does B-Max take to avoid liability risks during shipment?",
+			nest: "B-Max implements robust safety protocols and compliance measures to ensure that all shipments adhere to regulations and industry standards, minimizing liability risks for our customers.",
 		},
 		{
-			name: "How can Autotronix's solutions improve supply chain visibility for pharmaceutical companies?",
-			nest: "Autotronix provides end-to-end supply chain visibility, enabling pharmaceutical companies to track their shipments in real-time, maintain accurate inventory levels, and make data-driven decisions for better efficiency and productivity.",
+			name: "How can B-Max's solutions improve supply chain visibility for pharmaceutical companies?",
+			nest: "B-Max provides end-to-end supply chain visibility, enabling pharmaceutical companies to track their shipments in real-time, maintain accurate inventory levels, and make data-driven decisions for better efficiency and productivity.",
 		},
 	],
 };
@@ -252,37 +254,37 @@ export const healthData = {
 	linkText: "get service",
 
 	landing: {
-		header: "Revolutionize Healthcare Management with Autotronix",
-		text: "Experience excellence in healthcare management with Autotronix. From strategic planning to risk management, our comprehensive suite covers hospital administration, medical facility operations, and organizational development. Explore innovative solutions for clinical and project management, ensuring quality, compliance, and performance optimization. Our expert team combines leadership and technology to drive efficiency in healthcare processes, making us a pioneer in healthcare administration. Discover how Autotronix empowers healthcare leaders with cutting-edge solutions, shaping the future of medical practice, facility planning, and overall healthcare excellence.",
+		header: "Revolutionize Healthcare Management with B-Max",
+		text: "Experience excellence in healthcare management with B-Max. From strategic planning to risk management, our comprehensive suite covers hospital administration, medical facility operations, and organizational development. Explore innovative solutions for clinical and project management, ensuring quality, compliance, and performance optimization. Our expert team combines leadership and technology to drive efficiency in healthcare processes, making us a pioneer in healthcare administration. Discover how B-Max empowers healthcare leaders with cutting-edge solutions, shaping the future of medical practice, facility planning, and overall healthcare excellence.",
 	},
 	headerText: {
 		header: "Innovative Healthcare Management Solutions",
-		text: "Experience Autotronix's transformative suite covering hospital administration, clinical management, project optimization, ensuring quality, compliance, and performance in medical facilities. Revolutionize healthcare excellence with cutting-edge solutions.",
+		text: "Experience B-Max's transformative suite covering hospital administration, clinical management, project optimization, ensuring quality, compliance, and performance in medical facilities. Revolutionize healthcare excellence with cutting-edge solutions.",
 	},
 	cards: [
 		{
 			header: "Strategic Planning Mastery",
-			text: "Unlock the power of Autotronix's innovative tools for strategic planning in healthcare management. Our solutions offer comprehensive analytics, robust forecasting capabilities, and decision-making support. Empowering administrators to optimize resources and streamline processes, Autotronix ensures enhanced organizational performance and resilience in the ever-evolving healthcare landscape.",
+			text: "Unlock the power of B-Max's innovative tools for strategic planning in healthcare management. Our solutions offer comprehensive analytics, robust forecasting capabilities, and decision-making support. Empowering administrators to optimize resources and streamline processes, B-Max ensures enhanced organizational performance and resilience in the ever-evolving healthcare landscape.",
 		},
 		{
 			header: "Clinical Efficiency Solutions",
-			text: "Embark on a transformative journey with Autotronix's clinical management solutions. Our cutting-edge technologies optimize patient care from appointment scheduling to treatment tracking. Experience streamlined processes, improved patient outcomes, and enhanced healthcare delivery as Autotronix redefines clinical efficiency.",
+			text: "Embark on a transformative journey with B-Max's clinical management solutions. Our cutting-edge technologies optimize patient care from appointment scheduling to treatment tracking. Experience streamlined processes, improved patient outcomes, and enhanced healthcare delivery as B-Max redefines clinical efficiency.",
 		},
 		{
 			header: "Enhanced Patient Care with Timely Deliveries",
-			text: "Autotronix's efficient fleet management solutions enable healthcare providers to optimize route planning and delivery schedules. With real-time tracking and smart routing, medical facilities can ensure timely deliveries of critical medical equipment and supplies, enhancing patient care and minimizing disruptions in healthcare services.",
+			text: "B-Max's efficient fleet management solutions enable healthcare providers to optimize route planning and delivery schedules. With real-time tracking and smart routing, medical facilities can ensure timely deliveries of critical medical equipment and supplies, enhancing patient care and minimizing disruptions in healthcare services.",
 		},
 		{
 			header: "Comprehensive Fleet Visibility",
-			text: "Gain comprehensive visibility into your healthcare fleet with Autotronix's advanced telematics solutions. Monitor vehicle location, performance, and driver behavior in real-time. This level of insight allows healthcare providers to make data-driven decisions, improve operational efficiency, and reduce operational costs.",
+			text: "Gain comprehensive visibility into your healthcare fleet with B-Max's advanced auto solutions. Monitor vehicle location, performance, and driver behavior in real-time. This level of insight allows healthcare providers to make data-driven decisions, improve operational efficiency, and reduce operational costs.",
 		},
 		{
 			header: "Seamless Integration with Existing Systems",
-			text: "Autotronix's healthcare solutions seamlessly integrate with existing systems and workflows, allowing for a smooth implementation process. Our user-friendly interfaces and easy-to-use platforms ensure that healthcare professionals can efficiently manage their fleet and focus on delivering quality patient care.",
+			text: "B-Max's healthcare solutions seamlessly integrate with existing systems and workflows, allowing for a smooth implementation process. Our user-friendly interfaces and easy-to-use platforms ensure that healthcare professionals can efficiently manage their fleet and focus on delivering quality patient care.",
 		},
 		{
 			header: "Expert Support and Training",
-			text: "Autotronix provides dedicated support and training for healthcare organizations to maximize the benefits of our telematics solutions. Our team of experts is available to assist with any inquiries and ensure that healthcare providers make the most out of our advanced technology.",
+			text: "B-Max provides dedicated support and training for healthcare organizations to maximize the benefits of our telematics solutions. Our team of experts is available to assist with any inquiries and ensure that healthcare providers make the most out of our advanced technology.",
 		},
 	],
 	background: {
@@ -300,14 +302,191 @@ export const healthData = {
 	},
 	alt1: {
 		header: "Manage Your Fleet Seamlessly",
-		text: "Autotronix offers a comprehensive fleet management system that allows you to efficiently manage your entire fleet from a single, user-friendly platform. Gain real-time visibility into your vehicles’ locations, monitor driver behavior, optimize routes, and receive insightful reports for better decision-making. With our seamless fleet management solutions, enhance productivity, improve safety, and reduce operational costs.",
+		text: "B-Max offers a comprehensive fleet management system that allows you to efficiently manage your entire fleet from a single, user-friendly platform. Gain real-time visibility into your vehicles' locations, monitor driver behavior, optimize routes, and receive insightful reports for better decision-making. With our seamless fleet management solutions, enhance productivity, improve safety, and reduce operational costs.",
 	},
 	alt2: {
 		header: "Advanced Video Telematics",
-		text: "Autotronix’s advanced video telematics technology revolutionizes fleet management by providing real-time video insights into driver behavior and road conditions. Our cutting-edge cameras and AI-powered software capture and analyze critical moments, such as collisions or risky driving behavior. Experience enhanced safety, reduced accident rates, and improved driver performance with our video telematics solutions.",
+		text: "B-Max's advanced video telematics technology revolutionizes fleet management by providing real-time video insights into driver behavior and road conditions. Our cutting-edge cameras and AI-powered software capture and analyze critical moments, such as collisions or risky driving behavior. Experience enhanced safety, reduced accident rates, and improved driver performance with our video telematics solutions.",
 	},
 	alt3: {
 		header: "Fuel Monitoring",
-		text: "Autotronix’s fuel monitoring system helps you take control of your fleet’s fuel consumption and expenses. Keep track of fuel levels, detect fuel theft, and analyze fuel usage patterns with our intuitive monitoring tools. By optimizing fuel usage, you can reduce costs, improve environmental sustainability, and ensure efficient fleet operations. Maximize your fuel efficiency and drive your business forward with Autotronix’s fuel monitoring solutions.",
+		text: "B-Max's fuel monitoring system helps you take control of your fleet's fuel consumption and expenses. Keep track of fuel levels, detect fuel theft, and analyze fuel usage patterns with our intuitive monitoring tools. By optimizing fuel usage, you can reduce costs, improve environmental sustainability, and ensure efficient fleet operations. Maximize your fuel efficiency and drive your business forward with B-Max's fuel monitoring solutions.",
 	},
+};
+
+export const oilGasData = {
+	location: "oilGas-page",
+	linkSrc: "contact",
+	linkText: "know more",
+
+	landing: {
+		header: "Integrated oil and gas asset management software",
+		text: "Explore cutting-edge Oil and Gas solutions with B-Max, offering integrated software for upstream and downstream operations. Optimize your drilling performance with predictive maintenance analytics and real-time reservoir simulation. Our digital twin technology ensures efficient exploration, while cybersecurity solutions safeguard your data. From LNG terminal optimization to renewable energy integration, we specialize in comprehensive energy asset management. Enhance your oilfield automation with remote monitoring, ensuring compliance and environmental safety. Discover the power of geospatial analytics for energy field planning and emergency response. Trust B-Max for tailored solutions driving efficiency and sustainability in the dynamic Oil and Gas sector.",
+	},
+	alt1: {
+		header: "Enhancing Safety Measures for Assets",
+		text: "All-Inclusive Security for Vehicles, Drivers, and Cargo",
+	},
+	alt2: {
+		header: "Optimize Operations for Maximum Efficiency",
+		text: "Automate Workflows for Seamless Operations. Ensure Safety with Comprehensive Inspections. Monitor Real-Time Metrics for Data-Driven Decisions",
+	},
+	background: {
+		bgs: [
+			{
+				header: "Efficient Operations",
+				text: "Streamline your oil and gas operations with B-Max's advanced solutions for improved efficiency and productivity.",
+			},
+			{
+				header: "Fleet Management",
+				text: " Manage your oil and gas fleet seamlessly with B-Max's comprehensive fleet management platform, ensuring timely deliveries and optimized routes.",
+			},
+			{
+				header: "Real-Time Monitoring",
+				text: " Ensure the safety and integrity of your oil and gas infrastructure with B-Max's real-time monitoring solutions, detecting any anomalies and ensuring timely maintenance.",
+			},
+		],
+	},
+
+	dropData1: [
+		{
+			name: "Integrated Oil and Gas Asset Management",
+			nest: "Q: How does B-Max provide integrated solutions for oil and gas asset management? \n A: B-Max leads in integrated asset management for the Oil and Gas sector, offering software solutions that cover upstream exploration to downstream refinery operations. Our suite includes predictive maintenance analytics, real-time reservoir simulation, and digital twin technology, ensuring optimal performance and reliability. From drilling to environmental compliance, B-Max's comprehensive approach enhances efficiency, cybersecurity, and environmental safety. Explore our integrated solutions for holistic oil and gas asset management, driving operational excellence in every phase of energy production.",
+		},
+		{
+			name: "Renewable Energy Integration in Oil and Gas Operations",
+			nest: "Q: How does B-Max facilitate the integration of renewable energy in oil and gas operations? \n A: B-Max pioneers renewable energy integration in the Oil and Gas sector, addressing the industry's evolving needs. Our solutions go beyond traditional operations, embracing sustainability with offerings like LNG terminal optimization and renewable energy planning. From geospatial analytics for field planning to emergency response systems, B-Max ensures that oil and gas operations align with environmental goals. Explore our commitment to a greener future, where renewable energy seamlessly integrates with conventional processes, driving a sustainable and efficient energy landscape.",
+		},
+		{
+			name: "Predictive Maintenance and Analytics for Oilfield Equipment",
+			nest: "Q: How does B-Max leverage predictive maintenance and analytics for oilfield equipment?\n A: B-Max excels in predictive maintenance and analytics, revolutionizing oilfield equipment management. Our software suite provides real-time insights into drilling performance, ensuring optimal efficiency and reliability. With a focus on asset integrity management and remote monitoring, B-Max safeguards operations while optimizing production. Cybersecurity solutions add an extra layer of protection, ensuring data integrity. Explore our commitment to data-driven decision-making, where predictive analytics and maintenance drive excellence in oilfield equipment management, securing the future of Oil and Gas operations.",
+		},
+	],
+	dropData2: [
+		{
+			name: "Efficient Drilling and Exploration with B-Max",
+			nest: "Q: How does B-Max enhance drilling and exploration efficiency in the oil and gas industry? \n A: B-Max empowers the oil and gas sector with advanced technology for efficient drilling and exploration. Our integrated software solutions, including real-time reservoir simulation and drilling performance analytics, optimize operations. From digital twin technology for exploration planning to comprehensive data-driven decision-making, B-Max ensures that drilling processes are not only efficient but also adaptive to industry changes. Explore how B-Max's cutting-edge solutions redefine efficiency and performance in the dynamic realm of oil and gas exploration.",
+		},
+		{
+			name: "SCADA Systems for Natural Gas Pipeline Monitoring",
+			nest: "Q: How does B-Max utilize SCADA systems for natural gas pipeline monitoring? \n A: B-Max excels in natural gas pipeline monitoring through advanced SCADA (Supervisory Control and Data Acquisition) systems. Our solutions provide real-time visibility and control, ensuring the integrity and efficiency of pipeline operations. From remote monitoring to emergency response planning, B-Max's SCADA technology enhances the safety and reliability of natural gas transportation. Explore our commitment to secure and efficient pipeline operations, where SCADA systems play a pivotal role in ensuring the smooth flow of natural gas through the intricate network of pipelines.",
+		},
+		{
+			name: "Data-Driven Decision-Making in Oil Production Planning",
+			nest: "Q: How does B-Max facilitate data-driven decision-making in oil production planning? \n A: B-Max revolutionizes oil production planning with a focus on data-driven decision-making. Our software suite offers comprehensive analytics, from predictive maintenance to real-time data visualization, ensuring informed and strategic decision-making. B-Max's commitment to integrated drilling and exploration software, along with asset integrity management, enables oil producers to optimize production and enhance efficiency. Explore how B-Max's advanced analytics and planning tools empower the oil and gas industry, making data the cornerstone of successful oil production operations.",
+		},
+	],
+	dropData3: [
+		{
+			name: "How can B-Max's solutions benefit my oil and gas business?",
+			nest: "B-Max's solutions can significantly benefit your oil and gas business by providing real-time visibility, optimizing operational efficiency, ensuring asset safety, and automating workflows. With our advanced telematics technology and comprehensive fleet management platform, you can enhance productivity and reduce costs.",
+		},
+		{
+			name: "Does B-Max offer customized solutions to meet specific industry requirements?",
+			nest: "Yes, B-Max offers customized solutions tailored to meet the unique requirements of the oil and gas industry. Our team works closely with clients to understand their specific needs and delivers solutions that address their challenges effectively.",
+		},
+		{
+			name: "How does real-time monitoring help in ensuring the safety of oil and gas infrastructure?",
+			nest: "Real-time monitoring is a crucial aspect of ensuring the safety of oil and gas infrastructure. With B-Max's advanced video telematics technology, you can have a constant watch over your assets, identify potential risks, and take proactive measures to prevent incidents and accidents.",
+		},
+		{
+			name: "Can B-Max's fleet management platform help optimize fuel consumption and reduce operational costs?",
+			nest: "Absolutely! B-Max's fleet management platform allows you to closely monitor fuel consumption and track vehicle health. By analyzing real-time data and performance metrics, you can identify areas for improvement, optimize fuel usage, and reduce maintenance costs.",
+		},
+		{
+			name: "What kind of support and training does B-Max provide to its customers for efficient use of their solutions?",
+			nest: "B-Max is committed to providing exceptional support and training to its customers. Our team of experts assists with the implementation and integration of our solutions into your operations. We offer comprehensive training resources to ensure that you and your team can make the most of our technology and achieve optimal results.",
+		},
+	],
+};
+
+export const logisticData = {
+	location: "logistic-page",
+	linkSrc: "contact",
+	linkText: "get service",
+
+	landing: {
+		header: "B-Max: Revolutionizing Supply Chain Management",
+		text: "Revolutionize your supply chain with B-Max's comprehensive solutions. From Addis Ababa, Ethiopia, we offer end-to-end services including planning, sourcing, manufacturing, delivery, and return processing. Our focus on information systems and sustainability ensures efficiency and responsibility. Trust B-Max for innovative and reliable supply chain management in Addis Ababa and across Ethiopia. Experience seamless operations and unparalleled support with B-Max Supply Chain Solutions.",
+	},
+	headerText: {
+		header: "Improve Operations and Drive Productivity with B-Max",
+	},
+	alt1: {
+		header:
+			"Cloud-Based SCM Scalability: Unmatched Flexibility for Addis Ababa Businesses",
+		text: "Experience unprecedented growth with B-Max's cloud-based SCM, offering real-time visibility and data-driven demand forecasting for seamless scalability.",
+	},
+	alt2: {
+		header:
+			"Customizable ERP Integration: Tailored Solutions for Addis Ababa's Unique Requirements",
+		text: "Enhance supply chain control with B-Max's customizable ERP integration, providing comprehensive solutions adaptable to Addis Ababa businesses' distinct needs and challenges.",
+	},
+	background: {
+		bgs: [
+			{
+				header: "Trip Optimization",
+				text: "Optimize your fleet's trips with B-Max's advanced trip optimization tools, reducing travel time, fuel consumption, and operational costs for efficient deliveries.",
+			},
+			{
+				header: "E-Locks on Cargo",
+				text: "Secure your cargo with state-of-the-art electronic locks from B-Max, providing real-time monitoring and control over cargo access, ensuring safety and preventing theft.",
+			},
+			{
+				header: "Scorecards",
+				text: "Monitor and analyze your fleet's performance with B-Max's scorecards, providing valuable insights into driver behavior, fuel efficiency, and overall fleet productivity.",
+			},
+		],
+	},
+
+	dropData1: [
+		{
+			name: "Supply Chain Automation Excellence",
+			nest: "Q: How does B-Max's supply chain automation technology enhance operational efficiency? \n A: B-Max is a trailblazer in supply chain automation, providing businesses in Addis Ababa with cutting-edge technology to optimize their operations. Our automation solutions, including just-in-time (JIT) inventory management and advanced transportation optimization tools, empower organizations to achieve unparalleled levels of efficiency. With B-Max's supply chain automation, businesses can streamline warehouse processes, reduce carrying costs, and enhance overall productivity. The integration of state-of-the-art technology ensures that every aspect of the supply chain is finely tuned, enabling organizations to respond swiftly to market dynamics and gain a competitive edge.",
+		},
+		{
+			name: "Sustainable SCM Practices for a Greener Future",
+			nest: "Q: How does B-Max integrate RFID and IoT for sustainable supply chain management? \n A: B-Max is committed to sustainability, and our supply chain management practices reflect this dedication. We leverage RFID and IoT technologies to promote eco-friendly and socially responsible supply chain operations. By incorporating these technologies, organizations can monitor and track their supply chains with precision, reducing waste and minimizing environmental impact. B-Max's emphasis on sustainable SCM not only aligns with global environmental goals but also positions our clients as responsible corporate citizens, contributing to a greener future for Addis Ababa and beyond.",
+		},
+		{
+			name: "Collaborative Supplier Management Solutions",
+			nest: "Q: How does B-Max facilitate collaborative supplier management for seamless operations?\n A: B-Max understands the importance of collaboration in supply chain management. Our collaborative supplier management solutions foster seamless communication between businesses and their suppliers. This ensures a transparent and efficient flow of information, enabling organizations to build stronger relationships with their suppliers. B-Max's emphasis on collaboration goes beyond software solutions; it's a commitment to creating an interconnected ecosystem where suppliers and businesses work together harmoniously. With B-Max's tools, businesses in Addis Ababa can optimize their supplier relationships, streamline procurement processes, and achieve a level of operational cohesion that drives success in the competitive marketplace.",
+		},
+	],
+	dropData2: [
+		{
+			name: "Cloud-Based SCM Solutions for Business Scalability",
+			nest: "Q: How does B-Max's cloud-based SCM enhance scalability for businesses in Addis Ababa? \n A: B-Max's cloud-based supply chain management (SCM) solutions are designed to empower businesses in Addis Ababa with unmatched scalability. Our cloud platform enables organizations to adapt to changing market demands seamlessly. With features such as real-time supply chain visibility and data-driven demand forecasting, businesses can scale their operations efficiently. B-Max's cloud-based SCM not only provides the flexibility needed to grow but also ensures that businesses have access to the latest updates and innovations in supply chain technology, keeping them at the forefront of industry trends.",
+		},
+		{
+			name: "Customizable ERP Integration for Comprehensive SCM",
+			nest: "Q: How does B-Max integrate customizable ERP solutions to enhance supply chain management? \n A: B-Max goes beyond standard supply chain management by offering customizable Enterprise Resource Planning (ERP) solutions. Our ERP integration enhances supply chain visibility and control, allowing organizations in Addis Ababa to tailor their systems to specific business needs. Whether it's inventory control, order processing, or distribution management, B-Max's customizable ERP ensures that businesses have a comprehensive solution that aligns with their unique requirements. The flexibility of our ERP integration allows businesses to adapt quickly to changes in the market, making B-Max the ideal partner for those seeking a holistic approach to supply chain management.",
+		},
+		{
+			name: "Multi-Channel Fulfillment Solutions for Diverse Operations",
+			nest: "Q: How does B-Max's multi-channel fulfillment approach cater to diverse business operations in Addis Ababa? \n A: B-Max recognizes the diversity of business operations in Addis Ababa and addresses this with our multi-channel fulfillment solutions. Whether businesses operate through traditional retail channels, e-commerce platforms, or a combination of both, B-Max's supply chain management adapts to meet these varied needs. Our solutions encompass everything from procurement to distribution, ensuring that organizations can fulfill orders efficiently across multiple channels. B-Max's multi-channel fulfillment approach not only simplifies operations but also positions businesses to capitalize on the full spectrum of opportunities in the dynamic Addis Ababa market.",
+		},
+	],
+	dropData3: [
+		{
+			name: "How does B-Max's trip optimization feature work?",
+			nest: "B-Max's trip optimization feature utilizes advanced algorithms and real-time data to create the most efficient routes for your fleet, reducing fuel consumption and transportation time..",
+		},
+		{
+			name: "Can I track and control the e-locks on my cargo remotely?",
+			nest: "Yes, B-Max's supply chain solutions allow you to remotely track and control e-locks on your cargo, ensuring enhanced security and preventing unauthorized access.",
+		},
+		{
+			name: "What data and metrics are included in the scorecards provided by B-Max?",
+			nest: "B-Max's scorecards provide comprehensive data on fleet performance, driver behavior, fuel consumption, and other key metrics, empowering you to make data-driven decisions for better operational efficiency.",
+		},
+		{
+			name: "How can B-Max help improve customer satisfaction in supply chain management?",
+			nest: "B-Max's solutions enable real-time tracking and on-time deliveries, ensuring smooth operations and timely responses to customer demands, leading to increased customer satisfaction.",
+		},
+		{
+			name: "Does B-Max offer compliance solutions for the transportation industry?",
+			nest: "Yes, B-Max provides compliance solutions that help businesses adhere to regulatory standards and safety requirements, reducing the risk of penalties and ensuring a smooth and compliant supply chain.",
+		},
+	],
 };

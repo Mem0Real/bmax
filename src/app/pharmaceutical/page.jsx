@@ -1,7 +1,7 @@
 import React from "react";
-import GenerateSolution from "../components/GenerateSolution";
+import GeneratePage from "../components/GeneratePage";
 import { pharmaData } from "@/data/industry";
 
 export default function Pharma() {
-	return <GenerateSolution data={pharmaData} noExtra type="png" />;
+	return <GeneratePage data={pharmaData} noExtra type="png" />;
 }
