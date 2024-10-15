@@ -12,34 +12,6 @@ import GenerateCard from "../components/GenerateCard";
 
 import { aboutData } from "@/data/about";
 
-// const whyList = [
-// 	{
-// 		title: "EXPERTISE",
-// 		detail:
-// 			"With years of experience in the automotive industry, our team at B-Max possesses the expertise and knowledge to handle all aspects of car key replacement, programming, and security systems installation with precision and efficiency.",
-// 	},
-// 	{
-// 		title: "Cutting-Edge Technology",
-// 		detail:
-// 			"We stay at the forefront of technological advancements, utilizing the latest tools and equipment to ensure accurate key programming, seamless GPS tracking, and reliable car alarm system installations.",
-// 	},
-// 	{
-// 		title: "Custom Solutions",
-// 		detail:
-// 			"At B-Max, we understand that every vehicle and client has unique requirements. That&apos;s why we offer personalized solutions tailored to your specific needs, whether it&apos;s replacing lost keys, enhancing vehicle security, or optimizing fleet management.",
-// 	},
-// 	{
-// 		title: "Prompt Service",
-// 		detail:
-// 			"We value your time, which is why we strive to provide prompt and efficient service. Whether you need a car key replacement in a hurry or require urgent assistance with your GPS tracking system, you can rely on B-Max to deliver timely solutions.",
-// 	},
-// 	{
-// 		title: "Customer Satisfaction",
-// 		detail:
-// 			"At the heart of our business is a commitment to customer satisfaction. We prioritize open communication, transparency, and integrity in all our interactions, ensuring that every client receives the highest level of service and support. Choose B-Max for all your car key replacement, programming, GPS tracking, car alarm system, and fleet management needs. Experience the difference of working with a trusted partner dedicated to your safety and peace of mind on the road.",
-// 	},
-// ];
-
 const imgList = ["1", "2", "3", "4", "5"];
 
 export default function About() {
@@ -63,45 +35,6 @@ export default function About() {
 		InnovativeIcon,
 	];
 
-	// const cardList = [
-	// 	{
-	// 		icon: CheckIcon,
-	// 		title: "Tailored Solutions",
-	// 		detail:
-	// 			"At B-Max,  we take immense pride in crafting customized solutions that precisely address your unique business needs and challenges. Our expert team works closely with you to understand your fleet management requirements, ensuring we deliver solutions that fit your goals flawlessly.",
-	// 	},
-	// 	{
-	// 		icon: TechnologyIcon,
-	// 		title: "Advanced Technology",
-	// 		detail:
-	// 			"Embrace the power of advanced technologies with Autotronix. Our state-of-the-art GPS tracking, video telematics, and fuel monitoring solutions offer real-time visibility and actionable insights. Stay ahead of the competition and make data-driven decisions for your fleet&apos;s success.",
-	// 	},
-	// 	{
-	// 		icon: SupportIcon,
-	// 		title: "Exceptional Support",
-	// 		detail:
-	// 			"Customer satisfaction is paramount to us. Our dedicated professionals provide top-notch support, training, and assistance. Whether you have questions, need guidance, or face challenges, we ensure you have a seamless experience with our products.",
-	// 	},
-	// 	{
-	// 		icon: ExpertIcon,
-	// 		title: "Industry Expertise",
-	// 		detail:
-	// 			"B-Max boasts extensive experience in the fleet management industry, offering deep understanding of businesses&apos; challenges. Trust our domain knowledge to optimize your operations and achieve operational excellence.",
-	// 	},
-	// 	{
-	// 		icon: ScaleIcon,
-	// 		title: "Scalable Solutions",
-	// 		detail:
-	// 			"No matter your fleet size, our solutions are designed for growth. From small fleets to large enterprises, our services adapt to accommodate your expanding needs, providing flexibility and reliability.",
-	// 	},
-	// 	{
-	// 		icon: InnovativeIcon,
-	// 		title: "Innovative Approach",
-	// 		detail:
-	// 			"Innovation drives us forward. We continuously strive to bring the latest technologies and best practices to our offerings, keeping your fleet at the forefront of the industry. Experience our innovative approach to excel in a rapidly evolving market.",
-	// 	},
-	// ];
-
 	return (
 		<div className="w-full px-4 xl:px-40 bg-neutral-100 text-neutral-950 pb-36">
 			<div className="flex flex-col justify-center items-center gap-24 pt-28">
@@ -110,8 +43,8 @@ export default function About() {
 					<p className="text-2xl font-semibold">
 						At B-Max, we&apos;re passionate about keeping you on the road safely
 						and securely. As experts in car key replacement, programming, GPS
-						tracking, car alarm systems, and fleet management in Kenya, we offer
-						a comprehensive range of services to meet all your automotive
+						tracking, car alarm systems, and fleet management in Ethiopia, we
+						offer a comprehensive range of services to meet all your automotive
 						security and management needs.
 					</p>
 					<h1 className="text-5xl font-bold">Sliding Text Effect</h1>

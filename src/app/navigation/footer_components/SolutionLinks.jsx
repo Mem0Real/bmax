@@ -24,6 +24,7 @@ const links = [
 		address: "/fuel-monitoring",
 	},
 	{ title: "Dashcam", address: "/dashcam" },
+	{ title: "4G AI Dashcam", address: "/ai-dashcam" },
 	{ title: "Video Telematics", address: "/video-telematics" },
 ];
 export default function SolutionLinks() {

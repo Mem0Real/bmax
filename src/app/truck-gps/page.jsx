@@ -31,10 +31,10 @@ export default function Page() {
 				className="w-full h-[40rem] bg-cover bg-top bg-no-repeat"
 				style={{ backgroundImage: "url(/images/truck-page/background.jpg)" }}
 			>
-				<div className="absolute inset-0 bg-black opacity-35" />
+				<div className="absolute inset-0 bg-black opacity-55" />
 
 				<div className="relative w-full h-full grid grid-cols-6 grid-flow-row text-neutral-100">
-					<div className="col-start-2 col-span-3 place-content-center space-y-3">
+					<div className="px-4 lg:px-0 col-start-1 lg:col-start-2 col-span-5 lg:col-span-3 place-content-center space-y-3">
 						<h1 className="text-4xl md:text-6xl font-bold">
 							{tGpsData.landing.header}
 						</h1>

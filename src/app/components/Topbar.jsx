@@ -15,7 +15,7 @@ const Topbar = ({ className }) => {
 		>
 			<div className="flex justify-center items-center gap-4 flex-wrap">
 				<h1 className={className}>
-					+254 703 888 777 info@autotronix.co.ke Parklands, Ojijo rd. No.6 ||
+					+254 703 888 777 info@B-Max.co.ke Parklands, Ojijo rd. No.6 ||
 					Lavington, James Gichuru rd. No.105
 				</h1>
 			</div>

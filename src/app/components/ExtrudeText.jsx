@@ -35,7 +35,7 @@ export default function ExtrudeText({ dropData, className }) {
 						} py-8 ps-4 pe-2 flex justify-between items-center cursor-pointer`}
 						onClick={() => handleClick(index)}
 						layout="position"
-						transition={{ ease: "easeInOut" }}
+						transition={{ ease: "easeInOut", duration: 0.2 }}
 					>
 						<h1 className="text-xl md:text-2xl font-medium capitalize">
 							{name}
@@ -53,7 +53,7 @@ export default function ExtrudeText({ dropData, className }) {
 								animate={{ height: "auto", opacity: 1 }}
 								exit={{ height: 0, opacity: 0 }}
 								transition={{ ease: "easeInOut", duration: 0.2 }}
-								className="overflow-hidden w-[90%] mx-auto text-base"
+								className="overflow-hidden w-[90%] mx-auto text-lg text-neutral-900/80"
 								layout
 							>
 								{nest}

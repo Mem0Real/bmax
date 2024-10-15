@@ -40,14 +40,13 @@ export default function Page() {
 						{fuelData.headerText.text}
 					</p>
 				</div>
-				{/* cards */}
 				<Alternating extrude={true}>
 					<AlternateImage img={`${fuelData.location}/alt1.png`} />
 					<AlternateText
 						header={fuelData.alt1.header}
 						detail={fuelData.alt1.text}
 					>
-						<ExtrudeText dropData={fuelData.dropData1} />{" "}
+						<ExtrudeText dropData={fuelData.dropData1} />
 					</AlternateText>
 				</Alternating>
 				<Alternating extrude>
@@ -55,7 +54,7 @@ export default function Page() {
 						header={fuelData.alt2.header}
 						detail={fuelData.alt2.text}
 					>
-						<ExtrudeText dropData={fuelData.dropData2} />{" "}
+						<ExtrudeText dropData={fuelData.dropData2} />
 					</AlternateText>
 					<AlternateImage img={`${fuelData.location}/alt2.png`} />
 				</Alternating>

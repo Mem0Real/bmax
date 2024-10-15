@@ -33,7 +33,10 @@ export default function AlternateText({
 				dark ? (
 					<div className="flex flex-col justify-center items-center gap-8">
 						{detail?.map((text, index) => (
-							<p key={index} className="text-neutral-900 text-lg text-start">
+							<p
+								key={index}
+								className="text-neutral-900 text-lg text-center md:text-start"
+							>
 								{text}
 							</p>
 						))}
@@ -41,7 +44,10 @@ export default function AlternateText({
 				) : (
 					<div className="flex flex-col justify-center items-center gap-8">
 						{detail?.map((text, index) => (
-							<p key={index} className="text-neutral-200 text-lg text-start">
+							<p
+								key={index}
+								className="text-neutral-200 text-lg text-start md:text-start"
+							>
 								{text}
 							</p>
 						))}

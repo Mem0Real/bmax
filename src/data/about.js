@@ -30,7 +30,7 @@ export const aboutData = {
 		},
 		{
 			header: "Advanced Technology",
-			text: "Embrace the power of advanced technologies with Autotronix. Our state-of-the-art GPS tracking, video telematics, and fuel monitoring solutions offer real-time visibility and actionable insights. Stay ahead of the competition and make data-driven decisions for your fleet&apos;s success.",
+			text: "Embrace the power of advanced technologies with B-Max. Our state-of-the-art GPS tracking, video telematics, and fuel monitoring solutions offer real-time visibility and actionable insights. Stay ahead of the competition and make data-driven decisions for your fleet&apos;s success.",
 		},
 		{
 			header: "Exceptional Support",

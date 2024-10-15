@@ -201,7 +201,7 @@ export const duplicationData = {
 		},
 		{
 			name: "Is car key replacement expensive with B-Max Auto Solutions?",
-			nest: "No, unlike car dealerships in Kenya, we provide car key replacements at a far lesser cost and with more ease.",
+			nest: "No, unlike car dealerships in Ethiopia, we provide car key replacements at a far lesser cost and with more ease.",
 		},
 		{
 			name: "What payment methods do you accept for key replacement?",
@@ -1128,7 +1128,7 @@ export const videoData = {
 
 	landing: {
 		header: "Innovative Video Telematics",
-		text: "Explore the cutting-edge world of video telematics with Autotronix, where technology meets safety and efficiency. Our comprehensive solutions incorporate advanced in-cab cameras, real-time video insights, and AI-powered analytics to revolutionize fleet monitoring. Whether you're focused on road safety, driver behavior analytics, or logistics optimization, Autotronix's video telematics technology provides unparalleled visibility into your fleet's operations.",
+		text: "Explore the cutting-edge world of video telematics with B-Max, where technology meets safety and efficiency. Our comprehensive solutions incorporate advanced in-cab cameras, real-time video insights, and AI-powered analytics to revolutionize fleet monitoring. Whether you're focused on road safety, driver behavior analytics, or logistics optimization, B-Max's video telematics technology provides unparalleled visibility into your fleet's operations.",
 	},
 	alt: {
 		text1:
@@ -1137,7 +1137,7 @@ export const videoData = {
 			"Experience the power of B-Max's fleet management software, designed to meet the evolving demands of the modern business landscape. Our video telematics solutions not only improve safety and compliance but also provide a strategic advantage in logistics and operations. From in-depth driver behavior analytics to incident detection and AI-driven video analytics, B-Max's innovative approach to video telematics sets a new standard for businesses looking to transform their fleet management practices.",
 	},
 	background: {
-		header: "Revolutionize Fleet Safety with Autotronix",
+		header: "Revolutionize Fleet Safety with B-Max",
 		detail:
 			"Innovative video telematics solutions ensuring real-time insights, safety optimization, and efficient fleet management for unparalleled operational excellence.",
 		bgs: [

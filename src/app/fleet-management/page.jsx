@@ -20,7 +20,7 @@ export default function FleetManagement() {
 				<AlternateImage img={`${fleetData.location}/landing.jpg`} />
 			</Alternating>
 			<div className="w-full flex flex-col justify-center items-center gap-2 md:gap-8 lg:gap-0">
-				<p className="text-xl text-neutral-950 uppercase">
+				<p className="text-xl text-neutral-950 text-center">
 					{fleetData.headerText1.text}
 				</p>
 				<h1 className="text-3xl md:text-4xl font-medium uppercase text-center">
@@ -52,7 +52,7 @@ export default function FleetManagement() {
 
 			<div className="flex flex-col w-full justify-center items-center gap-5">
 				<div className="xl:px-4 flex flex-col justify-center items-center gap-2 text-center md:text-balance">
-					<h3 className="text-base md:text-lg text-neutral-900 capitalize font-medium">
+					<h3 className="text-base md:text-lg text-neutral-900 font-medium text-center">
 						{fleetData.headerText2.text}
 					</h3>
 					<h2 className="text-2xl md:text-3xl font-medium text-mellow capitalize">

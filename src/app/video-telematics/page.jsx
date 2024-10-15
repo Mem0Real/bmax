@@ -37,7 +37,7 @@ export default function Page() {
 			>
 				<div className="absolute inset-0 bg-black opacity-50" />
 
-				<div className="relative w-full min-h-[50rem] flex flex-col justify-center items-center text-neutral-100 gap-10 md:gap-12 lg:gap-16">
+				<div className="relative w-full min-h-[50rem] flex flex-col justify-center items-center text-neutral-100 gap-10 md:gap-12 lg:gap-16 py-12 lg:pt-0">
 					<Alternating>
 						<AlternateText
 							header={videoData.landing.header}

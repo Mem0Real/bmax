@@ -31,26 +31,26 @@ export default function Page() {
 		CursorIcon,
 	];
 
-	const body1 = aiDashData.data.obj1.table.map((entry) => (
-		<Table.Tr key={entry.title}>
+	const body1 = aiDashData.data.obj1.table.map((entry, index) => (
+		<Table.Tr key={index}>
 			<Table.Td>{entry.title}</Table.Td>
 			<Table.Td>{entry.value}</Table.Td>
 		</Table.Tr>
 	));
-	const body2 = aiDashData.data.obj2.table.map((entry) => (
-		<Table.Tr key={entry.title}>
+	const body2 = aiDashData.data.obj2.table.map((entry, index) => (
+		<Table.Tr key={index}>
 			<Table.Td>{entry.title}</Table.Td>
 			<Table.Td>{entry.value}</Table.Td>
 		</Table.Tr>
 	));
-	const body3 = aiDashData.data.obj3.table.map((entry) => (
-		<Table.Tr key={entry.title}>
+	const body3 = aiDashData.data.obj3.table.map((entry, index) => (
+		<Table.Tr key={index}>
 			<Table.Td>{entry.title}</Table.Td>
 			<Table.Td>{entry.value}</Table.Td>
 		</Table.Tr>
 	));
-	const body4 = aiDashData.data.obj4.table.map((entry) => (
-		<Table.Tr key={entry.title}>
+	const body4 = aiDashData.data.obj4.table.map((entry, index) => (
+		<Table.Tr key={index}>
 			<Table.Td>{entry.title}</Table.Td>
 			<Table.Td>{entry.value}</Table.Td>
 		</Table.Tr>
@@ -84,7 +84,7 @@ export default function Page() {
 					</h1>
 				</div>
 				<Alternating>
-					<AlternateImage img={`${aiDashData.location}/alt1.png`} />
+					<AlternateImage img={`${aiDashData.location}/alt1.png`} sm />
 					<AlternateText
 						header={aiDashData.alt1.header}
 						detail={[aiDashData.alt1.text1, aiDashData.alt1.text2]}

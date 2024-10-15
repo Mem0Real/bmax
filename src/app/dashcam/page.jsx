@@ -10,6 +10,7 @@ import AlternateImage from "../components/AlternateImage";
 
 import { useIcons } from "../components/CustomIcons";
 import GenerateCard from "../components/GenerateCard";
+import ExtrudeText from "../components/ExtrudeText";
 
 export default function Page() {
 	const { ClockIcon, LockedIcon, WifiIcon, CycleIcon, SecureIcon, RiskIcon } =
@@ -63,6 +64,9 @@ export default function Page() {
 				{/* cards */}
 				<div className="w-full px-4 xl:px-40 flex justify-center xl:justify-evenly items-center gap-8 lg:gap-4 xl:gap-20 flex-wrap">
 					<GenerateCard icons={iconList} data={dashcamData.cards} size="sm" />
+				</div>
+				<div className="px-4 xl:px-48 w-full flex flex-col justify-center items-stretch gap-2 pb-12">
+					<ExtrudeText dropData={dashcamData.dropData} />
 				</div>
 			</div>
 		</div>

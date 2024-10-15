@@ -19,8 +19,16 @@ import { useDisclosure, useMediaQuery } from "@mantine/hooks";
 const navData = [
 	{ title: "Home", address: "/" },
 	{ title: "About Us", address: "/about", dropData: <AboutDrop /> },
-	{ title: "Solutions", address: "/solutions", dropData: <SolutionDrop /> },
-	{ title: "Industries", address: "/industries", dropData: <IndustryDrop /> },
+	{
+		title: "Solutions",
+		address: "/key-replacement",
+		dropData: <SolutionDrop />,
+	},
+	{
+		title: "Industries",
+		address: "/transport-industry",
+		dropData: <IndustryDrop />,
+	},
 	{ title: "Reviews", address: "/reviews" },
 	{ title: "Contact Us", address: "/contact" },
 	{ title: "Blog", address: "/blog" },
@@ -54,13 +62,16 @@ export default function Nav() {
 
 	useEffect(() => {
 		if (!currentPath) setCurrentPath(pathname);
-		else if (currentPath !== pathname) close();
+		else if (currentPath !== pathname) setTimeout(() => close(), 200);
 	}, [pathname]);
 
 	return (
 		<>
 			<div className="w-full bg-neutral-900 text-neutral-300 px-4 lg:px-16 xl:px-40 py-4 flex items-center justify-between flex-wrap">
-				<div className="relative flex justify-center items-center w-[6.5rem] h-[2.5rem]">
+				<Link
+					className="relative flex justify-center items-center w-[6.5rem] h-[2.5rem]"
+					href="/"
+				>
 					<Image
 						src="/images/logo.png"
 						alt="B-Max"
@@ -68,7 +79,7 @@ export default function Nav() {
 						priority
 						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 					/>
-				</div>
+				</Link>
 				{/* Big screen */}
 				<motion.div className="hidden lg:flex justify-center items-center gap-3 font-semibold">
 					{navData.map(({ title, address, dropData }) => {
@@ -192,8 +203,6 @@ export default function Nav() {
 					</motion.div>
 				</AnimatePresence>
 			</Drawer>
-
-			{/* <Button onClick={open}>Open Drawer</Button> */}
 		</>
 	);
 }
