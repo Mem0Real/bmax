@@ -10,8 +10,10 @@ module.exports = {
 			colors: {
 				background: "var(--background)",
 				foreground: "var(--foreground)",
-				mellow: "#FFA500",
-				darkYellow: "#DFA70C",
+				// mellow: "#FFA500",
+				mellow: "#FFAD33",
+				// darkYellow: "#DFA70C",
+				darkYellow: "#FF8B1B",
 			},
 		},
 	},

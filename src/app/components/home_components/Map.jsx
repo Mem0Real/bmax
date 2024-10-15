@@ -8,8 +8,7 @@ export default function Map() {
 					width="100%"
 					height="100%"
 					title="map"
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.340652960034!2d38.74999041025282!3d9.032656790991396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b855999d29f4b%3A0x99338fc20315ddde!2sPiassa%20Arada%20building!5e0!3m2!1sen!2set!4v1728746848364!5m2!1sen!2set"
-					allowFullScreen=""
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.133452629574!2d38.7652243901535!3d9.000764569738669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b855402964879%3A0xdf68c1e50bd60c54!2sGazebo%20adebabaye!5e1!3m2!1sen!2set!4v1729031680097!5m2!1sen!2set"
 					loading="eager"
 				></iframe>
 			</span>
