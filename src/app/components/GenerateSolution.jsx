@@ -7,7 +7,12 @@ import AlternateImage from "../components/AlternateImage";
 import ExtrudeText from "../components/ExtrudeText";
 import BackgroundCard from "../components/BackgroundCard";
 
-export default function GenerateSolution({ data, bgImage }) {
+export default function GenerateSolution({
+	data,
+	bgImage,
+	noExtra,
+	type = "jpg",
+}) {
 	return (
 		<div
 			className={`min-h-[90vh] my-auto flex flex-col justify-center items-center text-neutral-950 gap-10 md:gap-12 lg:gap-16 ${
@@ -25,7 +30,7 @@ export default function GenerateSolution({ data, bgImage }) {
 
 					<div className="md:basis-[60%] relative w-full h-[20rem] md:h-[25rem] lg:h-[30rem]">
 						<Image
-							src={`/images/${data.location}/landing.jpg`}
+							src={`/images/${data.location}/landing.${type}`}
 							fill
 							className="object-fill md:object-contain object-center absolute"
 							alt={data.location}
@@ -37,7 +42,7 @@ export default function GenerateSolution({ data, bgImage }) {
 				<div
 					className="w-full xl:w-[90%] min-h-[30rem] lg:min-h-[35rem] xl:min-h-[40rem] bg-fixed bg-cover lg:bg-auto  bg-center bg-no-repeat grid md:grid-cols-2 lg:grid-cols-3 grid-flow-row lg:gap-12 justify-end place-content-around"
 					style={{
-						backgroundImage: `url("/images/${data.location}/landing.jpg`,
+						backgroundImage: `url("/images/${data.location}/${type}`,
 					}}
 				>
 					<div className="ps-4 lg:ps-12 py-5 lg:py-0 flex flex-col justify-center items-center gap-2 lg:gap-8 backdrop-blur-3xl md:backdrop-blur-lg text-black">
@@ -88,24 +93,28 @@ export default function GenerateSolution({ data, bgImage }) {
 
 				<BackgroundCard location={data.location} data={data.background.bgs} />
 			</div>
-			<Alternating>
-				<AlternateImage img={`${data.location}/alt3.png`} />
-				<AlternateText
-					header={data.alt3.header}
-					detail={data.alt3.text}
-					linkText={data.linkText}
-					address={data.linkSrc}
-				/>
-			</Alternating>
-			<Alternating>
-				<AlternateText
-					header={data.alt4.header}
-					detail={data.alt4.text}
-					linkText={data.linkText}
-					address={data.linkSrc}
-				/>
-				<AlternateImage img={`${data.location}/alt4.png`} />
-			</Alternating>
+			{!noExtra && (
+				<>
+					<Alternating>
+						<AlternateImage img={`${data.location}/alt3.png`} />
+						<AlternateText
+							header={data.alt3.header}
+							detail={data.alt3.text}
+							linkText={data.linkText}
+							address={data.linkSrc}
+						/>
+					</Alternating>
+					<Alternating>
+						<AlternateText
+							header={data.alt4.header}
+							detail={data.alt4.text}
+							linkText={data.linkText}
+							address={data.linkSrc}
+						/>
+						<AlternateImage img={`${data.location}/alt4.png`} />
+					</Alternating>
+				</>
+			)}
 
 			<div className="px-4 xl:px-48 w-full flex flex-col justify-center items-stretch gap-2 pb-12">
 				<ExtrudeText dropData={data.dropData3} className="bg-neutral-200/80" />
