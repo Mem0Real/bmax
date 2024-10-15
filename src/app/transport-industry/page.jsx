@@ -88,28 +88,28 @@ export default function Transport() {
 				/>
 			</div>
 			<Alternating>
-				<AlternateImage img={`${transportData.location}/alt1.png`} />
-				<AlternateText
-					header={transportData.alt1.header}
-					detail={transportData.alt1.text}
-					linkText={transportData.linkText}
-					address={transportData.linkSrc}
-				/>
-			</Alternating>
-			<Alternating>
+				<AlternateImage img={`${transportData.location}/alt2.png`} />
 				<AlternateText
 					header={transportData.alt2.header}
 					detail={transportData.alt2.text}
 					linkText={transportData.linkText}
 					address={transportData.linkSrc}
 				/>
-				<AlternateImage img={`${transportData.location}/alt2.png`} />
 			</Alternating>
 			<Alternating>
-				<AlternateImage img={`${transportData.location}/alt1.png`} />
 				<AlternateText
-					header={transportData.alt1.header}
-					detail={transportData.alt1.text}
+					header={transportData.alt3.header}
+					detail={transportData.alt3.text}
+					linkText={transportData.linkText}
+					address={transportData.linkSrc}
+				/>
+				<AlternateImage img={`${transportData.location}/alt3.png`} />
+			</Alternating>
+			<Alternating>
+				<AlternateImage img={`${transportData.location}/alt4.png`} />
+				<AlternateText
+					header={transportData.alt4.header}
+					detail={transportData.alt4.text}
 					linkText={transportData.linkText}
 					address={transportData.linkSrc}
 				/>
