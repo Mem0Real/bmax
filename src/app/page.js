@@ -2,7 +2,7 @@ import Home from "./Home";
 
 export default function Landing() {
 	return (
-		<div className="bg-white w-full flex flex-col justify-center items-center">
+		<div className="bg-neutral-100 w-full flex flex-col justify-center items-center">
 			<Home />
 		</div>
 	);

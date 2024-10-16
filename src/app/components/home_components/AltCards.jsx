@@ -93,7 +93,7 @@ export default function AltCards() {
 	const { width } = dimension;
 
 	return (
-		<div className="min-h-screen w-full flex flex-col bg-white text-neutral-900">
+		<div className="min-h-screen w-full flex flex-col text-neutral-900">
 			<motion.div className="w-[97%] xl:w-[95%] mx-auto">
 				{description.map(
 					({ smallTitle, title, detail, address, image }, index) => {

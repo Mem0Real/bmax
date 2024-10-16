@@ -5,13 +5,14 @@ import { useIcons } from "./CustomIcons";
 
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
+import Links from "./Links";
 
 const Topbar = ({ className }) => {
 	const { FacebookIcon, TwitterIcon, InstagramIcon, TiktokIcon } = useIcons();
 
 	return (
 		<div
-			className={`bg-mellow/80 text-neutral-900 font-semibold h-full min-h-8 px-4 xl:px-40 flex flex-col lg:flex-row justify-around items-center gap-4 lg:gap-0 ${className}`}
+			className={`bg-mellow/20 text-neutral-900 font-semibold h-full min-h-8 px-4 xl:px-40 flex flex-col lg:flex-row justify-around items-center gap-4 lg:gap-0 ${className}`}
 		>
 			<div className="flex justify-center items-center gap-4 flex-wrap">
 				<h1 className={className}>
@@ -19,7 +20,7 @@ const Topbar = ({ className }) => {
 					Lavington, James Gichuru rd. No.105
 				</h1>
 			</div>
-			<AnimatePresence>
+			{/* <AnimatePresence>
 				<div className="flex justify-center items-center gap-4 flex-wrap">
 					<Link
 						target="_blank"
@@ -62,7 +63,8 @@ const Topbar = ({ className }) => {
 						</motion.h1>
 					</Link>
 				</div>
-			</AnimatePresence>
+			</AnimatePresence> */}
+			<Links sm />
 		</div>
 	);
 };

@@ -2,6 +2,7 @@ import React from "react";
 import LogoStuff from "./footer_components/LogoStuff";
 import QuickLinks from "./footer_components/QuickLinks";
 import SolutionLinks from "./footer_components/SolutionLinks";
+import Links from "../components/Links";
 
 export default function Footer() {
 	return (

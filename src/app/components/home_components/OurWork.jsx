@@ -4,7 +4,7 @@ export default function OurWork() {
 	return (
 		<div className="min-h-screen w-full px-4 md:px-12 xl:px-40 bg-neutral-950 text-neutral-100 flex flex-col justify-center items-center py-8">
 			<div className="w-full flex flex-col xl:flex-row justify-stretch items-stretch relative gap-12 xl:gap-0">
-				<h1 className="flex-1/4 text-6xl font-semibold uppercase xl:pr-4 text-nowrap xl:-mt-5">
+				<h1 className="flex-1/4 text-5xl md:text-6xl font-semibold uppercase xl:pr-4 text-nowrap xl:-mt-5">
 					Our Work
 				</h1>
 				<div className="w-full flex-3/4 flex flex-col gap-12 lg:gap-20 xl:gap-36">

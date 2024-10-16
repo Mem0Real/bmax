@@ -100,14 +100,17 @@ export default function SayHello() {
 							<h1 className="text-2xl font-semibold text-neutral-900 uppercase">
 								Call us
 							</h1>
-							<p className="text-neutral-700/50 text-base">Bottom text</p>
+							<p className="text-neutral-700/50 text-base">+251-911 71 77 95</p>
+							<p className="text-neutral-700/50 text-base">+251-910 40 98 15</p>
 						</div>
 
 						<div className="flex flex-col gap-2 pr-8">
 							<h1 className="text-2xl font-semibold text-neutral-900 uppercase">
 								Email Us
 							</h1>
-							<p className="text-neutral-700/50 text-base">Bottom text</p>
+							<p className="text-neutral-700/50 text-base">
+								info@b-maxautosolutions.com
+							</p>
 						</div>
 					</div>
 				</div>

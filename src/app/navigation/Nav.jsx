@@ -65,9 +65,9 @@ export default function Nav() {
 
 	return (
 		<>
-			<div className="w-full bg-neutral-900 text-neutral-300 px-4 lg:px-16 xl:px-40 py-4 flex items-center justify-between flex-wrap">
+			<div className="w-full bg-neutral-900 text-neutral-300 px-4 lg:px-16 xl:px-40 py-2 xl:py-4 flex items-center justify-between flex-wrap">
 				<Link
-					className="relative flex justify-center items-center w-[7.5rem] h-[4.2rem]"
+					className="relative flex flex-col justify-center items-center w-[7.2rem] h-16 md:w-36 md:h-20"
 					href="/"
 				>
 					<Image
@@ -76,6 +76,7 @@ export default function Nav() {
 						fill
 						priority
 						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+						className="object-cover object-center"
 					/>
 				</Link>
 				{/* Big screen */}
