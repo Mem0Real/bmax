@@ -4,5 +4,5 @@ import { ignitionData } from "@/data/solution";
 import GeneratePage from "../components/GeneratePage";
 
 export default function IgnitionRepair() {
-	return <GeneratePage data={ignitionData} bgImage={true} />;
+	return <GeneratePage data={ignitionData} bgImage />;
 }

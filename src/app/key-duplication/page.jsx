@@ -4,5 +4,5 @@ import { duplicationData } from "@/data/solution";
 import GeneratePage from "../components/GeneratePage";
 
 export default function KeyDuplicate() {
-	return <GeneratePage data={duplicationData} />;
+	return <GeneratePage data={duplicationData} type="png" />;
 }

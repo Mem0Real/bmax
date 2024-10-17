@@ -53,10 +53,17 @@ export default function ExtrudeText({ dropData, className }) {
 								animate={{ height: "auto", opacity: 1 }}
 								exit={{ height: 0, opacity: 0 }}
 								transition={{ ease: "easeInOut", duration: 0.2 }}
-								className="overflow-hidden w-[90%] mx-auto text-lg text-neutral-900/80"
+								className="overflow-hidden w-[90%] mx-auto text-sm text-neutral-900/80"
 								layout
 							>
-								{nest}
+								{Array.isArray(nest) ? (
+									<>
+										<h1 className="font-bold text-neutral-900">{nest[0]}</h1>
+										<p>{nest[1]}</p>
+									</>
+								) : (
+									nest
+								)}
 							</motion.div>
 						)}
 					</AnimatePresence>

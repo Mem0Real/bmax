@@ -38,7 +38,7 @@ export default function GeneratePage({ data, bgImage, noExtra, type = "jpg" }) {
 				<div
 					className="w-full xl:w-[90%] min-h-[30rem] lg:min-h-[35rem] xl:min-h-[40rem] bg-fixed bg-cover lg:bg-auto  bg-center bg-no-repeat grid md:grid-cols-2 lg:grid-cols-3 grid-flow-row lg:gap-12 justify-end place-content-around"
 					style={{
-						backgroundImage: `url("/images/${data.location}/${type}`,
+						backgroundImage: `url("/images/${data.location}/landing.${type}`,
 					}}
 				>
 					<div className="ps-4 lg:ps-12 py-5 lg:py-0 flex flex-col justify-center items-center gap-2 lg:gap-8 backdrop-blur-3xl md:backdrop-blur-lg text-black">

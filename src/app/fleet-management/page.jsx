@@ -17,7 +17,7 @@ export default function FleetManagement() {
 					address={fleetData.linkSrc}
 					linkText={fleetData.linkText}
 				/>
-				<AlternateImage img={`${fleetData.location}/landing.jpg`} />
+				<AlternateImage img={`${fleetData.location}/landing.png`} />
 			</Alternating>
 			<div className="w-full flex flex-col justify-center items-center gap-2 md:gap-8 lg:gap-0">
 				<p className="text-xl text-neutral-950 text-center">

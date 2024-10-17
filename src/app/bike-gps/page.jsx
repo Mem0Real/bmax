@@ -18,5 +18,11 @@ export default function Page() {
 		BikeIcon,
 	];
 
-	return <GeneratePageWithBg iconList={iconList} data={bikeGpsData} />;
+	return (
+		<GeneratePageWithBg
+			iconList={iconList}
+			data={bikeGpsData}
+			landingType="png"
+		/>
+	);
 }

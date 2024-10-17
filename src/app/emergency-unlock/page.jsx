@@ -29,7 +29,7 @@ export default function Page() {
 					address={emergencyData.linkSrc}
 					linkText={emergencyData.linkText}
 				/>
-				<AlternateImage img={`${emergencyData.location}/landing.jpg`} />
+				<AlternateImage img={`${emergencyData.location}/landing.png`} />
 			</Alternating>
 			{/* counter */}
 			<div className="px-4 xl:px-40 w-full flex flex-col md:flex-row justify-center xl:justify-between items-center gap-8 xl:gap-10 pb-8">

@@ -1098,10 +1098,7 @@ export default function CustomIcons({ children }) {
 			viewBox="0 0 24 24"
 			xmlns="http://www.w3.org/2000/svg"
 		>
-			<path
-				class="cls-1"
-				d="M13.91,22.5H22.5V13L18.68,9.14v-1A6.68,6.68,0,0,0,12,1.5h0A6.68,6.68,0,0,0,5.32,8.18v1L1.5,13V22.5h8.59V18.68h3.82Z"
-			></path>
+			<path d="M13.91,22.5H22.5V13L18.68,9.14v-1A6.68,6.68,0,0,0,12,1.5h0A6.68,6.68,0,0,0,5.32,8.18v1L1.5,13V22.5h8.59V18.68h3.82Z"></path>
 		</svg>
 	);
 	const AmbulanceIcon = (

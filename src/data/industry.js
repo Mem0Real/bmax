@@ -109,51 +109,65 @@ export const fbData = {
 	dropData1: [
 		{
 			name: "Automated Food Processing",
-			nest: "Question: How does B-Max automate food processing for Ethiopian businesses? \n Answer: B-Max introduces advanced automation to food processing in Ethiopia. Our solutions optimize production lines, reduce manual labor, and enhance overall efficiency. From ingredient handling to packaging, B-Max's technology ensures precision and consistency, meeting the demands of modern food processing standards.",
+			nest: [
+				"Question: How does B-Max automate food processing for Ethiopian businesses?",
+				"Answer: B-Max introduces advanced automation to food processing in Ethiopia. Our solutions optimize production lines, reduce manual labor, and enhance overall efficiency. From ingredient handling to packaging, B-Max's technology ensures precision and consistency, meeting the demands of modern food processing standards.",
+			],
 		},
 		{
 			name: "Beverage Quality Control Systems",
-			nest: "Question: How does B-Max ensure quality control in beverage production? \n Answer: B-Max's beverage quality control systems set a new standard in Ethiopian production. Our software monitors every stage of beverage manufacturing, ensuring consistency, taste, and safety. From raw materials to the final product, B-Max guarantees the highest quality in every sip.",
+			nest: [
+				"Question: How does B-Max ensure quality control in beverage production?",
+				"Answer: B-Max's beverage quality control systems set a new standard in Ethiopian production. Our software monitors every stage of beverage manufacturing, ensuring consistency, taste, and safety. From raw materials to the final product, B-Max guarantees the highest quality in every sip.",
+			],
 		},
 		{
 			name: "Sustainable Supply Chain Solutions",
-			nest: "Question: How does B-Max contribute to sustainable supply chains in the F&B industry? \n Answer: B-Max champions sustainability in the Ethiopian food and beverage industry. Our supply chain solutions optimize routes, reduce waste, and promote eco-friendly practices. By integrating sustainability into every aspect of the supply chain, B-Max empowers businesses to meet environmental goals while ensuring efficient and responsible operations.",
+			nest: [
+				"Question: How does B-Max contribute to sustainable supply chains in the F&B industry?",
+				"Answer: B-Max champions sustainability in the Ethiopian food and beverage industry. Our supply chain solutions optimize routes, reduce waste, and promote eco-friendly practices. By integrating sustainability into every aspect of the supply chain, B-Max empowers businesses to meet environmental goals while ensuring efficient and responsible operations.",
+			],
 		},
 	],
 	dropData2: [
 		{
 			name: "Inventory Management for Food",
-			nest: "Question: How does B-Max optimize inventory management for the food industry in Ethiopia \n Answer: B-Max introduces advanced inventory management solutions tailored for the Ethiopian food industry. Our software optimizes stock levels, reduces waste, and ensures timely restocking. From ingredient tracking to expiration alerts, B-Max empowers businesses to maintain optimal inventory levels, reducing costs and enhancing overall operational efficiency.",
+			nest: [
+				"Question: How does B-Max optimize inventory management for the food industry in Ethiopia",
+				"Answer: B-Max introduces advanced inventory management solutions tailored for the Ethiopian food industry. Our software optimizes stock levels, reduces waste, and ensures timely restocking. From ingredient tracking to expiration alerts, B-Max empowers businesses to maintain optimal inventory levels, reducing costs and enhancing overall operational efficiency.",
+			],
 		},
 		{
 			name: "Food Safety Compliance Solutions",
-			nest: "Question: How does B-Max address food safety compliance for Ethiopian food businesses? \n Answer: B-Max is committed to ensuring food safety compliance for Ethiopian businesses. Our comprehensive solutions cover documentation, monitoring, and reporting to meet local and international food safety standards. B-Max's software provides real-time tracking, traceability, and quality control, ensuring that your products meet the highest safety and quality standards.",
+			nest: [
+				"Question: How does B-Max address food safety compliance for Ethiopian food businesses?",
+				"Answer: B-Max is committed to ensuring food safety compliance for Ethiopian businesses. Our comprehensive solutions cover documentation, monitoring, and reporting to meet local and international food safety standards. B-Max's software provides real-time tracking, traceability, and quality control, ensuring that your products meet the highest safety and quality standards.",
+			],
 		},
 		{
 			name: "Point of Sale (POS) Systems for Restaurants",
-			nest: "Question: How does B-Max enhance restaurant operations with Point of Sale (POS) systems? \n Answer: B-Max revolutionizes restaurant operations in Ethiopia with advanced Point of Sale (POS) systems. Our solutions streamline order processing, payment transactions, and inventory management. From menu customization to customer analytics, B-Max's POS systems empower restaurants to enhance customer experiences, improve efficiency, and drive profitability.",
+			nest: [
+				"Question: How does B-Max enhance restaurant operations with Point of Sale (POS) systems?",
+				"Answer: B-Max revolutionizes restaurant operations in Ethiopia with advanced Point of Sale (POS) systems. Our solutions streamline order processing, payment transactions, and inventory management. From menu customization to customer analytics, B-Max's POS systems empower restaurants to enhance customer experiences, improve efficiency, and drive profitability.",
+			],
 		},
 	],
 	dropData3: [
 		{
-			name: "Can you replace keys for all vehicle makes and models?",
-			nest: "Yes, we are fully stocked with blank keys that fit all makes and models, as well as transponder chips.",
+			name: "Can you provide real-time tracking?",
+			nest: "Yes, our system is designed to provide you with your cargo delivery info at a moment's notice.",
 		},
 		{
-			name: "Do you offer keyless and remote automobile keys?",
-			nest: "Absolutely! We have hundreds of authentic proximity (keyless) keys and remote automobile keys in stock.",
+			name: "Do you insure the prevention of contamination?",
+			nest: "Absolutely! Our employees will take the utmose care in the handling of your cargo.",
 		},
 		{
-			name: "Is car key replacement expensive with B-Max Auto Solutions?",
-			nest: "No, unlike car dealerships in Ethiopia, we provide car key replacements at a far lesser cost and with more ease.",
+			name: "How reliable is your pos system?",
+			nest: "Very reliable. Our server's are up and running 24/7 so that we could provide our services at any time.",
 		},
 		{
-			name: "What payment methods do you accept for key replacement?",
+			name: "What payment methods do you accept?",
 			nest: "We accept cash, credit cards, and M-pesa payments for your convenience.",
-		},
-		{
-			name: "How does your key replacement process work?",
-			nest: "Once you're ready to proceed, our qualified technician will come to your location and safely unlock the automobile using specialist hardware. We then use cutting-edge software to cut and program the new key or remote.",
 		},
 	],
 };
@@ -199,29 +213,47 @@ export const pharmaData = {
 	dropData1: [
 		{
 			name: "Pharmaceutical Logistics Excellence",
-			nest: "Question: How does B-Max optimize pharmaceutical logistics in Ethiopia? \n Answer: B-Max specializes in pharmaceutical logistics solutions, streamlining the supply chain with cutting-edge technology. Our software ensures efficient distribution, inventory control, and compliance management, addressing the unique challenges of the pharmaceutical industry in Ethiopia. From real-time tracking to temperature-sensitive transport, B-Max's logistics expertise guarantees the integrity and timely delivery of pharmaceutical products, meeting the highest industry standards.",
+			nest: [
+				"Question: How does B-Max optimize pharmaceutical logistics in Ethiopia?",
+				"Answer: B-Max specializes in pharmaceutical logistics solutions, streamlining the supply chain with cutting-edge technology. Our software ensures efficient distribution, inventory control, and compliance management, addressing the unique challenges of the pharmaceutical industry in Ethiopia. From real-time tracking to temperature-sensitive transport, B-Max's logistics expertise guarantees the integrity and timely delivery of pharmaceutical products, meeting the highest industry standards.",
+			],
 		},
 		{
 			name: "Regulatory Compliance Solutions for Pharma",
-			nest: "Question: How does B-Max ensure regulatory compliance in the pharmaceutical sector? \n Answer: B-Max takes a comprehensive approach to regulatory compliance in the pharmaceutical industry. Our solutions cover documentation, reporting, and adherence to local and international pharmaceutical regulations. From quality control systems to data security measures, B-Max's software guarantees that pharmaceutical companies in Ethiopia meet and exceed compliance standards. Stay confident in the compliance of your operations with B-Max's tailored regulatory solutions.",
+			nest: [
+				"Question: How does B-Max ensure regulatory compliance in the pharmaceutical sector?",
+				"Answer: B-Max takes a comprehensive approach to regulatory compliance in the pharmaceutical industry. Our solutions cover documentation, reporting, and adherence to local and international pharmaceutical regulations. From quality control systems to data security measures, B-Max's software guarantees that pharmaceutical companies in Ethiopia meet and exceed compliance standards. Stay confident in the compliance of your operations with B-Max's tailored regulatory solutions.",
+			],
 		},
 		{
 			name: "Digital Transformation in Pharma Operations",
-			nest: "Question: How does B-Max contribute to the digital transformation of pharmaceutical operations in Ethiopia? \n Answer: B-Max is at the forefront of digital transformation in the pharmaceutical sector. Our software solutions encompass Pharma ERP, inventory control systems, and data analytics tools, revolutionizing traditional processes. By embracing technology, B-Max empowers pharmaceutical companies in Ethiopia to enhance operational efficiency, make data-driven decisions, and stay competitive in an evolving industry landscape. Experience the future of pharmaceutical operations with B-Max's digital transformation solutions.",
+			nest: [
+				"Question: How does B-Max contribute to the digital transformation of pharmaceutical operations in Ethiopia?",
+				"Answer: B-Max is at the forefront of digital transformation in the pharmaceutical sector. Our software solutions encompass Pharma ERP, inventory control systems, and data analytics tools, revolutionizing traditional processes. By embracing technology, B-Max empowers pharmaceutical companies in Ethiopia to enhance operational efficiency, make data-driven decisions, and stay competitive in an evolving industry landscape. Experience the future of pharmaceutical operations with B-Max's digital transformation solutions.",
+			],
 		},
 	],
 	dropData2: [
 		{
 			name: "Quality Control in Pharma Manufacturing",
-			nest: "Question: How does B-Max enhance quality control in pharmaceutical manufacturing?\n Answer: B-Max revolutionizes pharmaceutical manufacturing with advanced quality control solutions. Our software ensures precision, consistency, and compliance throughout the production process. From raw material sourcing to final product inspection, B-Max guarantees the highest quality standards, empowering pharmaceutical companies in Ethiopia to deliver safe and effective medications.",
+			nest: [
+				"Question: How does B-Max enhance quality control in pharmaceutical manufacturing?",
+				"Answer: B-Max revolutionizes pharmaceutical manufacturing with advanced quality control solutions. Our software ensures precision, consistency, and compliance throughout the production process. From raw material sourcing to final product inspection, B-Max guarantees the highest quality standards, empowering pharmaceutical companies in Ethiopia to deliver safe and effective medications.",
+			],
 		},
 		{
 			name: "Clinical Trial Management Excellence",
-			nest: "Question: How does B-Max contribute to efficient clinical trial management in Ethiopia?\n Answer: B-Max excels in clinical trial management, offering comprehensive software solutions for the pharmaceutical industry in Ethiopia. Our tools streamline trial processes, from participant recruitment to data analysis. B-Max ensures transparency, compliance, and data security, facilitating successful clinical trials and accelerating the development of life-changing medications.",
+			nest: [
+				"Question: How does B-Max contribute to efficient clinical trial management in Ethiopia?",
+				"Answer: B-Max excels in clinical trial management, offering comprehensive software solutions for the pharmaceutical industry in Ethiopia. Our tools streamline trial processes, from participant recruitment to data analysis. B-Max ensures transparency, compliance, and data security, facilitating successful clinical trials and accelerating the development of life-changing medications.",
+			],
 		},
 		{
 			name: "Sustainable Pharmaceutical Supply Chain",
-			nest: "Question: How does B-Max contribute to a sustainable pharmaceutical supply chain?\n Answer: B-Max embraces sustainability in the pharmaceutical supply chain. Our solutions optimize distribution routes, reduce waste, and enhance energy efficiency. By implementing eco-friendly practices, B-Max supports pharmaceutical companies in Ethiopia in building a more sustainable future while meeting the increasing demand for responsible business operations.",
+			nest: [
+				"Question: How does B-Max contribute to a sustainable pharmaceutical supply chain?",
+				"Answer: B-Max embraces sustainability in the pharmaceutical supply chain. Our solutions optimize distribution routes, reduce waste, and enhance energy efficiency. By implementing eco-friendly practices, B-Max supports pharmaceutical companies in Ethiopia in building a more sustainable future while meeting the increasing demand for responsible business operations.",
+			],
 		},
 	],
 	dropData3: [
@@ -351,29 +383,47 @@ export const oilGasData = {
 	dropData1: [
 		{
 			name: "Integrated Oil and Gas Asset Management",
-			nest: "Q: How does B-Max provide integrated solutions for oil and gas asset management? \n A: B-Max leads in integrated asset management for the Oil and Gas sector, offering software solutions that cover upstream exploration to downstream refinery operations. Our suite includes predictive maintenance analytics, real-time reservoir simulation, and digital twin technology, ensuring optimal performance and reliability. From drilling to environmental compliance, B-Max's comprehensive approach enhances efficiency, cybersecurity, and environmental safety. Explore our integrated solutions for holistic oil and gas asset management, driving operational excellence in every phase of energy production.",
+			nest: [
+				"Question: How does B-Max provide integrated solutions for oil and gas asset management?",
+				"Answer: B-Max leads in integrated asset management for the Oil and Gas sector, offering software solutions that cover upstream exploration to downstream refinery operations. Our suite includes predictive maintenance analytics, real-time reservoir simulation, and digital twin technology, ensuring optimal performance and reliability. From drilling to environmental compliance, B-Max's comprehensive approach enhances efficiency, cybersecurity, and environmental safety. Explore our integrated solutions for holistic oil and gas asset management, driving operational excellence in every phase of energy production.",
+			],
 		},
 		{
 			name: "Renewable Energy Integration in Oil and Gas Operations",
-			nest: "Q: How does B-Max facilitate the integration of renewable energy in oil and gas operations? \n A: B-Max pioneers renewable energy integration in the Oil and Gas sector, addressing the industry's evolving needs. Our solutions go beyond traditional operations, embracing sustainability with offerings like LNG terminal optimization and renewable energy planning. From geospatial analytics for field planning to emergency response systems, B-Max ensures that oil and gas operations align with environmental goals. Explore our commitment to a greener future, where renewable energy seamlessly integrates with conventional processes, driving a sustainable and efficient energy landscape.",
+			nest: [
+				"Question: How does B-Max facilitate the integration of renewable energy in oil and gas operations?",
+				"Answer: B-Max pioneers renewable energy integration in the Oil and Gas sector, addressing the industry's evolving needs. Our solutions go beyond traditional operations, embracing sustainability with offerings like LNG terminal optimization and renewable energy planning. From geospatial analytics for field planning to emergency response systems, B-Max ensures that oil and gas operations align with environmental goals. Explore our commitment to a greener future, where renewable energy seamlessly integrates with conventional processes, driving a sustainable and efficient energy landscape.",
+			],
 		},
 		{
 			name: "Predictive Maintenance and Analytics for Oilfield Equipment",
-			nest: "Q: How does B-Max leverage predictive maintenance and analytics for oilfield equipment?\n A: B-Max excels in predictive maintenance and analytics, revolutionizing oilfield equipment management. Our software suite provides real-time insights into drilling performance, ensuring optimal efficiency and reliability. With a focus on asset integrity management and remote monitoring, B-Max safeguards operations while optimizing production. Cybersecurity solutions add an extra layer of protection, ensuring data integrity. Explore our commitment to data-driven decision-making, where predictive analytics and maintenance drive excellence in oilfield equipment management, securing the future of Oil and Gas operations.",
+			nest: [
+				"Question: How does B-Max leverage predictive maintenance and analytics for oilfield equipment?",
+				"Answer: B-Max excels in predictive maintenance and analytics, revolutionizing oilfield equipment management. Our software suite provides real-time insights into drilling performance, ensuring optimal efficiency and reliability. With a focus on asset integrity management and remote monitoring, B-Max safeguards operations while optimizing production. Cybersecurity solutions add an extra layer of protection, ensuring data integrity. Explore our commitment to data-driven decision-making, where predictive analytics and maintenance drive excellence in oilfield equipment management, securing the future of Oil and Gas operations.",
+			],
 		},
 	],
 	dropData2: [
 		{
 			name: "Efficient Drilling and Exploration with B-Max",
-			nest: "Q: How does B-Max enhance drilling and exploration efficiency in the oil and gas industry? \n A: B-Max empowers the oil and gas sector with advanced technology for efficient drilling and exploration. Our integrated software solutions, including real-time reservoir simulation and drilling performance analytics, optimize operations. From digital twin technology for exploration planning to comprehensive data-driven decision-making, B-Max ensures that drilling processes are not only efficient but also adaptive to industry changes. Explore how B-Max's cutting-edge solutions redefine efficiency and performance in the dynamic realm of oil and gas exploration.",
+			nest: [
+				"Question: How does B-Max enhance drilling and exploration efficiency in the oil and gas industry?",
+				"Answer: B-Max empowers the oil and gas sector with advanced technology for efficient drilling and exploration. Our integrated software solutions, including real-time reservoir simulation and drilling performance analytics, optimize operations. From digital twin technology for exploration planning to comprehensive data-driven decision-making, B-Max ensures that drilling processes are not only efficient but also adaptive to industry changes. Explore how B-Max's cutting-edge solutions redefine efficiency and performance in the dynamic realm of oil and gas exploration.",
+			],
 		},
 		{
 			name: "SCADA Systems for Natural Gas Pipeline Monitoring",
-			nest: "Q: How does B-Max utilize SCADA systems for natural gas pipeline monitoring? \n A: B-Max excels in natural gas pipeline monitoring through advanced SCADA (Supervisory Control and Data Acquisition) systems. Our solutions provide real-time visibility and control, ensuring the integrity and efficiency of pipeline operations. From remote monitoring to emergency response planning, B-Max's SCADA technology enhances the safety and reliability of natural gas transportation. Explore our commitment to secure and efficient pipeline operations, where SCADA systems play a pivotal role in ensuring the smooth flow of natural gas through the intricate network of pipelines.",
+			nest: [
+				"Question: How does B-Max utilize SCADA systems for natural gas pipeline monitoring?",
+				"Answer: B-Max excels in natural gas pipeline monitoring through advanced SCADA (Supervisory Control and Data Acquisition) systems. Our solutions provide real-time visibility and control, ensuring the integrity and efficiency of pipeline operations. From remote monitoring to emergency response planning, B-Max's SCADA technology enhances the safety and reliability of natural gas transportation. Explore our commitment to secure and efficient pipeline operations, where SCADA systems play a pivotal role in ensuring the smooth flow of natural gas through the intricate network of pipelines.",
+			],
 		},
 		{
 			name: "Data-Driven Decision-Making in Oil Production Planning",
-			nest: "Q: How does B-Max facilitate data-driven decision-making in oil production planning? \n A: B-Max revolutionizes oil production planning with a focus on data-driven decision-making. Our software suite offers comprehensive analytics, from predictive maintenance to real-time data visualization, ensuring informed and strategic decision-making. B-Max's commitment to integrated drilling and exploration software, along with asset integrity management, enables oil producers to optimize production and enhance efficiency. Explore how B-Max's advanced analytics and planning tools empower the oil and gas industry, making data the cornerstone of successful oil production operations.",
+			nest: [
+				"Question: How does B-Max facilitate data-driven decision-making in oil production planning?",
+				"Answer: B-Max revolutionizes oil production planning with a focus on data-driven decision-making. Our software suite offers comprehensive analytics, from predictive maintenance to real-time data visualization, ensuring informed and strategic decision-making. B-Max's commitment to integrated drilling and exploration software, along with asset integrity management, enables oil producers to optimize production and enhance efficiency. Explore how B-Max's advanced analytics and planning tools empower the oil and gas industry, making data the cornerstone of successful oil production operations.",
+			],
 		},
 	],
 	dropData3: [
@@ -442,29 +492,47 @@ export const logisticData = {
 	dropData1: [
 		{
 			name: "Supply Chain Automation Excellence",
-			nest: "Q: How does B-Max's supply chain automation technology enhance operational efficiency? \n A: B-Max is a trailblazer in supply chain automation, providing businesses in Addis Ababa with cutting-edge technology to optimize their operations. Our automation solutions, including just-in-time (JIT) inventory management and advanced transportation optimization tools, empower organizations to achieve unparalleled levels of efficiency. With B-Max's supply chain automation, businesses can streamline warehouse processes, reduce carrying costs, and enhance overall productivity. The integration of state-of-the-art technology ensures that every aspect of the supply chain is finely tuned, enabling organizations to respond swiftly to market dynamics and gain a competitive edge.",
+			nest: [
+				"Question: How does B-Max's supply chain automation technology enhance operational efficiency?",
+				"Answer: B-Max is a trailblazer in supply chain automation, providing businesses in Addis Ababa with cutting-edge technology to optimize their operations. Our automation solutions, including just-in-time (JIT) inventory management and advanced transportation optimization tools, empower organizations to achieve unparalleled levels of efficiency. With B-Max's supply chain automation, businesses can streamline warehouse processes, reduce carrying costs, and enhance overall productivity. The integration of state-of-the-art technology ensures that every aspect of the supply chain is finely tuned, enabling organizations to respond swiftly to market dynamics and gain a competitive edge.",
+			],
 		},
 		{
 			name: "Sustainable SCM Practices for a Greener Future",
-			nest: "Q: How does B-Max integrate RFID and IoT for sustainable supply chain management? \n A: B-Max is committed to sustainability, and our supply chain management practices reflect this dedication. We leverage RFID and IoT technologies to promote eco-friendly and socially responsible supply chain operations. By incorporating these technologies, organizations can monitor and track their supply chains with precision, reducing waste and minimizing environmental impact. B-Max's emphasis on sustainable SCM not only aligns with global environmental goals but also positions our clients as responsible corporate citizens, contributing to a greener future for Addis Ababa and beyond.",
+			nest: [
+				"Question: How does B-Max integrate RFID and IoT for sustainable supply chain management?",
+				"Answer: B-Max is committed to sustainability, and our supply chain management practices reflect this dedication. We leverage RFID and IoT technologies to promote eco-friendly and socially responsible supply chain operations. By incorporating these technologies, organizations can monitor and track their supply chains with precision, reducing waste and minimizing environmental impact. B-Max's emphasis on sustainable SCM not only aligns with global environmental goals but also positions our clients as responsible corporate citizens, contributing to a greener future for Addis Ababa and beyond.",
+			],
 		},
 		{
 			name: "Collaborative Supplier Management Solutions",
-			nest: "Q: How does B-Max facilitate collaborative supplier management for seamless operations?\n A: B-Max understands the importance of collaboration in supply chain management. Our collaborative supplier management solutions foster seamless communication between businesses and their suppliers. This ensures a transparent and efficient flow of information, enabling organizations to build stronger relationships with their suppliers. B-Max's emphasis on collaboration goes beyond software solutions; it's a commitment to creating an interconnected ecosystem where suppliers and businesses work together harmoniously. With B-Max's tools, businesses in Addis Ababa can optimize their supplier relationships, streamline procurement processes, and achieve a level of operational cohesion that drives success in the competitive marketplace.",
+			nest: [
+				"Question: How does B-Max facilitate collaborative supplier management for seamless operations?",
+				"Answer: B-Max understands the importance of collaboration in supply chain management. Our collaborative supplier management solutions foster seamless communication between businesses and their suppliers. This ensures a transparent and efficient flow of information, enabling organizations to build stronger relationships with their suppliers. B-Max's emphasis on collaboration goes beyond software solutions; it's a commitment to creating an interconnected ecosystem where suppliers and businesses work together harmoniously. With B-Max's tools, businesses in Addis Ababa can optimize their supplier relationships, streamline procurement processes, and achieve a level of operational cohesion that drives success in the competitive marketplace.",
+			],
 		},
 	],
 	dropData2: [
 		{
 			name: "Cloud-Based SCM Solutions for Business Scalability",
-			nest: "Q: How does B-Max's cloud-based SCM enhance scalability for businesses in Addis Ababa? \n A: B-Max's cloud-based supply chain management (SCM) solutions are designed to empower businesses in Addis Ababa with unmatched scalability. Our cloud platform enables organizations to adapt to changing market demands seamlessly. With features such as real-time supply chain visibility and data-driven demand forecasting, businesses can scale their operations efficiently. B-Max's cloud-based SCM not only provides the flexibility needed to grow but also ensures that businesses have access to the latest updates and innovations in supply chain technology, keeping them at the forefront of industry trends.",
+			nest: [
+				"Question: How does B-Max's cloud-based SCM enhance scalability for businesses in Addis Ababa?",
+				"Answer: B-Max's cloud-based supply chain management (SCM) solutions are designed to empower businesses in Addis Ababa with unmatched scalability. Our cloud platform enables organizations to adapt to changing market demands seamlessly. With features such as real-time supply chain visibility and data-driven demand forecasting, businesses can scale their operations efficiently. B-Max's cloud-based SCM not only provides the flexibility needed to grow but also ensures that businesses have access to the latest updates and innovations in supply chain technology, keeping them at the forefront of industry trends.",
+			],
 		},
 		{
 			name: "Customizable ERP Integration for Comprehensive SCM",
-			nest: "Q: How does B-Max integrate customizable ERP solutions to enhance supply chain management? \n A: B-Max goes beyond standard supply chain management by offering customizable Enterprise Resource Planning (ERP) solutions. Our ERP integration enhances supply chain visibility and control, allowing organizations in Addis Ababa to tailor their systems to specific business needs. Whether it's inventory control, order processing, or distribution management, B-Max's customizable ERP ensures that businesses have a comprehensive solution that aligns with their unique requirements. The flexibility of our ERP integration allows businesses to adapt quickly to changes in the market, making B-Max the ideal partner for those seeking a holistic approach to supply chain management.",
+			nest: [
+				"Question: How does B-Max integrate customizable ERP solutions to enhance supply chain management?",
+				"Answer: B-Max goes beyond standard supply chain management by offering customizable Enterprise Resource Planning (ERP) solutions. Our ERP integration enhances supply chain visibility and control, allowing organizations in Addis Ababa to tailor their systems to specific business needs. Whether it's inventory control, order processing, or distribution management, B-Max's customizable ERP ensures that businesses have a comprehensive solution that aligns with their unique requirements. The flexibility of our ERP integration allows businesses to adapt quickly to changes in the market, making B-Max the ideal partner for those seeking a holistic approach to supply chain management.",
+			],
 		},
 		{
 			name: "Multi-Channel Fulfillment Solutions for Diverse Operations",
-			nest: "Q: How does B-Max's multi-channel fulfillment approach cater to diverse business operations in Addis Ababa? \n A: B-Max recognizes the diversity of business operations in Addis Ababa and addresses this with our multi-channel fulfillment solutions. Whether businesses operate through traditional retail channels, e-commerce platforms, or a combination of both, B-Max's supply chain management adapts to meet these varied needs. Our solutions encompass everything from procurement to distribution, ensuring that organizations can fulfill orders efficiently across multiple channels. B-Max's multi-channel fulfillment approach not only simplifies operations but also positions businesses to capitalize on the full spectrum of opportunities in the dynamic Addis Ababa market.",
+			nest: [
+				"Question: How does B-Max's multi-channel fulfillment approach cater to diverse business operations in Addis Ababa?",
+				"Answer: B-Max recognizes the diversity of business operations in Addis Ababa and addresses this with our multi-channel fulfillment solutions. Whether businesses operate through traditional retail channels, e-commerce platforms, or a combination of both, B-Max's supply chain management adapts to meet these varied needs. Our solutions encompass everything from procurement to distribution, ensuring that organizations can fulfill orders efficiently across multiple channels. B-Max's multi-channel fulfillment approach not only simplifies operations but also positions businesses to capitalize on the full spectrum of opportunities in the dynamic Addis Ababa market.",
+			],
 		},
 	],
 	dropData3: [

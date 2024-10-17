@@ -65,7 +65,7 @@ export default function Nav() {
 
 	return (
 		<>
-			<div className="w-full bg-neutral-900 text-neutral-300 px-4 lg:px-16 xl:px-40 py-2 xl:py-4 flex items-center justify-between flex-wrap">
+			<div className="w-full bg-neutral-900 text-neutral-300 px-4 lg:px-16 xl:px-40 py-2 flex items-center justify-between flex-wrap">
 				<Link
 					className="relative flex flex-col justify-center items-center w-[7.2rem] h-16 md:w-36 md:h-20"
 					href="/"

@@ -61,7 +61,7 @@ export default function Page() {
 				</div>
 				{/* cards */}
 				<div className="w-full px-4 xl:px-40 flex justify-center xl:justify-evenly items-center gap-8 lg:gap-4 xl:gap-20 flex-wrap">
-					<GenerateCard icons={iconList} data={busGpsData.cards} size="sm" />
+					<GenerateCard icons={iconList} data={busGpsData.cards} size="md" />
 				</div>
 				{/* background */}
 				<div className="flex flex-col w-full justify-center items-center gap-5">

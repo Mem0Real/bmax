@@ -35,7 +35,7 @@ export default function Transport() {
 
 				<div className="md:basis-[60%] relative w-full h-[20rem] md:h-[25rem] lg:h-[30rem]">
 					<Image
-						src={`/images/${transportData.location}/landing.jpg`}
+						src={`/images/${transportData.location}/landing.png`}
 						fill
 						className="object-fill md:object-contain object-center absolute"
 						alt={transportData.location}

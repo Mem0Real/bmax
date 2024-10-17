@@ -22,7 +22,7 @@ const description = [
 		detail:
 			"Looking for car key duplication services? Our team of experienced professionals can make a duplicate car key for your car quickly and efficiently. Whether you need a spare key or have lost your original one, we have the tools and knowledge needed to make a perfect duplicate. Our services are available for all major car brands, including BMW, Toyota, and Ford. We use advanced technology to ensure the car key works seamlessly with your car's ignition system. You can trust us for high-quality, affordable services that meet all your needs. Contact us today to schedule an appointment for car key duplication that fits your schedule.",
 		address: "/car-key-duplication",
-		image: "/images/landing-cards/duplicate-key.jpg",
+		image: "/images/landing-cards/duplicate-key.png",
 	},
 	{
 		smallTitle: "VEHICLE SECURITY SOLUTIONS",
@@ -30,7 +30,7 @@ const description = [
 		detail:
 			"A car alarm is a security feature installed in vehicles to protect them from unauthorized access and theft. It is an electronic device that emits a loud noise when triggered by movement, vibration or attempted entry. The noise serves as a deterrent to potential thieves and alerts nearby individuals of the theft attempt. Car alarms have evolved over time and can now be synchronized with a smartphone app, allowing you to monitor and control your car's security remotely. Installing a car alarm is a wise investment to ensure the safety and security of your vehicle. It provides peace of mind knowing that you have taken the necessary steps to prevent theft and protect your investment.",
 		address: "",
-		image: "/images/landing-cards/car-alarm.jpg",
+		image: "/images/landing-cards/car-alarm.png",
 	},
 	{
 		smallTitle: "AUTO REPAIR SOLUTIONS",
@@ -44,7 +44,7 @@ const description = [
 		smallTitle: "MUCH MORE THAN TELEMATICS",
 		title: "Monitor All Your Assets",
 		detail:
-			"Unlock the power of comprehensive asset monitoring with B-Max Telematics. From key replacement to vehicle tracking, our professional locksmith and telematics services ensure the security and visibility of your assets. Experience reliability and professionalism like never before.",
+			"Unlock the power of comprehensive asset monitoring with B-Max. From key replacement to vehicle tracking, our professional locksmith and telematics services ensure the security and visibility of your assets. Experience reliability and professionalism like never before.",
 		address: "/fleet-management-solutions",
 		image: "/images/landing-cards/monitor.png",
 	},
@@ -52,7 +52,7 @@ const description = [
 		smallTitle: "SAFETY BACKED BY TECHNOLOGY",
 		title: "Protect Your Vehicles and Cargo",
 		detail:
-			"Safeguard your vehicles and cargo with B-Max Telematics' advanced technology. Our automotive locksmith services and vehicle tracking solutions provide enhanced safety measures, ensuring peace of mind for individuals and businesses alike. Trust us to protect what matters most.",
+			"Safeguard your vehicles and cargo with B-Max's advanced technology. Our automotive locksmith services and vehicle tracking solutions provide enhanced safety measures, ensuring peace of mind for individuals and businesses alike. Trust us to protect what matters most.",
 		address: "/",
 		image: "/images/landing-cards/protect.png",
 	},
@@ -136,7 +136,7 @@ export default function AltCards() {
 								>
 									<div className="self-start flex flex-col gap-2">
 										<h2 className=" text-lg font-semibold">{smallTitle}</h2>
-										<h2 className=" text-mellow text-4xl font-semibold">
+										<h2 className=" text-darkYellow text-4xl font-semibold">
 											{title}
 										</h2>
 									</div>
@@ -145,7 +145,7 @@ export default function AltCards() {
 										<Link href={address} className="self-start">
 											<motion.div
 												whileHover={{
-													backgroundColor: "#DFA70C",
+													backgroundColor: "#ffad33",
 													color: "#FFF",
 												}}
 												className="px-4 py-3 border border-mellow text-mellow font-bold cursor-pointer"
@@ -214,7 +214,7 @@ export default function AltCards() {
 												src={image}
 												alt={index}
 												fill
-												className="absolute object-contain md:object-fill object-center"
+												className="absolute object-contain object-center"
 												sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 												priority
 											/>
