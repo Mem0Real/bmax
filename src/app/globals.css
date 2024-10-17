@@ -34,3 +34,11 @@ body {
 	scroll-behavior: smooth;
 	-webkit-font-smoothing: antialiased;
 }
+
+.start {
+	color: "#000";
+}
+
+.end {
+	color: "#fff";
+}

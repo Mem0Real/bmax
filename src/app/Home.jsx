@@ -6,12 +6,14 @@ import OurWork from "./components/home_components/OurWork";
 import News from "./components/home_components/News";
 import Map from "./components/home_components/Map";
 import SayHello from "./components/home_components/SayHello";
+import TextSlide from "./components/TextSlide";
 
 export default function Home() {
 	return (
 		<div className="min-h-screen text-neutral-900 w-full">
 			<div className="w-full flex flex-col justify-center items-center">
-				<VidSlide />
+				{/* <VidSlide /> */}
+				{/* <TextSlide /> */}
 				<AltCards />
 				<IconList />
 				<OurWork />

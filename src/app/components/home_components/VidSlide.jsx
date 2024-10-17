@@ -94,11 +94,11 @@ export default function VidSlide() {
 			</div> */}
 
 			<div className="relative">
-				<span className="grid grid-rows-2 gap-3 text-black text-7xl font-semibold  tracking-tighter">
+				<div className="grid grid-rows-2 gap-3 text-black text-7xl font-semibold  tracking-tighter">
 					<motion.div
-						initial={{ width: 0, x: 0 }}
-						animate={anim ? { width: "100%", x: -50 } : { width: 0 }}
-						exit={{ width: 0, x: 0 }}
+						initial={{ width: 0, x: 150 }}
+						animate={anim ? { width: "100%", x: -150 } : { width: 0 }}
+						exit={{ width: 0, x: 150 }}
 						transition={{
 							duration: 0.4,
 							ease: "easeIn",
@@ -119,9 +119,9 @@ export default function VidSlide() {
 						</motion.h1>
 					</motion.div>
 					<motion.div
-						initial={{ width: 0, x: 0 }}
-						animate={anim ? { width: "110%", x: -50 } : { width: 0 }}
-						exit={{ width: 0, x: 0 }}
+						initial={{ width: 0, x: 150 }}
+						animate={anim ? { width: "110%", x: -150 } : { width: 0 }}
+						exit={{ width: 0, x: 150 }}
 						transition={{
 							delay: 0.2,
 							duration: 0.5,
@@ -144,7 +144,7 @@ export default function VidSlide() {
 							Services
 						</motion.h1>
 					</motion.div>
-				</span>
+				</div>
 				{/* <span className="-mt-48 grid grid-rows-2 gap-3 text-black text-7xl font-semibold  tracking-tighter">
 					<motion.div
 						initial={{ width: 0, x: 0 }}
