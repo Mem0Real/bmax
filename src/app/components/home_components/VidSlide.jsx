@@ -4,7 +4,12 @@ import React, { useEffect, useState } from "react";
 import { Carousel, CarouselSlide } from "@mantine/carousel";
 import { useIcons } from "@/app/components/CustomIcons";
 
-import { AnimatePresence, motion, useAnimate } from "framer-motion";
+import {
+	AnimatePresence,
+	cubicBezier,
+	motion,
+	useAnimate,
+} from "framer-motion";
 
 export default function VidSlide() {
 	const { LeftArrowIcon, RightArrowIcon } = useIcons();
@@ -35,6 +40,8 @@ export default function VidSlide() {
 	// useEffect(() => {
 	// 	animate(sequence);
 	// }, [anim]);
+
+	const easing = cubicBezier(0.52, 1.03, 0.64, 0.99);
 
 	return (
 		<div className="w-full min-h-screen bg-slate-500 text-neutral-200 flex flex-col justify-center items-center relative">
@@ -87,8 +94,111 @@ export default function VidSlide() {
 			</div> */}
 
 			<div className="relative">
+				<span className="grid grid-rows-2 gap-3 text-black text-7xl font-semibold  tracking-tighter">
+					<motion.div
+						initial={{ width: 0, x: 0 }}
+						animate={anim ? { width: "100%", x: -50 } : { width: 0 }}
+						exit={{ width: 0, x: 0 }}
+						transition={{
+							duration: 0.4,
+							ease: "easeIn",
+						}}
+						className="overflow-hidden whitespace-nowrap bg-white py-4"
+					>
+						<motion.h1
+							initial={{ x: 40 }}
+							animate={anim ? { x: 0 } : { x: 40 }}
+							exit={{ x: 40 }}
+							transition={{
+								duration: 0.4,
+								ease: "easeIn",
+							}}
+							className="text-start px-1"
+						>
+							Car Key
+						</motion.h1>
+					</motion.div>
+					<motion.div
+						initial={{ width: 0, x: 0 }}
+						animate={anim ? { width: "110%", x: -50 } : { width: 0 }}
+						exit={{ width: 0, x: 0 }}
+						transition={{
+							delay: 0.2,
+							duration: 0.5,
+							// ease: "easeInOut",
+							ease: easing,
+						}}
+						className="overflow-hidden whitespace-nowrap bg-white py-4"
+					>
+						<motion.h1
+							initial={{ x: 60 }}
+							animate={anim ? { x: 0 } : { x: 60 }}
+							exit={{ x: 60 }}
+							transition={{
+								duration: 0.5,
+								// ease: "easeInOut",
+								ease: easing,
+							}}
+							className="text-start px-1"
+						>
+							Services
+						</motion.h1>
+					</motion.div>
+				</span>
+				{/* <span className="-mt-48 grid grid-rows-2 gap-3 text-black text-7xl font-semibold  tracking-tighter">
+					<motion.div
+						initial={{ width: 0, x: 0 }}
+						animate={!anim ? { width: "100%", x: -50 } : { width: 0 }}
+						exit={{ width: 0, x: 0 }}
+						transition={{
+							delay: 6,
+							duration: 0.4,
+							ease: "easeIn",
+						}}
+						className="overflow-hidden whitespace-nowrap bg-white py-4"
+					>
+						<motion.h1
+							initial={{ x: 40 }}
+							animate={!anim ? { x: 0 } : { x: 40 }}
+							exit={{ x: 40 }}
+							transition={{
+								duration: 0.4,
+								ease: "easeIn",
+							}}
+							className="text-start px-1"
+						>
+							Servicing
+						</motion.h1>
+					</motion.div>
+					<motion.div
+						initial={{ width: 0, x: 0 }}
+						animate={!anim ? { width: "110%", x: -50 } : { width: 0 }}
+						exit={{ width: 0, x: 0 }}
+						transition={{
+							delay: 0.2,
+							duration: 0.5,
+							// ease: "easeInOut",
+							ease: easing,
+						}}
+						className="overflow-hidden whitespace-nowrap bg-white py-4"
+					>
+						<motion.h1
+							initial={{ x: 60 }}
+							animate={!anim ? { x: 0 } : { x: 60 }}
+							exit={{ x: 60 }}
+							transition={{
+								duration: 0.5,
+								// ease: "easeInOut",
+								ease: easing,
+							}}
+							className="text-start px-1"
+						>
+							Car Keys
+						</motion.h1>
+					</motion.div>
+				</span> */}
 				{/* First text */}
-				<div className="absolute -top-36 -right-3 flex flex-col justify-between items-center gap-2 py-3 text-black text-7xl font-semibold text-center tracking-tighter">
+				{/* <div className="absolute -top-36 -right-3 flex flex-col justify-between items-center gap-2 py-3 text-black text-7xl font-semibold text-center tracking-tighter">
 					<motion.div
 						initial={{ width: 0, x: 0 }}
 						animate={anim ? { width: "100%", x: -50 } : { width: 0 }}
@@ -136,7 +246,7 @@ export default function VidSlide() {
 							Services
 						</motion.h1>
 					</motion.div>
-				</div>
+				</div> */}
 				{/* Second text */}
 				{/* <div className="absolute -top-36 left-8 w-fit">
 					<motion.div
