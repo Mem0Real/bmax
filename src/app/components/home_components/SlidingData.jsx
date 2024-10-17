@@ -42,9 +42,5 @@ const items = [
 	],
 ];
 export default function SlidingData() {
-	return (
-		<div className="w-fit">
-			<GText items={items} />
-		</div>
-	);
+	return <GText items={items} />;
 }
