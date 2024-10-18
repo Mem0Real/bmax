@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useIcons } from "./CustomIcons";
+import BgFill from "./BgFill";
 
 export default function ExtrudeText({ dropData, className }) {
 	const [selected, setSelected] = useState(0);
@@ -32,14 +33,18 @@ export default function ExtrudeText({ dropData, className }) {
 								: selected === index
 								? "bg-mellow"
 								: "bg-mellow/50"
-						} py-8 ps-4 pe-2 flex justify-between items-center cursor-pointer`}
+						} py-4 ps-4 pe-2 flex justify-between items-center cursor-pointer`}
 						onClick={() => handleClick(index)}
 						layout="position"
 						transition={{ ease: "easeInOut", duration: 0.2 }}
 					>
-						<h1 className="text-xl md:text-2xl font-medium capitalize">
-							{name}
-						</h1>
+						<BgFill
+							text={
+								<h1 className="text-xl md:text-2xl font-medium capitalize py-4">
+									{name}
+								</h1>
+							}
+						/>
 						<h3 className="w-8 text-neutral-900">
 							{selected !== index ? PlusIcon : MinusIcon}
 						</h3>
