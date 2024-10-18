@@ -12,30 +12,29 @@ export default function GText({ items }) {
 
 	const { LeftArrowIcon, RightArrowIcon } = useIcons();
 
-	// Function to reveal items (expand width to the left)
+	// Function to reveal items
 	const revealItems = () => {
 		gsap.fromTo(
 			textRefs.current,
-			{ width: 0, opacity: 0, transformOrigin: "right" },
+			{ xPercent: -100, opacity: 0 },
 			{
-				width: "auto",
+				xPercent: 0,
 				opacity: 1,
-				duration: 0.5, // Faster animation
-				stagger: 0.1,
-				ease: "power4.out", // Eases up at the end
+				duration: 1,
+				stagger: 0.2,
+				ease: "power2.out",
 			}
 		);
 	};
 
-	// Function to hide items (shrink width to the right)
+	// Function to hide items
 	const hideItems = (onComplete) => {
 		gsap.to(textRefs.current, {
-			width: 0,
+			xPercent: 100,
 			opacity: 0,
-			duration: 0.5, // Faster animation
-			stagger: 0.1,
-			transformOrigin: "right",
-			ease: "power4.in", // Eases up at the end
+			duration: 1,
+			stagger: 0.2,
+			ease: "power2.in",
 			onComplete,
 		});
 	};
@@ -80,7 +79,7 @@ export default function GText({ items }) {
 	return (
 		<>
 			<div className="relative w-full min-h-screen bg-slate-500 text-neutral-200 flex flex-col justify-center items-center">
-				<div className="z-10 whitespace-nowrap">
+				<div className="z-10">
 					{visibleItems.map((item, index) => (
 						<div
 							key={index}

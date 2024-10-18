@@ -4,7 +4,7 @@ import Link from "next/link";
 import GText from "../GText";
 
 const BigText = ({ children }) => (
-	<div className="text-6xl font-bold mb-4 bg-neutral-200 text-neutral-900">
+	<div className="text-6xl font-bold mb-4 bg-neutral-200 text-neutral-900 w-fit">
 		{children}
 	</div>
 );
@@ -27,8 +27,9 @@ const items = [
 		</BottomLink>,
 	],
 	[
-		<BigText key="1">Fleet Management</BigText>,
-		<BigText key="2">Operations</BigText>,
+		<BigText key="1">Fleet</BigText>,
+		<BigText key="2">Management</BigText>,
+		<BigText key="3">Operations</BigText>,
 		<BottomLink key="3" href="/fleet-management">
 			View more_
 		</BottomLink>,
