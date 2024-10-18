@@ -1,30 +1,55 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-
-gsap.registerPlugin(useGSAP);
 
 export default function BgFill({ text }) {
 	const textRef = useRef(null);
 	const backgroundRef = useRef(null);
+	const [isToggled, setIsToggled] = useState(false);
 
-	useGSAP(() => {
+	useEffect(() => {
 		const textElement = textRef.current;
 		const backgroundElement = backgroundRef.current;
 
 		gsap.set(textElement, { color: "black" });
 		gsap.set(backgroundElement, { scaleX: 0, transformOrigin: "left" });
-	});
+
+		return () => gsap.killTweensOf([textElement, backgroundElement]);
+	}, []);
 
 	const handleMouseEnter = () => {
+		if (window.innerWidth >= 1280) {
+			// Check for xl screens
+			animateIn();
+		}
+	};
+
+	const handleMouseLeave = () => {
+		if (window.innerWidth >= 1280) {
+			// Check for xl screens
+			animateOut();
+		}
+	};
+
+	const handleClick = () => {
+		if (window.innerWidth < 1280) {
+			// Check for smaller screens
+			if (isToggled) {
+				animateOut();
+			} else {
+				animateIn();
+			}
+			setIsToggled(!isToggled);
+		}
+	};
+
+	const animateIn = () => {
 		gsap.to(backgroundRef.current, {
 			scaleX: 1,
 			duration: 0.6,
 			ease: "power1.out",
 		});
-
 		gsap.to(textRef.current, {
 			color: "white",
 			duration: 0.6,
@@ -32,7 +57,7 @@ export default function BgFill({ text }) {
 		});
 	};
 
-	const handleMouseLeave = () => {
+	const animateOut = () => {
 		gsap.to(backgroundRef.current, {
 			scaleX: 0,
 			duration: 0.6,
@@ -44,11 +69,13 @@ export default function BgFill({ text }) {
 			ease: "power1.out",
 		});
 	};
+
 	return (
 		<div
 			className="relative inline-block overflow-hidden cursor-pointer bg-none"
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}
+			onClick={handleClick}
 		>
 			{/* Background */}
 			<span
