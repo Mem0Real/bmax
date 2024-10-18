@@ -148,16 +148,16 @@ export default function GText({ items, autoplayDuration = 8000 }) {
 				})}
 			</div>
 			{/* Buttons */}
-			<div className="absolute inset-0 flex justify-between items-center px-6 md:px-8 xl:px-12 w-full z-50">
+			<div className="absolute inset-0 flex justify-between items-center px-2 md:px-8 xl:px-12 w-full z-50">
 				<button
 					onClick={() => handlePrevious()}
-					className="text-blue-400 w-10 h-10 bg-neutral-950 rounded-full"
+					className="text-blue-400 w-6 md:w-8 lg:w-10 bg-neutral-950 rounded-full"
 				>
 					{LeftArrowIcon}
 				</button>
 				<button
 					onClick={() => handleNext()}
-					className="text-blue-400 w-10 h-10 bg-neutral-950 rounded-full"
+					className="text-blue-400 w-6 md:w-8 lg:w-10 bg-neutral-950 rounded-full"
 				>
 					{RightArrowIcon}
 				</button>

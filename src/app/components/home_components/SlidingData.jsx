@@ -4,7 +4,7 @@ import Link from "next/link";
 import GText from "../GText";
 
 const BigText = ({ children }) => (
-	<div className="text-6xl font-bold mb-4 bg-neutral-200 text-neutral-900 w-fit">
+	<div className="text-4xl md:text-6xl lg:text-8xl font-bold mb-4 bg-neutral-200 text-neutral-900 w-fit">
 		{children}
 	</div>
 );

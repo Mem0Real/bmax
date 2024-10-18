@@ -47,7 +47,7 @@ export default function About() {
 						offer a comprehensive range of services to meet all your automotive
 						security and management needs.
 					</p>
-					<h1 className="text-5xl font-bold">Sliding Text Effect</h1>
+					{/* <h1 className="text-5xl font-bold">Sliding Text Effect</h1> */}
 				</div>
 
 				{/* image */}
