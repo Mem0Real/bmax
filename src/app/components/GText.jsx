@@ -5,11 +5,13 @@ import gsap from "gsap";
 import { useIcons } from "./CustomIcons";
 
 export default function GText({ items, autoplayDuration = 5000 }) {
-	const textRefs = useRef([]);
-	const [visibleItems, setVisibleItems] = useState(items[0]);
+	const [visibleItems, setVisibleItems] = useState(items[0].components);
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const [isFirstLoad, setIsFirstLoad] = useState(true);
+
+	const textRefs = useRef([]);
 	const autoplayRef = useRef(null);
+	const videoRef = useRef(null);
 
 	const { LeftArrowIcon, RightArrowIcon } = useIcons();
 
@@ -56,14 +58,29 @@ export default function GText({ items, autoplayDuration = 5000 }) {
 		}
 	}, [visibleItems]);
 
+	// Fade out the current video and change to the next one
+	const changeVideo = (index) => {
+		gsap.to(videoRef.current, {
+			opacity: 0,
+			duration: 0.5,
+			onComplete: () => {
+				videoRef.current.src = items[index].video; // Change video source
+				videoRef.current.load(); // Load new video
+				gsap.to(videoRef.current, {
+					opacity: 1,
+					duration: 0.5,
+					onStart: () => videoRef.current.play(), // Play new video
+				});
+			},
+		});
+	};
 	// Handler for next button
 	const handleNext = () => {
 		hideItems(() => {
 			const nextIndex = (currentIndex + 1) % items.length;
-			setVisibleItems(items[nextIndex]);
+			setVisibleItems(items[nextIndex].components); // Get components from the next item
 			setCurrentIndex(nextIndex);
-
-			// Clear references to prepare for the next set of items
+			changeVideo(nextIndex); // Change the video
 			textRefs.current = [];
 		});
 		clearInterval(autoplayRef.current);
@@ -73,8 +90,9 @@ export default function GText({ items, autoplayDuration = 5000 }) {
 	const handlePrevious = () => {
 		hideItems(() => {
 			const prevIndex = (currentIndex - 1 + items.length) % items.length;
-			setVisibleItems(items[prevIndex]);
+			setVisibleItems(items[prevIndex].components); // Get components from the previous item
 			setCurrentIndex(prevIndex);
+			changeVideo(prevIndex); // Change the video
 			textRefs.current = [];
 		});
 		clearInterval(autoplayRef.current);
@@ -87,10 +105,24 @@ export default function GText({ items, autoplayDuration = 5000 }) {
 	}, [currentIndex]);
 
 	return (
-		<>
-			<div className="relative w-full min-h-screen bg-slate-500 text-neutral-200 flex flex-col justify-center items-center">
-				<div className="z-10 whitespace-nowrap">
-					{visibleItems.map((item, index) => (
+		// <div className="w-full min-h-screen bg-slate-500 text-neutral-200 flex flex-col justify-center items-center">
+		<div className="w-full min-h-screen bg-slate-500 text-neutral-200 flex flex-col justify-center items-center relative overflow-hidden">
+			{/* Vid */}
+			<video
+				ref={videoRef}
+				className="absolute top-0 left-0 w-full h-full object-cover"
+				muted
+				loop
+				style={{ opacity: 1 }} // Start visible
+			>
+				<source src={items[currentIndex].video} type="video/mp4" />
+				Your browser does not support the video tag.
+			</video>
+
+			{/* Text */}
+			<div className="z-10 whitespace-nowrap">
+				{visibleItems.map((item, index) => {
+					return (
 						<div
 							key={index}
 							ref={(el) => (textRefs.current[index] = el)}
@@ -98,24 +130,24 @@ export default function GText({ items, autoplayDuration = 5000 }) {
 						>
 							{item}
 						</div>
-					))}
-				</div>
-				{/* <button onClick={handleNext}>Next</button> */}
-				<div className="absolute inset-0 flex justify-between items-center px-24 w-full">
-					<button
-						onClick={() => handlePrevious()}
-						className="text-blue-400 w-8 h-12 bg-neutral-300 rounded-full"
-					>
-						{LeftArrowIcon}
-					</button>
-					<button
-						onClick={() => handleNext()}
-						className="text-blue-400 w-8 h-12 bg-neutral-300 rounded-full"
-					>
-						{RightArrowIcon}
-					</button>
-				</div>
+					);
+				})}
 			</div>
-		</>
+			{/* Buttons */}
+			<div className="absolute inset-0 flex justify-between items-center px-24 w-full">
+				<button
+					onClick={() => handlePrevious()}
+					className="text-blue-400 w-8 h-12 bg-neutral-300 rounded-full"
+				>
+					{LeftArrowIcon}
+				</button>
+				<button
+					onClick={() => handleNext()}
+					className="text-blue-400 w-8 h-12 bg-neutral-300 rounded-full"
+				>
+					{RightArrowIcon}
+				</button>
+			</div>
+		</div>
 	);
 }
