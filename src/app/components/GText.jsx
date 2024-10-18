@@ -12,11 +12,9 @@ export default function GText({ items, autoplayDuration = 5000 }) {
 
 	const textRefs = useRef([]);
 	const autoplayRef = useRef(null);
-	const videoRef = useRef(null);
+	const videoRefs = useRef([]);
 
 	const { LeftArrowIcon, RightArrowIcon } = useIcons();
-
-	// Function to reveal items (expand width to the left)
 	const revealItems = () => {
 		gsap.fromTo(
 			textRefs.current,
@@ -24,35 +22,66 @@ export default function GText({ items, autoplayDuration = 5000 }) {
 			{
 				width: "auto",
 				opacity: 1,
-				duration: 0.5, // Faster animation
+				duration: 0.5,
 				stagger: 0.1,
-				ease: "power2.out", // Eases up at the end
+				ease: "power4.out",
 			}
 		);
 	};
 
-	// Function to hide items (shrink width to the right)
 	const hideItems = (onComplete) => {
 		gsap.to(textRefs.current, {
 			width: 0,
 			opacity: 0,
-			duration: 0.5, // Faster animation
+			duration: 0.5,
 			stagger: 0.1,
 			transformOrigin: "right",
-			ease: "power2.in", // Eases up at the end
+			ease: "power4.in",
 			onComplete,
 		});
 	};
 
-	// Function to handle video playback
-	const playVideo = (index) => {
-		videoRef.current.src = items[index].video; // Set video source
-		videoRef.current.load(); // Load video
-		videoRef.current.currentTime = 0; // Reset time to start
-		videoRef.current.play(); // Play video
-		gsap.to(videoRef.current, {
+	const changeVideo = (index) => {
+		const currentVideo = videoRefs.current[currentIndex];
+		const nextVideo = videoRefs.current[index];
+
+		// Fade out the current video and pause it
+		gsap.to(currentVideo, {
+			opacity: 0,
+			duration: 0.5,
+			onComplete: () => {
+				currentVideo.pause();
+				currentVideo.currentTime = 0; // Reset current time
+			},
+		});
+
+		// Fade in the next video and play it
+		gsap.to(nextVideo, {
 			opacity: 1,
 			duration: 0.5,
+			onStart: () => {
+				nextVideo.play(); // Play the next video when starting the fade in
+			},
+		});
+	};
+
+	const handleNext = () => {
+		hideItems(() => {
+			const nextIndex = (currentIndex + 1) % items.length;
+			setVisibleItems(items[nextIndex].components);
+			setCurrentIndex(nextIndex);
+			changeVideo(nextIndex);
+			clearInterval(autoplayRef.current);
+		});
+	};
+
+	const handlePrevious = () => {
+		hideItems(() => {
+			const prevIndex = (currentIndex - 1 + items.length) % items.length;
+			setVisibleItems(items[prevIndex].components);
+			setCurrentIndex(prevIndex);
+			changeVideo(prevIndex);
+			clearInterval(autoplayRef.current);
 		});
 	};
 
@@ -60,7 +89,6 @@ export default function GText({ items, autoplayDuration = 5000 }) {
 	useEffect(() => {
 		if (isFirstLoad) {
 			revealItems();
-			playVideo(currentIndex);
 			setIsFirstLoad(false);
 		}
 	}, [isFirstLoad]);
@@ -72,82 +100,38 @@ export default function GText({ items, autoplayDuration = 5000 }) {
 		}
 	}, [visibleItems]);
 
-	// Fade out the current video and change to the next one
-	const changeVideo = (index) => {
-		// Set the new video source and load it, but keep it hidden initially
-		videoRef.current.src = items[index].video;
-		videoRef.current.load();
-		videoRef.current.currentTime = 0; // Reset time to the start
-		videoRef.current.onloadeddata = () => {
-			setIsVideoReady(true); // Mark the video as ready when data is loaded
-			videoRef.current.play();
-			gsap.to(videoRef.current, {
-				opacity: 1,
-				duration: 0.5,
-			});
-		};
-
-		// Fade out the current video, and only fade in the new video if it's ready
-		gsap.to(videoRef.current, {
-			opacity: 0,
-			duration: 0.5,
-			onComplete: () => {
-				if (isVideoReady) {
-					videoRef.current.play(); // Play the new video
-					gsap.to(videoRef.current, {
-						opacity: 1,
-						duration: 0.5,
-					});
-				}
-			},
-		});
-	};
-
-	// Handler for next button
-	const handleNext = () => {
-		hideItems(() => {
-			const nextIndex = (currentIndex + 1) % items.length;
-			setVisibleItems(items[nextIndex].components); // Get components from the next item
-			setCurrentIndex(nextIndex);
-			changeVideo(nextIndex);
-			textRefs.current = [];
-		});
-		clearInterval(autoplayRef.current);
-	};
-
-	// Handler for the previous button
-	const handlePrevious = () => {
-		hideItems(() => {
-			const prevIndex = (currentIndex - 1 + items.length) % items.length;
-			setVisibleItems(items[prevIndex].components); // Get components from the previous item
-			setCurrentIndex(prevIndex);
-			changeVideo(prevIndex); // Change the video
-			textRefs.current = [];
-		});
-		clearInterval(autoplayRef.current);
-	};
-
 	// Autoplay functionality
 	useEffect(() => {
-		autoplayRef.current = setInterval(handleNext, autoplayDuration);
+		// Start playing the first video on mount
+		videoRefs.current[currentIndex]?.play();
+
+		const autoplayVideos = () => {
+			handleNext(); // Call next video when the interval elapses
+		};
+
+		autoplayRef.current = setInterval(autoplayVideos, autoplayDuration);
 		return () => clearInterval(autoplayRef.current);
-	}, [currentIndex]);
+	}, [currentIndex, autoplayDuration]);
 
 	return (
 		// <div className="w-full min-h-screen bg-slate-500 text-neutral-200 flex flex-col justify-center items-center">
-		<div className="w-full min-h-screen text-neutral-200 flex flex-col justify-center items-center relative overflow-hidden">
+		<div className="w-full min-h-screen bg-neutral-900/90 text-neutral-200 flex flex-col justify-center items-center relative overflow-hidden">
 			{/* Vid */}
-			<video
-				ref={videoRef}
-				className="absolute top-0 left-0 w-full h-full object-cover opacity-1"
-				muted
-				loop
-				preload="auto"
-				playsInline
-			>
-				<source src={items[currentIndex].video} type="video/mp4" />
-				Your browser does not support the video tag.
-			</video>
+			{items.map((item, index) => (
+				<video
+					key={index}
+					ref={(el) => (videoRefs.current[index] = el)}
+					className={`absolute top-0 left-0 w-full h-full object-cover opacity-0 ${
+						index === currentIndex ? "opacity-100" : ""
+					}`} // Set initial opacity based on currentIndex
+					muted
+					loop
+					preload="auto"
+				>
+					<source src={item.video} type="video/mp4" />
+					Your browser does not support the video tag.
+				</video>
+			))}
 
 			{/* Text */}
 			<div className="z-10 whitespace-nowrap">
