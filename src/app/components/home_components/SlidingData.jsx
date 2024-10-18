@@ -24,7 +24,7 @@ const Video = ({ src, type }) => {
 			<video
 				width="98vw"
 				height="90vh"
-				preload="none"
+				preload="auto"
 				autoPlay
 				loop
 				muted

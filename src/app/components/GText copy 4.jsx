@@ -8,7 +8,6 @@ export default function GText({ items, autoplayDuration = 5000 }) {
 	const [visibleItems, setVisibleItems] = useState(items[0].components);
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const [isFirstLoad, setIsFirstLoad] = useState(true);
-	const [isVideoReady, setIsVideoReady] = useState(false);
 
 	const textRefs = useRef([]);
 	const autoplayRef = useRef(null);
@@ -26,7 +25,7 @@ export default function GText({ items, autoplayDuration = 5000 }) {
 				opacity: 1,
 				duration: 0.5, // Faster animation
 				stagger: 0.1,
-				ease: "power2.out", // Eases up at the end
+				ease: "power4.out", // Eases up at the end
 			}
 		);
 	};
@@ -39,20 +38,8 @@ export default function GText({ items, autoplayDuration = 5000 }) {
 			duration: 0.5, // Faster animation
 			stagger: 0.1,
 			transformOrigin: "right",
-			ease: "power2.in", // Eases up at the end
+			ease: "power4.in", // Eases up at the end
 			onComplete,
-		});
-	};
-
-	// Function to handle video playback
-	const playVideo = (index) => {
-		videoRef.current.src = items[index].video; // Set video source
-		videoRef.current.load(); // Load video
-		videoRef.current.currentTime = 0; // Reset time to start
-		videoRef.current.play(); // Play video
-		gsap.to(videoRef.current, {
-			opacity: 1,
-			duration: 0.5,
 		});
 	};
 
@@ -60,7 +47,6 @@ export default function GText({ items, autoplayDuration = 5000 }) {
 	useEffect(() => {
 		if (isFirstLoad) {
 			revealItems();
-			playVideo(currentIndex);
 			setIsFirstLoad(false);
 		}
 	}, [isFirstLoad]);
@@ -78,27 +64,18 @@ export default function GText({ items, autoplayDuration = 5000 }) {
 		videoRef.current.src = items[index].video;
 		videoRef.current.load();
 		videoRef.current.currentTime = 0; // Reset time to the start
-		videoRef.current.onloadeddata = () => {
-			setIsVideoReady(true); // Mark the video as ready when data is loaded
-			videoRef.current.play();
-			gsap.to(videoRef.current, {
-				opacity: 1,
-				duration: 0.5,
-			});
-		};
 
-		// Fade out the current video, and only fade in the new video if it's ready
+		// Fade out the current video, and fade in the new video
 		gsap.to(videoRef.current, {
 			opacity: 0,
 			duration: 0.5,
 			onComplete: () => {
-				if (isVideoReady) {
-					videoRef.current.play(); // Play the new video
-					gsap.to(videoRef.current, {
-						opacity: 1,
-						duration: 0.5,
-					});
-				}
+				// Play the new video and fade it in
+				videoRef.current.play();
+				gsap.to(videoRef.current, {
+					opacity: 1,
+					duration: 0.5,
+				});
 			},
 		});
 	};
@@ -109,7 +86,7 @@ export default function GText({ items, autoplayDuration = 5000 }) {
 			const nextIndex = (currentIndex + 1) % items.length;
 			setVisibleItems(items[nextIndex].components); // Get components from the next item
 			setCurrentIndex(nextIndex);
-			changeVideo(nextIndex);
+			changeVideo(nextIndex); // Change the video
 			textRefs.current = [];
 		});
 		clearInterval(autoplayRef.current);
@@ -142,8 +119,6 @@ export default function GText({ items, autoplayDuration = 5000 }) {
 				className="absolute top-0 left-0 w-full h-full object-cover opacity-1"
 				muted
 				loop
-				preload="auto"
-				playsInline
 			>
 				<source src={items[currentIndex].video} type="video/mp4" />
 				Your browser does not support the video tag.
