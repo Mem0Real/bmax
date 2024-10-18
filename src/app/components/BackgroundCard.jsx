@@ -1,5 +1,19 @@
 import React from "react";
 
+import { Rajdhani, Raleway } from "next/font/google";
+
+const raleway = Raleway({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+
+const raj = Rajdhani({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+
 export default function BackgroundCard({ data, location, light }) {
 	let opacity = light ? "opacity-40" : "opacity-60";
 	let count = data.length;
@@ -25,8 +39,16 @@ export default function BackgroundCard({ data, location, light }) {
 						></div>
 
 						<div className="w-full relative flex flex-col justify-stretch items-stretch gap-5 text-white min-h-36 md:min-h-44 lg:min-h-48 xl:min-h-48 backdrop-blur-sm px-2 pt-2">
-							<h1 className="text-xl lg:text-2xl capitalize">{header}</h1>
-							<p className="text-base md:text-[13px] lg:text-lg">{text}</p>
+							<h1
+								className={`text-xl lg:text-3xl capitalize font-semibold ${raj.className}`}
+							>
+								{header}
+							</h1>
+							<p
+								className={`text-base md:text-[13px] lg:text-base ${raleway.className}`}
+							>
+								{text}
+							</p>
 						</div>
 					</div>
 				);

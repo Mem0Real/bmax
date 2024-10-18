@@ -5,6 +5,20 @@ import Link from "next/link";
 
 import { motion } from "framer-motion";
 
+import { Rajdhani, Raleway } from "next/font/google";
+
+const raleway = Raleway({
+	weight: ["400", "500", "600", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+
+const raj = Rajdhani({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+
 export default function AlternateText({
 	header,
 	detail,
@@ -22,16 +36,20 @@ export default function AlternateText({
 		: "text-neutral-200/80";
 	tailColor += swap ? " text-xl" : " text-base";
 
-	let headSize = swap
-		? "text-4xl md:text-6xl font-bold"
-		: "text-3xl md:text-4xl font-medium";
+	let headSize = swap ? "text-4xl md:text-6xl" : "text-3xl md:text-4x";
 
 	return (
 		<div className="w-full basis-1/2 flex flex-col justify-center items-start gap-8">
-			<h1 className={headSize}>{header}</h1>
+			<h1
+				className={`text-mellow text-xl md:text-5xl font-bold ${headSize} ${raj.className}`}
+			>
+				{header}
+			</h1>
 			{Array.isArray(detail) ? (
 				dark ? (
-					<div className="flex flex-col justify-center items-center gap-8">
+					<div
+						className={`flex flex-col justify-center items-center gap-8 ${raleway.className}`}
+					>
 						{detail?.map((text, index) => (
 							<p
 								key={index}
@@ -42,7 +60,9 @@ export default function AlternateText({
 						))}
 					</div>
 				) : (
-					<div className="flex flex-col justify-center items-center gap-8">
+					<div
+						className={`flex flex-col justify-center items-center gap-8 ${raleway.className}`}
+					>
 						{detail?.map((text, index) => (
 							<p
 								key={index}
@@ -54,16 +74,18 @@ export default function AlternateText({
 					</div>
 				)
 			) : (
-				<p className={tailColor}>{detail}</p>
+				<p className={`${tailColor} ${raleway.className} font-medium`}>
+					{detail}
+				</p>
 			)}
 			{!swap && linkText && (
 				<Link href={`/${address}`}>
 					<motion.h1
 						whileHover={{
-							backgroundColor: "#DFA70C",
+							backgroundColor: "#ee8f34",
 							color: "#FFF",
 						}}
-						className="px-12 py-3 border border-darkYellow text-darkYellow font-bold uppercase"
+						className={`px-12 py-3 border border-mellow text-mellow font-bold uppercase ${raj.className}`}
 					>
 						{linkText}
 					</motion.h1>

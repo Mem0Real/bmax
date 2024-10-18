@@ -6,6 +6,20 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { emergencyData } from "@/data/solution";
 
+import { Rajdhani, Raleway } from "next/font/google";
+
+const raleway = Raleway({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+
+const raj = Rajdhani({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+
 export default function HoverCard({ location }) {
 	const [hovered, setHovered] = useState(null);
 
@@ -38,16 +52,18 @@ export default function HoverCard({ location }) {
 
 							<div className="flex flex-col justify-center items-center gap-4">
 								<motion.h1
-									className="font-bold text-neutral-900 text-lg"
+									className={`font-bold text-black text-xl ${raj.className}`}
 									animate={
 										hovered === count
-											? { color: "#FFA500" }
+											? { color: "#ee8f34" }
 											: { color: "#171717" }
 									}
 								>
 									{header}
 								</motion.h1>
-								<p className="text-neutral-900/90 text-center text-base">
+								<p
+									className={`text-neutral-950 text-center text-base ${raleway.className}`}
+								>
 									{text}
 								</p>
 							</div>

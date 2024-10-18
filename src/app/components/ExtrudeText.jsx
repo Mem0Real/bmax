@@ -4,7 +4,20 @@ import React, { useEffect, useState } from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useIcons } from "./CustomIcons";
-import BgFill from "./BgFill";
+
+import { Rajdhani, Raleway } from "next/font/google";
+
+const raleway = Raleway({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+
+const raj = Rajdhani({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
 
 export default function ExtrudeText({ dropData, className }) {
 	const [selected, setSelected] = useState(0);
@@ -32,19 +45,17 @@ export default function ExtrudeText({ dropData, className }) {
 									: ""
 								: selected === index
 								? "bg-mellow"
-								: "bg-mellow/50"
+								: "bg-lightMellow"
 						} py-4 ps-4 pe-2 flex justify-between items-center cursor-pointer`}
 						onClick={() => handleClick(index)}
 						layout="position"
 						transition={{ ease: "easeInOut", duration: 0.2 }}
 					>
-						<BgFill
-							text={
-								<h1 className="text-xl md:text-2xl font-medium capitalize py-4">
-									{name}
-								</h1>
-							}
-						/>
+						<h1
+							className={`text-xl md:text-3xl font-medium capitalize py-4 ${raj.className}`}
+						>
+							{name}
+						</h1>
 						<h3 className="w-8 text-neutral-900">
 							{selected !== index ? PlusIcon : MinusIcon}
 						</h3>
@@ -58,7 +69,7 @@ export default function ExtrudeText({ dropData, className }) {
 								animate={{ height: "auto", opacity: 1 }}
 								exit={{ height: 0, opacity: 0 }}
 								transition={{ ease: "easeInOut", duration: 0.2 }}
-								className="overflow-hidden w-[90%] mx-auto text-sm text-neutral-900/80"
+								className={`overflow-hidden w-[90%] mx-auto text-sm text-neutral-black font-medium ${raleway.className}`}
 								layout
 							>
 								{Array.isArray(nest) ? (
