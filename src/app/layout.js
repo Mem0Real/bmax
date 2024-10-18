@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
 				<body
 					className={`${geistSans.variable} ${geistMono.variable} antialiased text-sm`}
 				>
-					<Topbar className={geistMono.variable} />
+					{/* <Topbar className={geistMono.variable} /> */}
 					{/* <Navbar /> */}
 					<MantineProvider>
 						<Nav />
