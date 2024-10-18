@@ -17,52 +17,6 @@ const BottomLink = ({ href, children }) => (
 		{children}
 	</Link>
 );
-
-const Video = ({ src, type }) => {
-	return (
-		<div className="relative">
-			<video
-				width="98vw"
-				height="90vh"
-				preload="auto"
-				autoPlay
-				loop
-				muted
-				playsInline
-				className="absolute inset-0 w-screen h-screen"
-			>
-				<source src={src} type={`video/${type}`} />
-			</video>
-		</div>
-	);
-};
-// const items = [
-// 	[
-// 		<Video key="0" src="/vids/1.mp4" type="mp4" />,
-// 		<BigText key="1">Car Key</BigText>,
-// 		<BigText key="2">Services</BigText>,
-// 		<BottomLink key="3" href="/key-replacement">
-// 			View more_
-// 		</BottomLink>,
-// 	],
-// 	[
-// 		<Video key="0" src="/vids/2.mp4" type="mp4" />,
-// 		<BigText key="1">Fleet</BigText>,
-// 		<BigText key="2">Management</BigText>,
-// 		<BigText key="3">Operations</BigText>,
-// 		<BottomLink key="3" href="/fleet-management">
-// 			View more_
-// 		</BottomLink>,
-// 	],
-// 	[
-// 		<Video key="0" src="/vids/3.mp4" type="mp4" />,
-// 		<BigText key="1">Tracking &</BigText>,
-// 		<BigText key="2">Telematics</BigText>,
-// 		<BottomLink key="3" href="/video-telematics">
-// 			View more_
-// 		</BottomLink>,
-// 	],
-// ];
 const items = [
 	{
 		video: "/vids/1.mp4",

@@ -1,7 +1,3 @@
-import GsapText from "./components/GsapText";
-import GText from "./components/GText";
-import SlidingData from "./components/home_components/SlidingData";
-import VidSlide from "./components/home_components/VidSlide";
 import Home from "./Home";
 
 export default function Landing() {
@@ -14,11 +10,7 @@ export default function Landing() {
 
 	return (
 		<div className="bg-neutral-100 w-full flex flex-col justify-center items-center">
-			{/* <Home /> */}
-			{/* <GsapText /> */}
-			{/* <VidSlide /> */}
-			{/* <GText items={items} /> */}
-			<SlidingData />
+			<Home />
 		</div>
 	);
 }

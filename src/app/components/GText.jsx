@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { useIcons } from "./CustomIcons";
 
-export default function GText({ items, autoplayDuration = 5000 }) {
+export default function GText({ items, autoplayDuration = 8000 }) {
 	const [visibleItems, setVisibleItems] = useState(items[0].components);
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const [isFirstLoad, setIsFirstLoad] = useState(true);
@@ -148,16 +148,16 @@ export default function GText({ items, autoplayDuration = 5000 }) {
 				})}
 			</div>
 			{/* Buttons */}
-			<div className="absolute inset-0 flex justify-between items-center px-24 w-full">
+			<div className="absolute inset-0 flex justify-between items-center px-12 w-full">
 				<button
 					onClick={() => handlePrevious()}
-					className="text-blue-400 w-8 h-12 bg-neutral-300 rounded-full"
+					className="text-blue-400 w-10 h-10 bg-neutral-950 rounded-full"
 				>
 					{LeftArrowIcon}
 				</button>
 				<button
 					onClick={() => handleNext()}
-					className="text-blue-400 w-8 h-12 bg-neutral-300 rounded-full"
+					className="text-blue-400 w-10 h-10 bg-neutral-950 rounded-full"
 				>
 					{RightArrowIcon}
 				</button>
