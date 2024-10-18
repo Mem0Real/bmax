@@ -1,7 +1,6 @@
 import localFont from "next/font/local";
+
 import "./globals.css";
-import Topbar from "./components/Topbar";
-import Navbar from "./navigation/Navbar";
 import Footer from "./navigation/Footer";
 import CustomIcons from "./components/CustomIcons";
 
@@ -35,8 +34,6 @@ export default function RootLayout({ children }) {
 				<body
 					className={`${geistSans.variable} ${geistMono.variable} antialiased text-sm`}
 				>
-					{/* <Topbar className={geistMono.variable} /> */}
-					{/* <Navbar /> */}
 					<MantineProvider>
 						<Nav />
 						<ScrollToTopButton>{children}</ScrollToTopButton>

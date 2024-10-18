@@ -1,28 +1,18 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
-
-import { useIcons } from "@/app/components/CustomIcons";
-import Link from "next/link";
-
-import { AnimatePresence, motion } from "framer-motion";
 import Links from "@/app/components/Links";
 
 export default function LogoStuff() {
-	const { FacebookIcon, TelegramIcon, InstagramIcon, LinkedInIcon } =
-		useIcons();
-
 	return (
 		<section className="w-full">
 			<div className="flex flex-col justify-stretch items-start gap-2">
-				<div className="self-start w-full h-[9.5rem] relative">
+				<div className="self-start w-[250px] h-[80px] md:w-[288px] md:h-[93px] relative">
 					<Image
 						fill
-						src="/images/logo.png"
+						src="/images/logo3.png"
 						alt="B-Max"
 						priority
-						className="object-contain xl:object-cover object-left absolute"
+						className="object-cover object-center absolute"
 						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 					/>
 				</div>

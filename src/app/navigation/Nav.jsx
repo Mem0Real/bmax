@@ -4,6 +4,8 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { Rajdhani } from "next/font/google";
+
 import AboutDrop from "./navbar_components/AboutDrop";
 import SolutionDrop from "./navbar_components/SolutionDrop";
 import IndustryDrop from "./navbar_components/IndustryDrop";
@@ -31,6 +33,12 @@ const navData = [
 	},
 	{ title: "Contact Us", address: "/contact" },
 ];
+
+const raj = Rajdhani({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
 
 export default function Nav() {
 	const [drop, setDrop] = useState("");
@@ -65,13 +73,13 @@ export default function Nav() {
 
 	return (
 		<>
-			<div className="w-full bg-neutral-900 text-neutral-300 px-4 lg:px-16 xl:px-40 py-2 flex items-center justify-between flex-wrap">
+			<div className="w-full bg-lightestMellow text-neutral-900 px-4 lg:px-16 xl:px-40 py-2 flex items-center justify-between flex-wrap">
 				<Link
-					className="relative flex flex-col justify-center items-center w-[7.2rem] h-16 md:w-36 md:h-20"
+					className="relative flex flex-col justify-center items-center w-44 h-16 md:w-72 md:h-20 xl:-mb-5"
 					href="/"
 				>
 					<Image
-						src="/images/logo.png"
+						src="/images/logo2.png"
 						alt="B-Max"
 						fill
 						priority
@@ -89,10 +97,12 @@ export default function Nav() {
 								onHoverEnd={() => setDrop("")}
 								className="flex flex-col justify-center items-center py-4 px-2 relative"
 							>
-								<motion.div className="flex items-center gap-1">
+								<motion.div
+									className={`flex items-center gap-1 ${raj.className}`}
+								>
 									<Link href={address}>{title}</Link>
 									<motion.span
-										className="cursor-pointer w-4 text-mellow"
+										className="cursor-pointer w-5 text-darkestMellow"
 										initial={{ rotate: 0 }}
 										animate={drop === title ? { rotate: 90 } : { rotate: 0 }}
 										transition={{ ease: easeInOut }}
@@ -103,7 +113,7 @@ export default function Nav() {
 								<AnimatePresence>
 									{title === drop && (
 										<motion.h2
-											className="absolute top-16 z-50"
+											className={`absolute top-16 z-50 ${raj.className}`}
 											initial={{ opacity: 0, y: -20 }}
 											animate={{ opacity: 1, y: 0 }}
 											exit={{ opacity: 0, y: -20 }}
@@ -122,12 +132,12 @@ export default function Nav() {
 					})}
 				</motion.div>
 				{/* Small screen */}
-				<div className="lg:hidden flex justify-center items-center gap-4 text-darkYellow">
+				<div className="lg:hidden flex justify-center items-center gap-4">
 					{/* hamburger btn */}
-					<motion.div onTap={open} className="w-8 text-neutral-200">
+					<motion.div onTap={open} className="w-8 text-neutral-900">
 						{BarIcon}
 					</motion.div>
-					<div className="w-8 text-neutral-200">{SearchIcon}</div>
+					<div className="w-8 text-neutral-900">{SearchIcon}</div>
 				</div>
 			</div>
 
@@ -147,8 +157,8 @@ export default function Nav() {
 					),
 				}}
 				styles={{
-					content: { backgroundColor: "#212121", color: "#d4d4d4" },
-					header: { backgroundColor: "#212121", color: "#d4d4d4" },
+					content: { backgroundColor: "#fcead9", color: "#212121" },
+					header: { backgroundColor: "#fcead9", color: "#212121" },
 				}}
 				size={300}
 			>
@@ -161,12 +171,15 @@ export default function Nav() {
 						{navData.map(({ title, address, dropData }) => (
 							<motion.span
 								key={title}
-								className="w-full relative z-50"
+								className={`w-full relative z-50 ${raj.className}`}
 								layout="position"
 								onClick={() => toggleNest(title)}
 							>
 								<div className="w-full flex justify-between items-center">
-									<Link href={address} className="text-base lg:text-lg">
+									<Link
+										href={address}
+										className="text-base lg:text-lg font-semibold"
+									>
 										{title}
 									</Link>
 									<motion.button
@@ -175,7 +188,7 @@ export default function Nav() {
 											nest.includes(title) ? { rotate: 90 } : { rotate: -90 }
 										}
 										transition={{ ease: easeInOut }}
-										className="w-4 text-mellow"
+										className="w-6 text-darkestMellow"
 									>
 										{dropData && LeftIcon}
 									</motion.button>

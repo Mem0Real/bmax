@@ -5,6 +5,8 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import { Rajdhani, Raleway } from "next/font/google";
+
 import { motion } from "framer-motion";
 
 const description = [
@@ -74,6 +76,18 @@ const description = [
 	},
 ];
 
+const raleway = Raleway({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+
+const raj = Rajdhani({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+
 export default function AltCards() {
 	const [dimension, setDimension] = useState({ width: 0, height: 0 });
 
@@ -104,7 +118,7 @@ export default function AltCards() {
 								className="flex flex-col xl:flex-row xl:odd:flex-row-reverse justify-center md:gap-9 xl:gap-6 relative px-4 md:px-8 xl:px-40 xl:py-12"
 							>
 								<motion.div
-									className={`order-2 xl:order-1 xl:flex-1 flex flex-col items-center justify-center self-center justify-self-center my-auto py-6 gap-5 xl:gap-12 text-start ${
+									className={`order-2 xl:order-1 xl:flex-1 flex flex-col items-center justify-center self-center justify-self-center my-auto py-6 gap-5 xl:gap-4 text-start ${
 										++index % 2 === 0 ? "pr-2 md:pr-8" : "pl-2 md:pl-8"
 									}`}
 									itemID={`${index}-text`}
@@ -136,16 +150,25 @@ export default function AltCards() {
 								>
 									<div className="self-start flex flex-col gap-2">
 										<h2 className=" text-lg font-semibold">{smallTitle}</h2>
-										<h2 className=" text-darkYellow text-4xl font-semibold">
+										<h2
+											className={`text-darkYellow text-5xl md:text-6xl font-bold ${raj.className}`}
+										>
 											{title}
 										</h2>
 									</div>
-									<p className="text-balance text-sm font-medium">{detail}</p>
+									<p
+										className={`text-balance text-base font-medium ${raleway.className}`}
+									>
+										{detail}
+									</p>
 									{address && (
-										<Link href={address} className="self-start">
+										<Link
+											href={address}
+											className={`self-start ${raj.className}`}
+										>
 											<motion.div
 												whileHover={{
-													backgroundColor: "#ffad33",
+													backgroundColor: "#ee8f34",
 													color: "#FFF",
 												}}
 												className="px-4 py-3 border border-mellow text-mellow font-bold cursor-pointer"

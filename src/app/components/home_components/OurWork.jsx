@@ -1,10 +1,24 @@
 import React from "react";
+import { Rajdhani, Raleway } from "next/font/google";
+
+const raleway = Raleway({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+const raj = Rajdhani({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
 
 export default function OurWork() {
 	return (
 		<div className="min-h-screen w-full px-4 md:px-12 xl:px-40 bg-neutral-950 text-neutral-100 flex flex-col justify-center items-center py-8">
 			<div className="w-full flex flex-col xl:flex-row justify-stretch items-stretch relative gap-12 xl:gap-0">
-				<h1 className="flex-1/4 text-5xl md:text-6xl font-semibold uppercase xl:pr-4 text-nowrap xl:-mt-5">
+				<h1
+					className={`flex-1/4 text-6xl md:text-7xl lg:text-8xl font-semibold uppercase xl:pr-4 text-nowrap xl:-mt-5 ${raj.className}`}
+				>
 					Our Work
 				</h1>
 				<div className="w-full flex-3/4 flex flex-col gap-12 lg:gap-20 xl:gap-36">
@@ -14,10 +28,14 @@ export default function OurWork() {
 								<p className="absolute top-12"> 01</p>
 							</h1>
 							<div className="w-full h-full flex flex-col justify-start items-start gap-6 px-2 xl:pl-8">
-								<h1 className="text-neutral-100 font-semibold text-lg pt-3">
+								<h1
+									className={`text-neutral-100 font-semibold text-lg pt-3 ${raj.className}`}
+								>
 									Automotive Locksmith Services
 								</h1>
-								<p className="text-neutral-200/50 pr-2 xl:pr-8 text-sm">
+								<p
+									className={`text-neutral-200/50 pr-2 xl:pr-8 text-sm ${raleway.className}`}
+								>
 									B-Max Telematics offers key replacement, programming, repair,
 									and emergency car unlocking services with professionalism and
 									efficiency.
@@ -29,10 +47,14 @@ export default function OurWork() {
 								<p className="absolute top-12"> 02</p>
 							</h1>
 							<div className="w-full h-full flex flex-col justify-start items-start gap-6 px-2 xl:pl-8">
-								<h1 className="text-neutral-100 font-semibold text-lg pt-3">
+								<h1
+									className={`text-neutral-100 font-semibold text-lg pt-3 ${raj.className}`}
+								>
 									Telematics Solutions
 								</h1>
-								<p className="text-neutral-200/50 pr-2 xl:pr-8 text-sm">
+								<p
+									className={`text-neutral-200/50 pr-2 xl:pr-8 text-sm ${raleway.className}`}
+								>
 									Enhance vehicle security and monitoring with B-Max
 									Telematics&apos; advanced solutions, including tracking, fleet
 									management, car alarms, and dashcam installations.
@@ -46,10 +68,14 @@ export default function OurWork() {
 								<p className="absolute top-12"> 03</p>
 							</h1>
 							<div className="w-full h-full flex flex-col justify-start items-start gap-6 px-2 xl:pl-8">
-								<h1 className="text-neutral-100 font-semibold text-lg pt-3">
+								<h1
+									className={`text-neutral-100 font-semibold text-lg pt-3 ${raj.className}`}
+								>
 									Vehicle Security
 								</h1>
-								<p className="text-neutral-200/50 pr-2 xl:pr-8 text-sm">
+								<p
+									className={`text-neutral-200/50 pr-2 xl:pr-8 text-sm ${raleway.className}`}
+								>
 									Protect your vehicles with B-Max Telematics&apos;
 									immobilizers, GPS tracking, and anti-theft systems, ensuring
 									peace of mind.
@@ -61,10 +87,14 @@ export default function OurWork() {
 								<p className="absolute top-12"> 04</p>
 							</h1>
 							<div className="w-full h-full flex flex-col justify-start items-start gap-6 px-2 xl:pl-8">
-								<h1 className="text-neutral-100 font-semibold text-lg pt-3">
+								<h1
+									className={`text-neutral-100 font-semibold text-lg pt-3 ${raj.className}`}
+								>
 									Fleet Services
 								</h1>
-								<p className="text-neutral-200/50 pr-2 xl:pr-8 text-sm">
+								<p
+									className={`text-neutral-200/50 pr-2 xl:pr-8 text-sm ${raleway.className}`}
+								>
 									Optimize fleet operations with B-Max Telematics&apos;
 									tracking, fuel management, driver behavior monitoring, and
 									maintenance management solutions.

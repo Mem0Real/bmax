@@ -64,7 +64,7 @@ export default function SolutionDrop() {
 
 	return (
 		<AnimatePresence>
-			<motion.div className="z-50 lg:w-[50rem] lg:max-h-[35rem] py-6 lg:py-12 flex flex-col justify-end lg:justify-start items-start gap-4 lg:flex-wrap lg:bg-neutral-900 text-neutral-200 font-thin text-xs rounded-md">
+			<motion.div className="z-50 lg:w-[50rem] lg:max-h-[35rem] py-6 lg:py-12 flex flex-col justify-end lg:justify-start items-start gap-4 lg:flex-wrap bg-lightestMellow text-neutral-900 font-thin text-xs rounded-b-md">
 				{dropMenuData.map(({ icon, header, nest }, index) => (
 					<div
 						key={`${index} - header`}
@@ -72,12 +72,12 @@ export default function SolutionDrop() {
 					>
 						<div className="flex gap-4 items-center w-full ps-2 lg:px-6 lg:pb-3">
 							<div className="w-8 text-mellow">{icon}</div>
-							<div className="text-lg font-semibold">{header}</div>
+							<div className="text-lg font-bold">{header}</div>
 						</div>
 						<div className="flex flex-col justify-center items-start gap-4 pb-8 ps-6 lg:pb-3 lg:ps-8">
 							{nest?.map(({ address, title }, index) => (
 								<Link
-									className="flex flex-col justify-center items-start ps-5 text-sm"
+									className="flex flex-col justify-center items-start ps-5 text-sm font-semibold"
 									key={index}
 									href={address}
 								>

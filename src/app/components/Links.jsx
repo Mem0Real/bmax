@@ -7,23 +7,28 @@ import { useIcons } from "./CustomIcons";
 import Link from "next/link";
 
 export default function Links({ sm }) {
-	const { TelegramIcon, FacebookIcon, InstagramIcon, LinkedInIcon } =
-		useIcons();
+	const {
+		TelegramIcon,
+		FacebookIcon,
+		InstagramIcon,
+		LinkedInIcon,
+		TiktokIcon,
+	} = useIcons();
 	let width = sm ? "w-6" : "w-9";
 	let padding = sm ? "p-1" : "p-1.5";
 	let color = sm ? "text-neutral-800" : "text-neutral-200";
 
 	return (
 		<AnimatePresence>
-			<div className="w-56 h-12 flex justify-center items-center gap-6 ps-4">
+			<div className="flex justify-center items-center gap-6 ps-4">
 				<motion.div
 					className={`rounded-full ${width} ${padding} ${color}`}
-					initial={{ backgroundColor: "rgb(255 173 51 / 0.6)" }}
+					initial={{ backgroundColor: "#713b09" }}
 					whileHover={{
 						backgroundColor: "rgb(255 173 51 / 0)",
 						color: "#2563eb",
 					}}
-					exit={{ backgroundColor: "rgb(255 173 51 / 0.6)" }}
+					exit={{ backgroundColor: "#713b09" }}
 					transition={{ ease: "easeInOut", duration: 0.6 }}
 				>
 					<Link
@@ -36,12 +41,12 @@ export default function Links({ sm }) {
 				</motion.div>
 				<motion.div
 					className={`rounded-full ${width} ${padding}`}
-					initial={{ backgroundColor: "rgb(255 173 51 / 0.6)" }}
+					initial={{ backgroundColor: "#713b09" }}
 					whileHover={{
 						backgroundColor: "rgb(255 173 51 / 0)",
 						color: "#2563eb",
 					}}
-					exit={{ backgroundColor: "rgb(255 173 51 / 0.6)" }}
+					exit={{ backgroundColor: "#713b09" }}
 					transition={{ ease: "easeInOut", duration: 0.6 }}
 				>
 					<Link
@@ -55,23 +60,27 @@ export default function Links({ sm }) {
 
 				<motion.div
 					className={`rounded-full ${width} ${padding}`}
-					initial={{ backgroundColor: "rgb(255 173 51 / 0.6)" }}
+					initial={{ backgroundColor: "#713b09" }}
 					whileHover={{
 						backgroundColor: "rgb(255 173 51 / 0)",
 						color: "#f472b6",
 					}}
-					exit={{ backgroundColor: "rgb(255 173 51 / 0.6)" }}
+					exit={{ backgroundColor: "#713b09" }}
 					transition={{ ease: "easeInOut", duration: 0.6 }}
 				>
-					<Link href="https://instagram.com" target="_blank" className="w-6">
+					<Link
+						href="https://instagram.com/bmaxautosolutions?igsh=MWJ6N2xnd3FnYm1rOA%3D%3D&utm_source=gr"
+						target="_blank"
+						className="w-6"
+					>
 						{InstagramIcon}
 					</Link>
 				</motion.div>
 				<motion.div
 					className={`rounded-lg ${width} ${padding}`}
-					initial={{ backgroundColor: "rgb(255 173 51 / 0.6)" }}
+					initial={{ backgroundColor: "#713b09" }}
 					whileHover={{ backgroundColor: "#0077B5", color: "#fff" }}
-					exit={{ backgroundColor: "rgb(255 173 51 / 0.6)" }}
+					exit={{ backgroundColor: "#713b09" }}
 					transition={{ ease: "easeInOut", duration: 0.6 }}
 				>
 					<Link
@@ -80,6 +89,25 @@ export default function Links({ sm }) {
 						className="w-6"
 					>
 						{LinkedInIcon}
+					</Link>
+				</motion.div>
+				<motion.div
+					className={`rounded-lg ${width} ${padding}`}
+					initial={{ backgroundColor: "#713b09" }}
+					whileHover={{
+						backgroundColor: "#000",
+						borderRadius: "5px",
+						color: "#fff",
+					}}
+					exit={{ backgroundColor: "#713b09" }}
+					transition={{ ease: "easeInOut", duration: 0.6 }}
+				>
+					<Link
+						href="https://www.tiktok.com/@bmax.auto.solutio"
+						target="_blank"
+						className="w-6"
+					>
+						{TiktokIcon}
 					</Link>
 				</motion.div>
 			</div>

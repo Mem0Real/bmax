@@ -3,6 +3,19 @@
 import { useIcons } from "@/app/components/CustomIcons";
 import React from "react";
 
+import { Rajdhani, Raleway } from "next/font/google";
+
+const raleway = Raleway({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+const raj = Rajdhani({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+
 export default function IconList() {
 	const {
 		LockIcon,
@@ -60,7 +73,9 @@ export default function IconList() {
 					<h1 className="text-neutral-900 text-lg font-medium uppercase">
 						Telematics Services by Autoronix
 					</h1>
-					<h1 className="text-darkYellow text-3xl font-bold">
+					<h1
+						className={`text-darkYellow text-5xl font-bold text-start md:text-center ${raj.className}`}
+					>
 						Enabling Digital Transformation Across Industries
 					</h1>
 				</div>
@@ -72,8 +87,14 @@ export default function IconList() {
 							className="xl:w-64 flex flex-col justify-center items-center gap-2"
 						>
 							<div className="text-darkYellow w-12">{icon}</div>
-							<h1 className="font-semibold text-lg uppercase">{header}</h1>
-							<p className="text-neutral-400 text-sm px-6 text-center">
+							<h1
+								className={`font-semibold text-lg uppercase ${raj.className}`}
+							>
+								{header}
+							</h1>
+							<p
+								className={`text-center text-base font-medium ${raleway.className}`}
+							>
 								{detail}
 							</p>
 						</div>

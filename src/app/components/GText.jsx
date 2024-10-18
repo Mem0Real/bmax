@@ -134,7 +134,7 @@ export default function GText({ items, autoplayDuration = 8000 }) {
 			))}
 
 			{/* Text */}
-			<div className="z-50 whitespace-nowrap">
+			<div className="z-40 whitespace-nowrap">
 				{visibleItems.map((item, index) => {
 					return (
 						<div
@@ -148,7 +148,7 @@ export default function GText({ items, autoplayDuration = 8000 }) {
 				})}
 			</div>
 			{/* Buttons */}
-			<div className="absolute inset-0 flex justify-between items-center px-2 md:px-8 xl:px-12 w-full z-40">
+			<div className="absolute inset-0 flex justify-between items-center px-2 md:px-8 xl:px-12 w-full z-30">
 				<button
 					onClick={() => handlePrevious()}
 					className="text-blue-400 w-6 md:w-8 lg:w-10 bg-neutral-950 rounded-full"

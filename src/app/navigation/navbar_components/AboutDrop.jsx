@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 export default function AboutDrop() {
 	return (
 		<AnimatePresence>
-			<motion.div className="flex flex-col justify-center items-start w-56 bg-neutral-900 text-neutral-200 font-thin rounded-md lg:py-4">
+			<motion.div className="flex flex-col justify-center items-start w-56 bg-lightestMellow text-black rounded-b-md font-semibold">
 				<motion.div
 					initial={{ opacity: 0.9 }}
 					whileHover={{ opacity: 1 }}
