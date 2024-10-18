@@ -4,11 +4,12 @@ import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { useIcons } from "./CustomIcons";
 
-export default function GText({ items }) {
+export default function GText({ items, autoplayDuration = 5000 }) {
 	const textRefs = useRef([]);
 	const [visibleItems, setVisibleItems] = useState(items[0]);
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const [isFirstLoad, setIsFirstLoad] = useState(true);
+	const autoplayRef = useRef(null);
 
 	const { LeftArrowIcon, RightArrowIcon } = useIcons();
 
@@ -65,6 +66,7 @@ export default function GText({ items }) {
 			// Clear references to prepare for the next set of items
 			textRefs.current = [];
 		});
+		clearInterval(autoplayRef.current);
 	};
 
 	// Handler for the previous button
@@ -75,7 +77,14 @@ export default function GText({ items }) {
 			setCurrentIndex(prevIndex);
 			textRefs.current = [];
 		});
+		clearInterval(autoplayRef.current);
 	};
+
+	// Autoplay functionality
+	useEffect(() => {
+		autoplayRef.current = setInterval(handleNext, autoplayDuration);
+		return () => clearInterval(autoplayRef.current);
+	}, [currentIndex]);
 
 	return (
 		<>
