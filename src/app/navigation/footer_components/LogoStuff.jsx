@@ -1,11 +1,18 @@
 import React from "react";
 import Image from "next/image";
 import Links from "@/app/components/Links";
+import { Rajdhani, Raleway } from "next/font/google";
+
+const raleway = Raleway({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
 
 export default function LogoStuff() {
 	return (
 		<section className="w-full">
-			<div className="flex flex-col justify-stretch items-start gap-2">
+			<div className="flex flex-col justify-stretch items-start gap-2 md:gap-4">
 				<div className="self-start w-[250px] h-[80px] md:w-[288px] md:h-[93px] relative">
 					<Image
 						fill
@@ -16,7 +23,9 @@ export default function LogoStuff() {
 						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 					/>
 				</div>
-				<p className="text-sm pb-6 xl:w-[15rem]">
+				<p
+					className={`self-center text-sm pb-6 xl:w-[15rem] ${raleway.className}`}
+				>
 					Advanced telematics solutions for seamless fleet management. GPS
 					tracking, video telematics, fuel monitoring, and more. Empower your
 					business today. Contact us now.

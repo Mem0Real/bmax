@@ -4,6 +4,20 @@ import React, { useState } from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
 
+import { Rajdhani, Raleway } from "next/font/google";
+
+const raleway = Raleway({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+
+const raj = Rajdhani({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+
 const clientList = [
 	{ id: "Safaricom", source: "safari.png" },
 	{ id: "Jacaranda", source: "jacaranda.png" },
@@ -23,8 +37,12 @@ export default function Clients() {
 	return (
 		<div className="px-6 md:px-12 xl:px-40 w-full min-h-screen bg-neutral-200 text-neutral-900 flex flex-col justify-center items-center gap-16 py-12 pb-20">
 			<div className="flex flex-col justify-center items-center gap-8">
-				<h1 className="text-4xl font-semibold">OUR VALUED CLIENTS</h1>
-				<p className="text-lg text-neutral-900/60 text-center">
+				<h1 className={`text-4xl font-semibold ${raj.className}`}>
+					OUR VALUED CLIENTS
+				</h1>
+				<p
+					className={`text-lg text-neutral-900/90 text-center ${raleway.className}`}
+				>
 					At B-Max Auto Solutions, our commitment to excellence and unwavering
 					dedication to providing top-notch automotive security solutions have
 					allowed us to build strong partnerships with a diverse range of
@@ -66,28 +84,38 @@ export default function Clients() {
 			</div>
 			<div className="flex flex-col xl:flex-row gap-6 xl:gap-12 justify-center items-start">
 				<div className="flex flex-col justify-start items-start">
-					<h1 className="text-2xl font-bold">OUR DIVERSE CLIENTELE</h1>
-					<div className="mt-4 text-lg text-neutral-950">
+					<h1 className={`text-2xl font-bold ${raj.className}`}>
+						OUR DIVERSE CLIENTELE
+					</h1>
+					<div
+						className={`mt-4 text-lg text-neutral-950  ${raleway.className}`}
+					>
 						<p className="pb-6">
 							Our clientele spans across various sectors, including:
 						</p>
 						<ul className="list-disc list-inside space-y-5 lg:space-y-0">
 							<li>
-								<span className="font-medium">Individual Vehicle Owners:</span>
+								<span className="font-semibold">
+									Individual Vehicle Owners:&nbsp;
+								</span>
 								We cater to individuals who seek advanced security solutions for
 								their personal vehicles. Whether it&apos;s GPS tracking, remote
 								immobilization, or alarm systems, we provide personalized
 								security solutions.
 							</li>
 							<li>
-								<span className="font-medium">Commercial Fleet Operators:</span>
+								<span className="font-semibold">
+									Commercial Fleet Operators:&nbsp;
+								</span>
 								B-Max Telematics Limited partners with businesses managing
 								fleets of vehicles. Our comprehensive fleet management solutions
 								enhance security, optimize routes, monitor driver behavior, and
 								ensure operational efficiency.
 							</li>
 							<li>
-								<span className="font-medium">Automotive Manufacturers:</span>
+								<span className="font-semibold">
+									Automotive Manufacturers:&nbsp;
+								</span>
 								We collaborate with automotive manufacturers to integrate
 								cutting-edge security features into their vehicles, ensuring a
 								higher level of safety and protection for end-users.
@@ -96,27 +124,31 @@ export default function Clients() {
 					</div>
 				</div>
 				<div className="flex flex-col justify-start items-start">
-					<h1 className="text-2xl font-bold uppercase">
+					<h1 className={`text-2xl font-bold uppercase ${raj.className}`}>
 						Why Our Clients Choose Us
 					</h1>
 					<div className="mt-4 text-lg text-neutral-950">
-						<ul className="list-disc list-inside space-y-5 lg:space-y-0">
+						<ul
+							className={`list-disc list-inside space-y-5 lg:space-y-0 ${raleway.className}`}
+						>
 							<li>
-								<span className="font-medium">Cutting-edge Technology:</span>
+								<span className="font-semibold">
+									Cutting-edge Technology:&nbsp;
+								</span>
 								Our commitment to staying updated with the latest advancements
 								in automotive security technology ensures that our clients
 								benefit from the most advanced solutions available in the
 								market.
 							</li>
 							<li>
-								<span className="font-medium">Customization:</span>
+								<span className="font-semibold">Customization:&nbsp;</span>
 								We understand that each client&apos;s security needs are unique.
 								Therefore, we offer tailored solutions to precisely match their
 								requirements, ensuring optimal security measures.
 							</li>
 							<li>
-								<span className="font-medium">
-									Exceptional Customer Service:
+								<span className="font-semibold">
+									Exceptional Customer Service:&nbsp;
 								</span>
 								B-Max Auto Solutions prioritizes customer satisfaction. Our
 								dedicated support team ensures a seamless experience for our
