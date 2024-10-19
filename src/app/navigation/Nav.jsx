@@ -154,11 +154,15 @@ export default function Nav() {
 						{SearchIcon}
 					</div>
 				</div>
-				<Search
-					isVisible={isSearchVisible}
-					toggleVisibility={toggleSearchVisibility}
-					linksData={linkData}
-				/>
+				{isSearchVisible && (
+					<span className="absolute">
+						<Search
+							isVisible={isSearchVisible}
+							toggleVisibility={toggleSearchVisibility}
+							linksData={linkData}
+						/>
+					</span>
+				)}
 			</div>
 
 			<Drawer
