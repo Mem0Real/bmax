@@ -77,19 +77,19 @@ export default function SayHello() {
 							</p>
 						</div>
 
-						<div className="flex flex-col gap-2 pr-8">
+						<div className="flex flex-col gap-2">
 							<h1
 								className={`text-2xl font-semibold text-neutral-900 uppercase ${raj.className}`}
 							>
 								Call us
 							</h1>
 							<p
-								className={`text-neutral-900/90 text-base ${raleway.className}`}
+								className={`text-start text-neutral-900/90 text-base ${raleway.className}`}
 							>
 								+251-911 71 77 95
 							</p>
 							<p
-								className={`text-neutral-900/90 text-base ${raleway.className}`}
+								className={`text-start text-neutral-900/90 text-base ${raleway.className}`}
 							>
 								+251-910 40 98 15
 							</p>
