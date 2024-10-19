@@ -11,8 +11,7 @@ import Nav from "./navigation/Nav";
 import ScrollToTopButton from "./components/ScrollToTop";
 import TopLoaderProvider from "./components/TopLoader";
 
-import { raleway } from "@/app/ui/fonts";
-import SlidingData from "./components/home_components/SlidingData";
+// import { raleway } from "@/app/ui/fonts";
 
 export const metadata = {
 	title: "B-Max",
@@ -23,17 +22,14 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<CustomIcons>
-				<body className="text-sm">
+				<body className={` antialiased text-sm`}>
 					<MantineProvider>
 						<Nav />
-						<TopLoaderProvider>
-							<SlidingData />
-							<ScrollToTopButton>
-								<div className={`bg-neutral-100 ${raleway.className}`}>
-									{children}
-								</div>
-							</ScrollToTopButton>
-						</TopLoaderProvider>
+						{/* <TopLoaderProvider> */}
+						{/* <ScrollToTopButton> */}
+						<div className="bg-neutral-100">{children}</div>
+						{/* </ScrollToTopButton> */}
+						{/* </TopLoaderProvider> */}
 					</MantineProvider>
 					<Footer />
 				</body>
