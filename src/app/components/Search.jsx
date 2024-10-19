@@ -30,7 +30,7 @@ const Search = ({ isVisible, toggleVisibility, linksData }) => {
 
 	const filteredLinks = linksData.filter(
 		(link) =>
-			searchTerm.length >= 3 &&
+			searchTerm.length > 0 &&
 			link.title.toLowerCase().includes(searchTerm.toLowerCase())
 	);
 
@@ -173,7 +173,7 @@ const Search = ({ isVisible, toggleVisibility, linksData }) => {
 									{link.title}
 								</Link>
 						  ))
-						: searchTerm.length >= 3 && (
+						: searchTerm.length > 0 && (
 								<li className="text-white text-lg">No results found</li>
 						  )}
 				</ul>
