@@ -14,7 +14,7 @@ import TopLoaderProvider from "./components/TopLoader";
 import { raleway } from "@/app/ui/fonts";
 
 export const metadata = {
-	title: "B-Max Auto",
+	title: "B-Max",
 	description: "Auto Solutions for your vehicle Security",
 };
 
