@@ -28,46 +28,6 @@ export default function SayHello() {
 						>
 							Say Hello!
 						</h1>
-						{/* <form
-							className="h-full w-full px-2 mt-5 flex flex-col gap-4 justify-center items-center"
-							onSubmit={form.onSubmit(console.log("Sub"))}
-						>
-							<div className="flex gap-4 justify-center items-start">
-								<TextInput
-									variant="filled"
-									placeholder="Name"
-									key={form.key("name")}
-									{...form.getInputProps("name")}
-									aria-label="name"
-								/>
-								<TextInput
-									variant="filled"
-									placeholder="Email"
-									key={form.key("email")}
-									{...form.getInputProps("email")}
-									aria-label="email"
-								/>
-							</div>
-							<div className="w-full">
-								<Textarea
-									variant="filled"
-									size="sm"
-									radius="md"
-									placeholder="Message"
-									key={form.key("message")}
-									{...form.getInputProps("message")}
-									aria-label="message"
-									// inputSize="xl"
-									style={{
-										"--radius": "0rem",
-										borderRadius: "var(--radius)",
-									}}
-								/>
-							</div>
-							<Button type="submit" mt="sm">
-								Submit
-							</Button>
-						</form> */}
 						<form
 							action=""
 							className="h-full w-full px-2 mt-5 flex flex-col gap-4 justify-center items-center"
@@ -97,7 +57,7 @@ export default function SayHello() {
 									}}
 									className="px-6 py-2 border border-mellow text-mellow font-bold cursor-pointer uppercase"
 								>
-									Send _
+									Send
 								</motion.h1>
 							</div>
 						</form>

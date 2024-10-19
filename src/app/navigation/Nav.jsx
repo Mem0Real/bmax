@@ -17,6 +17,9 @@ import { Drawer } from "@mantine/core";
 
 import { useDisclosure, useMediaQuery } from "@mantine/hooks";
 
+import Search from "../components/Search";
+import { linkData } from "@/data/links";
+
 const raj = Rajdhani({
 	weight: ["300", "400", "500", "700"],
 	style: ["normal"],
@@ -26,7 +29,7 @@ const raj = Rajdhani({
 export default function Nav() {
 	const [drop, setDrop] = useState("");
 	const [nest, setNest] = useState([]);
-	const [currentPath, setCurrentPath] = useState("");
+	const [isSearchVisible, setIsSearchVisible] = useState(false);
 
 	const [opened, { open, close }] = useDisclosure(false);
 	const { RightIcon, LeftIcon, CloseIcon, BarIcon, SearchIcon } = useIcons();
@@ -64,13 +67,17 @@ export default function Nav() {
 		});
 	};
 
+	const toggleSearchVisibility = () => {
+		setIsSearchVisible((prev) => !prev);
+	};
+
 	useEffect(() => {
 		if (matches) close();
 	}, [matches, close]);
 
 	return (
 		<>
-			<div className="w-full bg-lightestMellow text-neutral-900 px-4 lg:px-16 xl:px-40 py-2 flex items-center justify-between flex-wrap">
+			<div className="relaitve w-full bg-lightestMellow text-neutral-900 px-4 lg:px-16 xl:px-40 py-2 flex items-center justify-between flex-wrap">
 				<Link
 					className="relative flex flex-col justify-center items-center w-[125px] h-[40px] -mt-1"
 					href="/"
@@ -127,6 +134,12 @@ export default function Nav() {
 							</motion.span>
 						);
 					})}
+					<button
+						onClick={toggleSearchVisibility}
+						className="search-button p-2"
+					>
+						{SearchIcon}
+					</button>
 				</motion.div>
 				{/* Small screen */}
 				<div className="lg:hidden flex justify-center items-center gap-4">
@@ -134,8 +147,22 @@ export default function Nav() {
 					<motion.div onTap={open} className="w-8 text-neutral-900">
 						{BarIcon}
 					</motion.div>
-					<div className="w-8 text-neutral-900">{SearchIcon}</div>
+					<div
+						className="w-8 text-neutral-900"
+						onClick={toggleSearchVisibility}
+					>
+						{SearchIcon}
+					</div>
 				</div>
+				{isSearchVisible && (
+					<span className="absolute">
+						<Search
+							isVisible={isSearchVisible}
+							toggleVisibility={toggleSearchVisibility}
+							linksData={linkData}
+						/>
+					</span>
+				)}
 			</div>
 
 			<Drawer
