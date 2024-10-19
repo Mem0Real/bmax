@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-import { raj } from "@/app/ui/fonts";
+// import { raj } from "@/app/ui/fonts";
 
 import GText from "../GText";
 
@@ -16,7 +16,7 @@ const BigText = ({ children }) => (
 const BottomLink = ({ href, children }) => (
 	<Link
 		href={href}
-		className={`bg-neutral-900 text-neutral-200 px-4 py-2 rounded-md mt-6 inline-block ${raj.className}`}
+		className={`bg-neutral-900 text-neutral-200 px-4 py-2 rounded-md mt-6 inline-block`}
 	>
 		{children}
 	</Link>
