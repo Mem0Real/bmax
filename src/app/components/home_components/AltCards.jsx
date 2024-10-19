@@ -149,7 +149,9 @@ export default function AltCards() {
 									transition={{ delay: 0.2 }}
 								>
 									<div className="self-start flex flex-col gap-2">
-										<h2 className=" text-lg font-semibold">{smallTitle}</h2>
+										<h2 className={`text-lg font-medium ${raleway.className}`}>
+											{smallTitle}
+										</h2>
 										<h2
 											className={`text-darkYellow text-5xl md:text-6xl font-bold ${raj.className}`}
 										>

@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 import { Rajdhani } from "next/font/google";
 
@@ -17,22 +16,6 @@ import Image from "next/image";
 import { Drawer } from "@mantine/core";
 
 import { useDisclosure, useMediaQuery } from "@mantine/hooks";
-
-const navData = [
-	{ title: "Home", address: "/" },
-	{ title: "About Us", address: "/about", dropData: <AboutDrop /> },
-	{
-		title: "Solutions",
-		address: "/key-replacement",
-		dropData: <SolutionDrop />,
-	},
-	{
-		title: "Industries",
-		address: "/transport-industry",
-		dropData: <IndustryDrop />,
-	},
-	{ title: "Contact Us", address: "/contact" },
-];
 
 const raj = Rajdhani({
 	weight: ["300", "400", "500", "700"],
@@ -49,7 +32,26 @@ export default function Nav() {
 	const { RightIcon, LeftIcon, CloseIcon, BarIcon, SearchIcon } = useIcons();
 
 	const matches = useMediaQuery("(min-width: 1024px)");
-	const pathname = usePathname();
+
+	const navData = [
+		{ title: "Home", address: "/" },
+		{
+			title: "About Us",
+			address: "/about",
+			dropData: <AboutDrop close={close} />,
+		},
+		{
+			title: "Solutions",
+			address: "/key-replacement",
+			dropData: <SolutionDrop close={close} />,
+		},
+		{
+			title: "Industries",
+			address: "/transport-industry",
+			dropData: <IndustryDrop close={close} />,
+		},
+		{ title: "Contact Us", address: "/contact" },
+	];
 
 	const toggleNest = (title) => {
 		setNest((prevNest) => {
@@ -66,20 +68,15 @@ export default function Nav() {
 		if (matches) close();
 	}, [matches, close]);
 
-	useEffect(() => {
-		if (!currentPath) setCurrentPath(pathname);
-		else if (currentPath !== pathname) setTimeout(() => close(), 200);
-	}, [pathname]);
-
 	return (
 		<>
 			<div className="w-full bg-lightestMellow text-neutral-900 px-4 lg:px-16 xl:px-40 py-2 flex items-center justify-between flex-wrap">
 				<Link
-					className="relative flex flex-col justify-center items-center w-44 h-16 md:w-72 md:h-20 xl:-mb-5"
+					className="relative flex flex-col justify-center items-center w-[125px] h-[40px] -mt-1"
 					href="/"
 				>
 					<Image
-						src="/images/logo2.png"
+						src="/images/logo3.png"
 						alt="B-Max"
 						fill
 						priority
@@ -178,7 +175,7 @@ export default function Nav() {
 								<div className="w-full flex justify-between items-center">
 									<Link
 										href={address}
-										className="text-base lg:text-lg font-semibold"
+										className="text-base lg:text-xl font-semibold"
 									>
 										{title}
 									</Link>

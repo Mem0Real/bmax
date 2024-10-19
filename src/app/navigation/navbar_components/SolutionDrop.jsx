@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useIcons } from "@/app/components/CustomIcons";
 
-export default function SolutionDrop() {
+export default function SolutionDrop({ close }) {
 	const { LockIcon, FleetIcon, TrackingIcon, FuelIcon, VideoIcon } = useIcons();
 
 	const dropMenuData = [
@@ -80,6 +80,7 @@ export default function SolutionDrop() {
 									className="flex flex-col justify-center items-start ps-5 text-sm font-semibold"
 									key={index}
 									href={address}
+									onClick={close}
 								>
 									{title}
 								</Link>

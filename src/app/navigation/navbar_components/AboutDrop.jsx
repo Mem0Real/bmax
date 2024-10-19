@@ -2,11 +2,18 @@ import Link from "next/link";
 import React from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
+import { Raleway } from "next/font/google";
 
+const raleway = Raleway({
+	weight: ["400", "500", "600", "700"],
+	subsets: ["latin"],
+});
 export default function AboutDrop() {
 	return (
 		<AnimatePresence>
-			<motion.div className="flex flex-col justify-center items-start w-56 bg-lightestMellow text-black rounded-b-md font-semibold">
+			<motion.div
+				className={`flex flex-col justify-center items-start w-56 bg-lightestMellow text-black rounded-b-md font-medium ${raleway.className} antialiased`}
+			>
 				<motion.div
 					initial={{ opacity: 0.9 }}
 					whileHover={{ opacity: 1 }}

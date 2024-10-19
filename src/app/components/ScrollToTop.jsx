@@ -21,7 +21,7 @@ export default function ScrollToTopButton({ children }) {
 		return scrollYProgress.on("change", (latestValue) => {
 			if (latestValue > 0.02) {
 				controls.start("show");
-				if (latestValue >= 0.95) {
+				if (latestValue >= 0.99) {
 					setLift(true);
 				} else setLift(false);
 			} else {
@@ -30,7 +30,7 @@ export default function ScrollToTopButton({ children }) {
 		});
 	});
 
-	const { TopArrowIcon } = useIcons();
+	const { TopCircleIcon } = useIcons();
 
 	const scrollVariants = {
 		hide: { opacity: 0, transition: { duration: 0.3 } },
@@ -43,14 +43,14 @@ export default function ScrollToTopButton({ children }) {
 			<div className="relative">
 				<motion.button
 					className={`fixed ${
-						lift ? "bottom-12" : "bottom-0"
-					} right-0 p-5 text-blue-700 dark:text-blue-500 text-5xl transition-all ease-in-out duration-200 z-20`}
+						lift ? "bottom-28" : "bottom-5"
+					} right-4 text-mellow text-xl transition-all ease-in-out duration-200 z-20 w-10`}
 					variants={scrollVariants}
 					initial="hide"
 					animate={controls}
 					onClick={scrollToTop}
 				>
-					{TopArrowIcon}
+					{TopCircleIcon}
 				</motion.button>
 			</div>
 		</>

@@ -9,7 +9,9 @@ import "@mantine/carousel/styles.css";
 
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import Nav from "./navigation/Nav";
+
 import ScrollToTopButton from "./components/ScrollToTop";
+import TopLoaderProvider from "./components/TopLoader";
 
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
@@ -36,7 +38,9 @@ export default function RootLayout({ children }) {
 				>
 					<MantineProvider>
 						<Nav />
-						<ScrollToTopButton>{children}</ScrollToTopButton>
+						<TopLoaderProvider>
+							<ScrollToTopButton>{children}</ScrollToTopButton>
+						</TopLoaderProvider>
 					</MantineProvider>
 					<Footer />
 				</body>

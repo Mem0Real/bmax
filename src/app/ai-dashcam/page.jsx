@@ -127,7 +127,7 @@ export default function Page() {
 						{aiDashData.headerText2.header}
 					</h1>
 					<p
-						className={`text-base text-neutral-950/90 w-[90%] md:w-[60%] lg:w-auto text-center lg:text-balance ${raleway.className}`}
+						className={`text-base text-neutral-950/90 w-[90%] md:w-[60%] lg:w-auto text-start lg:text-balance ${raleway.className}`}
 					>
 						{aiDashData.headerText2.text}
 					</p>
@@ -144,14 +144,14 @@ export default function Page() {
 						{aiDashData.headerText3.header}
 					</h1>
 					<p
-						className={`px-6 xl:px-16 text-base text-neutral-950/90 w-[90%] md:w-[60%] lg:w-auto text-center ${raleway.className}`}
+						className={`px-6 xl:px-16 text-base text-neutral-950/90 w-[90%] md:w-[60%] lg:w-auto text-start ${raleway.className}`}
 					>
 						{aiDashData.headerText3.text}
 					</p>
 				</div>
 				{/* tabular data */}
 				<div className="w-full px-4 xl:px-40 flex justify-evenly items-start flex-wrap gap-y-12">
-					<div className="flex flex-col justify-start items-center gap-8 max-w-[20rem] lg:min-w-[30rem] lg:max-w-[30rem] min-h-[35rem]">
+					<div className="flex flex-col justify-start items-center gap-8 max-w-full lg:min-w-[30rem] lg:max-w-[30rem] min-h-[35rem]">
 						<div
 							className={`text-3xl md:text-5xl font-bold uppercase text-center self-center ${raj.className}`}
 						>
@@ -159,7 +159,7 @@ export default function Page() {
 						</div>
 						<GenerateTable body={body1} />
 					</div>
-					<div className="flex flex-col justify-start items-center gap-8 max-w-[20rem] lg:min-w-[30rem] lg:max-w-[30rem] min-h-[35rem]">
+					<div className="flex flex-col justify-start items-center gap-8 max-w-full lg:min-w-[30rem] lg:max-w-[30rem] min-h-[35rem]">
 						<div
 							className={`text-3xl md:text-5xl font-bold uppercase text-center self-center ${raj.className}`}
 						>
@@ -167,7 +167,7 @@ export default function Page() {
 						</div>
 						<GenerateTable body={body2} />
 					</div>
-					<div className="flex flex-col justify-start items-center gap-8 max-w-[20rem] lg:min-w-[30rem] lg:max-w-[30rem] min-h-[35rem]">
+					<div className="flex flex-col justify-start items-center gap-8 max-w-full lg:min-w-[30rem] lg:max-w-[30rem] min-h-[35rem]">
 						<div
 							className={`text-3xl md:text-5xl font-bold uppercase text-center self-center ${raj.className}`}
 						>
@@ -175,7 +175,7 @@ export default function Page() {
 						</div>
 						<GenerateTable body={body3} />
 					</div>
-					<div className="flex flex-col justify-start items-center gap-8 max-w-[20rem] lg:min-w-[30rem] lg:max-w-[30rem] min-h-[35rem]">
+					<div className="flex flex-col justify-start items-center gap-8 max-w-full lg:min-w-[30rem] lg:max-w-[30rem] min-h-[35rem]">
 						<div
 							className={`text-3xl md:text-5xl font-bold uppercase text-center self-center ${raj.className}`}
 						>

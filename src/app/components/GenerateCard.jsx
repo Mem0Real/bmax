@@ -28,7 +28,7 @@ export default function GenerateCard({ icons, data, size }) {
 		>
 			<div className="w-8 lg:w-12 text-mellow">{icons[index]}</div>
 			<div
-				className={`text-sm md:text-lg lg:text-2xl font-semibold text-mellow ${raj.className}`}
+				className={`text-lg md:text-lg lg:text-2xl font-semibold text-mellow ${raj.className}`}
 			>
 				{header}
 			</div>

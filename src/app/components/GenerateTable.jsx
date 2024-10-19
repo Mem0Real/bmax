@@ -19,7 +19,7 @@ export default function GenerateTable({ body }) {
 	return (
 		<Table>
 			<Table.Thead>
-				<Table.Tr className={raj.className}>
+				<Table.Tr className={`w-fit px-40 ${raj.className}`}>
 					<Table.Th>Specification</Table.Th>
 					<Table.Th>Details</Table.Th>
 				</Table.Tr>

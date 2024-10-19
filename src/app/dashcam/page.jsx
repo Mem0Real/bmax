@@ -74,7 +74,7 @@ export default function Page() {
 						{dashcamData.headerText.header}
 					</h1>
 					<p
-						className={`text-base text-neutral-950/90 w-[90%] md:w-[60%] lg:w-auto text-center lg:text-balance ${raleway.className}`}
+						className={`text-base text-neutral-950/90 w-[90%] md:w-[60%] lg:w-auto text-start lg:text-balance ${raleway.className}`}
 					>
 						{dashcamData.headerText.text}
 					</p>

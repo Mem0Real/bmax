@@ -51,10 +51,7 @@ export default function AlternateText({
 						className={`flex flex-col justify-center items-center gap-8 ${raleway.className}`}
 					>
 						{detail?.map((text, index) => (
-							<p
-								key={index}
-								className="text-neutral-900 text-lg text-center md:text-start"
-							>
+							<p key={index} className="text-neutral-900 text-lg text-start">
 								{text}
 							</p>
 						))}
@@ -64,10 +61,7 @@ export default function AlternateText({
 						className={`flex flex-col justify-center items-center gap-8 ${raleway.className}`}
 					>
 						{detail?.map((text, index) => (
-							<p
-								key={index}
-								className="text-neutral-200 text-lg text-start md:text-start"
-							>
+							<p key={index} className="text-neutral-200 text-lg text-start">
 								{text}
 							</p>
 						))}
