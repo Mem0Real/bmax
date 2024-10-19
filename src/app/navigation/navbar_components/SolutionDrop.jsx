@@ -5,11 +5,12 @@ import Link from "next/link";
 import { useIcons } from "@/app/components/CustomIcons";
 
 export default function SolutionDrop({ close }) {
-	const { LockIcon, FleetIcon, TrackingIcon, FuelIcon, VideoIcon } = useIcons();
+	const { NewKeyIcon, FleetIcon, TrackingIcon, FuelIcon, VideoIcon } =
+		useIcons();
 
 	const dropMenuData = [
 		{
-			icon: LockIcon,
+			icon: NewKeyIcon,
 			header: "Auto Locksmith Services",
 			nest: [
 				{ title: "Car Key Replacement", address: "/key-replacement" },
@@ -71,7 +72,7 @@ export default function SolutionDrop({ close }) {
 						className="flex flex-col justify-center items-start gap-4 lg:gap-2"
 					>
 						<div className="flex gap-4 items-center w-full ps-2 lg:px-6 lg:pb-3">
-							<div className="w-8 text-mellow">{icon}</div>
+							<div className="w-10 text-mellow">{icon}</div>
 							<div className="text-lg font-bold">{header}</div>
 						</div>
 						<div className="flex flex-col justify-center items-start gap-4 pb-8 ps-6 lg:pb-3 lg:ps-8">

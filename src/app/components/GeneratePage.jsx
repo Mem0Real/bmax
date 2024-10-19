@@ -21,7 +21,13 @@ const raj = Rajdhani({
 	subsets: ["latin"],
 });
 
-export default function GeneratePage({ data, bgImage, noExtra, type = "jpg" }) {
+export default function GeneratePage({
+	data,
+	bgImage,
+	noExtra,
+	type = "jpg",
+	sm = false,
+}) {
 	return (
 		<div
 			className={`min-h-[90vh] my-auto flex flex-col justify-center items-center text-neutral-950 gap-10 md:gap-12 lg:gap-16 ${
@@ -29,29 +35,14 @@ export default function GeneratePage({ data, bgImage, noExtra, type = "jpg" }) {
 			}`}
 		>
 			{!bgImage ? (
-				<div className="px-4 xl:px-48 w-full flex flex-col md:flex-row justify-center items-center pt-8 md:py-2 gap-4 md:gap-8">
-					<div className="basis-[40%] flex flex-col justify-center items-center md:items-start gap-4 md:gap-8">
-						<h1
-							className={`text-3xl md:text-6xl text-darkYellow font-bold uppercase text-center md:text-start ${raj.className}`}
-						>
-							{data.landing.header}
-						</h1>
-						<p className={`text-lg text-neutral-950/90 ${raleway.className}`}>
-							{data.landing.text}
-						</p>
-					</div>
+				<Alternating>
+					<AlternateText
+						header={data.landing.header}
+						detail={data.landing.text}
+					/>
 
-					<div className="md:basis-[60%] relative w-full h-[20rem] md:h-[25rem] lg:h-[30rem]">
-						<Image
-							src={`/images/${data.location}/landing.${type}`}
-							fill
-							className="object-fill md:object-contain object-center absolute"
-							alt={data.location}
-							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-							priority
-						/>
-					</div>
-				</div>
+					<AlternateImage img={`${data.location}/landing.${type}`} sm />
+				</Alternating>
 			) : (
 				<div
 					className="w-full min-h-[30rem] lg:min-h-[35rem] xl:min-h-[40rem] bg-fixed bg-cover lg:bg-auto bg-center bg-no-repeat grid md:grid-cols-2 lg:grid-cols-3 grid-flow-row lg:gap-12 justify-end place-content-around"

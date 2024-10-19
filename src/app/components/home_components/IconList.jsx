@@ -18,7 +18,7 @@ const raj = Rajdhani({
 
 export default function IconList() {
 	const {
-		LockIcon,
+		NewKeyIcon,
 		FleetIcon,
 		TrackingIcon,
 		AlarmIcon,
@@ -28,7 +28,7 @@ export default function IconList() {
 
 	const listData = [
 		{
-			icon: LockIcon,
+			icon: NewKeyIcon,
 			header: "Auto Locksmiths",
 			detail:
 				"Reliable and efficient auto locksmith services for key replacement, programming, and repairs.",

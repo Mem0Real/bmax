@@ -77,7 +77,7 @@ export default function Nav() {
 
 	return (
 		<>
-			<div className="relaitve w-full bg-lightestMellow text-neutral-900 px-4 lg:px-16 xl:px-40 py-2 flex items-center justify-between flex-wrap">
+			<div className="relaitve w-full bg-lightestMellow text-neutral-900 px-4 lg:px-16 xl:px-40 py-4 flex items-center justify-between flex-wrap">
 				<Link
 					className="relative flex flex-col justify-center items-center w-[125px] h-[40px] -mt-1"
 					href="/"
@@ -104,9 +104,11 @@ export default function Nav() {
 								<motion.div
 									className={`flex items-center gap-1 ${raj.className}`}
 								>
-									<Link href={address}>{title}</Link>
+									<Link href={address} className="text-lg">
+										{title}
+									</Link>
 									<motion.span
-										className="cursor-pointer w-5 text-darkestMellow"
+										className="cursor-pointer w-5 text-black"
 										initial={{ rotate: 0 }}
 										animate={drop === title ? { rotate: 90 } : { rotate: 0 }}
 										transition={{ ease: easeInOut }}
@@ -136,7 +138,7 @@ export default function Nav() {
 					})}
 					<button
 						onClick={toggleSearchVisibility}
-						className="search-button p-2"
+						className="search-button w-5 -mt-1"
 					>
 						{SearchIcon}
 					</button>
@@ -148,7 +150,7 @@ export default function Nav() {
 						{BarIcon}
 					</motion.div>
 					<div
-						className="w-8 text-neutral-900"
+						className="w-6 text-neutral-900"
 						onClick={toggleSearchVisibility}
 					>
 						{SearchIcon}
@@ -202,7 +204,7 @@ export default function Nav() {
 								<div className="w-full flex justify-between items-center">
 									<Link
 										href={address}
-										className="text-base lg:text-xl font-semibold"
+										className="text-lg lg:text-xl font-semibold"
 									>
 										{title}
 									</Link>
@@ -212,7 +214,7 @@ export default function Nav() {
 											nest.includes(title) ? { rotate: 90 } : { rotate: -90 }
 										}
 										transition={{ ease: easeInOut }}
-										className="w-6 text-darkestMellow"
+										className="w-6 text-black"
 									>
 										{dropData && LeftIcon}
 									</motion.button>

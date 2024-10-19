@@ -60,7 +60,7 @@ export default function GText({ items, autoplayDuration = 8000 }) {
 			opacity: 1,
 			duration: 0.5,
 			onStart: () => {
-				nextVideo.play(); // Play the next video when starting the fade in
+				nextVideo?.play(); // Play the next video when starting the fade in
 			},
 		});
 	};

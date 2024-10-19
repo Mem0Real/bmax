@@ -125,7 +125,6 @@ export default function CustomIcons({ children }) {
 	const SearchIcon = (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			height="16"
 			fill="currentColor"
 			className="bi bi-search"
 			viewBox="0 0 16 16"
@@ -204,49 +203,55 @@ export default function CustomIcons({ children }) {
 			aria-hidden="true"
 			xmlns="http://www.w3.org/2000/svg"
 			fill="none"
-			viewBox="0 0 24 24"
+			viewBox="0 0 24 20"
 			stroke="currentColor"
 			strokeLinecap="round"
 			strokeLinejoin="round"
-			strokeWidth="1.5"
+			clipRule="evenodd"
+			strokeWidth="2"
 		>
 			<path d="M13 7h6l2 4m-8-4v8m0-8V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v9h2m8 0H9m4 0h2m4 0h2v-4m0 0h-5m3.5 5.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm-10 0a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" />
 		</svg>
 	);
 	const TrackingIcon = (
-		<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<svg
+			viewBox="0 0 24 24"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+			strokeWidth="2"
+		>
 			<path
 				d="M20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z"
 				stroke="currentColor"
-				strokeWidth="1.5"
+				strokeWidth="2"
 			></path>
 			<path
 				d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
 				stroke="currentColor"
-				strokeWidth="1.5"
+				strokeWidth="2"
 			></path>
 			<path
 				d="M2 12L4 12"
 				stroke="currentColor"
-				strokeWidth="1.5"
+				strokeWidth="2"
 				strokeLinecap="round"
 			></path>
 			<path
 				d="M20 12L22 12"
 				stroke="currentColor"
-				strokeWidth="1.5"
+				strokeWidth="2"
 				strokeLinecap="round"
 			></path>
 			<path
 				d="M12 4V2"
 				stroke="currentColor"
-				strokeWidth="1.5"
+				strokeWidth="2"
 				strokeLinecap="round"
 			></path>
 			<path
 				d="M12 22V20"
 				stroke="currentColor"
-				strokeWidth="1.5"
+				strokeWidth="2"
 				strokeLinecap="round"
 			></path>
 		</svg>
@@ -309,6 +314,7 @@ export default function CustomIcons({ children }) {
 			viewBox="0 0 14 14"
 			fill="none"
 			stroke="currentColor"
+			strokeWidth="1.4"
 		>
 			<path d="m 10.78125,0 -0.625,0.71875 1.1875,1.09375 c 0.03621,0.036212 0.0856,0.084693 0.125,0.125 l -0.25,0.28125 C 10.818532,2.6189681 11.105689,3.1369332 11.25,3.28125 L 12,4.03125 12,10 c 0,1 -0.392136,1 -0.5,1 C 11.392136,11 11,11 11,10 L 11,6 C 11,4.7190916 10,4 9,4 L 9,2 C 9,1.4486964 8.575273,1 8,1 L 2,1 C 1.400757,1 1,1.4247267 1,2 l 0,12 8,0 0,-9 c 0,0 1,0 1,1 l 0,4 c 0,2 1.239698,2 1.5,2 0.275652,0 1.5,0 1.5,-2 L 13,3 C 13,2 12.713983,1.7907839 12.375,1.46875 L 10.78125,0 z M 2,3 8,3 8,6 2,6 2,3 z"></path>
 		</svg>
@@ -359,6 +365,7 @@ export default function CustomIcons({ children }) {
 			viewBox="0 0 24 24"
 			fill="none"
 			stroke="currentColor"
+			strokeWidth="2"
 		>
 			<path d="M4 11c-2.21 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm10 2c.702 0 1.373-.127 2-.35v6.35c0 1.104-.896 2-2 2h-10c-1.104 0-2-.896-2-2v-6.35c.627.223 1.298.35 2 .35 2.084 0 3.924-1.068 5-2.687 1.076 1.619 2.916 2.687 5 2.687zm4 1v4l6 3v-10l-6 3zm-4-11c-2.209 0-4 1.791-4 4s1.791 4 4 4 4-1.791 4-4-1.791-4-4-4z" />
 		</svg>
@@ -384,12 +391,12 @@ export default function CustomIcons({ children }) {
 			xmlns="http://www.w3.org/2000/svg"
 			fill="none"
 			viewBox="0 0 24 24"
+			strokeWidth="2"
 		>
 			<path
 				stroke="currentColor"
 				strokeLinecap="round"
 				strokeLinejoin="round"
-				strokeWidth="1.5"
 				d="M12 5.464V3.099m0 2.365a5.338 5.338 0 0 1 5.133 5.368v1.8c0 2.386 1.867 2.982 1.867 4.175C19 17.4 19 18 18.462 18H5.538C5 18 5 17.4 5 16.807c0-1.193 1.867-1.789 1.867-4.175v-1.8A5.338 5.338 0 0 1 12 5.464ZM6 5 5 4M4 9H3m15-4 1-1m1 5h1M8.54 18a3.48 3.48 0 0 0 6.92 0H8.54Z"
 			/>
 		</svg>
@@ -405,7 +412,7 @@ export default function CustomIcons({ children }) {
 				stroke="currentColor"
 				strokeLinecap="round"
 				strokeLinejoin="round"
-				strokeWidth="1.5"
+				strokeWidth="2"
 				d="M12 14v3m-3-6V7a3 3 0 1 1 6 0v4m-8 0h10a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1Z"
 			/>
 		</svg>
@@ -1235,6 +1242,44 @@ export default function CustomIcons({ children }) {
 			/>
 		</svg>
 	);
+	const NewKeyIcon = (
+		// <svg
+		// 	xmlns="http://www.w3.org/2000/svg"
+		// 	viewBox="0 0 38 60"
+		// 	fill="none"
+		// 	stroke="currentColor"
+		// 	strokeWidth="2"
+		// 	clipRule="evenodd"
+		// 	fillRule="evenodd"
+		// 	strokeLinejoin="round"
+		// >
+		// 	<path d="M9,13c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S11.206,13,9,13z M9,7C7.897,7,7,7.897,7,9s0.897,2,2,2s2-0.897,2-2 S10.103,7,9,7z" />
+		// 	<path d="M25,38H14c-1.654,0-3-1.346-3-3s1.346-3,3-3h11c1.654,0,3,1.346,3,3S26.654,38,25,38z M14,34c-0.552,0-1,0.449-1,1 s0.448,1,1,1h11c0.552,0,1-0.449,1-1s-0.448-1-1-1H14z" />
+		// 	<path d="M23,56h-8c-4.963,0-9-4.038-9-9V35c0-0.552,0.448-1,1-1h5c0.552,0,1,0.448,1,1c0,0.551,0.448,1,1,1h11c0.552,0,1-0.449,1-1 c0-0.552,0.448-1,1-1h4c0.552,0,1,0.448,1,1v12C32,51.962,27.963,56,23,56z M8,36v11c0,3.86,3.14,7,7,7h8c3.86,0,7-3.14,7-7V36 h-2.171c-0.413,1.164-1.525,2-2.829,2H14c-1.304,0-2.416-0.836-2.829-2H8z" />
+		// 	<path d="M31,36h-4c-0.552,0-1-0.448-1-1c0-0.551-0.448-1-1-1H14c-0.552,0-1,0.449-1,1c0,0.552-0.448,1-1,1H7c-0.552,0-1-0.448-1-1 V23c0-4.962,4.037-9,9-9h8c4.963,0,9,4.038,9,9v12C32,35.552,31.552,36,31,36z M27.829,34H30V23c0-3.86-3.14-7-7-7h-8 c-3.86,0-7,3.14-7,7v11h3.171c0.413-1.164,1.525-2,2.829-2h11C26.304,32,27.416,32.836,27.829,34z" />
+		// 	<path d="M23,26h-8c-0.552,0-1-0.448-1-1s0.448-1,1-1h8c0.552,0,1,0.448,1,1S23.552,26,23,26z" />
+		// 	<path d="M23,46h-8c-0.552,0-1-0.448-1-1s0.448-1,1-1h8c0.552,0,1,0.448,1,1S23.552,46,23,46z" />
+		// 	<path d="M19,30c-0.552,0-1-0.448-1-1v-8c0-0.552,0.448-1,1-1s1,0.448,1,1v8C20,29.552,19.552,30,19,30z" />
+		// </svg>
+		<svg
+			id="Icons"
+			viewBox="0 0 60 60"
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			stroke="currentColor"
+			strokeWidth="2"
+		>
+			<path d="m15 49a11.013 11.013 0 0 0 11 11h8a11.013 11.013 0 0 0 11-11v-19a11.013 11.013 0 0 0 -11-11h-8a11.013 11.013 0 0 0 -11 11zm2-19a9.01 9.01 0 0 1 9-9h8a9.01 9.01 0 0 1 9 9v19a9.01 9.01 0 0 1 -9 9h-8a9.01 9.01 0 0 1 -9-9z" />
+			<path d="m30 41a8 8 0 1 0 -8-8 8.009 8.009 0 0 0 8 8zm0-14a6 6 0 1 1 -6 6 6.006 6.006 0 0 1 6-6z" />
+			<path d="m33 45h-6a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2z" />
+			<path d="m33 49h-6a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2z" />
+			<path d="m33 53h-6a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2z" />
+			<path d="m22.005 15.288a1 1 0 0 0 1.4 1.424 9.365 9.365 0 0 1 13.182 0 1 1 0 0 0 1.4-1.424 11.364 11.364 0 0 0 -15.99 0z" />
+			<path d="m41.045 12a1 1 0 0 0 .643-1.768 18.256 18.256 0 0 0 -23.376 0 1 1 0 0 0 1.288 1.536 16.247 16.247 0 0 1 20.808 0 1 1 0 0 0 .637.232z" />
+			<path d="m45.609 5.307a25.608 25.608 0 0 0 -31.218 0 1 1 0 1 0 1.218 1.586 23.609 23.609 0 0 1 28.782 0 1 1 0 0 0 1.218-1.586z" />
+		</svg>
+	);
+
 	return (
 		<IconsContext.Provider
 			value={{
@@ -1316,6 +1361,7 @@ export default function CustomIcons({ children }) {
 				TiktokIcon,
 				TopIcon,
 				TopCircleIcon,
+				NewKeyIcon,
 			}}
 		>
 			{children}

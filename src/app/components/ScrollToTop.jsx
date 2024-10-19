@@ -40,7 +40,7 @@ export default function ScrollToTopButton({ children }) {
 	return (
 		<>
 			{children}
-			<div className="relative">
+			<div className="relative bg-neutral-100">
 				<motion.button
 					className={`fixed ${
 						lift ? "bottom-28" : "bottom-5"
