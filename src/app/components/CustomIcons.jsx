@@ -205,114 +205,112 @@ export default function CustomIcons({ children }) {
 			xmlns="http://www.w3.org/2000/svg"
 			fill="none"
 			viewBox="0 0 24 24"
+			stroke="currentColor"
+			strokeLinecap="round"
+			strokeLinejoin="round"
+			strokeWidth="1.5"
 		>
-			<path
-				stroke="currentColor"
-				strokeLinecap="round"
-				strokeLinejoin="round"
-				strokeWidth="1.5"
-				d="M13 7h6l2 4m-8-4v8m0-8V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v9h2m8 0H9m4 0h2m4 0h2v-4m0 0h-5m3.5 5.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm-10 0a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"
-			/>
+			<path d="M13 7h6l2 4m-8-4v8m0-8V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v9h2m8 0H9m4 0h2m4 0h2v-4m0 0h-5m3.5 5.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm-10 0a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" />
 		</svg>
 	);
 	const TrackingIcon = (
 		<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-			<g
-				id="SVGRepo_tracerCarrier"
+			<path
+				d="M20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z"
+				stroke="currentColor"
+				strokeWidth="1.5"
+			></path>
+			<path
+				d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
+				stroke="currentColor"
+				strokeWidth="1.5"
+			></path>
+			<path
+				d="M2 12L4 12"
+				stroke="currentColor"
+				strokeWidth="1.5"
 				strokeLinecap="round"
-				strokeLinejoin="round"
-			></g>
-			<g id="SVGRepo_iconCarrier">
-				<path
-					d="M20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z"
-					stroke="currentColor"
-					strokeWidth="1.5"
-				></path>
-				<path
-					d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
-					stroke="currentColor"
-					strokeWidth="1.5"
-				></path>
-				<path
-					d="M2 12L4 12"
-					stroke="currentColor"
-					strokeWidth="1.5"
-					strokeLinecap="round"
-				></path>
-				<path
-					d="M20 12L22 12"
-					stroke="currentColor"
-					strokeWidth="1.5"
-					strokeLinecap="round"
-				></path>
-				<path
-					d="M12 4V2"
-					stroke="currentColor"
-					strokeWidth="1.5"
-					strokeLinecap="round"
-				></path>
-				<path
-					d="M12 22V20"
-					stroke="currentColor"
-					strokeWidth="1.5"
-					strokeLinecap="round"
-				></path>
-			</g>
+			></path>
+			<path
+				d="M20 12L22 12"
+				stroke="currentColor"
+				strokeWidth="1.5"
+				strokeLinecap="round"
+			></path>
+			<path
+				d="M12 4V2"
+				stroke="currentColor"
+				strokeWidth="1.5"
+				strokeLinecap="round"
+			></path>
+			<path
+				d="M12 22V20"
+				stroke="currentColor"
+				strokeWidth="1.5"
+				strokeLinecap="round"
+			></path>
 		</svg>
 	);
 	const FuelIcon = (
+		// <svg
+		// 	viewBox="0 0 1024 1024"
+		// 	className="icon"
+		// 	version="1.1"
+		// 	xmlns="http://www.w3.org/2000/svg"
+		// 	fill="#000000"
+		// >
+		// 	<g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+		// 	<g
+		// 		id="SVGRepo_tracerCarrier"
+		// 		strokeLinecap="round"
+		// 		strokeLinejoin="round"
+		// 	></g>
+		// 	<g id="SVGRepo_iconCarrier">
+		// 		<path
+		// 			d="M273.536 472.448h418.432v267.456H273.536z"
+		// 			fill="#DFA70CACD3DB"
+		// 		></path>
+		// 		<path
+		// 			d="M716.032 855.68a21.824 21.824 0 0 1-21.888 21.824H223.168a21.76 21.76 0 0 1-21.76-21.824V141.568a21.76 21.76 0 0 1 21.76-21.824h470.976c12.096 0 21.888 9.792 21.888 21.824V855.68z"
+		// 			fill="#DFA70C"
+		// 		></path>
+		// 		<path
+		// 			d="M112.32 841.088h807.232v76.48H112.32z"
+		// 			fill="#DFA70C5A7784"
+		// 		></path>
+		// 		<path
+		// 			d="M264.896 179.008h387.584v247.68H264.896z"
+		// 			fill="#DFA70CACD3DB"
+		// 		></path>
+		// 		<path
+		// 			d="M436.16 390.656l-20.8 36.032h83.2l-20.928-36.032zM334.784 270.784l-22.464 17.152-20.8-27.2 22.464-17.152zM608.64 244.032l22.4 17.088-20.8 27.2-22.4-17.088zM534.144 217.664l26.88 8.96-10.752 32.448-26.88-8.96zM441.216 211.968h28.352v34.24h-28.352zM395.136 249.856l-26.88 8.96-10.88-32.448 26.944-8.96z"
+		// 			fill="#DFA70C555F69"
+		// 		></path>
+		// 		<path
+		// 			d="M463.744 402.816l-19.008-11.712 100.096-149.248 7.36 4.544z"
+		// 			fill="#DFA70CCA5349"
+		// 		></path>
+		// 		<path
+		// 			d="M820.416 345.984a19.328 19.328 0 0 1-14.272-6.144l-105.664-110.976a19.84 19.84 0 0 1 0.768-27.904 19.648 19.648 0 0 1 27.776 0.768l105.664 111.04a19.712 19.712 0 0 1-14.272 33.216z"
+		// 			fill="#DFA70C478BBB"
+		// 		></path>
+		// 		<path
+		// 			d="M842.176 796.032c-9.792 0-20.352-1.408-31.872-4.288-74.304-18.048-65.024-137.408-57.024-190.656h-38.592v-39.424h86.208l-4.928 23.744c-10.624 50.432-18.752 157.824 23.616 168.128 21.12 5.12 36.288 3.904 45.248-3.904 14.912-12.736 20.032-46.4 15.232-100.032-2.944-32.96-14.72-46.976-29.696-64.768-22.912-27.392-48.96-58.368-47.808-150.336l39.296 0.512c-0.96 77.376 18.304 100.224 38.656 124.48 16.256 19.392 34.624 41.28 38.656 86.592 6.144 68.928-2.944 111.296-28.736 133.504-12.608 10.944-28.8 16.448-48.256 16.448z"
+		// 			fill="#DFA70C5A7784"
+		// 		></path>
+		// 		<path
+		// 			d="M777.6 326.464h85.632v103.744H777.6z"
+		// 			fill="#DFA70C478BBB"
+		// 		></path>
+		// 	</g>
+		// </svg>
 		<svg
-			viewBox="0 0 1024 1024"
-			className="icon"
-			version="1.1"
 			xmlns="http://www.w3.org/2000/svg"
-			fill="#000000"
+			viewBox="0 0 14 14"
+			fill="none"
+			stroke="currentColor"
 		>
-			<g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-			<g
-				id="SVGRepo_tracerCarrier"
-				strokeLinecap="round"
-				strokeLinejoin="round"
-			></g>
-			<g id="SVGRepo_iconCarrier">
-				<path
-					d="M273.536 472.448h418.432v267.456H273.536z"
-					fill="#DFA70CACD3DB"
-				></path>
-				<path
-					d="M716.032 855.68a21.824 21.824 0 0 1-21.888 21.824H223.168a21.76 21.76 0 0 1-21.76-21.824V141.568a21.76 21.76 0 0 1 21.76-21.824h470.976c12.096 0 21.888 9.792 21.888 21.824V855.68z"
-					fill="#DFA70C"
-				></path>
-				<path
-					d="M112.32 841.088h807.232v76.48H112.32z"
-					fill="#DFA70C5A7784"
-				></path>
-				<path
-					d="M264.896 179.008h387.584v247.68H264.896z"
-					fill="#DFA70CACD3DB"
-				></path>
-				<path
-					d="M436.16 390.656l-20.8 36.032h83.2l-20.928-36.032zM334.784 270.784l-22.464 17.152-20.8-27.2 22.464-17.152zM608.64 244.032l22.4 17.088-20.8 27.2-22.4-17.088zM534.144 217.664l26.88 8.96-10.752 32.448-26.88-8.96zM441.216 211.968h28.352v34.24h-28.352zM395.136 249.856l-26.88 8.96-10.88-32.448 26.944-8.96z"
-					fill="#DFA70C555F69"
-				></path>
-				<path
-					d="M463.744 402.816l-19.008-11.712 100.096-149.248 7.36 4.544z"
-					fill="#DFA70CCA5349"
-				></path>
-				<path
-					d="M820.416 345.984a19.328 19.328 0 0 1-14.272-6.144l-105.664-110.976a19.84 19.84 0 0 1 0.768-27.904 19.648 19.648 0 0 1 27.776 0.768l105.664 111.04a19.712 19.712 0 0 1-14.272 33.216z"
-					fill="#DFA70C478BBB"
-				></path>
-				<path
-					d="M842.176 796.032c-9.792 0-20.352-1.408-31.872-4.288-74.304-18.048-65.024-137.408-57.024-190.656h-38.592v-39.424h86.208l-4.928 23.744c-10.624 50.432-18.752 157.824 23.616 168.128 21.12 5.12 36.288 3.904 45.248-3.904 14.912-12.736 20.032-46.4 15.232-100.032-2.944-32.96-14.72-46.976-29.696-64.768-22.912-27.392-48.96-58.368-47.808-150.336l39.296 0.512c-0.96 77.376 18.304 100.224 38.656 124.48 16.256 19.392 34.624 41.28 38.656 86.592 6.144 68.928-2.944 111.296-28.736 133.504-12.608 10.944-28.8 16.448-48.256 16.448z"
-					fill="#DFA70C5A7784"
-				></path>
-				<path
-					d="M777.6 326.464h85.632v103.744H777.6z"
-					fill="#DFA70C478BBB"
-				></path>
-			</g>
+			<path d="m 10.78125,0 -0.625,0.71875 1.1875,1.09375 c 0.03621,0.036212 0.0856,0.084693 0.125,0.125 l -0.25,0.28125 C 10.818532,2.6189681 11.105689,3.1369332 11.25,3.28125 L 12,4.03125 12,10 c 0,1 -0.392136,1 -0.5,1 C 11.392136,11 11,11 11,10 L 11,6 C 11,4.7190916 10,4 9,4 L 9,2 C 9,1.4486964 8.575273,1 8,1 L 2,1 C 1.400757,1 1,1.4247267 1,2 l 0,12 8,0 0,-9 c 0,0 1,0 1,1 l 0,4 c 0,2 1.239698,2 1.5,2 0.275652,0 1.5,0 1.5,-2 L 13,3 C 13,2 12.713983,1.7907839 12.375,1.46875 L 10.78125,0 z M 2,3 8,3 8,6 2,6 2,3 z"></path>
 		</svg>
 	);
 	const HardwareIcon = (

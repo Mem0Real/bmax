@@ -12,6 +12,20 @@ import ExtrudeText from "../components/ExtrudeText";
 
 import { useIcons } from "../components/CustomIcons";
 
+import { Rajdhani, Raleway } from "next/font/google";
+
+const raleway = Raleway({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+
+const raj = Rajdhani({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+
 export default function Page() {
 	const {
 		ClockIcon,
@@ -41,10 +55,12 @@ export default function Page() {
 
 				<div className="relative w-full h-full grid grid-cols-6 grid-flow-row text-neutral-100">
 					<div className="col-start-2 col-span-3 place-content-center space-y-3">
-						<h1 className="text-4xl md:text-6xl font-bold uppercase">
+						<h1
+							className={`"text-4xl md:text-6xl font-bold uppercase ${raj.className}`}
+						>
 							{busGpsData.landing.header}
 						</h1>
-						<p className="text-nutral-200/80 text-xl">
+						<p className={`text-nutral-200/80 text-xl ${raleway.className}`}>
 							{busGpsData.landing.text}
 						</p>
 					</div>
@@ -52,10 +68,14 @@ export default function Page() {
 			</div>
 			<div className="relative bg-white text-neutral-900 py-12 flex flex-col justify-center items-center gap-12">
 				<div className="px-4 xl:px-40 w-full flex flex-col justify-center items-center gap-2 md:gap-8 lg:gap-0 ">
-					<h1 className="text-3xl md:text-4xl font-medium uppercase text-center">
+					<h1
+						className={`text-3xl md:text-4xl font-medium uppercase text-center ${raj.className}`}
+					>
 						{busGpsData.headerText.header}
 					</h1>
-					<p className="text-lg text-neutral-900/90 text-center">
+					<p
+						className={`text-lg text-neutral-900/90 text-center ${raleway.className}`}
+					>
 						{busGpsData.headerText.text}
 					</p>
 				</div>
@@ -66,10 +86,14 @@ export default function Page() {
 				{/* background */}
 				<div className="flex flex-col w-full justify-center items-center gap-5">
 					<div className="xl:px-4 flex flex-col justify-center items-center gap-2 text-center md:text-balance">
-						<h2 className="text-2xl md:text-3xl font-medium text-mellow capitalize">
+						<h2
+							className={`text-3xl md:text-5xl font-bold text-mellow capitalize ${raj.className}`}
+						>
 							{busGpsData.background.header}
 						</h2>
-						<p className="text-base text-neutral-900/80 text-center px-2 md:px-0 xl:px-8">
+						<p
+							className={`text-base text-neutral-900/80 text-center px-2 md:px-0 xl:px-8 font-medium ${raleway.className}`}
+						>
 							{busGpsData.background.detail}
 						</p>
 					</div>

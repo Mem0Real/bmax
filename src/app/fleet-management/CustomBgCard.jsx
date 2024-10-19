@@ -1,5 +1,19 @@
 import React from "react";
 
+import { Rajdhani, Raleway } from "next/font/google";
+
+const raleway = Raleway({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+
+const raj = Rajdhani({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+
 export default function CustomBgCard({ data, location }) {
 	return (
 		<div className="px-4 xl:px-48 w-full flex flex-col md:flex-row flex-shrink justify-evenly items-center pb-8 gap-6 md:gap-0">
@@ -17,8 +31,12 @@ export default function CustomBgCard({ data, location }) {
 						<div className="absolute inset-0 bg-black opacity-65"></div>
 
 						<div className="relative flex flex-col gap-5 text-white min-h-28 md:min-h-60 lg:min-h-44 xl:min-h-48">
-							<h1 className="text-4xl font-base capitalize">{header}</h1>
-							<p className="font-medium text-xl">{text}</p>
+							<h1 className={`text-4xl font-bold capitalize ${raj.className}`}>
+								{header}
+							</h1>
+							<p className={`font-medium text-base ${raleway.className}`}>
+								{text}
+							</p>
 						</div>
 					</div>
 				);

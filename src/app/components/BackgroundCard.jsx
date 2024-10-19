@@ -38,7 +38,7 @@ export default function BackgroundCard({ data, location, light }) {
 							className={`absolute inset-0 bg-black rounded-xl ${opacity}`}
 						></div>
 
-						<div className="w-full relative flex flex-col justify-stretch items-stretch gap-5 text-white min-h-36 md:min-h-44 lg:min-h-48 xl:min-h-48 backdrop-blur-sm px-2 pt-2">
+						<div className="w-full relative flex flex-col justify-stretch items-stretch gap-5 text-white min-h-36 md:min-h-44 lg:min-h-48 xl:min-h-56 backdrop-blur-sm px-2 pt-2">
 							<h1
 								className={`text-xl lg:text-3xl capitalize font-semibold ${raj.className}`}
 							>

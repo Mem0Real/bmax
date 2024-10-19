@@ -7,6 +7,20 @@ import AlternateImage from "../components/AlternateImage";
 import ExtrudeText from "../components/ExtrudeText";
 import CustomBgCard from "./CustomBgCard";
 
+import { Rajdhani, Raleway } from "next/font/google";
+
+const raleway = Raleway({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+
+const raj = Rajdhani({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+
 export default function FleetManagement() {
 	return (
 		<div className="min-h-[90vh] my-auto flex flex-col justify-center items-center text-neutral-950 gap-10 md:gap-12 lg:gap-16 pt-12">
@@ -20,10 +34,14 @@ export default function FleetManagement() {
 				<AlternateImage img={`${fleetData.location}/landing.png`} />
 			</Alternating>
 			<div className="w-full flex flex-col justify-center items-center gap-2 md:gap-8 lg:gap-0">
-				<p className="text-xl text-neutral-950 text-center">
+				<p
+					className={`text-xl text-neutral-950 text-center ${raleway.className}`}
+				>
 					{fleetData.headerText1.text}
 				</p>
-				<h1 className="text-3xl md:text-4xl font-medium uppercase text-center">
+				<h1
+					className={`text-3xl md:text-4xl font-medium uppercase text-center ${raj.className}`}
+				>
 					{fleetData.headerText1.header}
 				</h1>
 			</div>
@@ -52,10 +70,14 @@ export default function FleetManagement() {
 
 			<div className="flex flex-col w-full justify-center items-center gap-5">
 				<div className="xl:px-4 flex flex-col justify-center items-center gap-2 text-center md:text-balance">
-					<h3 className="text-base md:text-lg text-neutral-900 font-medium text-center">
+					<h3
+						className={`text-base md:text-lg text-neutral-900 font-medium text-center ${raleway.className}`}
+					>
 						{fleetData.headerText2.text}
 					</h3>
-					<h2 className="text-2xl md:text-3xl font-medium text-mellow capitalize">
+					<h2
+						className={`text-2xl md:text-3xl font-medium text-mellow capitalize ${raj.className}`}
+					>
 						{fleetData.headerText2.header}
 					</h2>
 				</div>

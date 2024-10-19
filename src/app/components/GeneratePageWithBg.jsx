@@ -8,12 +8,27 @@ import GenerateCard from "../components/GenerateCard";
 import BackgroundCard from "../components/BackgroundCard";
 import ExtrudeText from "./ExtrudeText";
 
+import { Rajdhani, Raleway } from "next/font/google";
+
+const raleway = Raleway({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+
+const raj = Rajdhani({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+
 export default function GeneratePageWithBg({
 	iconList,
 	data,
 	type = "jpg",
 	landingType = "jpg",
 	size = "lg",
+	noCards = false,
 }) {
 	return (
 		<div className="relative w-full flex flex-col">
@@ -40,27 +55,52 @@ export default function GeneratePageWithBg({
 			</div>
 			<div className="relative bg-white text-neutral-900 py-12 flex flex-col justify-center items-center gap-12">
 				<div className="w-full flex flex-col justify-center items-center gap-2 md:gap-8 lg:gap-0 ">
-					<h1 className="text-3xl md:text-4xl font-medium uppercase text-center">
+					<h1
+						className={`text-3xl md:text-5xl font-medium uppercase text-center ${raj.className}`}
+					>
 						{data.headerText.header}
 					</h1>
-					<p className="text-xl text-neutral-950 px-4 xl:px-40 text-center">
+					<p
+						className={`text-lg text-neutral-950 px-4 xl:px-40 text-center ${raleway.className}`}
+					>
 						{data.headerText.text}
 					</p>
 				</div>
 				{/* cards */}
-				<div className="w-full px-4 xl:px-40 flex justify-center xl:justify-evenly items-center gap-8 lg:gap-4 xl:gap-20 flex-wrap">
-					<GenerateCard icons={iconList} data={data.cards} size={size} />
-				</div>
+				{noCards ? (
+					<>
+						<Alternating extrude={true}>
+							<AlternateImage img={`${data.location}/alt1.png`} />
+							<AlternateText header={data.alt1.header} detail={data.alt1.text}>
+								<ExtrudeText dropData={data.dropData1} />
+							</AlternateText>
+						</Alternating>
+						<Alternating extrude>
+							<AlternateText header={data.alt2.header} detail={data.alt2.text}>
+								<ExtrudeText dropData={data.dropData2} />
+							</AlternateText>
+							<AlternateImage img={`${data.location}/alt2.png`} />
+						</Alternating>
+					</>
+				) : (
+					<div className="w-full px-4 xl:px-40 flex justify-center xl:justify-evenly items-center gap-8 lg:gap-4 xl:gap-20 flex-wrap">
+						<GenerateCard icons={iconList} data={data.cards} size={size} />
+					</div>
+				)}
 				{/* background */}
 				<div className="flex flex-col w-full justify-center items-center gap-5">
 					<div className="xl:px-4 flex flex-col justify-center items-center gap-2 text-center md:text-balance">
 						{data.background.header && (
-							<h2 className="text-2xl md:text-3xl font-medium text-mellow capitalize">
+							<h2
+								className={`text-3xl md:text-5xl font-bold text-mellow capitalize ${raj.className}`}
+							>
 								{data.background.header}
 							</h2>
 						)}
 						{data.background.detail && (
-							<p className="text-base text-neutral-900/80 text-center px-2 md:px-0 xl:px-8">
+							<p
+								className={`text-base text-neutral-900/80 text-center px-2 md:px-0 xl:px-8 font-medium ${raleway.className}`}
+							>
 								{data.background.detail}
 							</p>
 						)}
@@ -68,7 +108,7 @@ export default function GeneratePageWithBg({
 
 					<BackgroundCard location={data.location} data={data.background.bgs} />
 				</div>
-				{data.alt1 && (
+				{!noCards && data.alt1 && (
 					<Alternating>
 						<AlternateImage img={`${data.location}/alt1.png`} />
 						<AlternateText
@@ -79,7 +119,7 @@ export default function GeneratePageWithBg({
 						/>
 					</Alternating>
 				)}
-				{data.alt2 && (
+				{!noCards && data.alt2 && (
 					<Alternating>
 						<AlternateText
 							header={data.alt2.header}
@@ -99,6 +139,17 @@ export default function GeneratePageWithBg({
 							linkText={data.linkText}
 							address={data.linkSrc}
 						/>
+					</Alternating>
+				)}
+				{data.alt4 && (
+					<Alternating>
+						<AlternateText
+							header={data.alt4.header}
+							detail={data.alt4.text}
+							linkText={data.linkText}
+							address={data.linkSrc}
+						/>
+						<AlternateImage img={`${data.location}/alt4.png`} />
 					</Alternating>
 				)}
 

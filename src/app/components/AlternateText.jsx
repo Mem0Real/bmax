@@ -34,7 +34,7 @@ export default function AlternateText({
 			? "text-nutral-200/80"
 			: "text-neutral-950/90"
 		: "text-neutral-200/80";
-	tailColor += swap ? " text-xl" : " text-base";
+	tailColor += swap ? " text-lg" : " text-base";
 
 	let headSize = swap ? "text-4xl md:text-6xl" : "text-3xl md:text-4x";
 
@@ -78,6 +78,7 @@ export default function AlternateText({
 					{detail}
 				</p>
 			)}
+			{children}
 			{!swap && linkText && (
 				<Link href={`/${address}`}>
 					<motion.h1
@@ -91,7 +92,6 @@ export default function AlternateText({
 					</motion.h1>
 				</Link>
 			)}
-			{children}
 		</div>
 	);
 }

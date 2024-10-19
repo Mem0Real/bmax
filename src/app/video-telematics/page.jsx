@@ -4,12 +4,25 @@ import React from "react";
 
 import Alternating from "../components/Alternating";
 import AlternateText from "../components/AlternateText";
-import AlternateImage from "../components/AlternateImage";
 import GenerateCard from "../components/GenerateCard";
 
 import { videoData } from "@/data/solution";
 import { useIcons } from "../components/CustomIcons";
 import BackgroundCard from "../components/BackgroundCard";
+
+import { Rajdhani, Raleway } from "next/font/google";
+
+const raleway = Raleway({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+
+const raj = Rajdhani({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
 
 export default function Page() {
 	const {
@@ -35,7 +48,7 @@ export default function Page() {
 				className=" min-h-screen bg-cover bg-bottom bg-no-repeat"
 				style={{ backgroundImage: "url(/images/video-page/background.jpg)" }}
 			>
-				<div className="absolute inset-0 bg-black opacity-50" />
+				<div className="absolute inset-0 bg-black opacity-80" />
 
 				<div className="relative w-full min-h-[50rem] flex flex-col justify-center items-center text-neutral-100 gap-10 md:gap-12 lg:gap-16 py-12 lg:pt-0">
 					<Alternating>
@@ -54,10 +67,14 @@ export default function Page() {
 				{/* background */}
 				<div className="flex flex-col w-full justify-center items-center gap-5">
 					<div className="xl:px-4 flex flex-col justify-center items-center gap-2 text-center md:text-balance">
-						<h2 className="text-2xl md:text-3xl font-medium text-neutral-900 capitalize">
+						<h2
+							className={`text-3xl md:text-5xl font-bold text-mellow capitalize ${raj.className}`}
+						>
 							{videoData.background.header}
 						</h2>
-						<p className="text-base text-neutral-900/80 text-center px-2 md:px-0 xl:px-8">
+						<p
+							className={`text-base text-neutral-900/80 text-center px-2 md:px-0 xl:px-8 font-medium ${raleway.className}`}
+						>
 							{videoData.background.detail}
 						</p>
 					</div>

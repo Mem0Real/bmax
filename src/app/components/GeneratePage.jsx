@@ -110,7 +110,9 @@ export default function GeneratePage({ data, bgImage, noExtra, type = "jpg" }) {
 				{data.background && (
 					<div className="xl:px-4 flex flex-col justify-center items-center gap-2 text-center md:text-balance">
 						{data.background.title && (
-							<h3 className="text-base md:text-lg text-neutral-900 capitalize font-medium">
+							<h3
+								className={`text-base md:text-lg text-neutral-900 capitalize font-medium ${raleway.className}`}
+							>
 								{data.background.title}
 							</h3>
 						)}

@@ -452,7 +452,7 @@ export const fleetData = {
 	},
 	headerText1: {
 		text: "Why Choose Our Fleet Management System?",
-		header: "Enhance Efficiency, Control, and Safety",
+		header: "Enhanced Efficiency, Control, and Safety",
 	},
 	headerText2: {
 		text: "Need More Reason to Choose Our Fleet Management System?",

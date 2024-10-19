@@ -12,6 +12,20 @@ import { useIcons } from "../components/CustomIcons";
 import GenerateCard from "../components/GenerateCard";
 import ExtrudeText from "../components/ExtrudeText";
 
+import { Rajdhani, Raleway } from "next/font/google";
+
+const raleway = Raleway({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+
+const raj = Rajdhani({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+
 export default function Page() {
 	const { ClockIcon, LockedIcon, WifiIcon, CycleIcon, SecureIcon, RiskIcon } =
 		useIcons();
@@ -54,10 +68,14 @@ export default function Page() {
 					/>
 				</Alternating>
 				<div className="px-4 xl:px-40 w-full flex flex-col justify-center items-center gap-2 md:gap-8 lg:gap-0 ">
-					<h1 className="text-3xl md:text-4xl font-medium uppercase text-center">
+					<h1
+						className={`text-3xl md:text-5xl font-bold capitalize ${raj.className}`}
+					>
 						{dashcamData.headerText.header}
 					</h1>
-					<p className="text-base text-neutral-900/90 text-center">
+					<p
+						className={`text-base text-neutral-950/90 w-[90%] md:w-[60%] lg:w-auto text-center lg:text-balance ${raleway.className}`}
+					>
 						{dashcamData.headerText.text}
 					</p>
 				</div>
