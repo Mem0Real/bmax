@@ -16,6 +16,20 @@ import { useIcons } from "../components/CustomIcons";
 
 import { motion } from "framer-motion";
 
+import { Rajdhani, Raleway } from "next/font/google";
+
+const raleway = Raleway({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+
+const raj = Rajdhani({
+	weight: ["300", "400", "500", "700"],
+	style: ["normal"],
+	subsets: ["latin"],
+});
+
 export default function Transport() {
 	const { GraphIcon, ShippingIcon, ShieldIcon, TechnoIcon } = useIcons();
 
@@ -25,10 +39,12 @@ export default function Transport() {
 		<div className="min-h-[90vh] my-auto flex flex-col justify-center items-center text-neutral-950 gap-10 md:gap-12 lg:gap-16 pt-12">
 			<div className="px-4 xl:px-48 w-full flex flex-col md:flex-row justify-center items-center pt-8 md:py-2 gap-4 md:gap-8">
 				<div className="basis-[40%] flex flex-col justify-center items-center md:items-start gap-4 md:gap-8">
-					<h1 className="text-3xl md:text-4xl font-medium uppercase text-center md:text-start">
+					<h1
+						className={`"text-4xl md:text-6xl font-bold uppercase ${raj.className}`}
+					>
 						{transportData.landing.header}
 					</h1>
-					<p className="text-base text-neutral-950/90">
+					<p className={`text-nutral-200/80 text-xl ${raleway.className}`}>
 						{transportData.landing.text}
 					</p>
 				</div>
@@ -47,7 +63,7 @@ export default function Transport() {
 				<Link href={`/${transportData.address}`} className="col-start-1 w-fit">
 					<motion.h1
 						whileHover={{
-							backgroundColor: "#DFA70C",
+							backgroundColor: "#ee8f34",
 							color: "#FFF",
 						}}
 						className="px-12 py-3 border border-darkYellow text-darkYellow font-bold uppercase"
@@ -73,10 +89,14 @@ export default function Transport() {
 			{/* background */}
 			<div className="flex flex-col w-full justify-center items-center gap-2">
 				<div className="xl:px-4 flex flex-col justify-center items-center gap-2 text-center md:text-balance">
-					<h2 className="text-2xl md:text-3xl font-medium text-mellow capitalize">
+					<h2
+						className={`text-3xl md:text-5xl font-bold text-mellow capitalize ${raj.className}`}
+					>
 						{transportData.background.header}
 					</h2>
-					<p className="text-base text-neutral-900/80 text-center px-2 md:px-0 xl:px-8">
+					<p
+						className={`text-base text-neutral-900/80 text-center px-2 md:px-0 xl:px-8 font-medium ${raleway.className}`}
+					>
 						{transportData.background.detail}
 					</p>
 				</div>
