@@ -5,19 +5,7 @@ import { gsap } from "gsap";
 import { useState } from "react";
 import { useIcons } from "./CustomIcons";
 import Link from "next/link";
-import { Rajdhani, Raleway } from "next/font/google";
-
-const raleway = Raleway({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
-
-const raj = Rajdhani({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
+import { raj } from "@/app/ui/fonts";
 
 const Search = ({ isVisible, toggleVisibility, linksData }) => {
 	const [searchTerm, setSearchTerm] = useState("");

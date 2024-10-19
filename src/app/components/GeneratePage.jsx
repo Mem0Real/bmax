@@ -7,19 +7,7 @@ import AlternateImage from "./AlternateImage";
 import ExtrudeText from "./ExtrudeText";
 import BackgroundCard from "./BackgroundCard";
 
-import { Rajdhani, Raleway } from "next/font/google";
-
-const raleway = Raleway({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
-
-const raj = Rajdhani({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
+import { raj } from "@/app/ui/fonts";
 
 export default function GeneratePage({
 	data,
@@ -56,9 +44,7 @@ export default function GeneratePage({
 						>
 							{data.landing.header}
 						</h1>
-						<p
-							className={`text-base text-neutral-950 py-8 font-medium ${raleway.className}`}
-						>
+						<p className="text-base text-neutral-950 py-8 font-medium">
 							{data.landing.text}
 						</p>
 					</div>
@@ -74,9 +60,7 @@ export default function GeneratePage({
 						</h1>
 					)}
 					{data.headerText.text && (
-						<p
-							className={`text-base text-neutral-950/90 w-[90%] md:w-[60%] lg:w-auto text-center lg:text-balance ${raleway.className}`}
-						>
+						<p className="text-base text-neutral-950/90 w-[90%] md:w-[60%] lg:w-auto text-center lg:text-balance">
 							{data.headerText.text}
 						</p>
 					)}
@@ -101,9 +85,7 @@ export default function GeneratePage({
 				{data.background && (
 					<div className="xl:px-4 flex flex-col justify-center items-center gap-2 text-center md:text-balance">
 						{data.background.title && (
-							<h3
-								className={`text-base md:text-lg text-neutral-900 capitalize font-medium ${raleway.className}`}
-							>
+							<h3 className="text-base md:text-lg text-neutral-900 capitalize font-medium">
 								{data.background.title}
 							</h3>
 						)}
@@ -115,9 +97,7 @@ export default function GeneratePage({
 							</h2>
 						)}
 						{data.background.detail && (
-							<p
-								className={`text-base text-neutral-900/80 text-center px-2 md:px-0 xl:px-8 font-medium ${raleway.className}`}
-							>
+							<p className="text-base text-neutral-900/80 text-center px-2 md:px-0 xl:px-8 font-medium">
 								{data.background.detail}
 							</p>
 						)}

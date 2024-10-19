@@ -8,19 +8,7 @@ import GenerateCard from "../components/GenerateCard";
 import BackgroundCard from "../components/BackgroundCard";
 import ExtrudeText from "./ExtrudeText";
 
-import { Rajdhani, Raleway } from "next/font/google";
-
-const raleway = Raleway({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
-
-const raj = Rajdhani({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
+import { raj } from "@/app/ui/fonts";
 
 export default function GeneratePageWithBg({
 	iconList,
@@ -60,9 +48,7 @@ export default function GeneratePageWithBg({
 					>
 						{data.headerText.header}
 					</h1>
-					<p
-						className={`text-lg text-neutral-950 px-4 xl:px-40 text-center ${raleway.className}`}
-					>
+					<p className={`text-lg text-neutral-950 px-4 xl:px-40 text-center`}>
 						{data.headerText.text}
 					</p>
 				</div>
@@ -99,7 +85,7 @@ export default function GeneratePageWithBg({
 						)}
 						{data.background.detail && (
 							<p
-								className={`text-base text-neutral-900/80 text-center px-2 md:px-0 xl:px-8 font-medium ${raleway.className}`}
+								className={`text-base text-neutral-900/80 text-center px-2 md:px-0 xl:px-8 font-medium`}
 							>
 								{data.background.detail}
 							</p>

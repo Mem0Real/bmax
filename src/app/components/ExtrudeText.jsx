@@ -5,19 +5,7 @@ import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useIcons } from "./CustomIcons";
 
-import { Rajdhani, Raleway } from "next/font/google";
-
-const raleway = Raleway({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
-
-const raj = Rajdhani({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
+import { raj } from "@/app/ui/fonts";
 
 export default function ExtrudeText({ dropData, className }) {
 	const [selected, setSelected] = useState(0);
@@ -69,7 +57,7 @@ export default function ExtrudeText({ dropData, className }) {
 								animate={{ height: "auto", opacity: 1 }}
 								exit={{ height: 0, opacity: 0 }}
 								transition={{ ease: "easeInOut", duration: 0.2 }}
-								className={`overflow-hidden w-[90%] mx-auto text-sm text-neutral-black font-medium ${raleway.className}`}
+								className="overflow-hidden w-[90%] mx-auto text-sm text-neutral-black font-medium"
 								layout
 							>
 								{Array.isArray(nest) ? (

@@ -12,19 +12,7 @@ import { useIcons } from "../components/CustomIcons";
 import { Table } from "@mantine/core";
 import GenerateTable from "../components/GenerateTable";
 
-import { Rajdhani, Raleway } from "next/font/google";
-
-const raleway = Raleway({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
-
-const raj = Rajdhani({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
+import { raj } from "@/app/ui/fonts";
 
 export default function Page() {
 	const {
@@ -126,9 +114,7 @@ export default function Page() {
 					>
 						{aiDashData.headerText2.header}
 					</h1>
-					<p
-						className={`text-base text-neutral-950/90 w-[90%] md:w-[60%] lg:w-auto text-start lg:text-balance ${raleway.className}`}
-					>
+					<p className="text-base text-neutral-950/90 w-[90%] md:w-[60%] lg:w-auto text-start lg:text-balance">
 						{aiDashData.headerText2.text}
 					</p>
 				</div>
@@ -143,9 +129,7 @@ export default function Page() {
 					>
 						{aiDashData.headerText3.header}
 					</h1>
-					<p
-						className={`px-6 xl:px-16 text-base text-neutral-950/90 w-[90%] md:w-[60%] lg:w-auto text-start ${raleway.className}`}
-					>
+					<p className="px-6 xl:px-16 text-base text-neutral-950/90 w-[90%] md:w-[60%] lg:w-auto text-start">
 						{aiDashData.headerText3.text}
 					</p>
 				</div>

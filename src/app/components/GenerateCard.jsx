@@ -1,17 +1,5 @@
 import React from "react";
-import { Rajdhani, Raleway } from "next/font/google";
-
-const raleway = Raleway({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
-
-const raj = Rajdhani({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
+import { raj } from "@/app/ui/fonts";
 
 export default function GenerateCard({ icons, data, size }) {
 	let height =
@@ -32,9 +20,7 @@ export default function GenerateCard({ icons, data, size }) {
 			>
 				{header}
 			</div>
-			<div
-				className={`text-sm font-light md:text-base lg:text-lg text-neutral-200 ${raleway.className}`}
-			>
+			<div className="text-sm font-light md:text-base lg:text-lg text-neutral-200">
 				{text}
 			</div>
 		</div>

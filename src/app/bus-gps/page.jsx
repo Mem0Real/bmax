@@ -12,19 +12,7 @@ import ExtrudeText from "../components/ExtrudeText";
 
 import { useIcons } from "../components/CustomIcons";
 
-import { Rajdhani, Raleway } from "next/font/google";
-
-const raleway = Raleway({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
-
-const raj = Rajdhani({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
+import { raj } from "@/app/ui/fonts";
 
 export default function Page() {
 	const {
@@ -60,7 +48,7 @@ export default function Page() {
 						>
 							{busGpsData.landing.header}
 						</h1>
-						<p className={`text-nutral-200/80 text-xl ${raleway.className}`}>
+						<p className="text-nutral-200/80 text-xl">
 							{busGpsData.landing.text}
 						</p>
 					</div>
@@ -73,9 +61,7 @@ export default function Page() {
 					>
 						{busGpsData.headerText.header}
 					</h1>
-					<p
-						className={`text-lg text-neutral-900/90 text-center ${raleway.className}`}
-					>
+					<p className="text-lg text-neutral-900/90 text-center">
 						{busGpsData.headerText.text}
 					</p>
 				</div>
@@ -91,9 +77,7 @@ export default function Page() {
 						>
 							{busGpsData.background.header}
 						</h2>
-						<p
-							className={`text-base text-neutral-900/80 text-center px-2 md:px-0 xl:px-8 font-medium ${raleway.className}`}
-						>
+						<p className="text-base text-neutral-900/80 text-center px-2 md:px-0 xl:px-8 font-medium">
 							{busGpsData.background.detail}
 						</p>
 					</div>

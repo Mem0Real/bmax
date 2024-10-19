@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-import { Rajdhani, Raleway } from "next/font/google";
+import { raj } from "@/app/ui/fonts";
 
 const links = [
 	{ title: "Car Key Duplication", address: "/key-duplication" },
@@ -30,18 +30,6 @@ const links = [
 	{ title: "Video Telematics", address: "/video-telematics" },
 ];
 
-const raleway = Raleway({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
-
-const raj = Rajdhani({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
-
 export default function SolutionLinks() {
 	return (
 		<div className="min-h-56">
@@ -56,7 +44,7 @@ export default function SolutionLinks() {
 								whileHover={{
 									borderColor: "#ee8f34",
 								}}
-								className={`py-2 md:py-0.5 xl:py-1 px-4 border border-white text-white font-base cursor-pointer uppercase ${raleway.className}`}
+								className={`py-2 md:py-0.5 xl:py-1 px-4 border border-white text-white font-base cursor-pointer uppercase`}
 							>
 								{title}
 							</motion.div>

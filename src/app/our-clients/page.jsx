@@ -4,19 +4,7 @@ import React, { useState } from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
 
-import { Rajdhani, Raleway } from "next/font/google";
-
-const raleway = Raleway({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
-
-const raj = Rajdhani({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
+import { raj } from "@/app/ui/fonts";
 
 const clientList = [
 	{ id: "Safaricom", source: "safari.png" },
@@ -40,9 +28,7 @@ export default function Clients() {
 				<h1 className={`text-4xl font-semibold ${raj.className}`}>
 					OUR VALUED CLIENTS
 				</h1>
-				<p
-					className={`text-lg text-neutral-900/90 text-center ${raleway.className}`}
-				>
+				<p className={`text-lg text-neutral-900/90 text-center`}>
 					At B-Max Auto Solutions, our commitment to excellence and unwavering
 					dedication to providing top-notch automotive security solutions have
 					allowed us to build strong partnerships with a diverse range of
@@ -87,9 +73,7 @@ export default function Clients() {
 					<h1 className={`text-2xl font-bold ${raj.className}`}>
 						OUR DIVERSE CLIENTELE
 					</h1>
-					<div
-						className={`mt-4 text-lg text-neutral-950  ${raleway.className}`}
-					>
+					<div className={`mt-4 text-lg text-neutral-950 `}>
 						<p className="pb-6">
 							Our clientele spans across various sectors, including:
 						</p>
@@ -128,9 +112,7 @@ export default function Clients() {
 						Why Our Clients Choose Us
 					</h1>
 					<div className="mt-4 text-lg text-neutral-950">
-						<ul
-							className={`list-disc list-inside space-y-5 lg:space-y-0 ${raleway.className}`}
-						>
+						<ul className={`list-disc list-inside space-y-5 lg:space-y-0`}>
 							<li>
 								<span className="font-semibold">
 									Cutting-edge Technology:&nbsp;

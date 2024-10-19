@@ -10,19 +10,7 @@ import { videoData } from "@/data/solution";
 import { useIcons } from "../components/CustomIcons";
 import BackgroundCard from "../components/BackgroundCard";
 
-import { Rajdhani, Raleway } from "next/font/google";
-
-const raleway = Raleway({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
-
-const raj = Rajdhani({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
+import { raj } from "@/app/ui/fonts";
 
 export default function Page() {
 	const {
@@ -73,7 +61,7 @@ export default function Page() {
 							{videoData.background.header}
 						</h2>
 						<p
-							className={`text-base text-neutral-900/80 text-center px-2 md:px-0 xl:px-8 font-medium ${raleway.className}`}
+							className={`text-base text-neutral-900/80 text-center px-2 md:px-0 xl:px-8 font-medium`}
 						>
 							{videoData.background.detail}
 						</p>

@@ -6,19 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { emergencyData } from "@/data/solution";
 
-import { Rajdhani, Raleway } from "next/font/google";
-
-const raleway = Raleway({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
-
-const raj = Rajdhani({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
+import { raj } from "@/app/ui/fonts";
 
 export default function HoverCard({ location }) {
 	const [hovered, setHovered] = useState(null);
@@ -61,9 +49,7 @@ export default function HoverCard({ location }) {
 								>
 									{header}
 								</motion.h1>
-								<p
-									className={`text-neutral-950 text-center text-base ${raleway.className}`}
-								>
+								<p className={`text-neutral-950 text-center text-base`}>
 									{text}
 								</p>
 							</div>

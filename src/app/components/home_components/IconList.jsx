@@ -3,18 +3,7 @@
 import { useIcons } from "@/app/components/CustomIcons";
 import React from "react";
 
-import { Rajdhani, Raleway } from "next/font/google";
-
-const raleway = Raleway({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
-const raj = Rajdhani({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
+import { raj } from "@/app/ui/fonts";
 
 export default function IconList() {
 	const {
@@ -70,9 +59,7 @@ export default function IconList() {
 		<div className="min-h-screen w-full px-4 xl:px-40 bg-neutral-100 py-5 xl:pb-12">
 			<div className="flex flex-col justify-center items-center gap-20">
 				<div className="flex flex-col justify-center items-center gap-2">
-					<h1
-						className={`text-neutral-900 text-lg font-semibold uppercase ${raleway.className}`}
-					>
+					<h1 className={`text-neutral-900 text-lg font-semibold uppercase`}>
 						Telematics Services by B-Max
 					</h1>
 					<h1
@@ -94,11 +81,7 @@ export default function IconList() {
 							>
 								{header}
 							</h1>
-							<p
-								className={`text-center text-base font-medium ${raleway.className}`}
-							>
-								{detail}
-							</p>
+							<p className={`text-center text-base font-medium`}>{detail}</p>
 						</div>
 					))}
 				</section>

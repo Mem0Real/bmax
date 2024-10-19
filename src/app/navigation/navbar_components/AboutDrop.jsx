@@ -12,7 +12,7 @@ export default function AboutDrop() {
 	return (
 		<AnimatePresence>
 			<motion.div
-				className={`flex flex-col justify-center items-start w-56 bg-lightestMellow text-black rounded-b-md font-medium ${raleway.className} antialiased`}
+				className={`flex flex-col justify-center items-start w-56 bg-lightestMellow text-black rounded-b-md font-medium antialiased`}
 			>
 				<motion.div
 					initial={{ opacity: 0.9 }}

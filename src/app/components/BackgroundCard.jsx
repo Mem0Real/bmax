@@ -1,18 +1,6 @@
 import React from "react";
 
-import { Rajdhani, Raleway } from "next/font/google";
-
-const raleway = Raleway({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
-
-const raj = Rajdhani({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
+import { raj } from "@/app/ui/fonts";
 
 export default function BackgroundCard({ data, location, light }) {
 	let opacity = light ? "opacity-40" : "opacity-60";
@@ -44,11 +32,7 @@ export default function BackgroundCard({ data, location, light }) {
 							>
 								{header}
 							</h1>
-							<p
-								className={`text-base md:text-[13px] lg:text-base ${raleway.className}`}
-							>
-								{text}
-							</p>
+							<p className="text-base md:text-[13px] lg:text-base">{text}</p>
 						</div>
 					</div>
 				);

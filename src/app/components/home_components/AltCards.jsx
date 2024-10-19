@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { Rajdhani, Raleway } from "next/font/google";
+import { raj } from "@/app/ui/fonts";
 
 import { motion } from "framer-motion";
 
@@ -99,18 +99,6 @@ const description = [
 	},
 ];
 
-const raleway = Raleway({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
-
-const raj = Rajdhani({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
-
 export default function AltCards() {
 	const [dimension, setDimension] = useState({ width: 0, height: 0 });
 
@@ -188,11 +176,7 @@ export default function AltCards() {
 									transition={{ delay: 0.2 }}
 								>
 									<div className="self-start flex flex-col gap-2">
-										<h2
-											className={`text-lg font-semibold ${raleway.className}`}
-										>
-											{smallTitle}
-										</h2>
+										<h2 className={`text-lg font-semibold`}>{smallTitle}</h2>
 										<h2
 											className={`text-darkYellow text-5xl md:text-6xl font-bold ${raj.className}`}
 										>
@@ -200,7 +184,7 @@ export default function AltCards() {
 										</h2>
 									</div>
 									<p
-										className={`text-balance text-justify text-base font-medium ${raleway.className}`}
+										className={`text-balance text-justify text-base font-medium`}
 									>
 										{highlightText(detail, highlight)}
 									</p>

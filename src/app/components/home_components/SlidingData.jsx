@@ -1,25 +1,13 @@
 import React from "react";
 import Link from "next/link";
 
-import { Rajdhani, Raleway } from "next/font/google";
+import { raj } from "@/app/ui/fonts";
 
 import GText from "../GText";
 
-const raj = Rajdhani({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
-
-const raleway = Raleway({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
-
 const BigText = ({ children }) => (
 	<div
-		className={`text-4xl md:text-6xl lg:text-8xl font-bold mb-4 bg-neutral-200 text-neutral-900 w-fit ${raleway.className}`}
+		className={`text-4xl md:text-6xl lg:text-8xl font-bold mb-4 bg-neutral-200 text-neutral-900 w-fit`}
 	>
 		{children}
 	</div>
