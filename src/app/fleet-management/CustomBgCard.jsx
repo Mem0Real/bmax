@@ -1,18 +1,6 @@
 import React from "react";
 
-import { Rajdhani, Raleway } from "next/font/google";
-
-const raleway = Raleway({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
-
-const raj = Rajdhani({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
+import { raj } from "@/app/ui/fonts";
 
 export default function CustomBgCard({ data, location }) {
 	return (
@@ -34,9 +22,7 @@ export default function CustomBgCard({ data, location }) {
 							<h1 className={`text-4xl font-bold capitalize ${raj.className}`}>
 								{header}
 							</h1>
-							<p className={`font-medium text-base ${raleway.className}`}>
-								{text}
-							</p>
+							<p className={`font-medium text-base`}>{text}</p>
 						</div>
 					</div>
 				);

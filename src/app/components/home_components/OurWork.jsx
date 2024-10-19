@@ -1,16 +1,5 @@
 import React from "react";
-import { Rajdhani, Raleway } from "next/font/google";
-
-const raleway = Raleway({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
-const raj = Rajdhani({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
+import { raj } from "@/app/ui/fonts";
 
 export default function OurWork() {
 	return (
@@ -33,9 +22,7 @@ export default function OurWork() {
 								>
 									Automotive Locksmith Services
 								</h1>
-								<p
-									className={`text-neutral-200/50 pr-2 xl:pr-8 text-sm ${raleway.className}`}
-								>
+								<p className={`text-neutral-200/50 pr-2 xl:pr-8 text-sm`}>
 									B-Max Telematics offers key replacement, programming, repair,
 									and emergency car unlocking services with professionalism and
 									efficiency.
@@ -52,9 +39,7 @@ export default function OurWork() {
 								>
 									Telematics Solutions
 								</h1>
-								<p
-									className={`text-neutral-200/50 pr-2 xl:pr-8 text-sm ${raleway.className}`}
-								>
+								<p className={`text-neutral-200/50 pr-2 xl:pr-8 text-sm`}>
 									Enhance vehicle security and monitoring with B-Max
 									Telematics&apos; advanced solutions, including tracking, fleet
 									management, car alarms, and dashcam installations.
@@ -73,9 +58,7 @@ export default function OurWork() {
 								>
 									Vehicle Security
 								</h1>
-								<p
-									className={`text-neutral-200/50 pr-2 xl:pr-8 text-sm ${raleway.className}`}
-								>
+								<p className={`text-neutral-200/50 pr-2 xl:pr-8 text-sm`}>
 									Protect your vehicles with B-Max Telematics&apos;
 									immobilizers, GPS tracking, and anti-theft systems, ensuring
 									peace of mind.
@@ -92,9 +75,7 @@ export default function OurWork() {
 								>
 									Fleet Services
 								</h1>
-								<p
-									className={`text-neutral-200/50 pr-2 xl:pr-8 text-sm ${raleway.className}`}
-								>
+								<p className={`text-neutral-200/50 pr-2 xl:pr-8 text-sm`}>
 									Optimize fleet operations with B-Max Telematics&apos;
 									tracking, fuel management, driver behavior monitoring, and
 									maintenance management solutions.

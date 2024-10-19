@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React from "react";
 
-import { Rajdhani, Raleway } from "next/font/google";
+import { raj } from "@/app/ui/fonts";
 
 import { Carousel, CarouselSlide } from "@mantine/carousel";
 import { useIcons } from "../components/CustomIcons";
@@ -15,18 +15,6 @@ import GenerateCard from "../components/GenerateCard";
 import { aboutData } from "@/data/about";
 
 const imgList = ["1", "2", "3", "4", "5"];
-
-const raleway = Raleway({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
-
-const raj = Rajdhani({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
 
 export default function About() {
 	const {
@@ -54,9 +42,7 @@ export default function About() {
 			<div className="flex flex-col justify-center items-center gap-24 pt-28">
 				{/* landing text */}
 				<div className="flex flex-col justify-center items-center gap-6">
-					<p
-						className={`text-2xl font-medium ${raleway.className} xl:text-center`}
-					>
+					<p className="text-2xl font-medium xl:text-center">
 						At B-Max, we&apos;re passionate about keeping you on the road safely
 						and securely. As experts in car key replacement, programming, GPS
 						tracking, car alarm systems, and fleet management in Ethiopia, we
@@ -84,7 +70,7 @@ export default function About() {
 						ABOUT US_
 					</h1>
 					<div className="basis-2/3 grid grid-cols-1 xl:grid-cols-2 grid-flow-row gap-y-8 gap-x-2 text-base">
-						<p className={`xl:pr-16 ${raleway.className}`}>
+						<p className="xl:pr-16">
 							At B-Max, we excel in fleet management solutions, providing
 							cutting-edge GPS tracking, telematics, and video telematics
 							technologies. Our fuel monitoring systems enhance operational
@@ -96,7 +82,7 @@ export default function About() {
 							making us the go-to partner for efficient and productive fleet
 							management.
 						</p>
-						<p className={`xl:pr-16 ${raleway.className}`}>
+						<p className="xl:pr-16">
 							At B-Max,we pride ourselves on our industry expertise and
 							commitment to exceptional support. Our team of experts ensures
 							that businesses receive the best advice and assistance to make
@@ -107,7 +93,7 @@ export default function About() {
 							tracking, or improving operational efficiency, B-Max has the
 							expertise and solutions to drive your fleet to success.
 						</p>
-						<p className={`xl:pr-16 ${raleway.className}`}>
+						<p className="xl:pr-16">
 							Our GPS tracking systems empower businesses with real-time
 							visibility and analytics, allowing them to optimize fleet
 							performance. B-Max harnesses the latest technology to deliver
@@ -119,7 +105,7 @@ export default function About() {
 							vast expertise to craft tailored solutions that meet the unique
 							challenges of businesses across various sectors.
 						</p>
-						<p className={`xl:pr-16 ${raleway.className}`}>
+						<p className="xl:pr-16">
 							With a focus on operational efficiency and safety, B-Max offers
 							fleet management solutions designed to boost productivity and
 							performance. Our GPS tracking systems, telematics solutions, and
@@ -144,7 +130,7 @@ export default function About() {
 							<h1 className={`text-2xl font-semibold ${raj.className}`}>
 								{++index}.{header}
 							</h1>
-							<p className={`font-thin text-lg ${raleway.className}`}>{text}</p>
+							<p className="font-thin text-lg">{text}</p>
 						</React.Fragment>
 					))}
 				</div>
@@ -195,9 +181,7 @@ export default function About() {
 							<h1 className={`text-5xl font-medium ${raj.className}`}>
 								OUR VISION
 							</h1>
-							<p
-								className={`text-neutral-700/90 text-lg font-light ${raleway.className}`}
-							>
+							<p className="text-neutral-700/90 text-lg font-light">
 								To be the leading provider of intelligent fleet management and
 								asset tracking solutions, empowering businesses worldwide with
 								real-time insights and smart data-driven decisions.
@@ -207,9 +191,7 @@ export default function About() {
 							<h1 className={`text-5xl font-medium ${raj.className}`}>
 								OUR MISSION
 							</h1>
-							<p
-								className={`text-neutral-700/90 text-lg font-light ${raleway.className}`}
-							>
+							<p className="text-neutral-700/90 text-lg font-light">
 								Delivering comprehensive, user-friendly, and cost-effective
 								solutions that enable businesses to optimize their fleet
 								operations, reduce costs, and achieve unmatched customer

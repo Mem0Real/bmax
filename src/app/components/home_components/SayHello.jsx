@@ -4,19 +4,8 @@ import React from "react";
 
 import { motion } from "framer-motion";
 
-import { Rajdhani, Raleway } from "next/font/google";
+import { raj } from "@/app/ui/fonts";
 
-const raleway = Raleway({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
-
-const raj = Rajdhani({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
 export default function SayHello() {
 	return (
 		<div className="w-full px-2 md:px-4 xl:px-40 py-6 pb-8 md:py-12 xl:py-2">
@@ -64,15 +53,13 @@ export default function SayHello() {
 					</div>
 					<div className="w-full flex flex-col md:flex-row md:flex-wrap xl:flex-col justify-center items-start gap-4">
 						<div className="invisible h-8" />
-						<div className="flex flex-col gap-2 pr-8">
+						<div className="flex flex-col gap-2">
 							<h1
 								className={`text-2xl font-semibold text-neutral-900 uppercase ${raj.className}`}
 							>
 								Address
 							</h1>
-							<p
-								className={`text-neutral-900/90 text-base ${raleway.className}`}
-							>
+							<p className={`text-neutral-900/90 text-base`}>
 								Addis Ababa, Bole Wollo Sefer
 							</p>
 						</div>
@@ -83,27 +70,21 @@ export default function SayHello() {
 							>
 								Call us
 							</h1>
-							<p
-								className={`text-start text-neutral-900/90 text-base ${raleway.className}`}
-							>
+							<p className={`text-neutral-900/90 text-base`}>
 								+251-911 71 77 95
 							</p>
-							<p
-								className={`text-start text-neutral-900/90 text-base ${raleway.className}`}
-							>
+							<p className={`text-neutral-900/90 text-base`}>
 								+251-910 40 98 15
 							</p>
 						</div>
 
-						<div className="flex flex-col gap-2 pr-8">
+						<div className="flex flex-col gap-2">
 							<h1
 								className={`text-2xl font-semibold text-neutral-900 uppercase ${raj.className}`}
 							>
 								Email Us
 							</h1>
-							<p
-								className={`text-neutral-900/90 text-base ${raleway.className}`}
-							>
+							<p className={`text-neutral-900/90 text-base`}>
 								info@b-maxautosolutions.com
 							</p>
 						</div>

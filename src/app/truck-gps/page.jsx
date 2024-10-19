@@ -12,19 +12,7 @@ import ExtrudeText from "../components/ExtrudeText";
 
 import { useIcons } from "../components/CustomIcons";
 
-import { Rajdhani, Raleway } from "next/font/google";
-
-const raleway = Raleway({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
-
-const raj = Rajdhani({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
+import { raj } from "@/app/ui/fonts";
 
 export default function Page() {
 	const { SignIcon, PersonIcon, MapIcon, TruckIcon, HeartIcon, PinIcon } =
@@ -52,7 +40,7 @@ export default function Page() {
 						<h1 className={`text-4xl md:text-6xl font-bold ${raj.className}`}>
 							{tGpsData.landing.header}
 						</h1>
-						<p className={`text-neutral-100/90 text-lg ${raleway.className}`}>
+						<p className={`text-neutral-100/90 text-lg`}>
 							{tGpsData.landing.text}
 						</p>
 					</div>
@@ -65,9 +53,7 @@ export default function Page() {
 					>
 						{tGpsData.headerText.header}
 					</h1>
-					<p
-						className={`text-lg text-neutral-900/90 text-center ${raleway.className}`}
-					>
+					<p className={`text-lg text-neutral-900/90 text-center`}>
 						{tGpsData.headerText.text}
 					</p>
 				</div>
@@ -84,7 +70,7 @@ export default function Page() {
 							{tGpsData.background.header}
 						</h2>
 						<p
-							className={`text-base text-neutral-900/80 text-center px-2 md:px-0 xl:px-8 font-medium ${raleway.className}`}
+							className={`text-base text-neutral-900/80 text-center px-2 md:px-0 xl:px-8 font-medium`}
 						>
 							{tGpsData.background.detail}
 						</p>

@@ -7,19 +7,7 @@ import AlternateImage from "../components/AlternateImage";
 import ExtrudeText from "../components/ExtrudeText";
 import CustomBgCard from "./CustomBgCard";
 
-import { Rajdhani, Raleway } from "next/font/google";
-
-const raleway = Raleway({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
-
-const raj = Rajdhani({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
+import { raj } from "@/app/ui/fonts";
 
 export default function FleetManagement() {
 	return (
@@ -34,9 +22,7 @@ export default function FleetManagement() {
 				<AlternateImage img={`${fleetData.location}/landing.png`} />
 			</Alternating>
 			<div className="w-full flex flex-col justify-center items-center gap-2 md:gap-8 lg:gap-0">
-				<p
-					className={`text-xl text-neutral-950 text-center ${raleway.className}`}
-				>
+				<p className={`text-xl text-neutral-950 text-center`}>
 					{fleetData.headerText1.text}
 				</p>
 				<h1
@@ -71,7 +57,7 @@ export default function FleetManagement() {
 			<div className="flex flex-col w-full justify-center items-center gap-5">
 				<div className="xl:px-4 flex flex-col justify-center items-center gap-2 text-center md:text-balance">
 					<h3
-						className={`text-base md:text-lg text-neutral-900 font-medium text-center ${raleway.className}`}
+						className={`text-base md:text-lg text-neutral-900 font-medium text-center`}
 					>
 						{fleetData.headerText2.text}
 					</h3>

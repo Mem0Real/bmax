@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
-import { Rajdhani } from "next/font/google";
+import { raj } from "@/app/ui/fonts";
 
 import AboutDrop from "./navbar_components/AboutDrop";
 import SolutionDrop from "./navbar_components/SolutionDrop";
@@ -19,12 +19,6 @@ import { useDisclosure, useMediaQuery } from "@mantine/hooks";
 
 import Search from "../components/Search";
 import { linkData } from "@/data/links";
-
-const raj = Rajdhani({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
 
 export default function Nav() {
 	const [drop, setDrop] = useState("");

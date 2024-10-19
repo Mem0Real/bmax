@@ -5,19 +5,7 @@ import Link from "next/link";
 
 import { motion } from "framer-motion";
 
-import { Rajdhani, Raleway } from "next/font/google";
-
-const raleway = Raleway({
-	weight: ["400", "500", "600", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
-
-const raj = Rajdhani({
-	weight: ["300", "400", "500", "700"],
-	style: ["normal"],
-	subsets: ["latin"],
-});
+import { raj } from "@/app/ui/fonts";
 
 export default function AlternateText({
 	header,
@@ -47,9 +35,7 @@ export default function AlternateText({
 			</h1>
 			{Array.isArray(detail) ? (
 				dark ? (
-					<div
-						className={`flex flex-col justify-center items-center gap-8 ${raleway.className}`}
-					>
+					<div className="flex flex-col justify-center items-center gap-8">
 						{detail?.map((text, index) => (
 							<p key={index} className="text-neutral-900 text-lg text-justify">
 								{text}
@@ -57,9 +43,7 @@ export default function AlternateText({
 						))}
 					</div>
 				) : (
-					<div
-						className={`flex flex-col justify-center items-center gap-8 ${raleway.className}`}
-					>
+					<div className="flex flex-col justify-center items-center gap-8">
 						{detail?.map((text, index) => (
 							<p key={index} className="text-neutral-200 text-lg text-justify">
 								{text}
@@ -68,9 +52,7 @@ export default function AlternateText({
 					</div>
 				)
 			) : (
-				<p className={`${tailColor} ${raleway.className} font-medium`}>
-					{detail}
-				</p>
+				<p className={`${tailColor} font-medium`}>{detail}</p>
 			)}
 			{children}
 			{!swap && linkText && (
