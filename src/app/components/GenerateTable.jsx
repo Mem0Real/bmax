@@ -12,7 +12,7 @@ export default function GenerateTable({ body }) {
 					<Table.Th>Details</Table.Th>
 				</Table.Tr>
 			</Table.Thead>
-			<Table.Tbody className={raleway.className}>{body}</Table.Tbody>
+			<Table.Tbody>{body}</Table.Tbody>
 		</Table>
 	);
 }
