@@ -53,7 +53,7 @@ export default function SayHello() {
 					</div>
 					<div className="w-full flex flex-col md:flex-row md:flex-wrap xl:flex-col justify-center items-start gap-4">
 						<div className="invisible h-8" />
-						<div className="flex flex-col gap-2 pr-8">
+						<div className="flex flex-col gap-2">
 							<h1
 								className={`text-2xl font-semibold text-neutral-900 uppercase ${raj.className}`}
 							>
@@ -64,7 +64,7 @@ export default function SayHello() {
 							</p>
 						</div>
 
-						<div className="flex flex-col gap-2 pr-8">
+						<div className="flex flex-col gap-2">
 							<h1
 								className={`text-2xl font-semibold text-neutral-900 uppercase ${raj.className}`}
 							>
@@ -78,7 +78,7 @@ export default function SayHello() {
 							</p>
 						</div>
 
-						<div className="flex flex-col gap-2 pr-8">
+						<div className="flex flex-col gap-2">
 							<h1
 								className={`text-2xl font-semibold text-neutral-900 uppercase ${raj.className}`}
 							>
