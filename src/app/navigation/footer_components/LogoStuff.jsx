@@ -16,7 +16,7 @@ export default function LogoStuff() {
 				<div className="self-start w-[125px] h-[40px] md:w-[200px] md:h-[65px] relative">
 					<Image
 						fill
-						src="/images/logo3.png"
+						src="/images/logo4.png"
 						alt="B-Max"
 						priority
 						className="object-cover object-center absolute"

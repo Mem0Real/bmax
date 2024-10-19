@@ -79,11 +79,11 @@ export default function Nav() {
 		<>
 			<div className="relaitve w-full bg-lightestMellow text-neutral-900 px-4 lg:px-16 xl:px-40 py-4 flex items-center justify-between flex-wrap">
 				<Link
-					className="relative flex flex-col justify-center items-center w-[125px] h-[40px] -mt-1"
+					className="relative flex flex-col justify-center items-center w-[125px] h-[60px] xl:h-20 xl:w-48 -mt-1"
 					href="/"
 				>
 					<Image
-						src="/images/logo3.png"
+						src="/images/logo4.png"
 						alt="B-Max"
 						fill
 						priority
