@@ -13,7 +13,7 @@ export default function LogoStuff() {
 	return (
 		<section className="w-full">
 			<div className="flex flex-col justify-stretch items-start gap-2 md:gap-4">
-				<div className="self-start w-[125px] h-[40px] md:w-[200px] md:h-[65px] relative">
+				<div className="self-start w-[125px] h-[70px] md:w-[200px] md:h-[65px] xl:h-20 xl:w-48 relative">
 					<Image
 						fill
 						src="/images/logo4.png"
