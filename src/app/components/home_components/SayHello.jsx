@@ -24,7 +24,7 @@ export default function SayHello() {
 				<div className="w-full md:max-w-[50em] xl:max-w-[80em] mx-auto flex flex-col xl:flex-row  justify-start items-start gap-2 md:gap-4 xl:gap-8">
 					<div className="w-full flex flex-col justify-start items-start gap-1 xl:gap-5">
 						<h1
-							className={`text-7xl text-neutral-900 uppercase ms-2 xl:ms-5 ${raj.className}`}
+							className={`text-6xl text-neutral-900 font-bold uppercase ms-2 xl:ms-5 ${raj.className}`}
 						>
 							Say Hello!
 						</h1>
@@ -73,7 +73,7 @@ export default function SayHello() {
 							<p
 								className={`text-neutral-900/90 text-base ${raleway.className}`}
 							>
-								Bottom text
+								Addis Ababa, Bole Wollo Sefer
 							</p>
 						</div>
 

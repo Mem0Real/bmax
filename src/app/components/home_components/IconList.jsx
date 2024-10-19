@@ -70,8 +70,10 @@ export default function IconList() {
 		<div className="min-h-screen w-full px-4 xl:px-40 bg-neutral-100 py-5 xl:pb-12">
 			<div className="flex flex-col justify-center items-center gap-20">
 				<div className="flex flex-col justify-center items-center gap-2">
-					<h1 className="text-neutral-900 text-lg font-medium uppercase">
-						Telematics Services by Autoronix
+					<h1
+						className={`text-neutral-900 text-lg font-semibold uppercase ${raleway.className}`}
+					>
+						Telematics Services by B-Max
 					</h1>
 					<h1
 						className={`text-darkYellow text-5xl font-bold text-start md:text-center ${raj.className}`}
@@ -86,7 +88,7 @@ export default function IconList() {
 							key={index}
 							className="xl:w-64 flex flex-col justify-center items-center gap-2"
 						>
-							<div className="text-darkYellow w-12">{icon}</div>
+							<div className="text-darkYellow w-16">{icon}</div>
 							<h1
 								className={`font-semibold text-lg uppercase ${raj.className}`}
 							>

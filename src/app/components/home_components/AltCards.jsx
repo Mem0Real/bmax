@@ -188,7 +188,9 @@ export default function AltCards() {
 									transition={{ delay: 0.2 }}
 								>
 									<div className="self-start flex flex-col gap-2">
-										<h2 className={`text-lg font-medium ${raleway.className}`}>
+										<h2
+											className={`text-lg font-semibold ${raleway.className}`}
+										>
 											{smallTitle}
 										</h2>
 										<h2
@@ -198,7 +200,7 @@ export default function AltCards() {
 										</h2>
 									</div>
 									<p
-										className={`text-balance text-base font-medium ${raleway.className}`}
+										className={`text-balance text-justify text-base font-medium ${raleway.className}`}
 									>
 										{highlightText(detail, highlight)}
 									</p>
