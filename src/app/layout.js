@@ -30,8 +30,8 @@ export default function RootLayout({ children }) {
 						<TopLoaderProvider>
 							<ScrollToTopButton>
 								<div className="bg-neutral-100">
-									{/* {children} */}
-									<SlidingData />
+									{children}
+									{/* <SlidingData /> */}
 								</div>
 							</ScrollToTopButton>
 						</TopLoaderProvider>
