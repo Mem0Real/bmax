@@ -51,7 +51,6 @@ export default function GText({ items, autoplayDuration = 5000 }) {
 		}
 	}, [isFirstLoad]);
 
-	// Update animation when the visible items change
 	useEffect(() => {
 		if (!isFirstLoad) {
 			revealItems();
