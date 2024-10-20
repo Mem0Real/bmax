@@ -54,7 +54,7 @@ export default function SolutionLinks() {
 										</motion.div>
 									</Link>
 								}
-							/>{" "}
+							/>
 						</React.Fragment>
 					))}
 				</div>
