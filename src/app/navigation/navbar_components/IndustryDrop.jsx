@@ -17,20 +17,22 @@ export default function IndustryDrop() {
 		<AnimatePresence>
 			<motion.div className="flex flex-col justify-center items-start w-56 bg-lightestMellow text-black rounded-b-md">
 				{dropMenuData.map(({ title, address }, index) => (
-					<BgFill
-						text={
-							<motion.div
-								key={index}
-								initial={{ opacity: 0.9 }}
-								whileHover={{ opacity: 1 }}
-								exit={{ opacity: 0.9 }}
-								className="w-full px-6 py-2 xl:py-4 font-semibold"
-							>
-								<Link href={`/${address}`}>{title}</Link>
-							</motion.div>
-						}
-						color="black"
-					/>
+					<div key={index}>
+						<BgFill
+							text={
+								<motion.div
+									key={index}
+									initial={{ opacity: 0.9 }}
+									whileHover={{ opacity: 1 }}
+									exit={{ opacity: 0.9 }}
+									className="w-full px-6 py-2 xl:py-4 font-semibold"
+								>
+									<Link href={`/${address}`}>{title}</Link>
+								</motion.div>
+							}
+							color="black"
+						/>
+					</div>
 				))}
 			</motion.div>
 		</AnimatePresence>

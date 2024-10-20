@@ -78,19 +78,21 @@ export default function SolutionDrop({ close }) {
 						</div>
 						<div className="flex flex-col justify-center items-start gap-4 pb-8 ps-6 lg:pb-3 lg:ps-8">
 							{nest?.map(({ address, title }, index) => (
-								<BgFill
-									text={
-										<Link
-											className="flex flex-col justify-center items-start ps-5 text-sm font-semibold"
-											key={index}
-											href={address}
-											onClick={close}
-										>
-											{title}
-										</Link>
-									}
-									color="black"
-								/>
+								<div key={index}>
+									<BgFill
+										text={
+											<Link
+												className="flex flex-col justify-center items-start ps-5 text-sm font-semibold"
+												key={index}
+												href={address}
+												onClick={close}
+											>
+												{title}
+											</Link>
+										}
+										color="black"
+									/>
+								</div>
 							))}
 						</div>
 					</div>
