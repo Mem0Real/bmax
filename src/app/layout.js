@@ -13,6 +13,8 @@ import TopLoaderProvider from "./components/TopLoader";
 
 // import { raleway } from "@/app/ui/fonts";
 
+import SlidingData from "./components/home_components/SlidingData";
+
 export const metadata = {
 	title: "B-Max",
 	description: "Auto Solutions for your vehicle Security",
@@ -23,14 +25,15 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<CustomIcons>
 				<body className={` antialiased text-sm`}>
-					<MantineProvider>
+					<SlidingData />
+					{/* <MantineProvider>
 						<Nav />
 						<TopLoaderProvider>
 							<ScrollToTopButton>
 								<div className="bg-neutral-100">{children}</div>
 							</ScrollToTopButton>
 						</TopLoaderProvider>
-					</MantineProvider>
+					</MantineProvider> */}
 					<Footer />
 				</body>
 			</CustomIcons>

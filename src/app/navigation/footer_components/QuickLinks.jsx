@@ -23,7 +23,6 @@ export default function QuickLinks() {
 			<div className="w-[90%] mx-auto flex flex-col justify-center items-start gap-3">
 				{links.map(({ title, address }, index) => (
 					<React.Fragment key={index}>
-						{" "}
 						<BgFill
 							text={
 								<Link href={address} key={index} className="lg:min-w-[50%]">
