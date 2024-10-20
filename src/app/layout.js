@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<CustomIcons>
-				<body className={` antialiased text-sm`}>
+				<body className={`${raleway.className} antialiased text-sm`}>
 					<SlidingData />
 					{/* <MantineProvider>
 						<Nav />
