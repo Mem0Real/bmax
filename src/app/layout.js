@@ -11,7 +11,7 @@ import Nav from "./navigation/Nav";
 import ScrollToTopButton from "./components/ScrollToTop";
 import TopLoaderProvider from "./components/TopLoader";
 
-// import { raleway } from "@/app/ui/fonts";
+import { raleway } from "@/app/ui/fonts";
 
 import SlidingData from "./components/home_components/SlidingData";
 
