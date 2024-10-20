@@ -25,15 +25,17 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<CustomIcons>
 				<body className={`${raleway.className} antialiased text-sm`}>
-					<SlidingData />
-					{/* <MantineProvider>
+					<MantineProvider>
 						<Nav />
 						<TopLoaderProvider>
 							<ScrollToTopButton>
-								<div className="bg-neutral-100">{children}</div>
+								<div className="bg-neutral-100">
+									{/* {children} */}
+									<SlidingData />
+								</div>
 							</ScrollToTopButton>
 						</TopLoaderProvider>
-					</MantineProvider> */}
+					</MantineProvider>
 					<Footer />
 				</body>
 			</CustomIcons>
