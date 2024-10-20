@@ -28,12 +28,12 @@ export default function RootLayout({ children }) {
 					<MantineProvider>
 						<Nav />
 						<TopLoaderProvider>
-							<ScrollToTopButton>
-								<div className="bg-neutral-100">
-									{children}
-									{/* <SlidingData /> */}
-								</div>
-							</ScrollToTopButton>
+							{/* <ScrollToTopButton> */}
+							<div className="bg-neutral-100">
+								{children}
+								{/* <SlidingData /> */}
+							</div>
+							{/* </ScrollToTopButton> */}
 						</TopLoaderProvider>
 					</MantineProvider>
 					<Footer />
