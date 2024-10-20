@@ -17,7 +17,7 @@ export default function IndustryDrop() {
 		<AnimatePresence>
 			<motion.div className="flex flex-col justify-center items-start w-56 bg-lightestMellow text-black rounded-b-md">
 				{dropMenuData.map(({ title, address }, index) => (
-					<div key={index}>
+					<React.Fragment key={index}>
 						<BgFill
 							text={
 								<motion.div
@@ -32,7 +32,7 @@ export default function IndustryDrop() {
 							}
 							color="black"
 						/>
-					</div>
+					</React.Fragment>
 				))}
 			</motion.div>
 		</AnimatePresence>

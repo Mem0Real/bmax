@@ -78,7 +78,7 @@ export default function SolutionDrop({ close }) {
 						</div>
 						<div className="flex flex-col justify-center items-start gap-4 pb-8 ps-6 lg:pb-3 lg:ps-8">
 							{nest?.map(({ address, title }, index) => (
-								<div key={index}>
+								<React.Fragment key={index}>
 									<BgFill
 										text={
 											<Link
@@ -92,7 +92,7 @@ export default function SolutionDrop({ close }) {
 										}
 										color="black"
 									/>
-								</div>
+								</React.Fragment>
 							))}
 						</div>
 					</div>

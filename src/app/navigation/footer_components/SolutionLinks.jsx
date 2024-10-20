@@ -40,20 +40,22 @@ export default function SolutionLinks() {
 				</h1>
 				<div className="w-[90%] mx-auto grid md:grid-rows-4 xl:grid-rows-6 grid-cols-1 md:grid-cols-3 xl:grid-cols-2 grid-flow-row md:grid-flow-col justify-items-between xl:justify-items-start gap-3">
 					{links.map(({ title, address }, index) => (
-						<BgFill
-							text={
-								<Link href={address} key={index} className="lg:min-w-[70%]">
-									<motion.div
-										whileHover={{
-											borderColor: "#ee8f34",
-										}}
-										className={`py-2 md:py-0.5 xl:py-1 px-4 border border-white text-white font-base cursor-pointer uppercase`}
-									>
-										{title}
-									</motion.div>
-								</Link>
-							}
-						/>
+						<React.Fragment key={index}>
+							<BgFill
+								text={
+									<Link href={address} key={index} className="lg:min-w-[70%]">
+										<motion.div
+											whileHover={{
+												borderColor: "#ee8f34",
+											}}
+											className={`py-2 md:py-0.5 xl:py-1 px-4 border border-white text-white font-base cursor-pointer uppercase`}
+										>
+											{title}
+										</motion.div>
+									</Link>
+								}
+							/>{" "}
+						</React.Fragment>
 					))}
 				</div>
 			</div>
