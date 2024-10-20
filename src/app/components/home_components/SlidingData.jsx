@@ -1,13 +1,13 @@
 import React from "react";
 import Link from "next/link";
 
-// import { raj } from "@/app/ui/fonts";
+import { raj } from "@/app/ui/fonts";
 
 import GText from "../GText";
 
 const BigText = ({ children }) => (
 	<div
-		className={`text-4xl md:text-6xl lg:text-8xl font-bold mb-4 bg-neutral-200 text-neutral-900 w-fit`}
+		className={`text-4xl md:text-6xl lg:text-8xl font-bold mb-4 bg-neutral-200 text-neutral-900 w-fit ${raj.className}`}
 	>
 		{children}
 	</div>
