@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 import { raj } from "@/app/ui/fonts";
+import BgFill from "@/app/components/BgFill";
 
 const links = [
 	{ title: "Car Key Duplication", address: "/key-duplication" },
@@ -39,16 +40,20 @@ export default function SolutionLinks() {
 				</h1>
 				<div className="w-[90%] mx-auto grid md:grid-rows-4 xl:grid-rows-6 grid-cols-1 md:grid-cols-3 xl:grid-cols-2 grid-flow-row md:grid-flow-col justify-items-between xl:justify-items-start gap-3">
 					{links.map(({ title, address }, index) => (
-						<Link href={address} key={index} className="lg:min-w-[70%]">
-							<motion.div
-								whileHover={{
-									borderColor: "#ee8f34",
-								}}
-								className={`py-2 md:py-0.5 xl:py-1 px-4 border border-white text-white font-base cursor-pointer uppercase`}
-							>
-								{title}
-							</motion.div>
-						</Link>
+						<BgFill
+							text={
+								<Link href={address} key={index} className="lg:min-w-[70%]">
+									<motion.div
+										whileHover={{
+											borderColor: "#ee8f34",
+										}}
+										className={`py-2 md:py-0.5 xl:py-1 px-4 border border-white text-white font-base cursor-pointer uppercase`}
+									>
+										{title}
+									</motion.div>
+								</Link>
+							}
+						/>
 					))}
 				</div>
 			</div>

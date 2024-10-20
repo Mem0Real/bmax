@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 
-export default function BgFill({ text }) {
+export default function BgFill({ text, color = "white" }) {
 	const textRef = useRef(null);
 	const backgroundRef = useRef(null);
 	const [isToggled, setIsToggled] = useState(false);
@@ -12,7 +12,7 @@ export default function BgFill({ text }) {
 		const textElement = textRef.current;
 		const backgroundElement = backgroundRef.current;
 
-		gsap.set(textElement, { color: "black" });
+		gsap.set(textElement, { color: color });
 		gsap.set(backgroundElement, { scaleX: 0, transformOrigin: "left" });
 
 		return () => gsap.killTweensOf([textElement, backgroundElement]);
@@ -72,7 +72,7 @@ export default function BgFill({ text }) {
 
 	return (
 		<div
-			className="relative inline-block overflow-hidden cursor-pointer bg-none"
+			className="w-full relative inline-block overflow-hidden cursor-pointer bg-none"
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}
 			onClick={handleClick}
@@ -80,7 +80,7 @@ export default function BgFill({ text }) {
 			{/* Background */}
 			<span
 				ref={backgroundRef}
-				className="absolute inset-0 bg-black z-0"
+				className="absolute inset-0 bg-mellow z-0"
 				style={{ pointerEvents: "none" }}
 			/>
 

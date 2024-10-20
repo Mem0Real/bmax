@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 import Link from "next/link";
 import { useIcons } from "@/app/components/CustomIcons";
+import BgFill from "@/app/components/BgFill";
 
 export default function SolutionDrop({ close }) {
 	const { NewKeyIcon, FleetIcon, TrackingIcon, FuelIcon, VideoIcon } =
@@ -77,14 +78,19 @@ export default function SolutionDrop({ close }) {
 						</div>
 						<div className="flex flex-col justify-center items-start gap-4 pb-8 ps-6 lg:pb-3 lg:ps-8">
 							{nest?.map(({ address, title }, index) => (
-								<Link
-									className="flex flex-col justify-center items-start ps-5 text-sm font-semibold"
-									key={index}
-									href={address}
-									onClick={close}
-								>
-									{title}
-								</Link>
+								<BgFill
+									text={
+										<Link
+											className="flex flex-col justify-center items-start ps-5 text-sm font-semibold"
+											key={index}
+											href={address}
+											onClick={close}
+										>
+											{title}
+										</Link>
+									}
+									color="black"
+								/>
 							))}
 						</div>
 					</div>

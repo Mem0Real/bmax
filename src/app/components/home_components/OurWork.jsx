@@ -6,19 +6,19 @@ export default function OurWork() {
 		<div className="min-h-screen w-full px-4 md:px-12 xl:px-40 bg-neutral-950 text-neutral-100 flex flex-col justify-center items-center py-8">
 			<div className="w-full flex flex-col xl:flex-row justify-stretch items-stretch relative gap-12 xl:gap-0">
 				<h1
-					className={`flex-1/4 text-6xl md:text-7xl lg:text-8xl font-semibold uppercase xl:pr-4 text-nowrap xl:-mt-5 ${raj.className}`}
+					className={`flex-1/4 text-6xl md:text-7xl lg:text-8xl boldt-semibold uppercase xl:pr-4 text-nowrap xl:-mt-5 ${raj.className}`}
 				>
 					Our Work
 				</h1>
 				<div className="w-full flex-3/4 flex flex-col gap-12 lg:gap-20 xl:gap-36">
 					<div className="flex flex-col md:flex-row gap-12 xl:gap-0">
 						<div className="w-full">
-							<h1 className="relative inset-0 text-neutral-600/10 text-[12rem] tracking-tighter font-bold">
+							<h1 className="relative inset-0 text-neutral-500/10 text-[12rem] tracking-tighter font-bold">
 								<p className="absolute top-12"> 01</p>
 							</h1>
 							<div className="w-full h-full flex flex-col justify-start items-start gap-6 px-2 xl:pl-8">
 								<h1
-									className={`text-neutral-100 font-semibold text-lg pt-3 ${raj.className}`}
+									className={`text-neutral-100 font-bold text-lg pt-3 ${raj.className}`}
 								>
 									Automotive Locksmith Services
 								</h1>
@@ -30,12 +30,12 @@ export default function OurWork() {
 							</div>
 						</div>
 						<div className="w-full">
-							<h1 className="relative inset-0 text-neutral-600/10 text-[12rem] tracking-tighter font-bold">
+							<h1 className="relative inset-0 text-neutral-500/10 text-[12rem] tracking-tighter font-bold">
 								<p className="absolute top-12"> 02</p>
 							</h1>
 							<div className="w-full h-full flex flex-col justify-start items-start gap-6 px-2 xl:pl-8">
 								<h1
-									className={`text-neutral-100 font-semibold text-lg pt-3 ${raj.className}`}
+									className={`text-neutral-100 font-bold text-lg pt-3 ${raj.className}`}
 								>
 									Telematics Solutions
 								</h1>
@@ -49,12 +49,12 @@ export default function OurWork() {
 					</div>
 					<div className="flex flex-col md:flex-row gap-12 xl:gap-0">
 						<div className="w-full">
-							<h1 className="relative inset-0 text-neutral-600/10 text-[12rem] tracking-tighter font-bold">
+							<h1 className="relative inset-0 text-neutral-500/10 text-[12rem] tracking-tighter font-bold">
 								<p className="absolute top-12"> 03</p>
 							</h1>
 							<div className="w-full h-full flex flex-col justify-start items-start gap-6 px-2 xl:pl-8">
 								<h1
-									className={`text-neutral-100 font-semibold text-lg pt-3 ${raj.className}`}
+									className={`text-neutral-100 font-bold text-lg pt-3 ${raj.className}`}
 								>
 									Vehicle Security
 								</h1>
@@ -66,12 +66,12 @@ export default function OurWork() {
 							</div>
 						</div>
 						<div className="w-full">
-							<h1 className="relative inset-0 text-neutral-600/10 text-[12rem] tracking-tighter font-bold">
+							<h1 className="relative inset-0 text-neutral-500/10 text-[12rem] tracking-tighter font-bold">
 								<p className="absolute top-12"> 04</p>
 							</h1>
 							<div className="w-full h-full flex flex-col justify-start items-start gap-6 px-2 xl:pl-8">
 								<h1
-									className={`text-neutral-100 font-semibold text-lg pt-3 ${raj.className}`}
+									className={`text-neutral-100 font-bold text-lg pt-3 ${raj.className}`}
 								>
 									Fleet Services
 								</h1>
