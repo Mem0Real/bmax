@@ -25,11 +25,11 @@ export default function RootLayout({ children }) {
 				<body className={` antialiased text-sm`}>
 					<MantineProvider>
 						<Nav />
-						{/* <TopLoaderProvider> */}
-						{/* <ScrollToTopButton> */}
-						<div className="bg-neutral-100">{children}</div>
-						{/* </ScrollToTopButton> */}
-						{/* </TopLoaderProvider> */}
+						<TopLoaderProvider>
+							<ScrollToTopButton>
+								<div className="bg-neutral-100">{children}</div>
+							</ScrollToTopButton>
+						</TopLoaderProvider>
 					</MantineProvider>
 					<Footer />
 				</body>

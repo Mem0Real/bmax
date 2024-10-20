@@ -28,7 +28,7 @@ const items = [
 			<BigText key="1">Car Key</BigText>,
 			<BigText key="2">Services</BigText>,
 			<BottomLink key="3" href="/key-replacement">
-				View more_
+				View more
 			</BottomLink>,
 		],
 	},
@@ -39,7 +39,7 @@ const items = [
 			<BigText key="2">Management</BigText>,
 			<BigText key="3">Operations</BigText>,
 			<BottomLink key="4" href="/fleet-management">
-				View more_
+				View more
 			</BottomLink>,
 		],
 	},
@@ -49,7 +49,7 @@ const items = [
 			<BigText key="1">Tracking &</BigText>,
 			<BigText key="2">Telematics</BigText>,
 			<BottomLink key="3" href="/video-telematics">
-				View more_
+				View more
 			</BottomLink>,
 		],
 	},

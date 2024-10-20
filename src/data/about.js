@@ -1,6 +1,13 @@
 export const aboutData = {
 	location: "about-page",
 
+	dets: [
+		"At B-Max, we excel in fleet management solutions, providing cutting-edge GPS tracking, telematics, and video telematics technologies. Our fuel monitoring systems enhance operational efficiency and promote cost savings. We prioritize safety solutions to ensure real-time visibility and productivity for your fleet. With industry expertise, we offer tailored and scalable solutions to optimize fleet operations. Our exceptional support and customized fleet solutions cater to businesses of all sizes, making us the go-to partner for efficient and productive fleet management.",
+
+		"At B-Max,we pride ourselves on our industry expertise and commitment to exceptional support. Our team of experts ensures that businesses receive the best advice and assistance to make informed decisions about their fleet management needs. With cutting-edge technology and customized solutions, we enable businesses to streamline fleet operations and achieve their goals efficiently. Whether it&apos;s fleet optimization, real-time tracking, or improving operational efficiency, B-Max has the expertise and solutions to drive your fleet to success.",
+		"Our GPS tracking systems empower businesses with real-time visibility and analytics, allowing them to optimize fleet performance. B-Max harnesses the latest technology to deliver fleet tracking systems that boost operational efficiency and productivity. We leverage video telematics to provide valuable insights into driver behavior, further enhancing safety and compliance. Our fuel monitoring solutions reduce costs and minimize environmental impact. As industry leaders, we draw on our vast expertise to craft tailored solutions that meet the unique challenges of businesses across various sectors.",
+		"With a focus on operational efficiency and safety, B-Max offers fleet management solutions designed to boost productivity and performance. Our GPS tracking systems, telematics solutions, and video telematics technologies provide real-time visibility and data-driven insights. We pride ourselves on delivering cutting-edge technology tailored to the unique needs of our clients. Our fuel monitoring systems not only optimize consumption but also contribute to sustainability efforts. B-Max is the trusted partner for businesses seeking scalable fleet solutions and expert support in fleet management.",
+	],
 	whyList: [
 		{
 			header: "EXPERTISE",
