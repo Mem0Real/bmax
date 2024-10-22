@@ -66,11 +66,13 @@ export default function IconList() {
 				<div className="bg-black/40 backdrop-blur-sm text-neutral-200 px-4 xl:px-40 py-5 xl:pb-36 ">
 					<div className="flex flex-col justify-center items-center gap-20">
 						<div className="flex flex-col justify-center items-center gap-2">
-							<h1 className={`font-bold text-xl uppercase`}>
+							<h1
+								className={`font-bold text-xl uppercase text-center md:text-start`}
+							>
 								Telematics Services by B-Max
 							</h1>
 							<h1
-								className={`text-darkYellow text-5xl font-bold text-start md:text-center ${raj.className}`}
+								className={`text-darkYellow text-5xl font-bold text-center ${raj.className}`}
 							>
 								Enabling Digital Transformation Across Industries
 							</h1>
