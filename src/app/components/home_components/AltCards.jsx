@@ -177,12 +177,12 @@ export default function AltCards() {
 								>
 									<div className="self-start flex flex-col gap-2">
 										<h2
-											className={`text-sm md:text-base lg:text-lg font-semibold whitespace-nowrap`}
+											className={`text-sm md:text-base lg:text-lg font-bold whitespace-nowrap`}
 										>
 											{smallTitle}
 										</h2>
 										<h2
-											className={`text-darkYellow text-xl md:text-xl lg:text-5xl font-bold whitespace-nowrap ${raj.className}`}
+											className={`text-darkYellow text-xl md:text-xl lg:text-5xl font-extrabold whitespace-nowrap ${raj.className}`}
 										>
 											{title}
 										</h2>
@@ -267,7 +267,7 @@ export default function AltCards() {
 													src={image}
 													alt={index}
 													fill
-													className="absolute object-contain object-center"
+													className="absolute object-contain object-center p-4 rounded-3xl"
 													sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 													priority
 												/>
