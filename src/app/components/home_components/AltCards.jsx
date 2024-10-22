@@ -52,7 +52,7 @@ const description = [
 		title: "Ignition Repair",
 		detail:
 			"Car ignition issues are one of the most frustrating problems for drivers. If you notice that your car's engine won't start or is difficult to start, it may be time for ignition repair. There are many reasons why your car's ignition system can fail, from a damaged key to a faulty starter. Our team of experienced technicians has the expertise to quickly diagnose the problem and provide quality ignition repairs. We use top-quality parts and tools to ensure that your car's ignition system is functioning properly. Our services include ignition switch repair, ignition coil replacement, and starter repair. Contact us today for reliable and efficient car ignition repair services to get you back on the road safely and quickly.",
-		address: "",
+		address: "/ignition-repair",
 		image: "/images/landing-cards/ignition.png",
 		highlight: [""],
 	},

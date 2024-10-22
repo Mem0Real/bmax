@@ -8,7 +8,10 @@ import { raj } from "@/app/ui/fonts";
 
 export default function SayHello() {
 	return (
-		<div className="w-full px-2 md:px-4 xl:px-40 py-6 pb-8 md:py-12 xl:py-2">
+		<div
+			id="hello"
+			className="w-full px-2 md:px-4 xl:px-40 py-6 pb-8 md:py-12 xl:py-2"
+		>
 			<div className="xl:h-[70vh] flex flex-col xl:flex-row justify-start items-center">
 				<div className="w-full md:max-w-[50em] xl:max-w-[80em] mx-auto flex flex-col xl:flex-row  justify-start items-start gap-2 md:gap-4 xl:gap-8">
 					<div className="w-full flex flex-col justify-start items-start gap-1 xl:gap-5">

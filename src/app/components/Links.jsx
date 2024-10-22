@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useIcons } from "./CustomIcons";
 import Link from "next/link";
 
-export default function Links({ sm }) {
+export default function Links({ sm, top = false }) {
 	const {
 		TelegramIcon,
 		FacebookIcon,
@@ -18,17 +18,19 @@ export default function Links({ sm }) {
 	let padding = sm ? "p-1" : "p-1.5";
 	let color = sm ? "text-neutral-800" : "text-neutral-200";
 
+	let stroke = top ? "#f6c08e" : "#e27712";
+
 	return (
 		<AnimatePresence>
 			<div className="flex justify-center items-center gap-6 ps-4">
 				<motion.div
 					className={`rounded-full ${width} ${padding} ${color}`}
-					initial={{ backgroundColor: "#f6c08e" }}
+					initial={{ backgroundColor: stroke }}
 					whileHover={{
 						backgroundColor: "rgb(255 173 51 / 0)",
 						color: "#2563eb",
 					}}
-					exit={{ backgroundColor: "#f6c08e" }}
+					exit={{ backgroundColor: stroke }}
 					transition={{ ease: "easeInOut", duration: 0.6 }}
 				>
 					<Link
@@ -41,12 +43,12 @@ export default function Links({ sm }) {
 				</motion.div>
 				<motion.div
 					className={`rounded-full ${width} ${padding}`}
-					initial={{ backgroundColor: "#f6c08e" }}
+					initial={{ backgroundColor: stroke }}
 					whileHover={{
 						backgroundColor: "rgb(255 173 51 / 0)",
 						color: "#2563eb",
 					}}
-					exit={{ backgroundColor: "#f6c08e" }}
+					exit={{ backgroundColor: stroke }}
 					transition={{ ease: "easeInOut", duration: 0.6 }}
 				>
 					<Link
@@ -60,12 +62,12 @@ export default function Links({ sm }) {
 
 				<motion.div
 					className={`rounded-full ${width} ${padding}`}
-					initial={{ backgroundColor: "#f6c08e" }}
+					initial={{ backgroundColor: stroke }}
 					whileHover={{
 						backgroundColor: "rgb(255 173 51 / 0)",
 						color: "#f472b6",
 					}}
-					exit={{ backgroundColor: "#f6c08e" }}
+					exit={{ backgroundColor: stroke }}
 					transition={{ ease: "easeInOut", duration: 0.6 }}
 				>
 					<Link
@@ -78,9 +80,9 @@ export default function Links({ sm }) {
 				</motion.div>
 				<motion.div
 					className={`rounded-lg ${width} ${padding}`}
-					initial={{ backgroundColor: "#f6c08e" }}
+					initial={{ backgroundColor: stroke }}
 					whileHover={{ backgroundColor: "#0077B5", color: "#fff" }}
-					exit={{ backgroundColor: "#f6c08e" }}
+					exit={{ backgroundColor: stroke }}
 					transition={{ ease: "easeInOut", duration: 0.6 }}
 				>
 					<Link
@@ -93,13 +95,13 @@ export default function Links({ sm }) {
 				</motion.div>
 				<motion.div
 					className={`rounded-lg ${width} ${padding}`}
-					initial={{ backgroundColor: "#f6c08e" }}
+					initial={{ backgroundColor: stroke }}
 					whileHover={{
 						backgroundColor: "#000",
 						borderRadius: "5px",
 						color: "#fff",
 					}}
-					exit={{ backgroundColor: "#f6c08e" }}
+					exit={{ backgroundColor: stroke }}
 					transition={{ ease: "easeInOut", duration: 0.6 }}
 				>
 					<Link
