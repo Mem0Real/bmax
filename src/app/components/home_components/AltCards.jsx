@@ -43,7 +43,7 @@ const description = [
 		title: "Car Alarm Installation",
 		detail:
 			"A car alarm is a security feature installed in vehicles to protect them from unauthorized access and theft. It is an electronic device that emits a loud noise when triggered by movement, vibration or attempted entry. The noise serves as a deterrent to potential thieves and alerts nearby individuals of the theft attempt. Car alarms have evolved over time and can now be synchronized with a smartphone app, allowing you to monitor and control your car's security remotely. Installing a car alarm is a wise investment to ensure the safety and security of your vehicle. It provides peace of mind knowing that you have taken the necessary steps to prevent theft and protect your investment.",
-		address: "",
+		address: "#",
 		image: "/images/landing-cards/car-alarm-key.png",
 		highlight: [""],
 	},
