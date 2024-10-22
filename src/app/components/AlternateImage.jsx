@@ -30,7 +30,7 @@ export default function AlternateImage({ img, sm }) {
 				<Image
 					src={`/images/${img}`}
 					fill
-					className="object-cover object-center absolute inset-0 p-2"
+					className="object-cover object-center absolute inset-0 p-4 rounded-[3rem] "
 					alt={img}
 					sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 				/>

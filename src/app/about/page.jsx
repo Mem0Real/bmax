@@ -53,12 +53,12 @@ export default function About() {
 				</div>
 
 				{/* image */}
-				<div className="h-[90vh] flex justify-center items-center w-full relative">
+				<div className="flex justify-center items-center w-[120vw] h-[100vh] relative">
 					<Image
 						src={"/images/aboutImage.png"}
 						alt="About us"
 						fill
-						className="absolute object-cover object-center"
+						className="absolute object-contain object-center"
 						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 						priority
 					/>
@@ -182,9 +182,8 @@ export default function About() {
 								OUR VISION
 							</h1>
 							<p className="text-neutral-700/90 text-lg font-light">
-								To be the leading provider of intelligent fleet management and
-								asset tracking solutions, empowering businesses worldwide with
-								real-time insights and smart data-driven decisions.
+								“To be the top choice for secure and reliable locksmith and
+								fleet management solutions.
 							</p>
 						</div>
 						<div className="flex flex-col justify-start items-start gap-4">
@@ -192,10 +191,8 @@ export default function About() {
 								OUR MISSION
 							</h1>
 							<p className="text-neutral-700/90 text-lg font-light">
-								Delivering comprehensive, user-friendly, and cost-effective
-								solutions that enable businesses to optimize their fleet
-								operations, reduce costs, and achieve unmatched customer
-								satisfaction.
+								“Delivering trusted locksmith and fleet management services that
+								ensure safety and efficiency for our clients.”
 							</p>
 						</div>
 					</div>

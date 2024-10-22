@@ -13,7 +13,7 @@ import TopLoaderProvider from "./components/TopLoader";
 
 import { raleway } from "@/app/ui/fonts";
 
-import SlidingData from "./components/home_components/SlidingData";
+import Topbar from "./components/Topbar";
 
 export const metadata = {
 	title: "B-Max",
@@ -27,6 +27,7 @@ export default function RootLayout({ children }) {
 				<body className={`${raleway.className} antialiased text-sm`}>
 					<MantineProvider>
 						<Nav />
+						<Topbar />
 						<TopLoaderProvider>
 							<ScrollToTopButton>
 								<div className="bg-neutral-100">{children}</div>

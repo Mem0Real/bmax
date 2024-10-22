@@ -15,7 +15,7 @@ const description = [
 		title: "Car Key Replacement",
 		detail:
 			"If you have lost your car key, do not panic! We offer fast and reliable car key replacement services. Our team of experienced technicians can make your car replacement key  on site, saving you time and hassle. We use the latest technology and equipment to provide high-quality replacement of car keys for all makes and models of cars, including transponder keys and remote keys. With our fast and efficient service, you will be back on the road in no time. Contact us today to schedule your car key replacement or for any other car key services. Trust us to handle all of your car key needs!",
-		address: "/car-key-replacement",
+		address: "/key-replacement",
 		image: "/images/landing-cards/car-key.png",
 		highlight: [
 			"lost your car key",
@@ -29,7 +29,7 @@ const description = [
 		title: "Duplicate Car Keys",
 		detail:
 			"Looking for car key duplication services? Our team of experienced professionals can make a duplicate car key for your car quickly and efficiently. Whether you need a spare key or have lost your original one, we have the tools and knowledge needed to make a perfect duplicate. Our services are available for all major car brands, including BMW, Toyota, and Ford. We use advanced technology to ensure the car key works seamlessly with your car's ignition system. You can trust us for high-quality, affordable services that meet all your needs. Contact us today to schedule an appointment for car key duplication that fits your schedule.",
-		address: "/car-key-duplication",
+		address: "/key-duplication",
 		image: "/images/landing-cards/duplicate-key.png",
 		highlight: [
 			"car key duplication services",
@@ -44,7 +44,7 @@ const description = [
 		detail:
 			"A car alarm is a security feature installed in vehicles to protect them from unauthorized access and theft. It is an electronic device that emits a loud noise when triggered by movement, vibration or attempted entry. The noise serves as a deterrent to potential thieves and alerts nearby individuals of the theft attempt. Car alarms have evolved over time and can now be synchronized with a smartphone app, allowing you to monitor and control your car's security remotely. Installing a car alarm is a wise investment to ensure the safety and security of your vehicle. It provides peace of mind knowing that you have taken the necessary steps to prevent theft and protect your investment.",
 		address: "",
-		image: "/images/landing-cards/car-alarm.png",
+		image: "/images/landing-cards/car-alarm-key.png",
 		highlight: [""],
 	},
 	{
@@ -52,7 +52,7 @@ const description = [
 		title: "Ignition Repair",
 		detail:
 			"Car ignition issues are one of the most frustrating problems for drivers. If you notice that your car's engine won't start or is difficult to start, it may be time for ignition repair. There are many reasons why your car's ignition system can fail, from a damaged key to a faulty starter. Our team of experienced technicians has the expertise to quickly diagnose the problem and provide quality ignition repairs. We use top-quality parts and tools to ensure that your car's ignition system is functioning properly. Our services include ignition switch repair, ignition coil replacement, and starter repair. Contact us today for reliable and efficient car ignition repair services to get you back on the road safely and quickly.",
-		address: "/",
+		address: "",
 		image: "/images/landing-cards/ignition.png",
 		highlight: [""],
 	},
@@ -61,7 +61,7 @@ const description = [
 		title: "Monitor All Your Assets",
 		detail:
 			"Unlock the power of comprehensive asset monitoring with B-Max. From key replacement to vehicle tracking, our professional locksmith and telematics services ensure the security and visibility of your assets. Experience reliability and professionalism like never before.",
-		address: "/fleet-management-solutions",
+		address: "/fleet-management",
 		image: "/images/landing-cards/monitor.png",
 		highlight: ["asset monitoring", "vehicle tracking"],
 	},
@@ -70,7 +70,7 @@ const description = [
 		title: "Protect Your Vehicles and Cargo",
 		detail:
 			"Safeguard your vehicles and cargo with B-Max's advanced technology. Our automotive locksmith services and vehicle tracking solutions provide enhanced safety measures, ensuring peace of mind for individuals and businesses alike. Trust us to protect what matters most.",
-		address: "/",
+		address: "/ai-dashcam",
 		image: "/images/landing-cards/protect.png",
 		highlight: [
 			"vehicles",
@@ -84,7 +84,7 @@ const description = [
 		title: "Fuel Monitoring",
 		detail:
 			"Fuel monitoring and management is the process of tracking and optimizing fuel consumption in various industries, such as transportation and manufacturing. By carefully monitoring fuel usage and analyzing data, companies can identify inefficiencies and make informed decisions to reduce costs and lower their carbon footprint. This involves monitoring fuel levels in tanks, analyzing fuel usage patterns, and implementing measures to improve fuel efficiency. Through effective fuel management, companies can save money and improve their environmental impact by achieving greater fuel efficiency and reducing carbon emissions. This is essential to ensure that resources are used efficiently and sustainably, while also minimizing the impact on the environment. Effective fuel management is essential for any industry that relies on fuel and understands the importance of sustainability and responsible resource management.",
-		address: "/fuel-monitoring-system",
+		address: "/fuel-monitoring",
 		image: "/images/landing-cards/fuel.png",
 		highlight: ["Fuel monitoring and management"],
 	},
@@ -176,15 +176,19 @@ export default function AltCards() {
 									transition={{ delay: 0.2 }}
 								>
 									<div className="self-start flex flex-col gap-2">
-										<h2 className={`text-lg font-semibold`}>{smallTitle}</h2>
 										<h2
-											className={`text-darkYellow text-5xl md:text-6xl font-bold ${raj.className}`}
+											className={`text-sm md:text-base lg:text-lg font-semibold whitespace-nowrap`}
+										>
+											{smallTitle}
+										</h2>
+										<h2
+											className={`text-darkYellow text-xl md:text-xl lg:text-5xl font-bold whitespace-nowrap ${raj.className}`}
 										>
 											{title}
 										</h2>
 									</div>
 									<p
-										className={`text-balance text-justify text-base font-medium`}
+										className={`text-balance text-justify text-sm font-medium`}
 									>
 										{highlightText(detail, highlight)}
 									</p>
@@ -236,7 +240,7 @@ export default function AltCards() {
 												<Image
 													src={image}
 													alt={index}
-													className="absolute object-contain object-center"
+													className="absolute object-contain object-center p-4 rounded-3xl"
 													priority
 													fill
 													sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

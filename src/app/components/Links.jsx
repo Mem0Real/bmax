@@ -23,12 +23,12 @@ export default function Links({ sm }) {
 			<div className="flex justify-center items-center gap-6 ps-4">
 				<motion.div
 					className={`rounded-full ${width} ${padding} ${color}`}
-					initial={{ backgroundColor: "#713b09" }}
+					initial={{ backgroundColor: "#f6c08e" }}
 					whileHover={{
 						backgroundColor: "rgb(255 173 51 / 0)",
 						color: "#2563eb",
 					}}
-					exit={{ backgroundColor: "#713b09" }}
+					exit={{ backgroundColor: "#f6c08e" }}
 					transition={{ ease: "easeInOut", duration: 0.6 }}
 				>
 					<Link
@@ -41,12 +41,12 @@ export default function Links({ sm }) {
 				</motion.div>
 				<motion.div
 					className={`rounded-full ${width} ${padding}`}
-					initial={{ backgroundColor: "#713b09" }}
+					initial={{ backgroundColor: "#f6c08e" }}
 					whileHover={{
 						backgroundColor: "rgb(255 173 51 / 0)",
 						color: "#2563eb",
 					}}
-					exit={{ backgroundColor: "#713b09" }}
+					exit={{ backgroundColor: "#f6c08e" }}
 					transition={{ ease: "easeInOut", duration: 0.6 }}
 				>
 					<Link
@@ -60,12 +60,12 @@ export default function Links({ sm }) {
 
 				<motion.div
 					className={`rounded-full ${width} ${padding}`}
-					initial={{ backgroundColor: "#713b09" }}
+					initial={{ backgroundColor: "#f6c08e" }}
 					whileHover={{
 						backgroundColor: "rgb(255 173 51 / 0)",
 						color: "#f472b6",
 					}}
-					exit={{ backgroundColor: "#713b09" }}
+					exit={{ backgroundColor: "#f6c08e" }}
 					transition={{ ease: "easeInOut", duration: 0.6 }}
 				>
 					<Link
@@ -78,9 +78,9 @@ export default function Links({ sm }) {
 				</motion.div>
 				<motion.div
 					className={`rounded-lg ${width} ${padding}`}
-					initial={{ backgroundColor: "#713b09" }}
+					initial={{ backgroundColor: "#f6c08e" }}
 					whileHover={{ backgroundColor: "#0077B5", color: "#fff" }}
-					exit={{ backgroundColor: "#713b09" }}
+					exit={{ backgroundColor: "#f6c08e" }}
 					transition={{ ease: "easeInOut", duration: 0.6 }}
 				>
 					<Link
@@ -93,13 +93,13 @@ export default function Links({ sm }) {
 				</motion.div>
 				<motion.div
 					className={`rounded-lg ${width} ${padding}`}
-					initial={{ backgroundColor: "#713b09" }}
+					initial={{ backgroundColor: "#f6c08e" }}
 					whileHover={{
 						backgroundColor: "#000",
 						borderRadius: "5px",
 						color: "#fff",
 					}}
-					exit={{ backgroundColor: "#713b09" }}
+					exit={{ backgroundColor: "#f6c08e" }}
 					transition={{ ease: "easeInOut", duration: 0.6 }}
 				>
 					<Link

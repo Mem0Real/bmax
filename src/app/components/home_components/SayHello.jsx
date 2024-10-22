@@ -70,10 +70,14 @@ export default function SayHello() {
 							>
 								Call us
 							</h1>
-							<p className={`text-neutral-900/90 text-base`}>
+							<p
+								className={`text-lg text-neutral-900/90 text-center ${raj.className}`}
+							>
 								+251-911 71 77 95
 							</p>
-							<p className={`text-neutral-900/90 text-base`}>
+							<p
+								className={`text-lg ps-3 text-neutral-900/90 text-center ${raj.className}`}
+							>
 								+251-910 40 98 15
 							</p>
 						</div>

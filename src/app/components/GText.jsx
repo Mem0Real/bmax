@@ -3,6 +3,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { useIcons } from "./CustomIcons";
+import Image from "next/image";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function GText({ items, autoplayDuration = 8000 }) {
 	const [visibleItems, setVisibleItems] = useState(items[0].components);
@@ -50,8 +52,8 @@ export default function GText({ items, autoplayDuration = 8000 }) {
 			opacity: 0,
 			duration: 0.5,
 			onComplete: () => {
-				currentVideo.pause();
-				currentVideo.currentTime = 0; // Reset current time
+				currentVideo?.pause();
+				if (currentVideo) currentVideo.currentTime = 0; // Reset current time
 			},
 		});
 
@@ -60,7 +62,7 @@ export default function GText({ items, autoplayDuration = 8000 }) {
 			opacity: 1,
 			duration: 0.5,
 			onStart: () => {
-				nextVideo.play(); // Play the next video when starting the fade in
+				nextVideo?.play(); // Play the next video when starting the fade in
 			},
 		});
 	};
@@ -116,23 +118,46 @@ export default function GText({ items, autoplayDuration = 8000 }) {
 	return (
 		// <div className="w-full min-h-screen bg-slate-500 text-neutral-200 flex flex-col justify-center items-center">
 		<div className="w-full min-h-screen bg-neutral-900/90 text-neutral-200 flex flex-col justify-center items-center relative overflow-hidden">
-			{/* Vid */}
-			{items.map((item, index) => (
-				<video
-					key={index}
-					ref={(el) => (videoRefs.current[index] = el)}
-					className={`absolute top-0 left-0 w-full h-full object-cover opacity-0 ${
-						index === currentIndex ? "opacity-100" : ""
-					}`} // Set initial opacity based on currentIndex
-					muted
-					loop
-					preload="auto"
-				>
-					<source src={item.video} type="video/mp4" />
-					Your browser does not support the video tag.
-				</video>
-			))}
-
+			<AnimatePresence>
+				{/* Vid */}
+				{items.map((item, index) =>
+					!item.image ? (
+						<video
+							key={index}
+							ref={(el) => (videoRefs.current[index] = el)}
+							className={`absolute top-0 left-0 w-full h-full object-cover opacity-0 ${
+								index === currentIndex ? "opacity-100" : ""
+							}`} // Set initial opacity based on currentIndex
+							muted
+							loop
+							preload="auto"
+						>
+							<source src={item.video} type="video/mp4" />
+							Your browser does not support the video tag.
+						</video>
+					) : (
+						<AnimatePresence mode="wait" key={index}>
+							{index === currentIndex && (
+								<motion.div
+									className="absolute w-full h-screen"
+									key={index}
+									initial={{ opacity: 0 }}
+									animate={{ opacity: 1 }}
+									exit={{ opacity: 0 }}
+									transition={{ duration: 0.8 }}
+								>
+									<Image
+										src={item.image}
+										alt="Img"
+										fill
+										className="object-cover origin-center absolute"
+									/>
+								</motion.div>
+							)}
+						</AnimatePresence>
+					)
+				)}
+			</AnimatePresence>
 			{/* Text */}
 			<div className="z-40 whitespace-nowrap">
 				{visibleItems.map((item, index) => {
