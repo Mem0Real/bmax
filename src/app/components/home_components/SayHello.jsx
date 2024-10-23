@@ -25,7 +25,7 @@ export default function SayHello() {
 		e.preventDefault();
 		startTransition(() => {
 			sendEmail({
-				to: "juniourmimo@gmail.com",
+				to: "bmaxautosolutions@gmail.com",
 				subject: `New message from ${formData.name}`,
 				text: formData.message,
 				html: `<p>${formData.message}</p>`,
