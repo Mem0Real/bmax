@@ -1,12 +1,63 @@
 "use client";
 
-import React from "react";
+import React, { useState, useTransition } from "react";
+import { sendEmail } from "@/app/utils/sendEmail";
 
 import { motion } from "framer-motion";
+import { notifications } from "@mantine/notifications";
 
 import { raj } from "@/app/ui/fonts";
 
 export default function SayHello() {
+	const [formData, setFormData] = useState({
+		name: "",
+		email: "",
+		message: "",
+	});
+	const [isPending, startTransition] = useTransition();
+
+	const handleChange = (e) => {
+		const { name, value } = e.target;
+		setFormData({ ...formData, [name]: value });
+	};
+
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+		startTransition(() => {
+			sendEmail({
+				to: "juniourmimo@gmail.com",
+				subject: `New message from ${formData.name}`,
+				text: formData.message,
+				html: `<p>${formData.message}</p>`,
+			})
+				.then(() => {
+					notifications.show({
+						id: "success",
+						position: "top-center",
+						withCloseButton: true,
+						autoClose: 5000,
+						title: "Email sent successfully!",
+						color: "green",
+						className: "my-notification-class",
+						loading: false,
+					});
+				})
+				.catch((error) => {
+					notifications.show({
+						id: "failure",
+						position: "top-center",
+						withCloseButton: true,
+						autoClose: 5000,
+						title: "Failed to send email!",
+						message: "Please try again later.",
+						color: "red",
+						className: "my-notification-class",
+						loading: false,
+					});
+				});
+		});
+	};
+
 	return (
 		<div
 			id="hello"
@@ -21,36 +72,59 @@ export default function SayHello() {
 							Say Hello!
 						</h1>
 						<form
-							action=""
+							onSubmit={handleSubmit}
 							className="h-full w-full px-2 mt-5 flex flex-col gap-4 justify-center items-center"
 						>
 							<div className="w-full flex flex-col sm:flex-row items-start gap-5">
 								<input
 									className="basis-1/2 shrink py-2 bg-neutral-200/60 rounded px-2"
 									placeholder="Name"
+									type="text"
+									name="name"
+									value={formData.name}
+									onChange={handleChange}
+									required
 								/>
 								<input
 									className="basis-1/2 shrink py-2 bg-neutral-200/60 rounded px-2"
 									placeholder="Email"
+									type="email"
+									name="email"
+									value={formData.email}
+									onChange={handleChange}
+									required
 								/>
 							</div>
 							<div className="w-full">
 								<textarea
 									className="w-full min-h-36 bg-neutral-200/60 rounded px-2"
 									placeholder="Message"
+									name="message"
+									value={formData.message}
+									onChange={handleChange}
+									required
 								/>
 							</div>
 
 							<div className="self-start">
-								<motion.h1
-									whileHover={{
-										backgroundColor: "#ee8f34",
-										color: "#FFF",
-									}}
-									className="px-6 py-2 border border-mellow text-mellow font-bold cursor-pointer uppercase"
+								<motion.button
+									whileHover={
+										!isPending
+											? {
+													backgroundColor: "#ee8f34",
+													color: "#FFF",
+											  }
+											: {
+													backgroundColor: "#737373",
+													color: "#000",
+											  }
+									}
+									type="submit"
+									disabled={isPending}
+									className="px-6 py-2 border border-mellow disabled:bg-neutral-500 text-mellow font-bold cursor-pointer uppercase"
 								>
-									Send
-								</motion.h1>
+									{isPending ? "Sending..." : "Send"}
+								</motion.button>
 							</div>
 						</form>
 					</div>

@@ -6,6 +6,7 @@ import CustomIcons from "./components/CustomIcons";
 
 import "@mantine/core/styles.css";
 import "@mantine/carousel/styles.css";
+import "@mantine/notifications/styles.css";
 
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import Nav from "./navigation/Nav";
@@ -16,6 +17,7 @@ import TopLoaderProvider from "./components/TopLoader";
 import { raleway } from "@/app/ui/fonts";
 
 import Topbar from "./components/Topbar";
+import { Notifications } from "@mantine/notifications";
 
 export const metadata = {
 	title: "B-Max",
@@ -56,6 +58,7 @@ export default function RootLayout({ children }) {
 						<Nav />
 						<Topbar />
 						<TopLoaderProvider>
+							<Notifications />
 							<ScrollToTopButton>
 								<div className="bg-neutral-100">{children}</div>
 							</ScrollToTopButton>
