@@ -56,6 +56,6 @@ const items = [
 	},
 ];
 
-export default function SlidingData() {
+export default async function SlidingData() {
 	return <GText items={items} />;
 }
