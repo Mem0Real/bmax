@@ -128,9 +128,11 @@ export default function GText({ items, autoplayDuration = 8000 }) {
 							className={`absolute top-0 left-0 w-full h-full object-cover opacity-0 ${
 								index === currentIndex ? "opacity-100" : ""
 							}`} // Set initial opacity based on currentIndex
+							preload="auto"
 							muted
 							loop
-							preload="auto"
+							autoPlay
+							playsInline
 						>
 							<source src={item.video} type="video/mp4" />
 							Your browser does not support the video tag.

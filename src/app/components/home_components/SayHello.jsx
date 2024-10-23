@@ -63,7 +63,7 @@ export default function SayHello() {
 								Address
 							</h1>
 							<p className={`text-neutral-900/90 text-base`}>
-								Addis Ababa, Bole Wollo Sefer
+								Addis Ababa, Meskel flower
 							</p>
 						</div>
 
