@@ -45,7 +45,7 @@ const items = [
 	},
 	{
 		// video: "/vids/3.mp4",
-		image: "/images/slide.jpg",
+		image: "/images/slide.webp",
 		components: [
 			<BigText key="1">Tracking &</BigText>,
 			<BigText key="2">Telematics</BigText>,

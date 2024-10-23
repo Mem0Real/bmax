@@ -27,7 +27,7 @@ export const metadata = {
 		type: "website",
 		images: [
 			{
-				url: "https://b-maxautosolutions.com/images/favicon.jpg",
+				url: "https://b-maxautosolutions.com/images/favicon.webp",
 				width: 1200,
 				height: 630,
 				alt: "B-Max",

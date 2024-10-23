@@ -34,7 +34,7 @@ export default function Page() {
 		<div className="relative w-full flex flex-col">
 			<div
 				className=" min-h-screen bg-cover bg-bottom bg-no-repeat"
-				style={{ backgroundImage: "url(/images/video-page/background.jpg)" }}
+				style={{ backgroundImage: "url(/images/video-page/background.webp)" }}
 			>
 				<div className="absolute inset-0 bg-black opacity-80" />
 

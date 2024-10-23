@@ -10,7 +10,7 @@ export default function LogoStuff() {
 				<div className="self-start w-[125px] h-[70px] md:w-[200px] md:h-[65px] xl:h-20 xl:w-48 relative">
 					<Image
 						fill
-						src="/images/logo4.png"
+						src="/images/logo.webp"
 						alt="B-Max"
 						priority
 						className="object-cover object-center absolute"

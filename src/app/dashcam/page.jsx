@@ -30,7 +30,7 @@ export default function Page() {
 		<div className="relative w-full flex flex-col">
 			<div
 				className="min-h-screen bg-cover bg-bottom bg-no-repeat"
-				style={{ backgroundImage: "url(/images/dashcam-page/background.jpg)" }}
+				style={{ backgroundImage: "url(/images/dashcam-page/background.webp)" }}
 			>
 				<div className="absolute inset-0 bg-black opacity-50" />
 
@@ -41,13 +41,13 @@ export default function Page() {
 							detail={dashcamData.landing.text}
 							swap
 						/>
-						<AlternateImage img={`${dashcamData.location}/landing.png`} />
+						<AlternateImage img={`${dashcamData.location}/landing.webp`} />
 					</Alternating>
 				</div>
 			</div>
 			<div className="relative bg-white text-neutral-900 py-12 flex flex-col justify-center items-center gap-12">
 				<Alternating>
-					<AlternateImage img={`${dashcamData.location}/alt.png`} />
+					<AlternateImage img={`${dashcamData.location}/alt.webp`} />
 					<AlternateText
 						header={dashcamData.landing.header}
 						detail={dashcamData.landing.text}

@@ -30,7 +30,7 @@ export default function HoverCard({ location }) {
 								transition={{ ease: "easeInOut" }}
 							>
 								<Image
-									src={`/images/${location}/bg${count}.jpg`}
+									src={`/images/${location}/bg${count}.webp`}
 									alt={`bg-${count}`}
 									fill
 									className="overflow-hidden object-center object-cover absolute"

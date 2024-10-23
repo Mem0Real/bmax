@@ -7,16 +7,16 @@ import { AnimatePresence, motion } from "framer-motion";
 import { raj } from "@/app/ui/fonts";
 
 const clientList = [
-	{ id: "Safaricom", source: "safari.png" },
-	{ id: "Jacaranda", source: "jacaranda.png" },
-	{ id: "Inspiration", source: "inspiration.png" },
-	{ id: "IPS", source: "ips.png" },
-	{ id: "InTouch", source: "intouch.png" },
-	{ id: "eyestyle", source: "eye.jpg" },
-	{ id: "epn", source: "epn.jpg" },
-	{ id: "neom", source: "neom.jpg" },
-	{ id: "flamex", source: "flamex.jpg" },
-	{ id: "embassy", source: "embassy.jpg" },
+	{ id: "Safaricom", source: "safari.webp" },
+	{ id: "Jacaranda", source: "jacaranda.webp" },
+	{ id: "Inspiration", source: "inspiration.webp" },
+	{ id: "IPS", source: "ips.webp" },
+	{ id: "InTouch", source: "intouch.webp" },
+	{ id: "eyestyle", source: "eye.webp" },
+	{ id: "epn", source: "epn.webp" },
+	{ id: "neom", source: "neom.webp" },
+	{ id: "flamex", source: "flamex.webp" },
+	{ id: "embassy", source: "embassy.webp" },
 ];
 
 export default function Clients() {

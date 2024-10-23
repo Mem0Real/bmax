@@ -60,7 +60,7 @@ export default function IconList() {
 			<div
 				className="bg-fixed w-full z-50 bg-cover bg-bottom bg-no-repeat backdrop-brightness-50 backdrop-blur-2xl"
 				style={{
-					backgroundImage: `url(/images/land.jpg)`,
+					backgroundImage: `url(/images/land.webp)`,
 				}}
 			>
 				<div className="bg-black/40 backdrop-blur-sm text-neutral-200 px-4 xl:px-40 py-5 xl:pb-36 ">

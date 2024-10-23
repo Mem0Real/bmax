@@ -18,7 +18,7 @@ export default function BackgroundCard({ data, location, light }) {
 						key={index}
 						className={`relative w-full h-[25rem] md:h-[25rem] lg:h-[30rem] bg-no-repeat bg-cover bg-center flex flex-col justify-end items-center rounded-xl ${width}`}
 						style={{
-							backgroundImage: `url("/images/${location}/bg${count}.jpg")`,
+							backgroundImage: `url("/images/${location}/bg${count}.webp")`,
 							backdropFilter: "brightness 0.4",
 						}}
 					>

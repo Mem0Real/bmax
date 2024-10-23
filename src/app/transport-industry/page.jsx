@@ -39,7 +39,7 @@ export default function Transport() {
 
 				<div className="md:basis-[60%] relative w-full h-[20rem] md:h-[25rem] lg:h-[30rem]">
 					<Image
-						src={`/images/${transportData.location}/landing.png`}
+						src={`/images/${transportData.location}/landing.webp`}
 						fill
 						className="object-fill md:object-contain object-center absolute"
 						alt={transportData.location}
@@ -62,7 +62,7 @@ export default function Transport() {
 			</div>
 
 			<Alternating>
-				<AlternateImage img={`${transportData.location}/alt1.png`} />
+				<AlternateImage img={`${transportData.location}/alt1.webp`} />
 				<AlternateText
 					header={transportData.alt1.header}
 					detail={transportData.alt1.text}
@@ -96,7 +96,7 @@ export default function Transport() {
 				/>
 			</div>
 			<Alternating>
-				<AlternateImage img={`${transportData.location}/alt2.png`} />
+				<AlternateImage img={`${transportData.location}/alt2.webp`} />
 				<AlternateText
 					header={transportData.alt2.header}
 					detail={transportData.alt2.text}
@@ -111,10 +111,10 @@ export default function Transport() {
 					linkText={transportData.linkText}
 					address={transportData.linkSrc}
 				/>
-				<AlternateImage img={`${transportData.location}/alt3.png`} />
+				<AlternateImage img={`${transportData.location}/alt3.webp`} />
 			</Alternating>
 			<Alternating>
-				<AlternateImage img={`${transportData.location}/alt4.png`} />
+				<AlternateImage img={`${transportData.location}/alt4.webp`} />
 				<AlternateText
 					header={transportData.alt4.header}
 					detail={transportData.alt4.text}

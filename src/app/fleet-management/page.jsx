@@ -19,7 +19,7 @@ export default function FleetManagement() {
 					address={fleetData.linkSrc}
 					linkText={fleetData.linkText}
 				/>
-				<AlternateImage img={`${fleetData.location}/landing.png`} />
+				<AlternateImage img={`${fleetData.location}/landing.webp`} />
 			</Alternating>
 			<div className="w-full flex flex-col justify-center items-center gap-2 md:gap-8 lg:gap-0">
 				<p className={`text-xl text-neutral-950 text-center`}>
@@ -32,7 +32,7 @@ export default function FleetManagement() {
 				</h1>
 			</div>
 			<Alternating extrude>
-				<AlternateImage img={`${fleetData.location}/alt1.png`} />
+				<AlternateImage img={`${fleetData.location}/alt1.webp`} />
 				<AlternateText
 					header={fleetData.alt1.header}
 					detail={fleetData.alt1.text}
@@ -51,7 +51,7 @@ export default function FleetManagement() {
 				>
 					<ExtrudeText dropData={fleetData.dropData2} />
 				</AlternateText>
-				<AlternateImage img={`${fleetData.location}/alt2.png`} />
+				<AlternateImage img={`${fleetData.location}/alt2.webp`} />
 			</Alternating>
 
 			<div className="flex flex-col w-full justify-center items-center gap-5">

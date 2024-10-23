@@ -37,18 +37,18 @@ export default function Page() {
 		<div className="relative w-full flex flex-col">
 			<div
 				className="w-full h-[30rem] bg-cover bg-top bg-no-repeat"
-				style={{ backgroundImage: "url(/images/bus-page/background.jpg)" }}
+				style={{ backgroundImage: "url(/images/bus-page/background.webp)" }}
 			>
 				<div className="absolute inset-0 bg-black opacity-35" />
 
 				<div className="relative w-full h-full grid grid-cols-6 grid-flow-row text-neutral-100">
 					<div className="col-start-2 col-span-3 place-content-center space-y-3">
 						<h1
-							className={`"text-4xl md:text-6xl font-bold uppercase ${raj.className}`}
+							className={`text-2xl md:text-6xl font-bold uppercase ${raj.className}`}
 						>
 							{busGpsData.landing.header}
 						</h1>
-						<p className="text-nutral-200/80 text-xl">
+						<p className="text-nutral-200/80 text-base md:text-xl">
 							{busGpsData.landing.text}
 						</p>
 					</div>
@@ -88,7 +88,7 @@ export default function Page() {
 					/>
 				</div>
 				<Alternating>
-					<AlternateImage img={`${busGpsData.location}/alt1.png`} />
+					<AlternateImage img={`${busGpsData.location}/alt1.webp`} />
 					<AlternateText
 						header={busGpsData.alt1.header}
 						detail={busGpsData.alt1.text}
@@ -103,7 +103,7 @@ export default function Page() {
 						linkText={busGpsData.linkText}
 						address={busGpsData.linkSrc}
 					/>
-					<AlternateImage img={`${busGpsData.location}/alt2.png`} />
+					<AlternateImage img={`${busGpsData.location}/alt2.webp`} />
 				</Alternating>
 				<div className="px-4 xl:px-48 w-full flex flex-col justify-center items-stretch gap-2 pb-12">
 					<ExtrudeText

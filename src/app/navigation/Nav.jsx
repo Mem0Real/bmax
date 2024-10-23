@@ -77,7 +77,7 @@ export default function Nav() {
 					href="/"
 				>
 					<Image
-						src="/images/logo.png"
+						src="/images/logo.webp"
 						alt="B-Max"
 						fill
 						priority

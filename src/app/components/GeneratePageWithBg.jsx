@@ -13,8 +13,8 @@ import { raj } from "@/app/ui/fonts";
 export default function GeneratePageWithBg({
 	iconList,
 	data,
-	type = "jpg",
-	landingType = "jpg",
+	type = "webp",
+	landingType = "webp",
 	size = "lg",
 	noCards = false,
 }) {
@@ -56,7 +56,7 @@ export default function GeneratePageWithBg({
 				{noCards ? (
 					<>
 						<Alternating extrude={true}>
-							<AlternateImage img={`${data.location}/alt1.png`} />
+							<AlternateImage img={`${data.location}/alt1.webp`} />
 							<AlternateText header={data.alt1.header} detail={data.alt1.text}>
 								<ExtrudeText dropData={data.dropData1} />
 							</AlternateText>
@@ -65,7 +65,7 @@ export default function GeneratePageWithBg({
 							<AlternateText header={data.alt2.header} detail={data.alt2.text}>
 								<ExtrudeText dropData={data.dropData2} />
 							</AlternateText>
-							<AlternateImage img={`${data.location}/alt2.png`} />
+							<AlternateImage img={`${data.location}/alt2.webp`} />
 						</Alternating>
 					</>
 				) : (
@@ -96,7 +96,7 @@ export default function GeneratePageWithBg({
 				</div>
 				{!noCards && data.alt1 && (
 					<Alternating>
-						<AlternateImage img={`${data.location}/alt1.png`} />
+						<AlternateImage img={`${data.location}/alt1.webp`} />
 						<AlternateText
 							header={data.alt1.header}
 							detail={data.alt1.text}
@@ -113,12 +113,12 @@ export default function GeneratePageWithBg({
 							linkText={data.linkText}
 							address={data.linkSrc}
 						/>
-						<AlternateImage img={`${data.location}/alt2.png`} />
+						<AlternateImage img={`${data.location}/alt2.webp`} />
 					</Alternating>
 				)}
 				{data.alt3 && (
 					<Alternating>
-						<AlternateImage img={`${data.location}/alt3.png`} />
+						<AlternateImage img={`${data.location}/alt3.webp`} />
 						<AlternateText
 							header={data.alt3.header}
 							detail={data.alt3.text}
@@ -135,7 +135,7 @@ export default function GeneratePageWithBg({
 							linkText={data.linkText}
 							address={data.linkSrc}
 						/>
-						<AlternateImage img={`${data.location}/alt4.png`} />
+						<AlternateImage img={`${data.location}/alt4.webp`} />
 					</Alternating>
 				)}
 

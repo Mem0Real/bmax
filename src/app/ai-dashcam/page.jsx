@@ -62,7 +62,7 @@ export default function Page() {
 		<div className="relative w-full flex flex-col">
 			<div
 				className=" min-h-screen bg-cover bg-bottom bg-no-repeat"
-				style={{ backgroundImage: "url(/images/aidash-page/background.jpg)" }}
+				style={{ backgroundImage: "url(/images/aidash-page/background.webp)" }}
 			>
 				<div className="absolute inset-0 bg-black opacity-60" />
 
@@ -75,7 +75,7 @@ export default function Page() {
 							linkText={aiDashData.linkText}
 							swap={true}
 						/>
-						<AlternateImage img={`${aiDashData.location}/landing.png`} />
+						<AlternateImage img={`${aiDashData.location}/landing.webp`} />
 					</Alternating>
 				</div>
 			</div>
@@ -88,7 +88,7 @@ export default function Page() {
 					</h1>
 				</div>
 				<Alternating>
-					<AlternateImage img={`${aiDashData.location}/alt1.png`} sm />
+					<AlternateImage img={`${aiDashData.location}/alt1.webp`} sm />
 					<AlternateText
 						header={aiDashData.alt1.header}
 						detail={[aiDashData.alt1.text1, aiDashData.alt1.text2]}
@@ -105,7 +105,7 @@ export default function Page() {
 						address={aiDashData.linkSrc}
 						dark
 					/>
-					<AlternateImage img={`${aiDashData.location}/alt2.png`} />
+					<AlternateImage img={`${aiDashData.location}/alt2.webp`} />
 				</Alternating>
 				{/* Header1 */}
 				<div className="w-full flex flex-col justify-center items-center gap-2 md:gap-8 lg:gap-0">

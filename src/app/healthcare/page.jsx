@@ -28,7 +28,7 @@ export default function Page() {
 		<GeneratePageWithBg
 			iconList={iconList}
 			data={healthData}
-			landingType="png"
+			landingtype="webp"
 			size="md"
 		/>
 	);

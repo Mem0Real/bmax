@@ -29,7 +29,7 @@ export default function Page() {
 					address={emergencyData.linkSrc}
 					linkText={emergencyData.linkText}
 				/>
-				<AlternateImage img={`${emergencyData.location}/landing.png`} />
+				<AlternateImage img={`${emergencyData.location}/landing.webp`} />
 			</Alternating>
 			{/* counter */}
 			<div className="px-4 xl:px-40 w-full flex flex-col md:flex-row justify-center xl:justify-between items-center gap-8 xl:gap-10 pb-8">
@@ -57,7 +57,7 @@ export default function Page() {
 				<HoverCard location={emergencyData.location} />
 			</div>
 			<Alternating>
-				<AlternateImage img={`${emergencyData.location}/alt1.png`} />
+				<AlternateImage img={`${emergencyData.location}/alt1.webp`} />
 				<AlternateText
 					header={emergencyData.alt1.header}
 					detail={emergencyData.alt1.text}
@@ -72,7 +72,7 @@ export default function Page() {
 					address={emergencyData.linkSrc}
 					linkText={emergencyData.linkText}
 				/>
-				<AlternateImage img={`${emergencyData.location}/alt2.png`} />
+				<AlternateImage img={`${emergencyData.location}/alt2.webp`} />
 			</Alternating>
 		</div>
 	);

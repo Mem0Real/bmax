@@ -22,7 +22,7 @@ export default function Page() {
 		<GeneratePageWithBg
 			iconList={iconList}
 			data={bikeGpsData}
-			landingType="png"
+			landingtype="webp"
 		/>
 	);
 }

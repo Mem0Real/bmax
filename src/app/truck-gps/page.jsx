@@ -31,7 +31,7 @@ export default function Page() {
 		<div className="relative w-full flex flex-col">
 			<div
 				className="w-full h-[40rem] bg-cover bg-top bg-no-repeat"
-				style={{ backgroundImage: "url(/images/truck-page/background.jpg)" }}
+				style={{ backgroundImage: "url(/images/truck-page/background.webp)" }}
 			>
 				<div className="absolute inset-0 bg-black opacity-55" />
 
@@ -83,7 +83,7 @@ export default function Page() {
 					/>
 				</div>
 				<Alternating>
-					<AlternateImage img={`${tGpsData.location}/alt1.png`} />
+					<AlternateImage img={`${tGpsData.location}/alt1.webp`} />
 					<AlternateText
 						header={tGpsData.alt1.header}
 						detail={tGpsData.alt1.text}
@@ -98,7 +98,7 @@ export default function Page() {
 						linkText={tGpsData.linkText}
 						address={tGpsData.linkSrc}
 					/>
-					<AlternateImage img={`${tGpsData.location}/alt2.png`} />
+					<AlternateImage img={`${tGpsData.location}/alt2.webp`} />
 				</Alternating>
 				<div className="px-4 xl:px-48 w-full flex flex-col justify-center items-stretch gap-2 pb-12">
 					<ExtrudeText

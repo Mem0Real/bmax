@@ -13,7 +13,7 @@ export default function GeneratePage({
 	data,
 	bgImage,
 	noExtra,
-	type = "jpg",
+	type = "webp",
 	sm = false,
 }) {
 	return (
@@ -68,7 +68,7 @@ export default function GeneratePage({
 			)}
 
 			<Alternating extrude>
-				<AlternateImage img={`${data.location}/alt1.png`} />
+				<AlternateImage img={`${data.location}/alt1.webp`} />
 				<AlternateText header={data.alt1.header} detail={data.alt1.text}>
 					<ExtrudeText dropData={data.dropData1} />
 				</AlternateText>
@@ -77,7 +77,7 @@ export default function GeneratePage({
 				<AlternateText header={data.alt2.header} detail={data.alt2.text}>
 					<ExtrudeText dropData={data.dropData2} />
 				</AlternateText>
-				<AlternateImage img={`${data.location}/alt2.png`} />
+				<AlternateImage img={`${data.location}/alt2.webp`} />
 			</Alternating>
 
 			{/* background */}
@@ -110,7 +110,7 @@ export default function GeneratePage({
 				<>
 					{data.alt3 && (
 						<Alternating>
-							<AlternateImage img={`${data.location}/alt3.png`} />
+							<AlternateImage img={`${data.location}/alt3.webp`} />
 							<AlternateText
 								header={data.alt3.header}
 								detail={data.alt3.text}
@@ -127,7 +127,7 @@ export default function GeneratePage({
 								linkText={data.linkText}
 								address={data.linkSrc}
 							/>
-							<AlternateImage img={`${data.location}/alt4.png`} />
+							<AlternateImage img={`${data.location}/alt4.webp`} />
 						</Alternating>
 					)}
 				</>

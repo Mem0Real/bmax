@@ -55,7 +55,7 @@ export default function About() {
 				{/* image */}
 				<div className="flex justify-center items-center w-[120vw] h-[100vh] relative">
 					<Image
-						src={"/images/aboutImage.png"}
+						src={"/images/aboutImage.webp"}
 						alt="About us"
 						fill
 						className="absolute object-contain object-center"
