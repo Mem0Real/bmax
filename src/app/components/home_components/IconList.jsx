@@ -58,12 +58,12 @@ export default function IconList() {
 	return (
 		<div className="relative min-h-screen w-full bg-neutral-100">
 			<div
-				className="bg-fixed w-full z-50 bg-cover bg-bottom bg-no-repeat backdrop-brightness-50 backdrop-blur-2xl"
+				className="bg-fixed w-full z-50 bg-cover bg-bottom bg-no-repeat backdrop-brightness-50"
 				style={{
 					backgroundImage: `url(/images/land.webp)`,
 				}}
 			>
-				<div className="bg-black/40 backdrop-blur-sm text-neutral-200 px-4 xl:px-40 py-5 xl:pb-36 ">
+				<div className="bg-black/40 backdrop-brightness-50 text-neutral-200 px-4 xl:px-40 py-5 xl:pb-36 ">
 					<div className="flex flex-col justify-center items-center gap-20">
 						<div className="flex flex-col justify-center items-center gap-2">
 							<h1

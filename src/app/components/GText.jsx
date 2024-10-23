@@ -165,7 +165,7 @@ export default function GText({ items, autoplayDuration = 8000 }) {
 							loop
 							autoPlay
 							poster="/images/favicon.webp"
-							preload="auto"
+							// preload="auto"
 							key={index}
 							ref={(el) => (videoRefs.current[index] = el)}
 							className={`absolute top-0 left-0 w-full h-full object-cover opacity-0 ${

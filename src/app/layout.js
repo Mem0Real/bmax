@@ -27,21 +27,21 @@ export const metadata = {
 		description: "Auto Solutions for your Vehicle Security",
 		url: "https://b-maxautosolutions.com",
 		type: "website",
-		images: [
-			{
-				url: "https://b-maxautosolutions.com/images/favicon.webp",
-				width: 1200,
-				height: 630,
-				alt: "B-Max",
-			},
-		],
+		// images: [
+		// 	{
+		// 		url: "https://b-maxautosolutions.com/images/favicon.webp",
+		// 		width: 1200,
+		// 		height: 630,
+		// 		alt: "B-Max",
+		// 	},
+		// ],
 	},
 };
 
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<Head>
+			{/* <Head>
 				<meta name="description" content={metadata.description} />
 				<meta property="og:title" content={metadata.openGraph.title} />
 				<meta
@@ -51,7 +51,7 @@ export default function RootLayout({ children }) {
 				<meta property="og:image" content={metadata.openGraph.images[0].url} />
 				<meta property="og:url" content={metadata.openGraph.url} />
 				<meta property="og:type" content={metadata.openGraph.type} />
-			</Head>
+			</Head> */}
 			<CustomIcons>
 				<body className={`${raleway.className} antialiased text-sm`}>
 					<MantineProvider>
