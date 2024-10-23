@@ -42,3 +42,13 @@ body {
 .end {
 	color: "#fff";
 }
+
+video::-webkit-media-controls {
+	display: none !important;
+}
+
+video {
+	-webkit-overflow-scrolling: touch;
+	overflow: hidden;
+	position: fixed;
+}

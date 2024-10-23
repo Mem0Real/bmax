@@ -102,10 +102,28 @@ export default function GText({ items, autoplayDuration = 8000 }) {
 		}
 	}, [visibleItems]);
 
-	// Autoplay functionality
+	// // Autoplay functionality
+	// useEffect(() => {
+	// 	// Start playing the first video on mount
+	// 	videoRefs.current[currentIndex].play();
+
+	// 	const autoplayVideos = () => {
+	// 		handleNext(); // Call next video when the interval elapses
+	// 	};
+
+	// 	autoplayRef.current = setInterval(autoplayVideos, autoplayDuration);
+	// 	return () => clearInterval(autoplayRef.current);
+	// }, [currentIndex, autoplayDuration]);
+
 	useEffect(() => {
-		// Start playing the first video on mount
-		videoRefs.current[currentIndex]?.play();
+		const currentVideo = videoRefs.current[currentIndex];
+		if (currentVideo) {
+			setTimeout(() => {
+				currentVideo.play().catch((error) => {
+					console.error("Error playing video:", error);
+				});
+			}, 100); // Small delay (100ms)
+		}
 
 		const autoplayVideos = () => {
 			handleNext(); // Call next video when the interval elapses
@@ -115,6 +133,25 @@ export default function GText({ items, autoplayDuration = 8000 }) {
 		return () => clearInterval(autoplayRef.current);
 	}, [currentIndex, autoplayDuration]);
 
+	useEffect(() => {
+		const playOnInteraction = () => {
+			const currentVideo = videoRefs.current[currentIndex];
+			if (currentVideo) {
+				currentVideo.play().catch((error) => {
+					console.error("Error playing video on interaction:", error);
+				});
+			}
+		};
+
+		window.addEventListener("click", playOnInteraction);
+		window.addEventListener("touchstart", playOnInteraction);
+
+		return () => {
+			window.removeEventListener("click", playOnInteraction);
+			window.removeEventListener("touchstart", playOnInteraction);
+		};
+	}, [currentIndex]);
+
 	return (
 		// <div className="w-full min-h-screen bg-slate-500 text-neutral-200 flex flex-col justify-center items-center">
 		<div className="w-full min-h-screen bg-neutral-900/90 text-neutral-200 flex flex-col justify-center items-center relative overflow-hidden">
@@ -123,18 +160,18 @@ export default function GText({ items, autoplayDuration = 8000 }) {
 				{items.map((item, index) =>
 					!item.image ? (
 						<video
+							playsInline
+							muted
+							loop
+							autoPlay
+							poster="path_to_poster_image.jpg"
 							key={index}
 							ref={(el) => (videoRefs.current[index] = el)}
 							className={`absolute top-0 left-0 w-full h-full object-cover opacity-0 ${
 								index === currentIndex ? "opacity-100" : ""
 							}`} // Set initial opacity based on currentIndex
-							preload="auto"
-							muted
-							loop
-							autoPlay
-							playsInline
 						>
-							<source src={item.video} type="video/mp4" />
+							<source src={item.video} type="video/mp4" playsInline />
 							Your browser does not support the video tag.
 						</video>
 					) : (
