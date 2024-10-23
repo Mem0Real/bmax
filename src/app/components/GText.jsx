@@ -172,7 +172,18 @@ export default function GText({ items, autoplayDuration = 8000 }) {
 							}`} // Set initial opacity based on currentIndex
 						>
 							<source src={item.video} type="video/mp4" playsInline />
-							Your browser does not support the video tag.
+							<track
+								src="captions_en.vtt"
+								kind="captions"
+								srclang="en"
+								label="english_captions"
+							/>
+							<track
+								src="captions_es.vtt"
+								kind="captions"
+								srclang="es"
+								label="spanish_captions"
+							/>
 						</video>
 					) : (
 						<AnimatePresence mode="wait" key={index}>
@@ -216,12 +227,16 @@ export default function GText({ items, autoplayDuration = 8000 }) {
 				<button
 					onClick={() => handlePrevious()}
 					className="text-blue-400 w-6 md:w-8 lg:w-10 bg-neutral-950 rounded-full"
+					id="leftBtn"
+					aria-label="Left"
 				>
 					{LeftArrowIcon}
 				</button>
 				<button
 					onClick={() => handleNext()}
 					className="text-blue-400 w-6 md:w-8 lg:w-10 bg-neutral-950 rounded-full"
+					id="rightBtn"
+					aria-label="Right"
 				>
 					{RightArrowIcon}
 				</button>

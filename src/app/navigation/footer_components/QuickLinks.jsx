@@ -36,7 +36,7 @@ export default function QuickLinks() {
 									</motion.div>
 								</Link>
 							}
-						/>{" "}
+						/>
 					</React.Fragment>
 				))}
 			</div>

@@ -5,15 +5,12 @@ import OurWork from "./components/home_components/OurWork";
 import Map from "./components/home_components/Map";
 import SayHello from "./components/home_components/SayHello";
 import SlidingData from "./components/home_components/SlidingData";
-import VidLoader from "./components/loaders/VidLoader";
 
 export default function Home() {
 	return (
 		<div className="relative min-h-screen text-neutral-900 w-full">
 			<div className="w-full flex flex-col justify-center items-center">
-				<Suspense fallback={<VidLoader />}>
-					<SlidingData />
-				</Suspense>
+				<SlidingData />
 				<Suspense fallback={<div>Loading....</div>}>
 					<AltCards />
 				</Suspense>

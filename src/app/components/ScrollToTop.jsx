@@ -95,6 +95,8 @@ export default function ScrollToTopBottomButton({ children }) {
 					animate={controls}
 					onClick={scrollTo}
 					whileInView={scrollDirection === "down" ? "down" : "up"}
+					id="scrollBtn"
+					aria-label="Scroll"
 				>
 					{TopCircleIcon}
 				</motion.button>

@@ -133,6 +133,8 @@ export default function Nav() {
 					<button
 						onClick={toggleSearchVisibility}
 						className="search-button w-5 -mt-1"
+						id="searchBtn"
+						aria-label="Search"
 					>
 						{SearchIcon}
 					</button>

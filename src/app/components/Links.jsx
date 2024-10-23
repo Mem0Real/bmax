@@ -37,6 +37,7 @@ export default function Links({ sm, top = false }) {
 						href="https://t.me/B_Max_Auto_Solutions_bot"
 						target="_blank"
 						className="w-6"
+						aria-label="Go to Telegr"
 					>
 						{TelegramIcon}
 					</Link>
@@ -55,6 +56,7 @@ export default function Links({ sm, top = false }) {
 						href="https://www.facebook.com/share/EYTKdeYqzUgrtVAF/?mibextid=LQQJ4d"
 						target="_blank"
 						className="w-6"
+						aria-label="Go to Facebook"
 					>
 						{FacebookIcon}
 					</Link>
@@ -74,6 +76,7 @@ export default function Links({ sm, top = false }) {
 						href="https://instagram.com/bmaxautosolutions?igsh=MWJ6N2xnd3FnYm1rOA%3D%3D&utm_source=gr"
 						target="_blank"
 						className="w-6"
+						aria-label="Go to Instagram"
 					>
 						{InstagramIcon}
 					</Link>
@@ -89,6 +92,7 @@ export default function Links({ sm, top = false }) {
 						href="https://www.linkedin.com/groups/10003292"
 						target="_blank"
 						className="w-6"
+						aria-label="Go to LinkedIn"
 					>
 						{LinkedInIcon}
 					</Link>
@@ -108,6 +112,7 @@ export default function Links({ sm, top = false }) {
 						href="https://www.tiktok.com/@bmax.auto.solutio"
 						target="_blank"
 						className="w-6"
+						aria-label="Go to Tiktok"
 					>
 						{TiktokIcon}
 					</Link>

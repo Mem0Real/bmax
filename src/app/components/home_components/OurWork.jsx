@@ -18,11 +18,11 @@ export default function OurWork() {
 							</h1>
 							<div className="w-full h-full flex flex-col justify-start items-start gap-6 px-2 xl:pl-8">
 								<h1
-									className={`text-neutral-100 font-bold text-lg pt-3 ${raj.className}`}
+									className={`text-neutral-100 font-bold text-xl pt-3 ${raj.className}`}
 								>
 									Automotive Locksmith Services
 								</h1>
-								<p className={`text-neutral-200/50 pr-2 xl:pr-8 text-sm`}>
+								<p className={`text-neutral-200/90 pr-2 xl:pr-8 text-sm`}>
 									B-Max Telematics offers key replacement, programming, repair,
 									and emergency car unlocking services with professionalism and
 									efficiency.
@@ -35,11 +35,11 @@ export default function OurWork() {
 							</h1>
 							<div className="w-full h-full flex flex-col justify-start items-start gap-6 px-2 xl:pl-8">
 								<h1
-									className={`text-neutral-100 font-bold text-lg pt-3 ${raj.className}`}
+									className={`text-neutral-100 font-bold text-xl pt-3 ${raj.className}`}
 								>
 									Telematics Solutions
 								</h1>
-								<p className={`text-neutral-200/50 pr-2 xl:pr-8 text-sm`}>
+								<p className={`text-neutral-200/90 pr-2 xl:pr-8 text-sm`}>
 									Enhance vehicle security and monitoring with B-Max
 									Telematics&apos; advanced solutions, including tracking, fleet
 									management, car alarms, and dashcam installations.
@@ -54,11 +54,11 @@ export default function OurWork() {
 							</h1>
 							<div className="w-full h-full flex flex-col justify-start items-start gap-6 px-2 xl:pl-8">
 								<h1
-									className={`text-neutral-100 font-bold text-lg pt-3 ${raj.className}`}
+									className={`text-neutral-100 font-bold text-xl pt-3 ${raj.className}`}
 								>
 									Vehicle Security
 								</h1>
-								<p className={`text-neutral-200/50 pr-2 xl:pr-8 text-sm`}>
+								<p className={`text-neutral-200/90 pr-2 xl:pr-8 text-sm`}>
 									Protect your vehicles with B-Max Telematics&apos;
 									immobilizers, GPS tracking, and anti-theft systems, ensuring
 									peace of mind.
@@ -71,11 +71,11 @@ export default function OurWork() {
 							</h1>
 							<div className="w-full h-full flex flex-col justify-start items-start gap-6 px-2 xl:pl-8">
 								<h1
-									className={`text-neutral-100 font-bold text-lg pt-3 ${raj.className}`}
+									className={`text-neutral-100 font-bold text-xl pt-3 ${raj.className}`}
 								>
 									Fleet Services
 								</h1>
-								<p className={`text-neutral-200/50 pr-2 xl:pr-8 text-sm`}>
+								<p className={`text-neutral-200/90 pr-2 xl:pr-8 text-sm`}>
 									Optimize fleet operations with B-Max Telematics&apos;
 									tracking, fuel management, driver behavior monitoring, and
 									maintenance management solutions.
