@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Links from "@/app/components/Links";
-import { raj } from "@/app/ui/fonts";
 
 export default function LogoStuff() {
 	return (
@@ -23,53 +22,7 @@ export default function LogoStuff() {
 					tracking, video telematics, fuel monitoring, and more. Empower your
 					business today. Contact us now.
 				</p>
-				{/* <AnimatePresence>
-					<div className="flex gap-6 ps-4">
-						<Link href="https://t.me/B_Max_Auto_Solutions_bot" target="_blank">
-							<motion.div
-								className="bg-mellow rounded-full"
-								whileHover={{ background: "transparent", color: "#2563eb" }}
-								transition={{ ease: "easeInOut", duration: 0.6 }}
-							>
-								{TelegramIcon}
-							</motion.div>
-						</Link>
-						<Link
-							href="https://www.facebook.com/share/EYTKdeYqzUgrtVAF/?mibextid=LQQJ4d"
-							target="_blank"
-						>
-							<motion.div
-								className="bg-mellow rounded-full"
-								whileHover={{ background: "transparent", color: "#2563eb" }}
-								transition={{ ease: "easeInOut", duration: 0.6 }}
-							>
-								{FacebookIcon}
-							</motion.div>
-						</Link>
 
-						<Link href="https://instagram.com" target="_blank">
-							<motion.div
-								className="bg-mellow rounded-full"
-								whileHover={{ background: "transparent", color: "#f472b6" }}
-								transition={{ ease: "easeInOut", duration: 0.6 }}
-							>
-								{InstagramIcon}
-							</motion.div>
-						</Link>
-						<Link
-							href="https://www.linkedin.com/groups/10003292"
-							target="_blank"
-						>
-							<motion.div
-								className="bg-mellow rounded-full"
-								whileHover={{ background: "#0077B5", color: "#fff" }}
-								transition={{ ease: "easeInOut", duration: 0.6 }}
-							>
-								{LinkedInIcon}
-							</motion.div>
-						</Link>
-					</div>
-				</AnimatePresence> */}
 				<Links />
 			</div>
 		</section>

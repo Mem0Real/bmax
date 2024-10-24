@@ -53,7 +53,7 @@ export default function About() {
 				</div>
 
 				{/* image */}
-				<div className="flex justify-center items-center w-[120vw] h-[100vh] relative">
+				<div className="flex justify-center items-center w-[90vw] h-[100vh] relative">
 					<Image
 						src={"/images/aboutImage.webp"}
 						alt="About us"
@@ -162,7 +162,7 @@ export default function About() {
 							<React.Fragment key={index}>
 								<CarouselSlide>
 									<Image
-										src={`/images/${aboutData.location}/${source}.png`}
+										src={`/images/${aboutData.location}/${source}.webp`}
 										alt={source}
 										width={400}
 										height={400}
@@ -219,7 +219,10 @@ export default function About() {
 				</div>
 
 				{/* cards */}
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-16 gap-x-24 md:gap-x-12">
+				{/* <div className="grid grid-cols-1 md:grid-cols-2 gap-16 gap-x-24 md:gap-x-12">
+					<GenerateCard icons={iconList} data={aboutData.cards} size="sm" />
+				</div> */}
+				<div className="w-full px-4 xl:px-40 flex justify-center xl:justify-evenly items-center gap-8 lg:gap-4 xl:gap-20 flex-wrap">
 					<GenerateCard icons={iconList} data={aboutData.cards} size="sm" />
 				</div>
 			</div>

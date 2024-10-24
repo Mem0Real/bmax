@@ -23,12 +23,12 @@ export default function Clients() {
 	const [isHovered, setIsHovered] = useState("else");
 
 	return (
-		<div className="px-6 md:px-12 xl:px-40 w-full min-h-screen bg-neutral-200 text-neutral-900 flex flex-col justify-center items-center gap-16 py-12 pb-20">
-			<div className="flex flex-col justify-center items-center gap-8">
+		<div className="w-full min-h-screen bg-neutral-200 text-neutral-900 flex flex-col justify-center items-center gap-16 py-12 pb-20">
+			<div className="px-6 md:px-12 xl:px-40 flex flex-col justify-center items-center gap-8">
 				<h1 className={`text-4xl font-semibold ${raj.className}`}>
 					OUR VALUED CLIENTS
 				</h1>
-				<p className={`text-lg text-neutral-900/90 text-center`}>
+				<p className={`text-lg text-neutral-900/90 text-balance`}>
 					At B-Max Auto Solutions, our commitment to excellence and unwavering
 					dedication to providing top-notch automotive security solutions have
 					allowed us to build strong partnerships with a diverse range of
@@ -47,7 +47,7 @@ export default function Clients() {
 						{clientList.map(({ id, source }, index) => (
 							<motion.div
 								key={index}
-								className="relative w-44 md:48 lg:w-56 h-24 cursor-pointer"
+								className="relative w-36 md:w-44 lg:w-56 h-24 cursor-pointer"
 								animate={
 									isHovered === id || isHovered === "else"
 										? { opacity: 1 }
@@ -68,12 +68,12 @@ export default function Clients() {
 					</motion.div>
 				</AnimatePresence>
 			</div>
-			<div className="flex flex-col xl:flex-row gap-6 xl:gap-12 justify-center items-start">
+			<div className="px-6 md:px-12 xl:px-40 flex flex-col xl:flex-row gap-6 xl:gap-12 justify-center items-start">
 				<div className="flex flex-col justify-start items-start">
 					<h1 className={`text-2xl font-bold ${raj.className}`}>
 						OUR DIVERSE CLIENTELE
 					</h1>
-					<div className={`mt-4 text-lg text-neutral-950 `}>
+					<div className={`mt-4 text-lg text-neutral-950 text-balance`}>
 						<p className="pb-6">
 							Our clientele spans across various sectors, including:
 						</p>
