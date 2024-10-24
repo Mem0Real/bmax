@@ -19,5 +19,13 @@ export const linkData = [
 	{ title: "Car GPS Tracking", address: "/car-gps" },
 	{ title: "Bike GPS Tracking", address: "/bike-gps" },
 	{ title: "Bus Tracking System", address: "/bus-gps" },
-	{ title: "Truck Tracking System", address: "/truck-gps" },
+	{ title: "Transport Industry", address: "/transport-industry" },
+	{ title: "Food & Beverage", address: "/food-beverage" },
+	{ title: "Pharmaceutical", address: "/pharmaceutical" },
+	{ title: "Healthcare", address: "/healthcare" },
+	{ title: "Oil & Gas", address: "/oil-gas" },
+	{
+		title: "Logistics & Supply Chain Management",
+		address: "/logistics-supply",
+	},
 ];

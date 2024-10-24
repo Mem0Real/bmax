@@ -176,13 +176,13 @@ export default function GText({ items, autoplayDuration = 8000 }) {
 							<track
 								src="captions_en.vtt"
 								kind="captions"
-								srclang="en"
+								srcLang="en"
 								label="english_captions"
 							/>
 							<track
 								src="captions_es.vtt"
 								kind="captions"
-								srclang="es"
+								srcLang="es"
 								label="spanish_captions"
 							/>
 						</video>

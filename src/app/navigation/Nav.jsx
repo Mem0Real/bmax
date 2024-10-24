@@ -73,11 +73,11 @@ export default function Nav() {
 		<>
 			<div className="relaitve w-full bg-lightestMellow text-neutral-900 px-4 lg:px-16 xl:px-40 py-4 flex items-center justify-between flex-wrap">
 				<Link
-					className="relative flex flex-col justify-center items-center w-[125px] h-[60px] xl:h-20 xl:w-48 -mt-1"
+					className="relative flex flex-col justify-center items-center w-[125px] h-[60px] md:h-24 md:w-48 xl:h-20 xl:w-40 -mt-1"
 					href="/"
 				>
 					<Image
-						src="/images/logo.webp"
+						src="/images/logo2.webp"
 						alt="B-Max"
 						fill
 						priority
