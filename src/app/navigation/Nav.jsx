@@ -73,16 +73,17 @@ export default function Nav() {
 		<>
 			<div className="relaitve w-full bg-lightestMellow text-neutral-900 px-4 lg:px-16 xl:px-40 py-4 flex items-center justify-between flex-wrap">
 				<Link
-					className="relative flex flex-col justify-center items-center w-[125px] h-[60px] md:h-24 md:w-48 xl:h-20 xl:w-40 -mt-1"
+					// className="relative flex flex-col justify-center items-center w-[125px] h-[60px] md:h-24 md:w-48 xl:h-20 xl:w-40 -mt-1"
+					className="relative flex flex-col justify-center items-center w-[100px] h-16"
 					href="/"
 				>
 					<Image
-						src="/images/logo2.webp"
+						src="/images/logo4.webp"
 						alt="B-Max"
 						fill
 						priority
 						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-						className="object-cover object-center"
+						className="object-fill object-center"
 					/>
 				</Link>
 				{/* Big screen */}
