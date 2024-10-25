@@ -16,6 +16,7 @@ import { raleway } from "@/app/ui/fonts";
 
 import Topbar from "./components/Topbar";
 import { Notifications } from "@mantine/notifications";
+import BackDoor from "./components/BackDoor";
 
 export const metadata = {
 	metadataBase: new URL("https://b-maxautosolutions.com"),
@@ -67,17 +68,19 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<CustomIcons>
 				<body className={`${raleway.className} antialiased text-sm`}>
-					<MantineProvider>
-						<Nav />
-						<Topbar />
-						<TopLoaderProvider>
-							<Notifications />
-							<ScrollToTopButton>
-								<div className="bg-neutral-100">{children}</div>
-							</ScrollToTopButton>
-						</TopLoaderProvider>
-					</MantineProvider>
-					<Footer />
+					<BackDoor>
+						<MantineProvider>
+							<Nav />
+							<Topbar />
+							<TopLoaderProvider>
+								<Notifications />
+								<ScrollToTopButton>
+									<div className="bg-neutral-100">{children}</div>
+								</ScrollToTopButton>
+							</TopLoaderProvider>
+						</MantineProvider>
+						<Footer />
+					</BackDoor>
 				</body>
 			</CustomIcons>
 		</html>
