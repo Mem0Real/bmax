@@ -77,10 +77,10 @@ export default function ScrollToTopBottomButton({ children }) {
 			scale: 1,
 			transition: { duration: 0.5, ease: "easeOut" },
 		},
-		up: { rotate: 0, transition: { duration: 0.5, ease: [0.42, 0, 0.58, 1] } },
+		up: { rotate: 0, transition: { duration: 0.2, ease: [0.42, 0, 0.58, 1] } },
 		down: {
 			rotate: 180,
-			transition: { duration: 0.5, ease: [0.42, 0, 0.58, 1] },
+			transition: { duration: 0.2, ease: [0.42, 0, 0.58, 1] },
 		},
 	};
 
