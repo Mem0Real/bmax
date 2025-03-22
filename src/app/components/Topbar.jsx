@@ -12,8 +12,7 @@ const Topbar = ({ className }) => {
 			<div
 				className={`flex justify-center items-center gap-1 md:gap-4 font-semibold flex-wrap text-base ${raj.className}`}
 			>
-				<h1 className="self-start ">+251-911 71 77 95</h1>
-				<h1 className="self-end">+251-910 40 98 15</h1>
+				<h1 className="self-start ">0950444646</h1>
 				<Link href="/#hello" className="self-center">
 					info@b-maxautosolutions.com
 				</Link>
